@@ -1,0 +1,408 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Statistik 1",
+    "section": "",
+    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books."
+  },
+  {
+    "objectID": "01_intro/index.html",
+    "href": "01_intro/index.html",
+    "title": "1  Paradoxia",
+    "section": "",
+    "text": "2 Formalitäten"
+  },
+  {
+    "objectID": "01_intro/index.html#eine-rätselhafte-erkrankung",
+    "href": "01_intro/index.html#eine-rätselhafte-erkrankung",
+    "title": "1  Paradoxia",
+    "section": "Eine rätselhafte Erkrankung",
+    "text": "Eine rätselhafte Erkrankung\n\n\nEine rätselhafte Erkrankung hat seit geraumer Zeit die Bundesrepublik Deutschland heimgesucht. Die Betroffenen zeigen ein paradoxes emotionales Verhalten: sie reagieren allem Anschein nach traurig auf fröhliche Ereignisse und fröhlich auf traurige Ereignisse – als wären zwei Hirndrähte vertauscht worden! \nAufgrund ihres Erscheinungsbilds wird die neuartige Krankheit Paradoxia genannt."
+  },
+  {
+    "objectID": "01_intro/index.html#weiteres-mysterium-blaue-haare",
+    "href": "01_intro/index.html#weiteres-mysterium-blaue-haare",
+    "title": "1  Paradoxia",
+    "section": "Weiteres Mysterium: blaue Haare",
+    "text": "Weiteres Mysterium: blaue Haare\n\n\nNoch ist wenig bekannt über die Erkrankung. Eine weitere Auffälligkeit ist, dass viele der Betroffenen, eine Neigung haben, ihre Haare blau zu färben. Warum das so ist, ist unklar, auch wenn gemutmaßt wird, dass hierfür ein viral gegangenes Video einer Betroffenen verantwortlich ist."
+  },
+  {
+    "objectID": "01_intro/index.html#task-force",
+    "href": "01_intro/index.html#task-force",
+    "title": "1  Paradoxia",
+    "section": "Task Force",
+    "text": "Task Force\n\n\nDurch die schnelle Verbreitung der Erkrankung sind das Bundeskanzleramt und die Geheimdienste alarmiert. Schnell wird der Beschluss gefasst, eine Task Force bestehend aus Psycholog:innen, Mediziner:innen und Sozialforscher:innen ins Leben zu rufen, um die Erkrankung besser zu verstehen. \nSie sind Teil dieser Task Force im Team Psychologie."
+  },
+  {
+    "objectID": "01_intro/index.html#eine-erste-aufgabe-hypothesenbildung",
+    "href": "01_intro/index.html#eine-erste-aufgabe-hypothesenbildung",
+    "title": "1  Paradoxia",
+    "section": "Eine erste Aufgabe: Hypothesenbildung",
+    "text": "Eine erste Aufgabe: Hypothesenbildung\n\n\nIhre erste Aufgabe besteht darin, Hypothesen zu bilden, wie es zum Auftreten der Erkrankung gekommen sein könnte. Vermutet wird entweder eine neuartige Viruserkrankung, die das zentrale Nervensystem befällt, oder ein sozialpsychologisches Ansteckungsphänomen."
+  },
+  {
+    "objectID": "01_intro/index.html#anwesenheits--und-fehlzeitregelung",
+    "href": "01_intro/index.html#anwesenheits--und-fehlzeitregelung",
+    "title": "1  Paradoxia",
+    "section": "Anwesenheits- und Fehlzeitregelung",
+    "text": "Anwesenheits- und Fehlzeitregelung\n\n\n\nBildnachweis1"
+  },
+  {
+    "objectID": "01_intro/index.html#nützliche-links",
+    "href": "01_intro/index.html#nützliche-links",
+    "title": "1  Paradoxia",
+    "section": "Nützliche Links",
+    "text": "Nützliche Links\n\n\n\n\n\n\n\n\n\nStatistik für Psychologie\nhttps://www.statistikpsychologie.de/blog/\nEinige nützliche Blogeinträge zu statistischen Themen der Psychologie\n\n\nDATAtab\nhttps://datatab.de/tutorial/\nOnline-Kalkulator mit einigen guten Tutorials\n\n\nStatistikGuru\nhttps://statistikguru.de/\nFokus auf SPSS und R, aber viele Tutorials in allgemeinem Stil geschrieben"
+  },
+  {
+    "objectID": "01_intro/index.html#was-ist-statistik-1",
+    "href": "01_intro/index.html#was-ist-statistik-1",
+    "title": "1  Paradoxia",
+    "section": "Was ist Statistik?",
+    "text": "Was ist Statistik?\n\n\n\nDas Wort Statistik stammt von lateinisch statisticum „den Staat betreffend“ und italienisch statista Staatsmann oder Politiker […]\n\nQuelle: Wikipedia\n\n\n\n\nIn diesem Sinne beschrieb der Ausdruck Statistik ursprünglich die Lehre von den Daten über den Staat. Heute ist der Begriff wesentlich breiter gefasst:\n\n\n\n\n\n\nStatistik ist ein angewandter Zweig der Mathematik, der sich mit der Erhebung, Analyse und Interpretation empirischer Daten befasst.\n\n\n\n\n\nBeispiele\n\n\n\n\n\n\nErhebung\nWie groß sollte meine Stichprobe sein?\n\n\nAnalyse\nWas ist der Mittelwert meiner Variable?\n\n\nInterpretation\nUnterscheiden sich zwei Gruppen systematisch?\n\n\n\n\n\n\n\n\n\n\nBildnachweis2 3"
+  },
+  {
+    "objectID": "01_intro/index.html#wozu-statistik",
+    "href": "01_intro/index.html#wozu-statistik",
+    "title": "1  Paradoxia",
+    "section": "Wozu Statistik?",
+    "text": "Wozu Statistik?\n\n\nAuch ohne Statistik sind Menschen sehr gut darin, Muster oder Zusammenhänge in ihrer Umwelt zu erkennen. Man könnte diese Fähigkeit als intuitive Empirie bezeichnen. Wozu also Statistik?\n\n\n\n\nProbleme intuitiver Empirie (kleiner Ausschnitt)\n\nKognitive Biases (z.b. Konfirmationsbias)\nSchwächen beim probabilistischen Denken (Stichwort Lotto)\nÜbergeneralisierung / Tendenz zur vorschnellen Verallgemeinerung\nÜbersensitivität: Muster erkennen, wo keine sind\nVermischung mit eigenen Interessen (z.B. Politik)\nBegrenztes (Arbeits)Gedächtnis: Unfähigkeit, große Datenmengen im Kopf zu behalten und zu verrechnen\n\n\n\n\n\n\n\nBildnachweis4"
+  },
+  {
+    "objectID": "01_intro/index.html#beispiel-prävalenzfehler",
+    "href": "01_intro/index.html#beispiel-prävalenzfehler",
+    "title": "1  Paradoxia",
+    "section": "Beispiel Prävalenzfehler",
+    "text": "Beispiel Prävalenzfehler\n\n\nEin neuentwickelter Coronatest wird damit beworben, dass er anhand einer Speichelprobe in 100% der Fälle eine bestehende Coronaerkrankung erkennt. Im Kleingedruckten findet sich der Hinweis, dass die Spezifität 90% beträgt, d.h. der Test weist in 10% der Fälle eine gesunde Person fälschlicherweise als krank aus.\nNehmen Sie an, die Prävalenz von Corona ist 1%, d.h. eine von hundert Personen ist mit Corona infiziert.\n\nSchätzen Sie: Angenommen Ihr Test ist positiv, in wie viel Prozent der Fälle sind Sie dann auch tatsächlich positiv?"
+  },
+  {
+    "objectID": "01_intro/index.html#section",
+    "href": "01_intro/index.html#section",
+    "title": "1  Paradoxia",
+    "section": "",
+    "text": "Placeholder image!!!"
+  },
+  {
+    "objectID": "01_intro/index.html#beispiel-prävalenzfehler-1",
+    "href": "01_intro/index.html#beispiel-prävalenzfehler-1",
+    "title": "1  Paradoxia",
+    "section": "Beispiel Prävalenzfehler",
+    "text": "Beispiel Prävalenzfehler\n\n\nAuflösung:\n\nvon 100 Personen ist im Schnitt 1 Person krank. Diese wird durch den Test auf jeden Fall korrekt als krank erkannt.\n99 Personen sind nicht erkrankt, und bei 10% dieser Personen gibt der Test ein falsch-positives Ergebnis (≈ 10 Personen).\nD.h. bei 100 Personen haben ≈11 Personen ein positives Ergebnis, aber bei 10 von 11 Personen (91%) ist dieses Ergebnis falsch!\n\n\nUnsere empirische Intuition versagt in diesem Fall häufig. Im konkreten Beispiel spricht man auch vom Prävalenzfehler oder der Base rate fallacy.\n\n\n\n\n\nWeiteres Beispiel: ist die Häufigkeit/Prävelenz von “Sales people” deutlich größer als die der “Librarians”, so ist die Wahrscheinlichkeit groß, dass eine schüchterne Person mit großer Wahrscheinlichkeit eine “Sales person” – selbst dann, wenn Sales people mehrheitlich eher nicht schüchtern sind.5"
+  },
+  {
+    "objectID": "01_intro/index.html#beispiel-meditonsin",
+    "href": "01_intro/index.html#beispiel-meditonsin",
+    "title": "1  Paradoxia",
+    "section": "Beispiel Meditonsin",
+    "text": "Beispiel Meditonsin\n\n\n\nMeditonsin ist das meistverkaufte homöopathische Erkältungsmittel in Deutschland, mit einem Jahresumsatz von deutlich über zwanzig Millionen Euro.\n\n\nJedenfalls entwickelte ein Chemieprofessor für Medice eine Apparatur, die alle Zutaten von Meditonsin bis heute in 250-Liter-Fässern vermischt und am Ende zehnmal kräftig in Richtung Erdmittelpunkt schüttelt.\n\n\nMeditonsin enthält laut Beipackzettel Tollkirsche und Eisenhut in D5-Auflösung [0,00001%] sowie Quecksilber in D8-Auflösung [0,00000001%].\n\nQuelle: Sueddetsche Zeitung 6\n\n\n\n\nLaut einem Gerichtsurteil aus dem Mai 2023 darf Meditonsin nicht mehr mit einer vorgeblich wissenschaftlich bewiesenen Wirksamkeit werben.7"
+  },
+  {
+    "objectID": "01_intro/index.html#beispiel-meditonsin-1",
+    "href": "01_intro/index.html#beispiel-meditonsin-1",
+    "title": "1  Paradoxia",
+    "section": "Beispiel Meditonsin",
+    "text": "Beispiel Meditonsin\n\n\nWoher kommt das große Vertrauten in ein Medikament, bei dem eine Flasche im Schnitt kaum ein Molekül der vorgeblichen Wirksubstanzen enthält?\nWarum entsteht bei vielen Menschen subjektiv der Eindruck, Medikamente wie Meditonsin würden wirken?\n\n\n\n\nDer Geist in der Flasche.8"
+  },
+  {
+    "objectID": "01_intro/index.html#beispiel-meditonsin-2",
+    "href": "01_intro/index.html#beispiel-meditonsin-2",
+    "title": "1  Paradoxia",
+    "section": "Beispiel Meditonsin",
+    "text": "Beispiel Meditonsin\n\n\nEine Erklärung ist mangelndes Bewusstsein für einen Effekt der auch als Regression zur Mitte bezeichnet wird.\n\nMeditonsin wird vermutlich häufig eingenommen, wenn eine Erkältung auf ihrem Höhepunkt ist.\nIn aller Regel verbessert sich der Gesundheitszustand nach Erkältungen auch ohne Medikation und pendelt sich wieder auf einen Normalzustand ein (dies ist die “Regression” zur “Mitte”).\nDadurch entsteht eine subjektiv wahrgenommener Zusammenhang Einnahme Meditonsin   ⟶   Heilung\n\n\nStatistische Methoden ermöglichen hier in Kombination mit einem adäquaten Studiendesign (Interventions- und Placebogruppe) eine objektivere Einschätzung.\n\n\nEmpfehlung: Quarks Science Podcast “Meditonsin, Umckaloabo, Grippostad: Die Akte Erkältungsmittel” 9\n\n\n\n\n\nRegression zur Mitte. 10"
+  },
+  {
+    "objectID": "01_intro/index.html#deskriptive-statistik-und-inferenzstatistik",
+    "href": "01_intro/index.html#deskriptive-statistik-und-inferenzstatistik",
+    "title": "1  Paradoxia",
+    "section": "Deskriptive Statistik und Inferenzstatistik",
+    "text": "Deskriptive Statistik und Inferenzstatistik\n\n\nIn Statistik 1 und 2 werden wir fast ausschließlich Methoden aus der deskriptiven Statistik und Inferenzstatistik behandeln.\n\nDas Ziel der deskriptiven Statistik ist die Beschreibung und Zusammenfassung von Daten innerhalb einer Stichprobe.\n\n\nBeispielfragen: Wie hoch ist der Mittelwert einer Variable in der Stichprobe? Wie hoch ist die Korrelation zwischen Variable X und Variable Y in der Stichprobe?\n\n\nDas Ziel der Inferenzstatistik sind Schlussfolgerungen über eine Population auf der Grundlage von Stichproben.\n\n\nBeispielfragen: Wie groß ist die durchschnittliche Körpergröße der Bevölkerung, basierend auf einer Stichprobe von 500 Personen? Gibt es einen signifikanten Unterschied im durchschnittlichen Einkommen zwischen zwei verschiedenen Berufsgruppen?\n\n\n\n\n\nBildnachweis11\n\n\n\nEin alternativer Ausdruck für Inferenzstastistik ist Induktive Statistik."
+  },
+  {
+    "objectID": "01_intro/index.html#section-1",
+    "href": "01_intro/index.html#section-1",
+    "title": "1  Paradoxia",
+    "section": "",
+    "text": "Zurück zum Thema: wie entwickelt man gute Hypothesen? Und was ist eigentlich eine Hypothese?"
+  },
+  {
+    "objectID": "01_intro/index.html#der-forschungsprozess",
+    "href": "01_intro/index.html#der-forschungsprozess",
+    "title": "1  Paradoxia",
+    "section": "Der Forschungsprozess",
+    "text": "Der Forschungsprozess\nsetup:\n    - element: \"#hypothesis\"\n      modifier: function() { this.node.style.fill = 'green'; }\n    - element: \"#hypothesisbg\"\n      modifier: function() { this.node.style.fill = '#d8ffe2';}"
+  },
+  {
+    "objectID": "01_intro/index.html#was-ist-eine-hypothese",
+    "href": "01_intro/index.html#was-ist-eine-hypothese",
+    "title": "1  Paradoxia",
+    "section": "Was ist eine Hypothese?",
+    "text": "Was ist eine Hypothese?\n\n\n\n\n\n\nHypthesen: in Form einer logischen Aussage formulierte Annahme zur Erklärung empirischer Phänomene.\n\n\n\n\nBeispiele\n\nEs gibt einen positiven Zusammenhang zwischen der Feinstaubbelastung einer Stadt und der Prävalenz von Lungenerkrankungen.\nEine vorherige Impfung mit dem Corona-Impfstoff verringert die Symptomschwere im Fall einer Infektion.\n\n\n\n\n\nBildnachweis12"
+  },
+  {
+    "objectID": "01_intro/index.html#gute-hypothesen-schlechte-hyothesen",
+    "href": "01_intro/index.html#gute-hypothesen-schlechte-hyothesen",
+    "title": "1  Paradoxia",
+    "section": "Gute Hypothesen, schlechte Hyothesen",
+    "text": "Gute Hypothesen, schlechte Hyothesen\nEine wissenschaftliche Hypothese muss drei Grundvoraussetzungen erfüllen: Widerspruchsfreiheit, Widerlegbarkeit, Operationalisierbarkeit.\n\n\n\nBeispiele\n\nAlle Lebewesen benötigen Sauerstoff, aber manche Lebenwesen sind anaerob [widerspruchsfrei, widerlegbar, operationalisierbar]\nKönnten Babies sprechen, würden sie hauptsächlich ihre Gefühle zum Ausdruck bringen [widerspruchsfrei, operationalsierbar, widerlegbar]\nBewusstsein ist eine notwendige Voraussetzung um zu fühlen [widerspruchsfrei, operationalisierbar, widerlegbar].\n\nBeachte: Hypothese, die nicht widerspruchsfrei oder nicht operationalisierbar sind, sind auch nicht widerlegbar (die umgekehrte Aussage gilt nicht in allen Fällen).\n\n\nOperationalisierung: Messbarmachung eines theoretischen Konstrukts (Schwerkraft, Intelligenz, psychische Resilienz, …) durch ein geeignetes Messinstrument (Gravimeter, Intelligenztest, Fragebogen, …)"
+  },
+  {
+    "objectID": "01_intro/index.html#section-2",
+    "href": "01_intro/index.html#section-2",
+    "title": "1  Paradoxia",
+    "section": "",
+    "text": "Eine gute wissenschaftliche Hypothese erfüllt darüber hinaus weitere Kriterien:\n\n\n\n\n\n\n\nPrädiktivität\nHypothesen sollten präzise Vorhersagen ermöglichenNegativbeispiel: Das Selbst ist in ein Es, Ich, Über-Ich aufgeteiltPositivbeispiel: Eine tägliche morgendliche Meditationsübung verringert das subjektive und objektive Stresslevel\n\n\nSpezifität\nHypothesen sollten spezifisch und konkret seinNegativbeispiel: Frühe Kindheitstraumata wirken sich nachteilig auf spätere Beziehungen ausPositivbeispiel: Kindheitstraumata in einem vorsprachlichen Alter, verursacht durch wichtige Bezugspersonen, erhöhen die Wahrscheinlichkeit von Bindungsangst in engen romantischen Beziehungen\n\n\nSparsamkeit\nHypothesen sollten keine unnötige Komplexität beinhaltenNegativbeispiel: Die Coronapandemie verstärkt das Gefühl der Vereinsamung in älteren Bevölkerungsschichten, falls diese an einem Dienstag befragt wurden.Positivbeispiel: Die Coronapandemie verstärkt das Gefühl der Vereinsamung in älteren Bevölkerungsschichten, falls diese an einem Dienstag befragt wurden.\n\n\nRelevanz\nHypothesen sollten von theoretischer oder gesellschaftlicher Relevanz seinNegativbeispiel: Menschen mit roten Autos bevorzugen rote GemüsesortenPositivbeispiel: Nach persönlichen Erfolgserlebnissen neigen Menschen zu riskantem Fahrvehalten"
+  },
+  {
+    "objectID": "01_intro/index.html#gerichtete-und-ungerichtete-hypothesen",
+    "href": "01_intro/index.html#gerichtete-und-ungerichtete-hypothesen",
+    "title": "1  Paradoxia",
+    "section": "Gerichtete und ungerichtete Hypothesen",
+    "text": "Gerichtete und ungerichtete Hypothesen\n\n\n\nUngerichtete Hypothesen geben keine Richtung des Effektes an:\n\nFrauen und Männer haben unterschiedliche viele soziale Kontakte\nDie Punktzahl im Abitur hängt zusammen mit der späteren Lebenszufriedenheit\n\n\n\nGerichtete Hypothesen geben die Richtung des Effektes an:\n\nFrauen haben mehr soziale Kontakte als Männer\nEine höhere Punktzahl im Abitur korreliert negativ mit der späteren Lebenszufriedenheit\n\n\n\n\n\n\nBildnachweis13"
+  },
+  {
+    "objectID": "01_intro/index.html#probabilistische-hypothesen",
+    "href": "01_intro/index.html#probabilistische-hypothesen",
+    "title": "1  Paradoxia",
+    "section": "Probabilistische Hypothesen",
+    "text": "Probabilistische Hypothesen\n\n\nIn der Psychologie sind Hypothesen in aller Regel probabilistisch, d.h. sie machen Aussagen über Wahrscheinlichkeiten und Mittelwerte.\n\n\n\n\nBeispiel deterministische Hypothese: Menschen mit Alkoholabhängigkeit entwickeln eine Depression.\nBeispiel probabilistische Hypothese: Menschen mit Alkoholabhängigkeit haben eine erhöhte Wahrscheinlichkeit für eine Depression.Alternativ: Menschen mit Alkoholabhängigkeit haben im Mittel eine höhere Ausprägung depressiver Symptome.\n\n\n\n\n\nPsychologische Phänomene sind in der Regel von einer Vielzahl von Faktoren beeinflusst, die zum Großteil nicht bekannt sind (biologisch–z.B. Blutdruck, psychologisch–z.B. Stimmung, situativ–z.B. Versuchslabor versus Realität).\nDiese Faktoren erhöhen die Variabilität von Beobachtungen und führen dazu, dass die meisten psychologischen Phänomene nur durch Mittelwertbildung über eine Reihe von Messwiederholungen sichtbar werden.\n\n\n\n\n\nBildnachweis14"
+  },
+  {
+    "objectID": "01_intro/index.html#section-3",
+    "href": "01_intro/index.html#section-3",
+    "title": "1  Paradoxia",
+    "section": "",
+    "text": "Ok, Task Force: wie lauten eure (Arbeits-)Hypothesen zu den Hintergründen von Paradoxia?\n\nHypothese 1: Paradoxia wird durch eine virale Infektion verursacht. Die Blutproben von Menschen mit Paradoxia sollten daher eine höhere Menge von Entzündungsmarkern aufweisen.\n\n\nHypothese 2: Die Blaufärbung der Haare ist ein reines Tik-Tok-Phänomen. Betroffene in Ländern, in denen TikTok gesperrt ist, sollten daher keine erhöhte Neigung zur Blaufärbung der Haare haben."
+  },
+  {
+    "objectID": "02_messen/index.html",
+    "href": "02_messen/index.html",
+    "title": "2  Vorlesung 02: Messen in der Psychologie",
+    "section": "",
+    "text": "3 Das Experiment"
+  },
+  {
+    "objectID": "02_messen/index.html#der-forschungsprozess",
+    "href": "02_messen/index.html#der-forschungsprozess",
+    "title": "2  Vorlesung 02: Messen in der Psychologie",
+    "section": "Der Forschungsprozess",
+    "text": "Der Forschungsprozess\nsetup:\n    - element: \"#operationalize\"\n      modifier: function() { this.node.style.fill = 'green'; }\n    - element: \"#operationalizebg\"\n      modifier: function() { this.node.style.fill = '#d8ffe2';}"
+  },
+  {
+    "objectID": "02_messen/index.html#ohne-maßband-oder-waage-wie-misst-man-psyche",
+    "href": "02_messen/index.html#ohne-maßband-oder-waage-wie-misst-man-psyche",
+    "title": "2  Vorlesung 02: Messen in der Psychologie",
+    "section": "Ohne Maßband oder Waage – Wie misst man Psyche?",
+    "text": "Ohne Maßband oder Waage – Wie misst man Psyche?\n\n\n\n\nDie meisten Variablen menschlicher Psychologie sind keine “natürlichen Größen”, die sich mit konventionellen Instrumenten (z.B. Meterstab) messen ließen – sie sind latent.\nIn der Regel basieren diese Variablen auf bestimmten Vorstellungen oder Theorien über die Psyche (Optimismus, Ängstlichkeit, Intelligenz, usw.) – man spricht hier auch von Konstrukten.\nUm messbar zu werden, müssen Konstrukte operationalisiert werden, d.h. es müssen manifeste messbare Variablen definiert werden, die – ggf. in Kombination (z.B. Fragebogen) – Rückschluss auf das Konstrukt erlauben.\n\n\n\n\n\n\nBildnachweis1"
+  },
+  {
+    "objectID": "02_messen/index.html#skala-und-skalenniveau",
+    "href": "02_messen/index.html#skala-und-skalenniveau",
+    "title": "2  Vorlesung 02: Messen in der Psychologie",
+    "section": "Skala und Skalenniveau",
+    "text": "Skala und Skalenniveau\n\n\n\nEine Skala bezeichnet in der Psychologie die systematische Zuordnung der Ausprägungen eines empirischen Merkmals (z.B. Depressivität, Konzentrationsfähigkeit, Stresslevel) zu Zahlenwerten oder Kategorien.\nDiese Zuordnung erfolgt entweder mit einem Messinstrument oder einer Messvorschrift\n\nMessinstrumente: Test zur Bestimmung der Cortisolkonzentration im Speichel, Eyetracking-Gerät, EEG-Gerät, …\nBeispiele Messvorschriften: Fragebogen, strukturiertes Interview, psychologischer Test\n\nKurz gesagt: die Messung einer Variablen erfordert eine Skala\nSkalen werden in verschiedene Skalenniveaus unterteilt, deren Aussagekraft sich unterscheidet:\n\nNominalskala\nOrdinalskala\nIntervallskala\nVerhältnisskala"
+  },
+  {
+    "objectID": "02_messen/index.html#skalenniveaus",
+    "href": "02_messen/index.html#skalenniveaus",
+    "title": "2  Vorlesung 02: Messen in der Psychologie",
+    "section": "Skalenniveaus",
+    "text": "Skalenniveaus\n\n\n\n\n\nKategoriale / qualitative Skalenniveaus\n\n\n\n\n\n\n\nNominalskala\nVerschiedene Ausprägungen des Merkmals entsprechen qualitativen (zumeist verbalen) Kategorien\nStudiengang (Psychologie, Medizin, …), Geschlecht (männlich / weiblich)\n\n\nOrdinalskala\nWie Nominalskala, aber die Kategorien lassen sich in eine natürliche Reihenfolge bringen; daher häufig mit Zahlen benannt, diese Zahlen stellen aber kein “Ausmaß” dar\nLikert-Rating (z.B. Skala von 1 bis 10), Bildungsstand (Mittelschule, Abitur, Studium, Doktor, …)\n\n\n\n\n\n\n\n\n\n\nMetrische / quantitative Skalenniveaus (immer Zahlenwerte!)\n\n\n\n\n\n\n\nIntervallskala\nZahlenwerte; Abstände zwischen zwei Werten sind interpretierbar\nSchulnote (Note 1-6), IQ (96, 114, …)\n\n\nVerhältnisskala\nWie Intervallskala, aber es gibt einen natürlichen Nullpunkt und daher können Verhältnisse gebildet werden (z.B. “doppelt so viel Einkommen in €”)\nAnzahl Freunde (2, 6, …), Körpergröße (173cm, 199cm, …)\n\n\n\n\n\n\n\n\n\nSkalenniveaus werden manchmal mit den Etagen eines Hauses verglichen, wobei die Nominalskala die niedrigste Etage darstellt. In der Abbildung wird zusätzlich zwischen Intervall- und Absolutskala unterschieden. Im Gegensatz zur Verhältnisskala, bei der die Einheiten häufig frei gewählt werden können (Meter oder Zentimeter, Euro oder Cent, ..), basiert die Absolutskala auf der natürlichen Einheit “Anzahl” (Anzahl Personen, Anzahl richtiger Antworten, usw.). Davon abgesehen sind Verhältnis- und Absolutskala identisch und die genannte Unterscheidung ist ohne weitere praktische Relevanz."
+  },
+  {
+    "objectID": "02_messen/index.html#section",
+    "href": "02_messen/index.html#section",
+    "title": "2  Vorlesung 02: Messen in der Psychologie",
+    "section": "",
+    "text": "Achtung bei Nominalskalen: zum Teil werden den Ausprägungen einer nominalskalierten Variable Zahlen zugeordnet (die sog. Kodierung – Beispiel Haarfarbe: “hellblond” = 1, “dunkelblond” = 2, “hellbraun” = 3, usw.). Diese Kodierung ändert aber nichts an den Eigenschaften der Variable, insbesondere dürfen nominalskalierte Variablen auch nach der Kodierung nicht miteinander verechnet werden (d.h. keine Addition, kein Verhältnis, kein Mittelwert, usw.)."
+  },
+  {
+    "objectID": "02_messen/index.html#skalenniveaus-zusammenfassung",
+    "href": "02_messen/index.html#skalenniveaus-zusammenfassung",
+    "title": "2  Vorlesung 02: Messen in der Psychologie",
+    "section": "Skalenniveaus: Zusammenfassung",
+    "text": "Skalenniveaus: Zusammenfassung"
+  },
+  {
+    "objectID": "02_messen/index.html#was-ist-eine-variable",
+    "href": "02_messen/index.html#was-ist-eine-variable",
+    "title": "2  Vorlesung 02: Messen in der Psychologie",
+    "section": "Was ist eine Variable?",
+    "text": "Was ist eine Variable?\n\n\n\nDie Grundannahme psychologischer Forschung ist, dass sich Erleben und Verhalten durch bestimmte Merkmale messen und beschreiben lässt\nDiese Merkmale sind in aller Regel variabel, sowohl innerhalb eines Individuums (intraindividuell), als auch zwischen Individuen (interindividuell)\n\n\nVariables Merkmal = Variable\n\n\n\n\n\nBeispiele\n\nIntraindividuelle Variable (unterschiedliche Werte bei einer Person über die Zeit): Müdigkeit einer Person über den Tagesverlauf; Hippocampusvolumen einer Person zu verschiedenen Jahreszeiten\nInterindividuelle Variable (unterschiedliche Werte bei verschiedenen Personen): Alter verschiedener Personen; Intelligenzquotient verschiedener Personen"
+  },
+  {
+    "objectID": "02_messen/index.html#variablentypen",
+    "href": "02_messen/index.html#variablentypen",
+    "title": "2  Vorlesung 02: Messen in der Psychologie",
+    "section": "Variablentypen",
+    "text": "Variablentypen\nVariablen können verschiedene Arten von Ausprägungen aufweisen:\n\n\n\n\n\n\n\n\n\n\n\nTyp\nQuali/Quanti\nDefinition\nSkala\nBeispiele\n\n\n\n\n\nDichotom\nQualitativ (=Kategorien)\nZwei mögliche Ausprägungen\nNominal\nschwanger/nicht schwanger, Raucher/Nichtraucher\n\n\n\nKategorial\nQualitativ (=Kategorien)\nEine begrenzte Zahl von Ausprägungen\nNominal, Ordinal\nHaarfarbe, Schulabschluss, Musikgeschmack\n\n\n\nDiskret\nQuantitativ (=Zahlenwerte)\nGestufte Ausprägungen, die sich der Größe nach ordnen lassen\nOrdinal, Intervall, Verhältnis\nAnzahl von Geschwistern, Schulnoten\n\n\n\nKontinuierlich\nQuantitativ (=Zahlenwerte)\nStufenlose Ausprägung\nIntervall, Verhältnis\nAlter, Intelligenz\n\n\n\n\n\nNB: Die Art der Ausprägung einer Variable ist eine wichtige Information für die Auswahl einer geeigneten deskriptiven oder inferentiellen statistischen Methode"
+  },
+  {
+    "objectID": "02_messen/index.html#manifeste-und-latente-variablen",
+    "href": "02_messen/index.html#manifeste-und-latente-variablen",
+    "title": "2  Vorlesung 02: Messen in der Psychologie",
+    "section": "Manifeste und Latente Variablen",
+    "text": "Manifeste und Latente Variablen\n\n\n\n\n\n\n\n\n\n\n\n\n\nManifeste Variable\nDirekt messbar oder beobachtbar\nAlter, Geschlecht, Herzfrequenz, Schulnoten, Einkommen\n\n\n\nLatente Variable\nNicht direkt messbar oder beobachtbar – die Ausprägungen der Variablen müssen erschlossen werden\nIntelligenz, Einstellung gegenüber Minderheiten, Wohlbefinden\n\n\n\n\n\n\n\nIn der Psychologie basieren viele Variablen auf theoretischen Konstrukten (wie Intelligenz) und können daher nicht direkt beobachtet, abgefragt oder gemessen werden 😒.\nLatente Variable sind daher eher die Regel als die Ausnahme."
+  },
+  {
+    "objectID": "02_messen/index.html#abhängige-und-unabhängige-variablen",
+    "href": "02_messen/index.html#abhängige-und-unabhängige-variablen",
+    "title": "2  Vorlesung 02: Messen in der Psychologie",
+    "section": "Abhängige und unabhängige Variablen",
+    "text": "Abhängige und unabhängige Variablen\n\n\nIn vielen Studien wird eine Variable in verschiedenen Studien- oder Experimentalbedingungen gemessen.\nUm Studierende etwas zu verwirren (😉) werden auch die Studien- bzw. Experimentalbedingungen als Variablen bezeichnet, genauer als unabhängige Variablen. Sie sind unabhängig, weil sie i.d.R. von den Durchführenden einer Studie frei bestimmt werden.\n\n\n\nDie tatsächlich gemessene Variable wird demgegenüber als abhängige Variable bezeichnet, da die Werte der Variable in Abhängigkeit von der jeweiligen Studien- btw. Experimentalbedingung unterschiedlich ausfallen können.\n\n\n\n\n\nBeispiele\n\n\n\n\n\n\nUnabhängige Variable\nGruppenzugehörigkeit (z.B. Patienten vs. Kontrollen), Experimentalbedingungen (z.B. mit versus ohne Aufmerksamkeit, Messzeitpunkt 1 versus Messzeitpunkt 2)\n\n\nAbhängige Variable\nHerzrate, Fragebogenscore, Anzahl von Fehlern in einer Aufgabe"
+  },
+  {
+    "objectID": "02_messen/index.html#der-forschungsprozess-1",
+    "href": "02_messen/index.html#der-forschungsprozess-1",
+    "title": "2  Vorlesung 02: Messen in der Psychologie",
+    "section": "Der Forschungsprozess",
+    "text": "Der Forschungsprozess\nsetup:\n    - element: \"#experiment\"\n      modifier: function() { this.node.style.fill = 'green'; }\n    - element: \"#experimentbg\"\n      modifier: function() { this.node.style.fill = '#d8ffe2';}"
+  },
+  {
+    "objectID": "02_messen/index.html#was-ist-ein-experiment",
+    "href": "02_messen/index.html#was-ist-ein-experiment",
+    "title": "2  Vorlesung 02: Messen in der Psychologie",
+    "section": "Was ist ein Experiment?",
+    "text": "Was ist ein Experiment?\n\nEin Experiment ist eine Überführung der Forschungsfrage in eine objektivierbare und quantifizierbare Untersuchung\nIm Zentrum des Experimentes steht die unabhängige Variable, durch die das Experiment in zwei oder mehr experimentelle Bedingungen unterteilt wird.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEin Experiment ist eine systematische Veränderung in einer unabhängigen Variable (Treatment / Manipulation), mit dem Ziel, ursächlich eine Veränderung in der abhängigen Variable (d.h. der gemessenen Variable) herbeizuführen.\n\n\n\n\n\n\n\n\n\n\n… was heißt das konkret?"
+  },
+  {
+    "objectID": "02_messen/index.html#beispiel",
+    "href": "02_messen/index.html#beispiel",
+    "title": "2  Vorlesung 02: Messen in der Psychologie",
+    "section": "Beispiel",
+    "text": "Beispiel\n\n\n\nWas schmeck besser: Coca-Cola oder Pepsi Cola?\n\nExperiment: Blindverkostung durch N Versuchspersonen, die jeweils Coca-Cola und Pepsi Cola in einem neutralen Gefäß probieren und auf einer Skala von 1 bis 10 bewerten.\n\nUnabhängige Variable: Getränkemarke (zwei Werte: Cola, Pepsi; kategorial)\nAbhängige Variable: Bewertung durch die Versuchspersonen (10 Werte, 1-10; diskret)\n\n\n \n\n\nIm genannten Beispiel handelt sich um ein Experiment mit within-subject Design, da jede Versuchsperson alle (hier zwei) Bedingungen der unabhängigen Variable durchläuft."
+  },
+  {
+    "objectID": "02_messen/index.html#section-1",
+    "href": "02_messen/index.html#section-1",
+    "title": "2  Vorlesung 02: Messen in der Psychologie",
+    "section": "",
+    "text": "Wie sähe das Experiment in einem between-subject Design aus?"
+  },
+  {
+    "objectID": "02_messen/index.html#within--und-between-subject-design",
+    "href": "02_messen/index.html#within--und-between-subject-design",
+    "title": "2  Vorlesung 02: Messen in der Psychologie",
+    "section": "Within- und between-subject Design",
+    "text": "Within- und between-subject Design\n\n\n\n\n\n\n\n\n\nDesign\nDefinition\nBeispiel\n\n\n\n\nWithin-subject\nAlle Versuchspersonen durchlaufen alle Experimentalbedingungen\nJede VP probiert Cola und Pepsi\n\n\nBetween-subject\nVerschiedene Versuchspersonengruppen durchlaufen jeweils nur eine Experimentalbedingung\nGruppe 1 probiert Cola, Gruppe 2 probiert Pepsi\n\n\nMixed\nMindestens eine Experimentalbedingung wird innerhalb der Teilnehmer variiert (within-subject) und eine Experimentalbedingung zwischen den Teilnehmern variiert (between-subject)\nGruppe 1 probiert Cola mit und ohne Eis, Gruppe 2 probiert Pepsi mit und ohne Eis\n\n\n\n\n\n\nBildnachweis2"
+  },
+  {
+    "objectID": "02_messen/index.html#within-subject-messwiederholung-ein-kleiner-rant",
+    "href": "02_messen/index.html#within-subject-messwiederholung-ein-kleiner-rant",
+    "title": "2  Vorlesung 02: Messen in der Psychologie",
+    "section": "Within-subject & Messwiederholung (ein kleiner Rant)",
+    "text": "Within-subject & Messwiederholung (ein kleiner Rant)\nEin synonymer Begriff für das within-subject Design ist Design mit Messwiederholung (engl. repeated measures).\nMesswiederholung bezeichnet, exakt wie das within-subject Design, die geplante Durchführung mehrerer Experimentalbedingungen an einer VP.\nMesswiederholung ist ein recht unglücklich gewählter und verwirrender Begriff:\n\nUrsprünglich bezeichneter er vermutlich allein die Messung einer VP zu verschiedenen Zeitpunkten (z.B. Test vor und nach einer Intervention). Hier ergibt der Begriff “Wiederholung” Sinn. In der heutigen Anwendung bezieht sich der Begriff Messwiederholung allerdings nicht nur auf den within-subject Faktor “Zeit” (mit verschiedenen Messzeitpunkten als within-subject Experimentalbedingungen), sondern auf jede Art von within-subject Faktor (z.B. mit und ohne Eis im Cola-Beispiel). “Wiederholung” verwirrt in diesem Zusammenhang, da unterschiedliche Experimentalbedingungen getestet werden (wenn auch in derselben Person).\nExperimente beinhalten häufig eine tatsächliche Art von Messwiederholung, nämlich die wiederholte Durchführung ein und derselben Experimentalbedingung (auch “Trial” genannt), um durch Mittelwertbildung die Präzision der Messung zu erhöhen. Hier wäre der Begriff Messwiederholung besser angebracht.\nAus dem Begriff selbst wird nicht deutlich, dass eine Messung tatsächlich innerhalb derselben VP wiederholt wird – der Begriff within-subject ist hier präziser.\n\nDer Ausdruck Messwiederholung oder Repeated Measures ist allerdings so verbreitet (in wissenschaftlichen Artikeln, Statistik-Software usw.), dass er hier Erwähnung finden muss."
+  },
+  {
+    "objectID": "02_messen/index.html#beispiel-between-subject-design-das-asch-experiment",
+    "href": "02_messen/index.html#beispiel-between-subject-design-das-asch-experiment",
+    "title": "2  Vorlesung 02: Messen in der Psychologie",
+    "section": "Beispiel between-subject Design: das Asch-Experiment",
+    "text": "Beispiel between-subject Design: das Asch-Experiment\n\n\n\nKonstrukt: gruppenkonformes Verhalten\nExperiment: die Versuchsperson (VP) musste auswählen, welche von drei Vergleichlinien dieselbe Länge wie eine Referenzlinie hat. Außer der VP waren noch weitere vorgebliche VPen anwesend (in Wirklichkeit Vertraute der Experimentalleitung – die “Konfidenten”).\n\nUnabhängige Variable: zwei Gruppen (Gruppe A: Konfidenten geben richtige Antworten; Gruppe B: Konfidenten geben in 2/3 der Fälle eine falsche Antwort)\nAbhängige Variable: Prozentzahl der Fehler der VP\n\n\nErgebnis:\n\n1% Fehlentscheidungen in Kontrollgruppe\n37% Fehlentscheidungen in der Experimentalgruppe\n\n\n⟶ Die Operationalsierung des Konstruktes “gruppenkonformes Verhalten” entspricht hier also einem experimentellen Kontrast:\n\n\nFehlerrate Experimentalgruppe − Fehlerrate Kontrollgruppe"
+  },
+  {
+    "objectID": "02_messen/index.html#ist-jede-wissenschaftliche-studie-ein-experiment",
+    "href": "02_messen/index.html#ist-jede-wissenschaftliche-studie-ein-experiment",
+    "title": "2  Vorlesung 02: Messen in der Psychologie",
+    "section": "Ist jede wissenschaftliche Studie ein Experiment?",
+    "text": "Ist jede wissenschaftliche Studie ein Experiment?\nNein.\n\nIn Beobachtungsstudien werden Phänomene oder Zusammenhänge ohne Manipulation einer unabhängigen Variable untersucht.\nBeispiele: Quasi-Experiment, Längsschnittstudien, Fall-Kontroll-Studie\nIm Gegensatz zum Experiment(*) können in Beobachtungsstudien keine kausalen Schlüsse gezogen werden\nWarum? Jeder Unterschied zwischen Gruppen oder Zusammenhang zweier Variablen zwischen Personen kann immer auch durch (bekannte oder unbekannte) Störvariablen verursacht sein.\n\n\n→ Mehr dazu im Modul Forschungsmethoden!\n\n(*)Angenommen wird hier ein “echtes Experiment”, d.h. mit randomisierter Zuordnung einer Stichprobe zu Experimentalbedingungen (das sog. randomisiert-kontrollierte Experiment)"
+  },
+  {
+    "objectID": "02_messen/index.html#section-2",
+    "href": "02_messen/index.html#section-2",
+    "title": "2  Vorlesung 02: Messen in der Psychologie",
+    "section": "",
+    "text": "Ok, Task Force, zurück zur ersten Hypothese:\n\nHypothese 1: Paradoxia wird durch eine virale Infektion verursacht. Die Blutproben von Menschen mit Paradoxia sollten daher eine höhere Menge von Entzündungsmarkern aufweisen.\n\n\n\n\nWarum wäre zur Überprüfung dieser Hypothese ein echtes Experiment ethisch schwierig? Welche Probleme weist eine reine Beobachtungsstudie (Vergleich der Entzündungsmarker von Paradoxikern und Kontrollen) auf?"
+  },
+  {
+    "objectID": "02_messen/index.html#der-forschungsprozess-2",
+    "href": "02_messen/index.html#der-forschungsprozess-2",
+    "title": "2  Vorlesung 02: Messen in der Psychologie",
+    "section": "Der Forschungsprozess",
+    "text": "Der Forschungsprozess\nsetup:\n    - element: \"#data\"\n      modifier: function() { this.node.style.fill = 'green'; }\n    - element: \"#databg\"\n      modifier: function() { this.node.style.fill = '#d8ffe2';}"
+  },
+  {
+    "objectID": "02_messen/index.html#darstellung-kategorialer-daten-die-häufigkeitstabelle",
+    "href": "02_messen/index.html#darstellung-kategorialer-daten-die-häufigkeitstabelle",
+    "title": "2  Vorlesung 02: Messen in der Psychologie",
+    "section": "Darstellung kategorialer Daten: die Häufigkeitstabelle",
+    "text": "Darstellung kategorialer Daten: die Häufigkeitstabelle\n\nReminder: Kategoriale Variable = begrenzte Zahl von Ausprägungen; keine natürliche Reihenfolge\n\n\n\n\n\nHäufigkeitsverteilung von Haarfarben unter Paradoxikern (N=800)\n\n\n\n\n\n\n\nHaarfarbe\nAbsolute Häufigkeit (n)\nRelative Häufigkeit (%)\n\n\n\n\nBlau (gefärbt)\n440\n55 %\n\n\nGrün (gefärbt)\n152\n19 %\n\n\nBraun (natürlich)\n104\n13 %\n\n\nBlond (natürlich)\n64\n8 %\n\n\nSchwarz (natürlich)\n40\n5 %\n\n\n\n\n\n\n\nBildnachweis3\n\n\n\n\n\nAbsolute Häufigkeiten: geben an, wie oft die jeweiligen Ausprägungen einer Variable vorkommen (Anzahl)\nRelative Häufigkeiten: geben an, wie häufig die jeweiligen Ausprägungen in Bezug zu allen Fällen vorkommen (Prozent oder Anteil)"
+  },
+  {
+    "objectID": "02_messen/index.html#darstellung-kategorialer-daten-die-häufigkeitstabelle-1",
+    "href": "02_messen/index.html#darstellung-kategorialer-daten-die-häufigkeitstabelle-1",
+    "title": "2  Vorlesung 02: Messen in der Psychologie",
+    "section": "Darstellung kategorialer Daten: die Häufigkeitstabelle",
+    "text": "Darstellung kategorialer Daten: die Häufigkeitstabelle\n\n\n\nDarstellung von Häufigkeitstabellen in JASP"
+  },
+  {
+    "objectID": "02_messen/index.html#darstellung-kategorialer-daten-kreisdiagramme",
+    "href": "02_messen/index.html#darstellung-kategorialer-daten-kreisdiagramme",
+    "title": "2  Vorlesung 02: Messen in der Psychologie",
+    "section": "Darstellung kategorialer Daten: Kreisdiagramme",
+    "text": "Darstellung kategorialer Daten: Kreisdiagramme\n\n\n\nVorteil: übersichtliche Darstellung der Verteilung kategorialer Variablen\nNachteil: verschiedene Bedingungen können nicht direkt verglichen werden (zwei Kreisdiagramme notwendig)\n\n\n\n\nKreisdiagramm in JASP"
+  },
+  {
+    "objectID": "02_messen/index.html#darstellung-kategorialer-daten-häufigkeitsdiagramm",
+    "href": "02_messen/index.html#darstellung-kategorialer-daten-häufigkeitsdiagramm",
+    "title": "2  Vorlesung 02: Messen in der Psychologie",
+    "section": "Darstellung kategorialer Daten: Häufigkeitsdiagramm",
+    "text": "Darstellung kategorialer Daten: Häufigkeitsdiagramm\n\nDas Häufigkeitsdiagramm erlaubt einen besseren Vergleich von zwei Gruppen oder Bedingungen\n\n\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport pandas as pd\n\nfontsize = 12\norder = ['Schwarz', 'Blond', 'Braun', 'Gruen', 'Blau']\n\ndf = pd.read_csv('data/haircolor_raw.csv')\ncount0 = df[df.group == 0].groupby('haircolor').id.count().reindex(order)\ncount1 = df[df.group == 1].groupby('haircolor').id.count().reindex(order)\nplt.barh(np.arange(0, 12.5, 2.5), count0.values, label='Paradoxia')\nplt.barh(np.arange(1, 13.5, 2.5), count1.values, label='Kontroll')\nplt.xticks(fontsize=fontsize)\nplt.yticks(np.arange(0.5, 12.5, 2.5), count0.index, fontsize=fontsize)\nplt.xlabel('Anzahl', fontsize=fontsize)\nplt.legend(fontsize=fontsize)\nplt.show()\n\n\n\n\nFigure 4.1: Verteilung der Haarfarbe bei Paradoxikern und Kontrollen in Form eines Häufigkeitsdiagramms. Die Form der Darstellung wird auch als Balken- oder Säulendiagramm bezeichnet."
+  },
+  {
+    "objectID": "02_messen/index.html#darstellung-quantitativer-daten-das-histogramm",
+    "href": "02_messen/index.html#darstellung-quantitativer-daten-das-histogramm",
+    "title": "2  Vorlesung 02: Messen in der Psychologie",
+    "section": "Darstellung quantitativer Daten: das Histogramm",
+    "text": "Darstellung quantitativer Daten: das Histogramm\n\nErinnerung: quantitative Variablen sind Zahlenwerte (diskret oder kontinuierlich)\nBeispiele: Körpergröße (z.B. in cm), durchschnittliches Zuspätkommen einer Kohorte in Statistik 1 (z.B. in sec), emotionaler Intelligenzquotient (einheitslos)\n\n\nDie wichtigste Darstellungsform quantitativer Daten ist das Histogramm:\n\n\nsetup:\n  - element: \"#image1\"\n    modifier: attr\n    parameters:\n      - class: fragment\n        data-fragment-index: \"3\"\n  - element: \"#binsize_text\"\n    modifier: attr\n    parameters:\n      - class: fragment\n        data-fragment-index: \"4\"\n  - element: \"#binsize_bracket\"\n    modifier: attr\n    parameters:\n      - class: fragment\n        data-fragment-index: \"4\"\n  - element: \"#totalbg\"\n    modifier: attr\n    parameters:\n      - class: fragment\n        data-fragment-index: \"5\"\n  - element: \"#total\"\n    modifier: attr\n    parameters:\n      - class: fragment\n        data-fragment-index: \"5\""
+  },
+  {
+    "objectID": "02_messen/index.html#section-3",
+    "href": "02_messen/index.html#section-3",
+    "title": "2  Vorlesung 02: Messen in der Psychologie",
+    "section": "",
+    "text": "Die Daten der ersten Beobachtungsstudie zu Paradoxia sind frisch eingetroffen!\n\n\nTable 1. Results.\n\n\n\n\n\n\n\nid\ngroup\ninflammatory value (0-1)\n\n\n\n\n1\ncontrol\n0.12\n\n\n2\ncontrol\n0.03\n\n\n…\n…\n…\n\n\n500\ncontrol\n0.19\n\n\n501\nparadoxia\n0.28\n\n\n502\nparadoxia\n0.15\n\n\n…\n…\n…\n\n\n1000\nparadoxia\n0.19"
+  },
+  {
+    "objectID": "02_messen/index.html#section-4",
+    "href": "02_messen/index.html#section-4",
+    "title": "2  Vorlesung 02: Messen in der Psychologie",
+    "section": "",
+    "text": "Hier ist das Histogramm der Entzündungswerte der Paradoxiker:\n\nWas ist die Intervallgröße? Überschlagen Sie: passt das Histogramm zur angegeben Stichprobe von N=500 Paradoxikern? Was schätzen Sie ist der Mittelwert der Entzündungsmarker?"
+  },
+  {
+    "objectID": "02_messen/index.html#section-5",
+    "href": "02_messen/index.html#section-5",
+    "title": "2  Vorlesung 02: Messen in der Psychologie",
+    "section": "",
+    "text": "Und hier der Vergleich mit der Kontrollgruppe:\n\nDiese erste Studie erbringt also tatsächlich Evidenz für einen erhöhten Entzüdungswert bei Paradoxikern, und favorisiert damit die Hypothese 1 der Task Force!"
+  },
+  {
+    "objectID": "02_messen/index.html#section-6",
+    "href": "02_messen/index.html#section-6",
+    "title": "2  Vorlesung 02: Messen in der Psychologie",
+    "section": "",
+    "text": "Statt der Anzahl (absolute Häufigkeit) kann auch die Wahrscheinlichkeit (relative Häufigkeit) dargestellt werden:\n\nJeder Wert in dieser Abbildung gibt also die Wahrscheinlichkeit an, dass ein Entzündungswert im Intervall des jeweiligen Balkens liegt.\nWährend sich die Balken eines Histogramms mit absoluter Häufigkeit (Anzahl) zur Stichprobengröße aufaddieren, addieren sie sich beim Histogramm mit relativer Häufigkeit (Wahrscheinlichkeit) zu 1!"
+  },
+  {
+    "objectID": "02_messen/index.html#grundgesamtheit-und-stichprobe",
+    "href": "02_messen/index.html#grundgesamtheit-und-stichprobe",
+    "title": "2  Vorlesung 02: Messen in der Psychologie",
+    "section": "Grundgesamtheit und Stichprobe",
+    "text": "Grundgesamtheit und Stichprobe\n\nGrundgesamtheit (auch Population) bezeichnet die Gesamtheit der Personen, für die wir uns in einer wissenschaftlichen Studie interessieren (z.B. Personen mit einer bestimmten Erkrankung, Kinder zwischen 3 und 6, die gesamte Menschheit)\nIn den meisten Fällen ist es nicht möglich alle Mitglieder der Grundgesamtheit zu untersuchen (Vollerhebung) – wir müssen daher eine Stichprobe ziehen.\nDie Annahme ist, dass die Stichprobe ein möglichst repräsentatives Abbild der Grundgesamtheit ist und sich Ergebnisse in der Stichprobe auf die Grundgesamtheit übertragen lassen.\n\n\n\n\nBildnachweis4"
+  },
+  {
+    "objectID": "02_messen/index.html#zufallsvariable",
+    "href": "02_messen/index.html#zufallsvariable",
+    "title": "2  Vorlesung 02: Messen in der Psychologie",
+    "section": "Zufallsvariable",
+    "text": "Zufallsvariable\n\nEine Zufallsvariable ist eine Variable, die zu einem gewissen Grad vom Zufall (oder uns zufällig erscheinenden Faktoren) abhängt.\nIn der Psychologie kommt “Zufall” an zwei Stellen ins Spiel:\n\nMessfehler (unbekannte, uns zufällig erscheinende, Einflüsse auf die Genauigkeit der Messung)\nBeim zufälligen Ziehen einer Stichprobe aus der Grundgesamtheit\n\nEin wichtiger Aspekt von Zufallsvariablen ist, dass die Zufälligkeit mathematisch beschrieben werden kann – durch Wahrscheinlichkeitsverteilungen (wir kommen darauf später noch einmal zurück)\n\nBeispiel: jeder Wurf eines Würfels ist zufällig, aber wir können sagen, dass die Wahrscheinlichkeit jeder Zahl exakt 1/6 ist.\n\n\n\n\n\nBildnachweis5"
+  },
+  {
+    "objectID": "02_messen/index.html#zufallsvariable-1",
+    "href": "02_messen/index.html#zufallsvariable-1",
+    "title": "2  Vorlesung 02: Messen in der Psychologie",
+    "section": "Zufallsvariable",
+    "text": "Zufallsvariable\n\n\n\nPraktisch gesehen, sind nahezu alle Variablen in der Psychologie Zufallsvariablen, daher meint “Variable” in aller Regel “Zufallsvariable”\nDie Ausnahme der Regel wäre der seltene Fall, dass eine Variable für alle Personen der Grundgesamtkeit bekannt ist und ihre Messung keinem Messfehler unterliegt (z.B. Geburtsjahr aller amerikanischen Präsidenten bis zum Jahr 2023).\nZufallsvariablen werden mit großen Lettern bezeichnet, i.d.R. \\(X\\) (oder \\(Y\\)/\\(Z\\) falls zwei/drei Zufallsvariablen betrachtet werden).\nEinzelne Beobachtungen einer Zufallsvariable (z.B. der gemessene IQ von bestimmten Personen) werden mit kleinen Lettern bezeichnet (\\(x_i\\), \\(y_i\\), \\(z_i\\)), wobei \\(i\\) der Durchnummerierung dient.\nDer Vektor \\(\\mathbf{x}\\) (beachte die Fettschrift) bezeichnet die Gesamtheit der Beobachtungen \\(x_1 .. x_N\\)\n\n\n\nBeispiel: die Zufallsvariable \\(X\\) bezeichnet in der Tabelle den in einer Stichprobe gemessenen Intelligenzquotienten\n\n\n\n\n\n\n\n\\(X\\)\n\n\n\n\n\\(x_1\\)\n99\n\n\n\\(x_2\\)\n112\n\n\n\\(x_3\\)\n104\n\n\n…\n…"
+  }
+]
