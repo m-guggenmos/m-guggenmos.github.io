@@ -744,7 +744,7 @@ f(x) = \frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\righ
 <p>Zur Wiederholung: müssen statistische Kennwerte wie Mittelwert und Standardabweichung nicht aus Stichproben geschätzt werden, sondern sind als bekannt angenommen, werden sie häufig mit griechischen Buchstaben bezeichnet.</p>
 </div><div class="column" style="width:18%;">
 <p><span class="math display">\[
-\bar{X} \longrightarrow \mu \\
+\bar{x} \longrightarrow \mu \\
 s \longrightarrow \sigma
 \]</span></p>
 </div>
@@ -854,7 +854,7 @@ plt.savefig('images/normal_sigma.png', bbox_inches='tight')
 </tr>
 <tr class="even">
 <td style="text-align: center;"><img data-src="images/definition.svg" height="70"></td>
-<td><strong>Zentraler Grenzwertsatz:</strong> bei einer additiven Überlagerung vieler kleiner unabhängiger Zufallseffekte zu einer aggregierten Zufallsvariable <span class="math inline">\(Z\)</span>, nähert sich für <span class="math inline">\(N\rightarrow\infty\)</span> die Verteilung von <span class="math inline">\(Z\)</span> der Normalverteilung an. <span style="font-size:17px">(Beweis<a href="#/footnotes" class="footnote-ref" id="fnref11" role="doc-noteref" data-footnote-href="#/fn11" onclick=""><sup>11</sup></a> — kein Klausurstoff)</span></td>
+<td><strong>Zentraler Grenzwertsatz:</strong> bei einer additiven Überlagerung vieler kleiner unabhängiger Zufallseffekte zu einer aggregierten Zufallsvariable <span class="math inline">\(Z\)</span>, nähert sich für <span class="math inline">\(n\rightarrow\infty\)</span> die Verteilung von <span class="math inline">\(Z\)</span> der Normalverteilung an. <span style="font-size:17px">(Beweis<a href="#/footnotes" class="footnote-ref" id="fnref11" role="doc-noteref" data-footnote-href="#/fn11" onclick=""><sup>11</sup></a> — kein Klausurstoff)</span></td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;"></td>
@@ -957,7 +957,7 @@ plt.savefig('images/normal_sigma.png', bbox_inches='tight')
 <ol type="1">
 <li class="fragment">Messfehler sind symmetrisch (Fehler in -X und +X Richtung sind gleich wahrscheinlich)</li>
 <li class="fragment">Kleinere Fehler sind häufiger als größere Fehler</li>
-<li class="fragment">Der Mittelwert ist der beste Schätzer für den Lageparameter der wahren theoretischen Verteilung, oder anders gesagt: der beste Schätzer für die unbekannten Fehler <span class="math inline">\(x_i - \mu\)</span> (<span class="math inline">\(\mu\)</span> ist nicht bekannt!) ist <span class="math inline">\(x_i - \bar{X}\)</span>.</li>
+<li class="fragment">Der Mittelwert ist der beste Schätzer für den Lageparameter der wahren theoretischen Verteilung, oder anders gesagt: der beste Schätzer für die unbekannten Fehler <span class="math inline">\(x_i - \mu\)</span> (<span class="math inline">\(\mu\)</span> ist nicht bekannt!) ist <span class="math inline">\(x_i - \bar{x}\)</span>.</li>
 </ol></li>
 <li class="fragment">Mit diesen wenigen Annahmen konnte Gauß zeigen, dass <em>die Funktion die mit größter Wahrscheinlichkeit Fehler dieser Art erzeugt</em><a href="#/footnotes" class="footnote-ref" id="fnref14" role="doc-noteref" data-footnote-href="#/fn14" onclick=""><sup>14</sup></a>, die Normalverteilung ist. Herleitung<a href="#/footnotes" class="footnote-ref" id="fnref15" role="doc-noteref" data-footnote-href="#/fn15" onclick=""><sup>15</sup></a></li>
 </ul>
@@ -1004,8 +1004,8 @@ plt.savefig('images/normal_sigma.png', bbox_inches='tight')
 <li class="fragment">Der p-Wert ist von zentraler Bedeutung in der psychologischen Forschungsliteratur (for the better or the worse).</li>
 <li class="fragment">Der p-Wert ist ein <strong>Signifikanz-Maß</strong>: er gibt vereinfacht gesprochen einen Hinweis darauf, wie wahrscheinlich es ist, dass ein gefundener Effekt (z.B. Mittelwertsunterschied zwischen zwei Gruppen) auf bloßem Zufall basiert.</li>
 <li class="fragment"><strong>Je kleiner der p-Wert, desto höher die statistische Signifikanz</strong>, desto sicherer können wir uns also sein, dass ein Effekt nicht nur auf einer zufälligen Schwankung von Messfehlern basiert.</li>
-<li class="fragment">Als magische Schwelle hat sich der Wert <span class="math inline">\(p&lt;0.05\)</span> etabliert: ist der p-Wert eines Effektes kleiner als 0.05, so gilt der Effekt als <strong>statistisch signifikant</strong>.</li>
-<li class="fragment">Den p-Wert werden wir noch ausführlich ab Vorlesung <strong>XY(!!)</strong> behandeln</li>
+<li class="fragment">Als magische Schwelle hat sich der Wert <span class="math inline">\(p&lt;0{,}05\)</span> etabliert: ist der p-Wert eines Effektes kleiner als 0,05, so gilt der Effekt als <strong>statistisch signifikant</strong>.</li>
+<li class="fragment">Den p-Wert werden wir noch ausführlich in den Vorlesungen zur Inferenzstatistik behandeln</li>
 </ul>
 </div><div class="column" style="width:30%;">
 <div class="quarto-figure quarto-figure-center">
