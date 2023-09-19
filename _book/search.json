@@ -404,5 +404,558 @@
     "title": "2  Vorlesung 02: Messen in der Psychologie",
     "section": "Zufallsvariable",
     "text": "Zufallsvariable\n\n\n\nPraktisch gesehen, sind nahezu alle Variablen in der Psychologie Zufallsvariablen, daher meint “Variable” in aller Regel “Zufallsvariable”\nDie Ausnahme der Regel wäre der seltene Fall, dass eine Variable für alle Personen der Grundgesamtkeit bekannt ist und ihre Messung keinem Messfehler unterliegt (z.B. Geburtsjahr aller amerikanischen Präsidenten bis zum Jahr 2023).\nZufallsvariablen werden mit großen Lettern bezeichnet, i.d.R. \\(X\\) (oder \\(Y\\)/\\(Z\\) falls zwei/drei Zufallsvariablen betrachtet werden).\nEinzelne Beobachtungen einer Zufallsvariable (z.B. der gemessene IQ von bestimmten Personen) werden mit kleinen Lettern bezeichnet (\\(x_i\\), \\(y_i\\), \\(z_i\\)), wobei \\(i\\) der Durchnummerierung dient.\nDer Vektor \\(\\mathbf{x}\\) (beachte die Fettschrift) bezeichnet die Gesamtheit der Beobachtungen \\(x_1 .. x_N\\)\n\n\n\nBeispiel: die Zufallsvariable \\(X\\) bezeichnet in der Tabelle den in einer Stichprobe gemessenen Intelligenzquotienten\n\n\n\n\n\n\n\n\\(X\\)\n\n\n\n\n\\(x_1\\)\n99\n\n\n\\(x_2\\)\n112\n\n\n\\(x_3\\)\n104\n\n\n…\n…"
+  },
+  {
+    "objectID": "03_location_dispersion/index.html",
+    "href": "03_location_dispersion/index.html",
+    "title": "3  Vorlesung 03: Lage- und Streuungsmaße",
+    "section": "",
+    "text": "4 Lagemaße"
+  },
+  {
+    "objectID": "03_location_dispersion/index.html#section",
+    "href": "03_location_dispersion/index.html#section",
+    "title": "3  Vorlesung 03: Lage- und Streuungsmaße",
+    "section": "",
+    "text": "Wie würden Sie die Daten in folgender Abbildung mit möglichst wenigen Worten beschreiben?"
+  },
+  {
+    "objectID": "03_location_dispersion/index.html#der-forschungsprozess",
+    "href": "03_location_dispersion/index.html#der-forschungsprozess",
+    "title": "3  Vorlesung 03: Lage- und Streuungsmaße",
+    "section": "Der Forschungsprozess",
+    "text": "Der Forschungsprozess\nsetup:\n    - element: \"#results\"\n      modifier: function() { this.node.style.fill = 'green'; }\n    - element: \"#resultsbg\"\n      modifier: function() { this.node.style.fill = '#d8ffe2';}"
+  },
+  {
+    "objectID": "03_location_dispersion/index.html#lagemaße-1",
+    "href": "03_location_dispersion/index.html#lagemaße-1",
+    "title": "3  Vorlesung 03: Lage- und Streuungsmaße",
+    "section": "Lagemaße",
+    "text": "Lagemaße\n\nDer weithin bekannte Durchschnittswert oder Mittelwert ist ein Beispiel für ein Lagemaß von Verteilungen.\nMan spricht dabei auch von der zentralen Tendenz (engl. central tendency) einer Verteilung\nDas Lagemaß ist neben dem Streumaß der wesentliche Parameter, um die Verteilung von Daten effizient (d.h. mit wenigen Parametern) zu beschreiben\nDie drei wichtigsten Lagemaße sind:\n\nMittelwert (gemeint ist das arithmetische Mittel)\nMedian\nModus (auch Modalwert)\n\n\n\n\n\nBildnachweis1"
+  },
+  {
+    "objectID": "03_location_dispersion/index.html#mittelwert",
+    "href": "03_location_dispersion/index.html#mittelwert",
+    "title": "3  Vorlesung 03: Lage- und Streuungsmaße",
+    "section": "Mittelwert",
+    "text": "Mittelwert\n\nBerechnung (verbal):\n\nAddiere alle Werte\nTeile durch die Anzahl der Werte\n\nBerechnung (Formel):\n\n\\[\n\\bar{x} = \\frac{1}{N}\\sum_{i=1}^N x_i\n\\]\n\nNotation: Strich über dem kleinen Letter der Zufallsvariable = Mittelwert der Zufallsvariable\n\nBeispiel\nFolgende Beobachtungen der Zufallsvariable \\(X\\) “Punktzahl in der Abi-Matheprüfung” werden in einer Stichprobe von 7 Psychologiestudierenden gemacht:  \\(\\mathbf{x} = \\{13, 7, 15, 8, 4, 9, 14\\}\\)\n\\[\n\\bar{x} = \\frac{1}{7}(13+7+15+8+4+9+14) =  = \\frac{1}{7}\\cdot 70 = 10\n\\]"
+  },
+  {
+    "objectID": "03_location_dispersion/index.html#wann-ist-der-mittelwert-sinnvoll",
+    "href": "03_location_dispersion/index.html#wann-ist-der-mittelwert-sinnvoll",
+    "title": "3  Vorlesung 03: Lage- und Streuungsmaße",
+    "section": "Wann ist der Mittelwert sinnvoll?",
+    "text": "Wann ist der Mittelwert sinnvoll?\n\nDer Mittelwert ist ein sinnvolles Lagemaß, wenn er nicht durch einzelne Ausreißer (extreme Werte) dominiert bzw. verzerrt wird.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(\\mathbf{x}\\) (z.B. Punktzahlen im Abi)\n\\(\\bar{X}\\)\nHistogramm\nMittelwert sinnvoll?\n\n\n\n\n\\(\\{13, 7, 15, 8, 4, 9, 14\\}\\)\n\\(10\\)\n\n✓\n\n\n\\(\\{3, 1, 4, 2, 2, 6, 15\\}\\)\n\\(4.7\\)\n\n✗\n\n\n\\(\\{13, 15, 11, 12, 9, 14, 1\\}\\)\n\\(10.7\\)\n\n✗"
+  },
+  {
+    "objectID": "03_location_dispersion/index.html#median",
+    "href": "03_location_dispersion/index.html#median",
+    "title": "3  Vorlesung 03: Lage- und Streuungsmaße",
+    "section": "Median",
+    "text": "Median\n\nGibt es dominante Ausreißer in den Daten, so ist häufig der Median das sinnvollere Lagemaß\nBerechnung:\n\nAlle \\(N\\) Werte der Größe nach aufreihen\nDer Wert, der genau in der Mitte liegt, ist der Median\nBei einer geraden Anzahl von Werten bilden zwei Werte die Mitte – in diesem Fall ist der Median der Mittelwert dieser beiden Werte\n\\(\\Big(\\) Alternativ mit Formel:  \\(Tiefe_{\\,\\text{Median}}=\\frac{N+1}{2}\\Big)\\)\n\n\nBeispiel\nFolgende Beobachtungen der Zufallsvariable \\(X\\) “Punktzahl in der Abi-Matheprüfung” werden in einer Stichprobe von 7 Psychologiestudierenden gemacht:  \\(\\mathbf{x} = \\{13, 7, 15, 8, 4, 9, 14\\}\\)\n\\[\n\\text{Sortierte Reihenfolge:} \\;\\mathbf{x} = \\{4, 7, 8, \\color{green}{\\mathbf{9}}, 13, 14, 15\\} \\;\\rightarrow\\; \\mathrm{Median} = \\tilde{x} = 9\n\\]\nWir fügen den Wert eines weiteren Studierenden hinzu:   \\(\\mathbf{x} = \\{13, 7, 15, 8, 4, 9, 14, 10\\}\\)\n\\[\n\\text{Sortierte Reihenfolge:} \\;\\mathbf{x} = \\{4, 7, 8, \\color{green}{\\mathbf{9}, \\mathbf{10}}, 13, 14, 15\\} \\;\\rightarrow\\; \\mathrm{Median} = \\tilde{x} = \\frac{9+10}{2} = 9.5\n\\]"
+  },
+  {
+    "objectID": "03_location_dispersion/index.html#median-1",
+    "href": "03_location_dispersion/index.html#median-1",
+    "title": "3  Vorlesung 03: Lage- und Streuungsmaße",
+    "section": "Median",
+    "text": "Median\n\n\n\nDer Median ist außerdem sinnvoll bei:\n\nordinalen Daten wie etwa diskreten Ratings (Skala von 1 bis 10), bei denen die Abstände zwischen Zahlen nicht interpretierbar sind.\nschiefen Verteilungen der Daten (dazu kommen wir noch)\n\n\n\n\n\n\n\nDer Median ist nicht sinnvoll, wenn:\n\nauch der Mittelwert ein sinnvolles Lagemaß darstellt (der Mittelwert hat einige hilfreiche mathematische Eigenschaften2).\nin der zugrundeliegenden Verteilung zwei oder mehr Wertebereiche deutlich häufiger vorkommen als andere Wertebereiche, und diese Bereiche nicht überlappen (z.B. hat der Median von \\(\\{2, 2, 2, 2, 9, 9, 9\\}\\) den wenig aussagekräftigen Wert 2).\n\n\n\n\n\nFür diese “bimodale” Verteilung der Daten ist der Median eine schlechte Wahl. Der Wert springt mehr oder weniger zufällig zwischen den beiden dominanten Wertebereichen der Daten (1-5 und 10-14), je nachdem, welcher Bereich mehr Werte aufweist."
+  },
+  {
+    "objectID": "03_location_dispersion/index.html#modus",
+    "href": "03_location_dispersion/index.html#modus",
+    "title": "3  Vorlesung 03: Lage- und Streuungsmaße",
+    "section": "Modus",
+    "text": "Modus\n\nIn manchen Fällen ist es interessant zu wissen, was der häufigste Wert in einem Datensatz ist – dies ist der Modus.\nBerechnung:\n\nZähle die Häufigkeit aller vorkommenden Werte\nDer häufigste Wert ist der Modus\n\nIm Fall von kategorialen Variablen ist der Modus das einzig mögliche Lagemaß (Beispiel: aus welchem Bundesland kommen die meisten von Ihnen?)\nEin weiterer sinnvoller Anwendungsfall können schiefe Verteilungen sein:\n\n\n\n\nBildnachweis3"
+  },
+  {
+    "objectID": "03_location_dispersion/index.html#warum-sind-streuungsmaße-wichtig",
+    "href": "03_location_dispersion/index.html#warum-sind-streuungsmaße-wichtig",
+    "title": "3  Vorlesung 03: Lage- und Streuungsmaße",
+    "section": "Warum sind Streuungsmaße wichtig?",
+    "text": "Warum sind Streuungsmaße wichtig?\n\n\n\n\n\n“In unserer Studie waren brünette Menschen im Schnitt 10 IQ-Punkte schlauer als blonde Menschen”\n\n\n\nBehind the scenes:"
+  },
+  {
+    "objectID": "03_location_dispersion/index.html#warum-sind-streuungsmaße-wichtig-1",
+    "href": "03_location_dispersion/index.html#warum-sind-streuungsmaße-wichtig-1",
+    "title": "3  Vorlesung 03: Lage- und Streuungsmaße",
+    "section": "Warum sind Streuungsmaße wichtig?",
+    "text": "Warum sind Streuungsmaße wichtig?"
+  },
+  {
+    "objectID": "03_location_dispersion/index.html#section-1",
+    "href": "03_location_dispersion/index.html#section-1",
+    "title": "3  Vorlesung 03: Lage- und Streuungsmaße",
+    "section": "",
+    "text": "Wie schätzen Sie die Streuung / Variabilität folgender Verteilungen ein?"
+  },
+  {
+    "objectID": "03_location_dispersion/index.html#streuungsmaße-1",
+    "href": "03_location_dispersion/index.html#streuungsmaße-1",
+    "title": "3  Vorlesung 03: Lage- und Streuungsmaße",
+    "section": "Streuungsmaße",
+    "text": "Streuungsmaße\n\n\n\nStreuungsmaße geben die Variabilität von Daten anann entweder\nLagemaße sollten durch die Angabe eines Streuungsmaßes ergänzt werden\nStreuung von Daten kann ein Ausdruck von echter Variabilität in der Stichprobe sein oder eine Folge der Messungenauigkeit (häufig beides)\nJe nach Skalenniveau und Zweck können verschiedene Streuungsmaße bestimmt werden:\n\nSpannweite (Range)\nInterquartilsabstand\nVarianz\nStandardabweichung"
+  },
+  {
+    "objectID": "03_location_dispersion/index.html#spannweite-range",
+    "href": "03_location_dispersion/index.html#spannweite-range",
+    "title": "3  Vorlesung 03: Lage- und Streuungsmaße",
+    "section": "Spannweite / Range",
+    "text": "Spannweite / Range\n\nDie Spannweite oder Range ist die Differenz zwischen dem kleinsten und dem größten Wert:\n\n\n\\[\nRange = x_{max} - x_{min}\n\\]\n\n\nEinfachstes Streuungsmaß — sinnvoll, um dem Leser einen Eindruck der gesamten Spannbreite von Daten zu geben.\nAllerdings kaum Aussagekraft über die tatsächliche Variabilität der Daten\n\nBeispiel: die Spannbreite von \\(\\mathbf{x}=\\{1, 10, 10, 10, 10, 10, 10, 10, 10, 10, 101\\}\\) ist \\(101-1=100\\), obwohl die Daten bis auf die zwei Ausreißer \\(1\\) und \\(101\\) keine Variabiltät aufweisen.\n\n\n\n\n\n\nBildnachweis4"
+  },
+  {
+    "objectID": "03_location_dispersion/index.html#range-beispiele",
+    "href": "03_location_dispersion/index.html#range-beispiele",
+    "title": "3  Vorlesung 03: Lage- und Streuungsmaße",
+    "section": "Range: Beispiele",
+    "text": "Range: Beispiele"
+  },
+  {
+    "objectID": "03_location_dispersion/index.html#varianz",
+    "href": "03_location_dispersion/index.html#varianz",
+    "title": "3  Vorlesung 03: Lage- und Streuungsmaße",
+    "section": "Varianz",
+    "text": "Varianz\n\nDie Varianz ist definiert als die Summe der quadrierten Abweichungen aller Werte vom Mittelwert:\n\n\\[\nVar(X) = s^2 = \\frac{1}{N}\\sum_{i=1}^N\\big(x_i-\\bar{X}\\big)^2\n\\]\n   (Die Varianz ist gleich der quadrierten Standardabweichung \\(s\\) – letztere lernen wir noch kennen)\n\nDurch die Quadrierung wird verhindert, dass sich positive und negative Abweichungen gegenseitig aufheben.\n\n\n\n\n\n\n\\[\n\\begin{aligned} s^2 &= 0{,}25+2{,}25+0{,}25+2{,}25 \\\\ &= 5 \\end{aligned}\n\\]"
+  },
+  {
+    "objectID": "03_location_dispersion/index.html#warum-werden-werden-nicht-einfach-die-absolutwerte-der-differenzen-genommen",
+    "href": "03_location_dispersion/index.html#warum-werden-werden-nicht-einfach-die-absolutwerte-der-differenzen-genommen",
+    "title": "3  Vorlesung 03: Lage- und Streuungsmaße",
+    "section": "Warum werden werden nicht einfach die Absolutwerte der Differenzen genommen?",
+    "text": "Warum werden werden nicht einfach die Absolutwerte der Differenzen genommen?\n\nPrinzipiell wäre auch eine Formel für die Varianz mit Absolutabständen denkbar:\n\\[\nVar_{\\text{absolut}}(X) = \\frac{1}{N}\\sum_{i=1}^N\\big|x_i-\\bar{X}\\big|\n\\]\nÜber die Gründe, warum sich \\(Var_{\\text{absolut}}\\) nicht durchgesetzt hat, streitet sich die Fachwelt. Neben historischen Gründen, gibt es aber einige Eigenschaften, die die Präferenz für Abstandsquadrate zumindest nachvollziehbar machen:\n\nQuadrierte Abstände gewichten Punkte, die weiter vom Mittelwert entfernt sind, höher. Dies entspricht einer “Bestrafung” von Ausreißern und kann ein wünschenswertes Verhalten sein.\nAnalogie zur euklidischen Distanz (z.B. Satz des Pythagoras: \\(a=\\sqrt{b^2+c^2}\\))\nDie Varianz mit Abstandsquadraten ist ein natürlicher Parameter der Normalverteilung\nFortgeschritten: die Varianz mit Abstandsquadraten ist für alle \\(x\\) differenzierbar  (hingegen ist \\(Var_{\\text{absolut}}\\) bei \\(x=0\\) nicht differenzierbar)\n\n\nWeitergehende Literatur 5"
+  },
+  {
+    "objectID": "03_location_dispersion/index.html#standardabweichung",
+    "href": "03_location_dispersion/index.html#standardabweichung",
+    "title": "3  Vorlesung 03: Lage- und Streuungsmaße",
+    "section": "Standardabweichung",
+    "text": "Standardabweichung\n\nEin Nachteil der Varianz ist, dass sie aufgrund der Abstandsquadrate in quadrierten Einheiten angegeben ist:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(x=\\{167\\,cm, 181\\,cm, 154\\,cm, 192\\,cm, 173\\,cm\\}\\rightarrow Var(X)=180.4\\,\\color{red}{cm^2}\\)\n\n\n\n\n\n\n\n\n\nQuadrierte Einheiten sind jedoch wenig intuitiv und schwer zu interpretieren.\nAus diesem Grund wird häufig die Standardabweichung angegeben, welche die Wurzel der Varianz darstellt:\n\n\\[\ns=\\sqrt{Var(X)}=\\sqrt{\\frac{1}{N}\\sum_{i=1}^N\\big(x_i-\\bar{X}\\big)^2}\n\\]\n\nDie Standardabweichung drückt die Streuung in den Rohwerten der Skala aus.\nSie wird häufig auch mit \\(SD\\) (für standard deviation) abgekürzt."
+  },
+  {
+    "objectID": "03_location_dispersion/index.html#standardabweichung-klassik-beispiele",
+    "href": "03_location_dispersion/index.html#standardabweichung-klassik-beispiele",
+    "title": "3  Vorlesung 03: Lage- und Streuungsmaße",
+    "section": "Standardabweichung: Klassik-Beispiele",
+    "text": "Standardabweichung: Klassik-Beispiele"
+  },
+  {
+    "objectID": "03_location_dispersion/index.html#interquartilsabstand-interquartile-range-iqr",
+    "href": "03_location_dispersion/index.html#interquartilsabstand-interquartile-range-iqr",
+    "title": "3  Vorlesung 03: Lage- und Streuungsmaße",
+    "section": "Interquartilsabstand (interquartile range = IQR)",
+    "text": "Interquartilsabstand (interquartile range = IQR)\n\nQuartile sind eine Spezialform von Quantilen\nQuantile teilen eine Verteilung von Daten in gleich große Abschnitte ein\n\n“gleich groß” = jeder Abschnitt hat gleich viele Datenpunkte\n\nBeispiel Dezile: Einteilung der Verteilung in 10 gleich große Abschnitte\n\nHier: 20 Werte in 10 Abschnitte (Decile) á 2 Werte\n\n\n\n\\[\n\\underbrace{1, 1,}_{\\small{\\text{1.Dezil}}}\\;\\underbrace{1, 2,}_{\\small{\\text{2.Dezil}}}\\;2, 3, \\;3, 5, \\;5, 5, \\;\\color{white}{\\underbrace{\\color{black}{5, 6,}}_{\\small{\\color{black}{\\text{...}}}}} \\;6, 7, \\;7, 7, \\;7, 8, \\;\\underbrace{8, 8}_{\\small{\\text{10.Dezil}}}\n\\]\n\n\nBeispiel Quintile: Einteilung der Verteilung in 5 gleich große Abschnitte\n\nHier: 30 Werte in 5 Abschnitte (Quintile) á 6 Werte\n\n\n\n\\[\n\\underbrace{1, 1, 1, 1, 2, 2,}_{\\small{\\text{1.Quintil}}}\\;\\underbrace{2, 2, 2, 3, 3, 3,}_{\\small{\\text{2.Quintil}}}\\;\\underbrace{4, 4, 5, 5, 5, 5,}_{\\small{\\text{3.Quintil}}} \\;\\underbrace{5, 6, 6, 7, 7, 7,}_{\\small{\\text{4.Quintil}}} \\;\\underbrace{8, 8, 9, 9, 9, 9}_{\\small{\\text{5.Quintil}}}\n\\]\n\n\nBeispiel Quartile: Einteilung der Verteilung in 4 gleich große Abschnitte\n\nHier: 12 Werte in 4 Abschnitte (Quartile) á 3 Werte\n\n\n\n\\[\n\\underbrace{1, 1, 2,}_{\\small{\\text{1.Quartil}}}\\;\\underbrace{2, 2, 2,}_{\\small{\\text{2.Quartil}}}\\;\\underbrace{3, 4, 5,}_{\\small{\\text{3.Quartil}}} \\;\\underbrace{5, 6, 6}_{\\small{\\text{4.Quartil}}}\n\\]"
+  },
+  {
+    "objectID": "03_location_dispersion/index.html#interquartilsabstand-interquartile-range-iqr-1",
+    "href": "03_location_dispersion/index.html#interquartilsabstand-interquartile-range-iqr-1",
+    "title": "3  Vorlesung 03: Lage- und Streuungsmaße",
+    "section": "Interquartilsabstand (interquartile range = IQR)",
+    "text": "Interquartilsabstand (interquartile range = IQR)\n\n\n\n\n\n\n\n\nUm eine Reihe von Daten in 4 gleich große Quartile zu teilen, sind genau drei Quartilsgrenzen notwendig\nDiese Quartilsgrenzen werden mit \\(Q_1\\), \\(Q_2\\), \\(Q_3\\) (bezogen auf Quartile) bzw. mit \\(Q_{25\\%}\\), \\(Q_{50\\%}\\), \\(Q_{75\\%}\\) (bezogen auf Quantile) bezeichnet\nDer Interquartilsabstand (IQR) ist die Differenz aus der 75%-Quantilsgrenze und der 25%-Quantilsgrenze bzw. die Differenz aus der 3. und der 1. Quartilsgrenze:\n\n\\[\nIQR = Q_{75\\%} - Q_{25\\%} = Q_3 - Q_1\n\\]"
+  },
+  {
+    "objectID": "03_location_dispersion/index.html#interquartilsabstand-interquartile-range-iqr-2",
+    "href": "03_location_dispersion/index.html#interquartilsabstand-interquartile-range-iqr-2",
+    "title": "3  Vorlesung 03: Lage- und Streuungsmaße",
+    "section": "Interquartilsabstand (interquartile range = IQR)",
+    "text": "Interquartilsabstand (interquartile range = IQR)\n\nBerechnung des IQR:\n\nSortiere alle Werte von klein nach groß\nBestimme die Tiefe des Medians (runde ab bei unganzzahligem Wert):\\(\\,Tiefe_{\\text{Median(abgerundet)}}\\)\nBestimme die Tiefe des Quartils:  \\(Tiefe_{\\text{Quartil}}=\\frac{Tiefe_{\\text{Median(abgerundet)}}+1}{2}=\\frac{\\text{abgerundet}\\big(\\frac{N+1}{2}\\big)+1}{2}\\)\nFür das 25%-Quantil (\\(Q_1\\)) geht man von vorne in die Datenreihe\nFür das 75%-Quantil (\\(Q_3\\)) geht man von hinten in die Datenreihe\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFolgende 11 Werte werden beobachtet: \\(x=\\{1, 1, \\color{darkred}{2}, \\color{darkred}{3}, 3, \\color{green}{3}, 4, \\color{darkblue}{6}, \\color{darkblue}{6}, 7, 9\\}\\)\nIn diesem Fall ist der 6. Wert der Median, also  \\(\\,\\color{green}{Tiefe_{\\text{Median(abgerundet)}}=6}\\)\nDie Tiefe des Quartils ist damit  \\(Tiefe_{\\text{Quartil}}=\\frac{\\color{darkgreen}{Tiefe_{\\text{Median(abgerundet)}}}+1}{2}=\\frac{6+1}{3}=3{,}5\\)\nDer “\\(3{,}5\\)”-te Wert von vorne ist der Mittelwert aus \\(\\color{darkred}{2}\\) und \\(\\color{darkred}{3}\\) (\\(\\color{darkred}{Q_1=2{,}5}\\)), der “\\(3{,}5\\)”-te Wert von hinten ist der Mittelwert aus \\(\\color{darkblue}{6}\\) und \\(\\color{darkblue}{6}\\) (\\(\\color{darkblue}{Q_3=6}\\))\n\\(IQR = \\color{darkblue}{Q_3} - \\color{darkred}{Q_1} = \\color{darkblue}{6} - \\color{darkred}{2.5} = 3{,}5\\)"
+  },
+  {
+    "objectID": "03_location_dispersion/index.html#wann-ist-der-interquartilsabstand-ein-sinnvolles-streuungsmaß",
+    "href": "03_location_dispersion/index.html#wann-ist-der-interquartilsabstand-ein-sinnvolles-streuungsmaß",
+    "title": "3  Vorlesung 03: Lage- und Streuungsmaße",
+    "section": "Wann ist der Interquartilsabstand ein sinnvolles Streuungsmaß?",
+    "text": "Wann ist der Interquartilsabstand ein sinnvolles Streuungsmaß?\nOutliers: When your dataset contains outliers, extreme values can heavily influence other dispersion measures like the range or standard deviation. The IQR is robust to outliers since it only depends on the middle 50% of the data.\nSkewed Data: If the data is not normally distributed and has a skewed shape, using the IQR can be advantageous because it is less affected by the tail of the distribution compared to other measures like the standard deviation.\nDer Interquartilsabstand ist zur Varianz, wie der Median zum Mittelwert"
+  },
+  {
+    "objectID": "03_location_dispersion/index.html#interquartilsabstand-klassik-beispiele",
+    "href": "03_location_dispersion/index.html#interquartilsabstand-klassik-beispiele",
+    "title": "3  Vorlesung 03: Lage- und Streuungsmaße",
+    "section": "Interquartilsabstand: Klassik-Beispiele",
+    "text": "Interquartilsabstand: Klassik-Beispiele"
+  },
+  {
+    "objectID": "03_location_dispersion/index.html#die-streuungsmaße-im-vergleich",
+    "href": "03_location_dispersion/index.html#die-streuungsmaße-im-vergleich",
+    "title": "3  Vorlesung 03: Lage- und Streuungsmaße",
+    "section": "Die Streuungsmaße im Vergleich",
+    "text": "Die Streuungsmaße im Vergleich\n\n\n\n\n\n\n\n\n\nSpannbreite (Range)\n▪ Gibt die Ausdehnung des gesamten Wertebereiches an\n▪ Auf kein bestimmtes Lagemaß bezogen\n▪ Geringer statistischer Nutzen, manchmal interessante Zusatzinfo\n▪ Maximal abhängig von Ausreißern\n\n\nVarianz\n▪ Auf den Mittelwert bezogen (“wie stark streuen die Daten um den Mittelwert?”)\n▪ Relativ anfällig gegenüber Ausreißern\n▪ Unnatürliche quadrierte Einheiten\n\n\nStandardabweichung\n▪ Wie Varianz, aber natürliche unquadrierte Einheiten\n\n\nInterquartilsabstand\n▪ Auf kein bestimmtes Lagemaß bezogen\n▪ Jedoch häufig im Zusammenhang mit Median angegeben\n▪ Sehr robust gegenüber Ausreißern"
+  },
+  {
+    "objectID": "03_location_dispersion/index.html#angabe-von-lage--und-streuungsmaßen-in-wissenschaftlichen-arbeiten",
+    "href": "03_location_dispersion/index.html#angabe-von-lage--und-streuungsmaßen-in-wissenschaftlichen-arbeiten",
+    "title": "3  Vorlesung 03: Lage- und Streuungsmaße",
+    "section": "Angabe von Lage- und Streuungsmaßen in wissenschaftlichen Arbeiten",
+    "text": "Angabe von Lage- und Streuungsmaßen in wissenschaftlichen Arbeiten\n\nHandelt es sich um einzelne Werte, können diese übersichtlich im Fließtext berichtet werden:\n\n\n\nHandelt es sich um eine größere Anzahl von Werten (z.B. bei mehreren Bedingungen) bietet sich eine Darstellung in Tabellenform an.\nAuch bei dieser Darstellung sollten Lage- und Streuungsmaße angegeben werden.\nIn wissenschaftlichen Manuskripten werden Tabellen häufig nach den APA-Richtlinien (7. Edition, 2020) formatiert:\n\n\n\n\n\n\n\n\n\nSiehe Link6 für Informationen zur Formatierung von Tabellen im APA-Stil"
+  },
+  {
+    "objectID": "03_location_dispersion/index.html#beispieltabelle",
+    "href": "03_location_dispersion/index.html#beispieltabelle",
+    "title": "3  Vorlesung 03: Lage- und Streuungsmaße",
+    "section": "Beispieltabelle",
+    "text": "Beispieltabelle"
+  },
+  {
+    "objectID": "03_location_dispersion/index.html#balkendiagramm-mit-fehlerbalken",
+    "href": "03_location_dispersion/index.html#balkendiagramm-mit-fehlerbalken",
+    "title": "3  Vorlesung 03: Lage- und Streuungsmaße",
+    "section": "Balkendiagramm mit Fehlerbalken",
+    "text": "Balkendiagramm mit Fehlerbalken\n\nDer Fehlerbalken ist die klassische graphische Repräsentation der Streuung:\n\n\n\nDie Darstellung entspricht dabei dem Lagemaß (im Bild der Mittelwert) plus/minus dem Streuungsmaß (im Bild die Standardabweichung)\nDer gesamte Fehlerbalken hat also die Ausdehnung \\(2\\cdot\\text{Streuungsmaß}\\)\nKlassische Kombinationen von Lagemaß und Streuungsmaß sind:\n\n\\(\\text{Mittelwert}\\pm\\text{Standardabweichung}\\)\n\\(\\text{Mittelwert}\\pm\\text{Standardfehler}\\) (dazu kommen wir noch)\n\\(\\text{Mittelwert}\\pm\\text{Konfidenzintervall}\\) (dazu kommen wir noch)\n\\(\\text{Median}\\pm\\text{IQR}\\)\n\\(\\text{Median}\\pm\\text{Median-Abweichung}\\) (das behandeln wir nicht)"
+  },
+  {
+    "objectID": "03_location_dispersion/index.html#beispiel",
+    "href": "03_location_dispersion/index.html#beispiel",
+    "title": "3  Vorlesung 03: Lage- und Streuungsmaße",
+    "section": "Beispiel",
+    "text": "Beispiel"
+  },
+  {
+    "objectID": "03_location_dispersion/index.html#einzelner-punkt-statt-balken",
+    "href": "03_location_dispersion/index.html#einzelner-punkt-statt-balken",
+    "title": "3  Vorlesung 03: Lage- und Streuungsmaße",
+    "section": "Einzelner Punkt statt Balken",
+    "text": "Einzelner Punkt statt Balken\n\nStatt eines Balkens kann der Mittelwert auch durch einen einzelnen Punkt repräsentiert werden – manche empfinden das als eleganter:"
+  },
+  {
+    "objectID": "03_location_dispersion/index.html#messwiederholungen-liniendiagramme",
+    "href": "03_location_dispersion/index.html#messwiederholungen-liniendiagramme",
+    "title": "3  Vorlesung 03: Lage- und Streuungsmaße",
+    "section": "Messwiederholungen: Liniendiagramme",
+    "text": "Messwiederholungen: Liniendiagramme\nGerade als sich die Hinweise auf die Hypothese des viralen Ursprungs von Paradoxia verdichten, wird ein Blogpost des Chaos Computer Club (CCC) in der Öffentlichkeit bekannt. Anonymen Hackern gelang es, auf die letzten 12 Monate Tik-Tok-Historie von 1800 Personen zuzugreifen – darunter viele Paradoxiker!\n\n\n\n\n\n\nDie Abbildung zeigt ein Liniendiagramm mit Fehlerbalken. Bei wiederholten Messungen Personen bietet es sich an, die einzelnen Messzeitpunkte mit Linien zu verbinden, um den zeitlichen Zusammenhang zu unterstreichen. Überlegen Sie sich: welche Aussage macht ein einzelner Fehlerbalken in dieser Abbildung?"
+  },
+  {
+    "objectID": "03_location_dispersion/index.html#section-2",
+    "href": "03_location_dispersion/index.html#section-2",
+    "title": "3  Vorlesung 03: Lage- und Streuungsmaße",
+    "section": "",
+    "text": "Die Daten des CCC geben der alternativen Hypothese neue Nahrung, nach der es sich bei Paradoxia um ein soziales Tik-Tok-Phänomen handelt. Leider ist nicht bekannt, zu welchem Zeitpunkt die Paradoxiker in dem Datensatz erkrankt sind. Die erste Frage an Sie als Task Force lautet: welche Möglichkeiten von Ursache und Wirkung könnten plausibel sein?"
+  },
+  {
+    "objectID": "03_location_dispersion/index.html#the-case-against-bar-plots",
+    "href": "03_location_dispersion/index.html#the-case-against-bar-plots",
+    "title": "3  Vorlesung 03: Lage- und Streuungsmaße",
+    "section": "The case against bar plots",
+    "text": "The case against bar plots\n\nTrotz ihrer hohen Verbreitung haben Balkendiagramme (Barplots) eine Reihe von Nachteilen:\n\nSie geben kaum Information über die spezifische Verteilung der Daten und mögliche Ausreißer\nDie intransparente Darstellungsweise verdeckt häufig, dass 1) Daten unrealistisch sind oder 2) Ausreißer das Lagemaß verzerren oder 3) die Verteilung der Daten unpassend für das verwendete Lagemaß sind.\nSie legen den Fokus auf irrelevante Bereiche der Skala (siehe Abbildung unten)\n\n\n\n\n\n\nDurch die tatsächliche Verteilung der Datenpunkte im rechten Plot wird klar, dass im Balkendiagramm ein vergleichsweise starker Fokus auf Bereiche gelegt wird, in den gar keine Daten enthalten sind (“Zone of Irrelevance”), und andererseits Extremwerte, insbesondere oberhalb des Fehlerbalkens, visuell völlig unrepräsentiert sind (“Zone of Invisibility”). Der Fehlerbalken ist außerdem leicht mit der Illusion verbunden, dass sich alle Datenpunkte innerhalb des angezeigten Bereiches befinden (“Within-the-bar bias”).7."
+  },
+  {
+    "objectID": "03_location_dispersion/index.html#the-case-against-bar-plots-1",
+    "href": "03_location_dispersion/index.html#the-case-against-bar-plots-1",
+    "title": "3  Vorlesung 03: Lage- und Streuungsmaße",
+    "section": "The case against bar plots",
+    "text": "The case against bar plots\n\nAlle Datenverteilungen haben den gleichen Mittelwert und Standardabweichung\n\n\n\n\nIllustration der Tatsache, dass unterschiedlichste Verteilungen von Daten im selben Balkendiagramm münden, hier am Beispiel von Mittelwert und Standardabweichung. Alle Verteilungen haben exakt den gleichen Mittelwert und Standardabweichung, sowohl entlang der y-Achse, als auch entlang der x-Achse (hier nicht dargestellt)8."
+  },
+  {
+    "objectID": "03_location_dispersion/index.html#the-case-against-bar-plots-2",
+    "href": "03_location_dispersion/index.html#the-case-against-bar-plots-2",
+    "title": "3  Vorlesung 03: Lage- und Streuungsmaße",
+    "section": "The case against bar plots",
+    "text": "The case against bar plots\n\n\n\n\n\n\nAlberto Cairo’s “DataSaurus”9."
+  },
+  {
+    "objectID": "03_location_dispersion/index.html#der-box-plot",
+    "href": "03_location_dispersion/index.html#der-box-plot",
+    "title": "3  Vorlesung 03: Lage- und Streuungsmaße",
+    "section": "Der Box-Plot",
+    "text": "Der Box-Plot\n\n\n\nEine bekannte Darstellungsform für den Median ist der Boxplot\nIn einer der bekanntesten Variationen zeigt der Boxplot drei Informationen an:\n\nMedian (als einfache Linie)\nBox: die “mittleren 50% der Daten” (25% über dem Median, 25% unter dem Median)\nAntennen (“Whisker”): der Bereich der Daten, der keine Ausreißer enthält. Häufig ist hier das Kriterium, dass die Daten im Bereich \\([Q_1-1.5\\cdot IQR; Q_3+1.5\\cdot IQR]\\) liegen müssen.\n\n\n\n\n\n\n\nDer Boxplot gibt eine schnelle Übersicht über wesentliche Kennwerte eines Datensatzen\nZu beachten ist, dass zahlreiche Variationen des Boxplots existieren\n\nBei einer weiteren bekannten Variation zeigen die Antennen das absolute Maximum und Minimum der Daten an (also inklusive möglicher Ausreißer)"
+  },
+  {
+    "objectID": "03_location_dispersion/index.html#moderne-darstellungsformen",
+    "href": "03_location_dispersion/index.html#moderne-darstellungsformen",
+    "title": "3  Vorlesung 03: Lage- und Streuungsmaße",
+    "section": "Moderne Darstellungsformen",
+    "text": "Moderne Darstellungsformen\n\n\n\nRaincloud-Plot\n\n\n\n\n\n\nBildnachweis10\n\n\n\n\n\nKlassische Darstellung mit Lage- und Streuungsmaß\n\n\n\n\n\n\nBildnachweis11\n\n\n\n\n\nModerne Statistik- und Plotsoftware ermöglicht heutzutage eine verbesserte und transparentere Darstellung von Daten:\n\nAnzeige einzelner Datenpunkte, meist getrennt durch “Jitter” (d.h. leichte horizontale oder vertikale Versetzung mit zufälligen Abständen, um Überschneidung der Datenpunkte zu reduzieren)\nAnzeige der Verteilung mittels (interpolierter) Histogramme (wichtige Information für die  Auswahl geeigneter Lage- und Streumaße, aber auch statistischer Tests)\nZusätzliche Anzeige von Kennwerten"
+  },
+  {
+    "objectID": "03_location_dispersion/index.html#abschneiden-der-y-achse",
+    "href": "03_location_dispersion/index.html#abschneiden-der-y-achse",
+    "title": "3  Vorlesung 03: Lage- und Streuungsmaße",
+    "section": "Abschneiden der y-Achse",
+    "text": "Abschneiden der y-Achse\n\nDas Abschneiden der y-Achse verzerrt häufig die Stärke von Effekten\n\n\n\nDie grundsätzliche Empfehlung ist daher, die y-Achse bei 0 beginnen zu lassen\nEs gibt aber Ausnahmen:\n\nVorliegen eines anderen natürlichen Referenzwertes (z.B. IQ-Wert 100, wenn alle Werte über 100 liegen).\nWären tatsächlich vorhandene Unterschiede zwischen Balken verschiedener Bedingungen überhaupt nicht mehr wahrnehmbar, kann ein Abschneiden der y-Achse sinnvoll sein (oder eine Logarithmus-Skala!).\nIn manchen Fällen können Messwerte niemals unter einen Mindestwert fallen. Beispielsweise sind motorische Reaktionszeiten physiologisch bedingt fast immer über 100ms – in diesem Fall ist der Bereich 0-100ms “Totraum” und kann sinnvollerweise weggelassen werden.\nIm Idealfall wird das Abschneiden der y-Achse durch einen “Bruch” angezeigt (siehe nächste Folie)."
+  },
+  {
+    "objectID": "03_location_dispersion/index.html#beispiel-für-gebrochene-y-achse",
+    "href": "03_location_dispersion/index.html#beispiel-für-gebrochene-y-achse",
+    "title": "3  Vorlesung 03: Lage- und Streuungsmaße",
+    "section": "Beispiel für gebrochene y-Achse",
+    "text": "Beispiel für gebrochene y-Achse\n\n\n\n\n\n\nDurch den Bruch der y-Achse wird betont, dass die Balken zur besseren Übersichtlichkeit “abgeschnitten” wurden. So werden fälschliche Wahrnehmungen und Interpretationen durch die abgeschnittene Achse eher vermieden. Bildnachweis12"
+  },
+  {
+    "objectID": "03_location_dispersion/index.html#gleiche-intervalle-auf-x-achse",
+    "href": "03_location_dispersion/index.html#gleiche-intervalle-auf-x-achse",
+    "title": "3  Vorlesung 03: Lage- und Streuungsmaße",
+    "section": "Gleiche Intervalle auf x-Achse",
+    "text": "Gleiche Intervalle auf x-Achse\n\nUngleichmäßige Intervalle auf der x-Achse verzerren die Daten von Liniendiagrammen"
+  },
+  {
+    "objectID": "04_correlation/index.html",
+    "href": "04_correlation/index.html",
+    "title": "4  Vorlesung 04: Zusammenhänge",
+    "section": "",
+    "text": "5 Kovarianz"
+  },
+  {
+    "objectID": "04_correlation/index.html#was-sind-zusammenhänge",
+    "href": "04_correlation/index.html#was-sind-zusammenhänge",
+    "title": "4  Vorlesung 04: Zusammenhänge",
+    "section": "Was sind Zusammenhänge?",
+    "text": "Was sind Zusammenhänge?\n\n\n\nEin Zusammenhang beschreibt zu welchem Grad zwei Variablen (Merkmale) systematisch miteinander in Verbindung stehen\nZusammenhänge bilden die Essenz der psychologischen Forschung—durch sie versuchen wir die Mechanik der menschlichen Psyche zu verstehen:\n\nFördert Ausdauersport das psychische Wohlbefinden?\nHelfen Psychotherapiestunden bei der Überwindung einer Depression?\nWirkt sich Bildschirmzeit nachteilig auf die Schlafqualität aus?\nSteigt durch kindliche Frühförderung die Wahrscheinlichkeit für einen akadamischen Bildungsabschluss?\n\nFast jede wissenschaftliche Hypothese lässt sich als Zusammenhang formuliern – selbst Unterschiede!\n\nFormulierung als Unterschied: unterscheiden sich Männer und Frauen in ihren verbalen Fähigkeiten?\nFormulierung als Zusammenhang: steht die kategorische Variable Geschlecht in Zusammenhang mit der metrischen Variable verbale Fähigkeiten?"
+  },
+  {
+    "objectID": "04_correlation/index.html#zusammenhänge-im-engeren-sinn",
+    "href": "04_correlation/index.html#zusammenhänge-im-engeren-sinn",
+    "title": "4  Vorlesung 04: Zusammenhänge",
+    "section": "Zusammenhänge im engeren Sinn",
+    "text": "Zusammenhänge im engeren Sinn\n\nUm Unterschiede und Zusammenhänge voneinander abzugrenzen, verstehen wir nachfolgend Zusammenhänge in einem engeren Sinn:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEin Zusammenhang (im engeren Sinn) beschreibt zu welchem Grad die Variation zweier metrischer Variablen miteinander in Verbindung steht.\n\n\n\n\n\n\n\n\n\nDurch die Eingrenzung auf metrische Variablen (diskret oder kontinuerlich) stellt etwa die Verbindung von Geschlecht und verbalen Fähigkeiten keinen Zusammenhang im engeren Sinn dar, da Geschlecht eine kategorische Variable ist.\nIn den meisten Fällen sind Zusammenhänge das “schärfere statistische Schwert” als Unterschiede und es lohnt sich oft, Forschungsfragen entsprechend anzupassen:\n\nUnterscheidet sich die akademische Leistung von Rauchern und Nichtrauchern? ⇒ Zusammenhang Zahl der Zigaretten pro Tag und akademische Leistung\nUnterscheidet sich der Medienkonsum von Depressiven und Kontrollen? ⇒ Zusammenhang Depressivität und Medienkonsum\nUnterscheidet sich das Depressionsrisiko zwischen Nord- und Süddeutschland? ⇒ Zusammenhang geographischer Breitengrad und Depressionsrisiko"
+  },
+  {
+    "objectID": "04_correlation/index.html#kovarianz-1",
+    "href": "04_correlation/index.html#kovarianz-1",
+    "title": "4  Vorlesung 04: Zusammenhänge",
+    "section": "Kovarianz",
+    "text": "Kovarianz\n\nZiel: mathematische Größe, die zum Ausdruck bringt, wie stark die Variation zweier Variablen miteinander in Zusammenhang steht\nWir haben bereits eine Größe für die Variation einer Variable — die Varianz:\n\n\\[\nVar(X) = \\frac{1}{N}\\sum_{i=1}^N\\big(x_i-\\bar{X}\\big)^2 = \\frac{1}{N}\\sum_{i=1}^N(x_i-\\bar{X})\\color{darkred}{(x_i-\\bar{X})}\n\\]\n\nDie Varianz gibt an, wie stark eine Variable \\(X\\) um ihren Mittelwert \\(\\bar{X}\\) schwankt\nAnalog berechnet die Kovarianz, wie stark die gemeinsame Schwankung zweier Variablen um ihren jeweiligen Mittelwert ist: \\[\n\\text{Kovarianz:}\\quad Cov(X,Y) = \\frac{1}{N}\\sum_{i=1}^N\\big(x_i-\\bar{X}\\big)^2 = \\frac{1}{N}\\sum_{i=1}^N(x_i-\\bar{X})\\color{darkred}{(y_i-\\bar{Y})}\n\\]\nIm Zentrum der Kovarianz steht die Erkenntnis, dass das mathematische Produkt zweier Abweichungsvariablen — hier die Abweichungen \\((x_i-\\bar{X})\\) und \\((y_i-\\bar{Y})\\) vom Mittelwert — angibt, wie stark die beiden Abweichungen gleichsinnig variieren (ko-variieren)."
+  },
+  {
+    "objectID": "04_correlation/index.html#kovarianz-2",
+    "href": "04_correlation/index.html#kovarianz-2",
+    "title": "4  Vorlesung 04: Zusammenhänge",
+    "section": "Kovarianz",
+    "text": "Kovarianz\nIntuition:\n\nSind zwei zusammengehörige Datenpunkte \\(x_i\\) und \\(y_i\\) größer als der Mittelwert, sind sowohl \\((x_i-\\bar{X})\\) als auch \\((y_i-\\bar{Y})\\) positiv, und damit auch das Produkt \\((x_i-\\bar{X})(y_i-\\bar{Y})\\) positiv.\nSind zwei zusammengehörige Datenpunkte \\(x_i\\) und \\(y_i\\) geringer als der Mittelwert, sind sowohl \\((x_i-\\bar{X})\\) als auch \\((y_i-\\bar{Y})\\) negativ, und damit das Produkt \\((x_i-\\bar{X})(y_i-\\bar{Y})\\) wieder positiv."
+  },
+  {
+    "objectID": "04_correlation/index.html#kovarianz-größe-gewicht-beispiel",
+    "href": "04_correlation/index.html#kovarianz-größe-gewicht-beispiel",
+    "title": "4  Vorlesung 04: Zusammenhänge",
+    "section": "Kovarianz: Größe-Gewicht-Beispiel",
+    "text": "Kovarianz: Größe-Gewicht-Beispiel\n\n\n\n\n\n\n\n\\[\n\\scriptsize{\n\\begin{aligned}\n&Cov(X, Y) = \\frac{1}{N}\\sum_{i=1}^N(x_i-\\bar{X})(y_i-\\bar{Y}) = \\\\\n          &= \\frac{1}{3}\\big[(160-170)(60-70)+(170-170)(70-70)+(180-170)(80-70)\\big] = \\\\\n          &= \\frac{1}{3}\\big[(-10)\\cdot (-10)+0\\cdot 0+10\\cdot 10\\big] = \\\\\n          &= \\frac{1}{3}\\cdot 200 = 66{,}67\n\\end{aligned}\n}\n\\]\n\n\n\nProblem: die Kovarianz hängt von den Einheiten ab!\nWird im Beispiel die Körpergröße \\(X\\) in der Einheit Meter angegeben, so lautet die Kovarianz:\n\n\\[\n\\scriptsize{\n\\begin{aligned}\nCov(X, Y) &= \\frac{1}{3}\\big[(1{,}60-1{,}70)(60-70)+(1{,}70-1{,}70)(70-70)+(1{,}80-1{,}70)(80-70)\\big] = \\\\\n          &= \\frac{1}{3}\\big[(-0{,}10)\\cdot (-10)+0\\cdot 0+0{,}10\\cdot 10\\big] = \\frac{1}{3}\\cdot 2 = 0{,}667\n\\end{aligned}\n}\n\\]\n\nKovarianzen sind also nicht vergleichbar wenn sich Einheiten unterscheiden, und erst recht nicht, wenn sich die Variablen unterscheiden."
+  },
+  {
+    "objectID": "04_correlation/index.html#pearson-korrelation-1",
+    "href": "04_correlation/index.html#pearson-korrelation-1",
+    "title": "4  Vorlesung 04: Zusammenhänge",
+    "section": "Pearson-Korrelation",
+    "text": "Pearson-Korrelation\n\n\n\nDie Pearson-Korrelation schafft Abhilfe für das Problem der mangelnden Vergleichbarkeit\nDer Schlüssel: die Kovarianz wird mit der Standardabweichung beider Variablen normalisiert:\n\n\\[\n\\small{\n\\text{Korrelation:}\\;\\; r_{XY} = \\frac{Cov(X,Y)}{s_X s_Y} = \\frac{1}{N s_X s_Y}\\sum_{i=1}^N(x_i-\\bar{X})(y_i-\\bar{Y})\n}\n\\]\n\nDurch das Teilen durch die Standardabweichungen \\(s_X\\) und \\(s_Y\\) werden die Einheiten herausgekürzt — die Korrelation ist also eine einheitslose Größe.\nDie Korrelation kann Werte zwischen \\(-1\\) (perfekter negativer Zusammenhang) und \\(+1\\) (perfekter positiver Zusammenhang) annehmen.\n\n\n\n\n\nDer britische Mathematiker Karl Pearson in seinem Büro im Jahr 1910. Neben dem Korrelationskoeffizienten verdanken wir Pearson viele andere statistische Konzepte wie die Hauptkomponentenanalyse oder den p-Wert. Später wurden seine Ansichten zu Eugenik kritisch hinterfragt. Bildnachweis1"
+  },
+  {
+    "objectID": "04_correlation/index.html#warum-ist-die-korrelation-auf-1-bis-1-beschränkt",
+    "href": "04_correlation/index.html#warum-ist-die-korrelation-auf-1-bis-1-beschränkt",
+    "title": "4  Vorlesung 04: Zusammenhänge",
+    "section": "Warum ist die Korrelation auf −1 bis 1 beschränkt?",
+    "text": "Warum ist die Korrelation auf −1 bis 1 beschränkt?\n\nDarstellung der Korrelation nur mit (Ko)Varianzen:\n\\[\nr_{XY} = \\frac{Cov(X,Y)}{s_X s_Y} = \\frac{Cov(X,Y)}{\\sqrt{Var(X)} \\sqrt{Var(Y)}}\n\\]\nDie Korrelation sollte maximal (\\(r=1\\)) sein, wenn \\(X\\) mit sich selbst korreliert wird (\\(Y=X\\)). Zu berücksichtigen ist, dass die Kovarianz von X mit sich selbst gleich der Varianz ist:\n\\[\nr_{XX} = \\frac{Cov(X,X)}{\\sqrt{Var(X)} \\sqrt{Var(X)}} = \\frac{Var(X)}{\\sqrt{Var(X)} \\sqrt{Var(X)}} = \\frac{Var(X)}{Var(X)} = 1\n\\]\nUmgekehrt sollte die Korrelation maximal negativ sein (\\(r=-1\\)), wenn \\(Y\\) genau das Inverse von \\(X\\) ist, also \\(Y=-X\\). Unter Berücksichtigung von \\(Var(X) = Var(-X)\\) gilt: \\[\nr_{X(-X)} = \\frac{Cov(X,-X)}{\\sqrt{Var(X)} \\sqrt{Var(-X)}} = \\frac{-Cov(X,X)}{\\sqrt{Var(X)} \\sqrt{Var(X)}} = \\frac{-Var(X)}{Var(X)} = -1\n\\]"
+  },
+  {
+    "objectID": "04_correlation/index.html#das-streudiagramm",
+    "href": "04_correlation/index.html#das-streudiagramm",
+    "title": "4  Vorlesung 04: Zusammenhänge",
+    "section": "Das Streudiagramm",
+    "text": "Das Streudiagramm\n\nVon einer kleinen Stichprobe im TikTok-Datensatz des CCC sind auch Entzündungswerte bekannt\nIn der Task Force fragen Sie sich, ob es unter den Paradoxikern einen Zusammenhang zwischen der Zahl der Stunden auf TikTok und den Entzündungswerten gibt\n\n\n\nSie fassen Ihr Ergebnis in einem Streudiagramm zusammen.\n\nDas Streudiagramm (engl. scatter plot) ist die häufigste Visualisierung eins biavariaten Zusammenhangs\nBei der Korrelation ist es dabei willkürlich, welche Variable auf der X- und Y-Achse liegt\nHäufig wird zusätzlich zur “Punktwolke” auch eine Regressionsgerade angegeben, sowie die Stärke des Zusammenhangs (r=.., p=..)"
+  },
+  {
+    "objectID": "04_correlation/index.html#pearson-korrelation-größe-gewicht-beispiel",
+    "href": "04_correlation/index.html#pearson-korrelation-größe-gewicht-beispiel",
+    "title": "4  Vorlesung 04: Zusammenhänge",
+    "section": "Pearson-Korrelation: Größe-Gewicht-Beispiel",
+    "text": "Pearson-Korrelation: Größe-Gewicht-Beispiel\n\n\n\n\n\n\n\nWir hatten:\n\\[\n\\small{\n\\begin{aligned}\n&Cov(X, Y) = \\frac{1}{N}\\sum_{i=1}^N(x_i-\\bar{X})(y_i-\\bar{Y}) = \\frac{200}{3}\n\\end{aligned}\n}\n\\]\nUnd berechnen nun die Korrelation \\(\\;\\;r_{XY} = \\frac{Cov(X,Y)}{s_X s_Y}\\)\n\\(\\scriptsize{s_X=\\sqrt{\\frac{1}{N}\\sum_{i=1}^N\\big(x_i-\\bar{X}\\big)^2}=\\sqrt{\\frac{1}{3}[(-10)^2+0^2+10^2]}=\\sqrt{\\frac{200}{3}}}\\)\n\\(\\scriptsize{s_Y=\\sqrt{\\frac{1}{N}\\sum_{i=1}^N\\big(y_i-\\bar{Y}\\big)^2}=\\sqrt{\\frac{1}{3}[(-10)^2+0^2+10^2]}=\\sqrt{\\frac{200}{3}}}\\)\n\\[\n\\small{\nr_{XY} = \\frac{\\frac{200}{3}}{\\sqrt{\\frac{200}{3}}\\cdot\\sqrt{\\frac{200}{3}}}=1\n}\n\\]\n\n\n\nWäre die Körpergröße in der Einheit Meter angeben, so kürzt sich der Faktor 100 (1m = 100cm) nicht nur im Zähler, sondern auch im Nenner:\n\n\n\n\\[\n\\small{\nr_{XY} = \\frac{\\frac{2\\color{darkred}{{,}}00}{3}}{\\sqrt{\\frac{2\\color{darkred}{{,}}00}{3}}\\cdot\\sqrt{\\frac{2\\color{darkred}{{,}}00}{3}}}=1\n}\n\\]\n\nDie Normalisierung mit der Standardabweichung sorgt somit dafür, dass die willkürliche Einheit keine Rolle spielt."
+  },
+  {
+    "objectID": "04_correlation/index.html#interpretation-der-pearson-korrelation",
+    "href": "04_correlation/index.html#interpretation-der-pearson-korrelation",
+    "title": "4  Vorlesung 04: Zusammenhänge",
+    "section": "Interpretation der Pearson-Korrelation",
+    "text": "Interpretation der Pearson-Korrelation\n\nDie Pearson-Korrelation zeigt an, wie linear der Zusammenhang zweier Variablen ausgeprägt ist\nDie Pearson-Korrelation ist dabei nicht von der Steigung einer gedachten Gerade abhängig.\n\n\n\n\nKorrelationskoeffizienten für verschiedene hypothetische Streudiagramme\n\n\n\nEin Zusammenhang zweier Variablen kann extrem schwach sein (z.B. so, dass eine Verdopplung von X nur einer 0.1%-Steigerung von Y entspricht) und dennoch kann die Korrelation stark sein (= nah an \\(\\pm 1\\)), wenn die Punkte exakt auf einer Geraden liegen.\nAuf einen Satz gemünzt kann man sagen:\n\n\n\nDie Pearson-Korrelation misst, wie gut bivariate Daten durch eine Gerade abgebildet werden können."
+  },
+  {
+    "objectID": "04_correlation/index.html#voraussetzungen-fur-das-berechnen-der-pearson-korrelation",
+    "href": "04_correlation/index.html#voraussetzungen-fur-das-berechnen-der-pearson-korrelation",
+    "title": "4  Vorlesung 04: Zusammenhänge",
+    "section": "Voraussetzungen für das Berechnen der Pearson-Korrelation",
+    "text": "Voraussetzungen für das Berechnen der Pearson-Korrelation\n\nDie Pearson-Korrelation kann immer berechnet werden, solange beide Variablen aus Zahlenwerten bestehen.\nEs gibt jedoch weitere Kriterien, die für die Sinnhaftigkeit und Interpretierbarkeit der Pearson-Korrelation wichtig sind:\n\n\n\n\n\n\n\n\n\n\n\nKriterium\nFalls Kriterium nicht erfüllt?\nBeispiel\nMögliche Abhilfe?\n\n\n\n\nDaten haben mindestens Intervallskalenniveau\n▪ Keine Aussage über Linearität des untersuchten Zusammenhangs möglich\n▪ Korrelation nicht interpretierbar\n\nRangkorrelation\n\n\nKeine Ausreißer\nKorrelationskoeffizient kann massiv verzerrt sein\n\nAusreißer entfernen oder Rangkorrelation\n\n\nZusammenhang der Daten wird nicht durch nicht-linearen Anteil dominiert\n▪ Pearson-Korrelation falsches Modell\n▪ Linearität der Daten wird verzerrt wiedergegeben, da die Korrelation vom nicht-linearen Teil beeinflusst wird\n\nKomplexeres Modell, das den nicht-linearen Anteil berücksichtigt"
+  },
+  {
+    "objectID": "04_correlation/index.html#mythen-zur-pearson-korrelation",
+    "href": "04_correlation/index.html#mythen-zur-pearson-korrelation",
+    "title": "4  Vorlesung 04: Zusammenhänge",
+    "section": "Mythen zur Pearson-Korrelation",
+    "text": "Mythen zur Pearson-Korrelation\n\nIn vielen Quellen finden sich darüber hinaus unzutreffende Behauptungen zur Verwendung der Pearson-Korrelation:\n\n\n\n\n\n\n\n\n\n\n\nBehauptung\nFact\n\n\n\n\nMythos 1\nDie Variablen müssen kontinuierlich sein\nPearson-Korrelation ist valide für diskrete Daten, solange diese mindestens Intervallskalenniveau aufweisen. Tatsächlich gibt es sogar eine Variante der Pearson-Korrelation, bei der beide Variablen binär sind (Phi-Koeffizient).\n\n\nMythos 2\nDie beiden Variablen müssen normalverteilt sein.\nDie beiden Variablen müssen nicht normalverteilt sein. Korrekt ist, dass die Daten für die Berechnung eines p-Wertes bivariat normalverteilt sein sollten.\n\n\nMythos 3\nDie Variablen müssen einen linearen Zusammenhang aufweisen\nGegenbeispiel: wenn Daten nur aus zufälligem Rauschen bestehen, sind sie hochgradig nicht-linear, aber dennoch gibt der Pearson-Koeffizient idR korrekterweise an, dass die Korrelation ungefähr 0 ist.Zusammenhänge in der Psychologie sind sehr selten eindeutig linear, dennoch kann es sinnvoll sein, die Pearson-Korrelation anzuwenden. Besser ist es daher zu sagen (wie in der Folie zuvor), dass der Zusammenhang nicht zu stark durch einen nicht-linearen Anteil dominiert werden sollten.\n\n\nMythos 4\nDie Variablen müssen varianzhomogen sein\nVarianzhomogenität (auch Homoskedastizität) meint, dass Y-Werte ähnliche Varianz in verschiedenen Abschnitten der X-Achse haben und umgekehrt. Jedoch ist Varianzhomogenität keine zwingende Voraussetzung für die Anwendung der Pearson-Korrelation. Korrekt ist, dass der erhaltene Korrelationskoeffizient ungenauer und der p-Wert nicht mehr korrekt ist."
+  },
+  {
+    "objectID": "04_correlation/index.html#korrelationsmatrix",
+    "href": "04_correlation/index.html#korrelationsmatrix",
+    "title": "4  Vorlesung 04: Zusammenhänge",
+    "section": "Korrelationsmatrix",
+    "text": "Korrelationsmatrix\n\nEine Korrelation bestimmt immer den Zusammenhang zwischen zwei Variablen\nGibt es mehr als zwei Variablen (z.B. die “Big Five”), bietet sich eine Darstellung aller paarweisen Korrelationen an – die Korrelationsmatrix\n\n\n\n\n\n\nTabellarische Korrelationsmatrix. Sterne kennzeichnen häufig das Signifikanzniveau.\n\n\n\n\n\n\nKorrelationsmatrix als “Heatmap” – die Einfärbung ist ein visuelles Hilfsmittel zur intuitiven und schnellen Erfassung der Korrelationsstruktur eines Variablen-Sets.\n\n\n\n\n\nDie Nebendiagonalelemente sind der interessante Teil der Korrelationsmatrix, sie geben die Korrelationen verschiedener Variablen an\nDie Diagonalelemente, also die Korrelationen von Variablen mit sich selbst, sind immer 1"
+  },
+  {
+    "objectID": "04_correlation/index.html#kovarianzmatrix",
+    "href": "04_correlation/index.html#kovarianzmatrix",
+    "title": "4  Vorlesung 04: Zusammenhänge",
+    "section": "Kovarianzmatrix",
+    "text": "Kovarianzmatrix\n\n\n\nEine analoge Matrix-Darstellung gibt es auch für die Kovarianz\nIm Unterschied zur Korrelationsmatrix sind die Diagonalelemente der Kovarianzmatrix nicht 1, sondern geben die Varianz der Variable an.\nSei \\(\\mathbf{X}\\) (beachte Fettschrift) ein Vektor von \\(n\\) Variablen \\(X_1 .. X_n\\), so ist die zugehörige Kovarianzematrix \\(\\operatorname{Cov}(\\mathbf{X})\\):\n\n\\[\n\\small{\n\\begin{aligned}\n\\operatorname{Cov}(\\mathbf{X}) & =\n\\begin{pmatrix}\\operatorname{Var}(X_1) & \\operatorname{Cov}(X_1,X_2) & \\cdots & \\operatorname{Cov}(X_1,X_n) \\\\ \\\\\n\\operatorname{Cov}(X_2,X_1)  & \\operatorname{Var}(X_2) & \\cdots & \\operatorname{Cov}(X_2,X_n) \\\\ \\\\\n\\vdots & \\vdots & \\ddots & \\vdots \\\\ \\\\\n\\operatorname{Cov}(X_n,X_1) & \\operatorname{Cov}(X_n,X_2) & \\cdots & \\operatorname{Var}(X_n)\n\\end{pmatrix}\n\\end{aligned}\n}\n\\]\n\n\n\n\n\nIm Gegensatz zur Korrelationsmatrix ist die Kovarianzmatrix selten das “Endprodukt” einer Analyse, sondern meist ein Zwischenschritt in fortgeschritteneren statistischen Analysen wie der Hauptkomponentenanalyse"
+  },
+  {
+    "objectID": "04_correlation/index.html#was-ist-eine-rangkorrelation",
+    "href": "04_correlation/index.html#was-ist-eine-rangkorrelation",
+    "title": "4  Vorlesung 04: Zusammenhänge",
+    "section": "Was ist eine Rangkorrelation?",
+    "text": "Was ist eine Rangkorrelation?\n\n\n\nRangkorrelationsmaße ermöglichen es, Zusammenhänge von ordinalskalierten und nicht-linearen Variablem zu untersuchen.\n\nDies ist mit der Pearson-Korrelation nicht möglich\n\n“Rang” bezieht sich auf das Ordinalskalenniveau, d.h. dass die Daten nur als “Rang” oder “Reihenfolge” interpretiert werden können.\nIm Gegensatz zur Pearson-Korrelation bewerten Rangkorrelationen nicht die Linearität eines Zusammenhangs, sondern die Monotonie des Zusammmenhangs.\nEin weiterer Anwendungsfall sind intervallskalierte Daten, die Ausreißer aufweisen und daher die Pearson-Korrelation verzerren.\n\nRangkorrelationen sind robust gegenüber Ausreißern\nIn diesem Fall werden die Variablen künstlich in Ränge umgewandelt.\n\nHier behandeln wir zwei Maße für die Rangkorrelation:\n\nSpearman-Korrelation\nKendall’sches Tau"
+  },
+  {
+    "objectID": "04_correlation/index.html#berechnung-von-rängen",
+    "href": "04_correlation/index.html#berechnung-von-rängen",
+    "title": "4  Vorlesung 04: Zusammenhänge",
+    "section": "Berechnung von Rängen",
+    "text": "Berechnung von Rängen\n\nLiegen die Variablen nicht als Ränge vor, müssen sie zunächst in Ränge umgewandelt werden:\n\nWerte der Variable sortieren\n(Unnormierte) Ränge zuordnen\nNormierung: Gleiche Werte erhalten den Mittelwert ihrer Ränge\n(Optional) Variablen in ihre ursprüngliche Reihenfolge bringen\n\n\n\n\nDie Tabelle gibt die Rangberechnung einer Variablen an (z.B. X) – für die andere Variable (Y) muss das analoge Prozedere durchgeführt werden."
+  },
+  {
+    "objectID": "04_correlation/index.html#spearman-korrelation",
+    "href": "04_correlation/index.html#spearman-korrelation",
+    "title": "4  Vorlesung 04: Zusammenhänge",
+    "section": "Spearman-Korrelation",
+    "text": "Spearman-Korrelation\n\nDie Spearman-Korrelation ist identisch zur Pearson-Korrelation, wenn die Variablen \\(X\\) und \\(Y\\) als Ränge \\(R(X)\\) und \\(R(Y)\\) vorliegen (Spearman wird häufig mit dem Buchstaben \\(\\rho\\) bezeichnet):\n\n\\[\n\\rho_{XY} = \\frac{cov(R(X),R(Y))}{s_{R(X)} s_{R(Y)}}\n\\]   wobei \\(s_{R(X)}\\) und \\(s_{R(Y)}\\) die Standardabweichungen der Ränge von \\(X\\) und \\(Y\\) sind.\n\n\n\nWie die Pearson-Korrelation nimmt die Spearman-Korrelation Werte zwischen \\(-1\\) und \\(+1\\) an:\n\nEin positiver Wert impliziert eine positiven monotonen Zusammenhang\nEin negativer Wert impliziert eine negativen monotonen Zusammenhang\nEin Wert nahe bei 0 impliziert einen schwachen (oder keinen) monotonen Zusammenhang"
+  },
+  {
+    "objectID": "04_correlation/index.html#kendalls-tau",
+    "href": "04_correlation/index.html#kendalls-tau",
+    "title": "4  Vorlesung 04: Zusammenhänge",
+    "section": "Kendalls Tau",
+    "text": "Kendalls Tau\n\n\n\nEine Alternative Rangkorrelation zu Spearman ist Kendalls Tau\nKendalls Tau vergleicht inwieweit die Rangfolge aller Paare \\(x_i\\), \\(x_j\\) mit der Rangfolge aller Paare \\(y_i\\), \\(y_j\\) übereinstimmt\nDazu wird die Zahl der konkordanten (übereinstimmenden) und diskordanten (nicht übereinstimmenden) Paare gezählt\n\n\n\n\n\n\n\n\n\n\n\nBeispiel\n\n\\[\n\\small{\nX=\\begin{pmatrix} 9\\\\ 3\\\\ 7\\\\ 5 \\end{pmatrix}\nY=\\begin{pmatrix} 18\\\\ 7\\\\ 8\\\\ 21 \\end{pmatrix}\n}\n\\]\n\n\nDie Paare von X sind: \\(\\small{(9, 3), (9, 7), (9, 5), (3, 7), (3, 5), (7, 5)}\\)\nDie Paare von Y sind: \\(\\small{(18, 7), (18, 8), (18, 21), (7, 8), (7, 21), (8, 21)}\\)\nDie Paare \\((x_1=9, x_3=7)\\) und \\((y_1=18, y_3=2)\\) wären konkordant, da die Rangfolge des X-Paares (\\(x_1 &gt; x_3\\)) gleich der Rangfolge des entsprechenden Y-Paares (\\(y_1 &gt; y_3\\)) ist\nDie Paare\\((x_1=9, x_4=5)\\) und \\((y_1=18, y_4=21)\\) wären diskonkordant, da die Rangfolge des X-Paares (\\(x_1 &gt; x_4\\)) ungleich der Rangfolge des entsprechenden Y-Paares (\\(y_1 &lt; y_4\\)) ist\n\n\n\nInsgesamt gibt es im Beispiel 4 konkordante Paare und 2 diskordante Paare (prüfe nach!), daher gilt:\n\\[\n\\tau = \\frac{K-D}{K+D} = \\frac{4-2}{3+3} = \\frac{2}{6} = 0.333..\n\\]"
+  },
+  {
+    "objectID": "04_correlation/index.html#rangkorrelationen-robust-gegen-ausreißer",
+    "href": "04_correlation/index.html#rangkorrelationen-robust-gegen-ausreißer",
+    "title": "4  Vorlesung 04: Zusammenhänge",
+    "section": "Rangkorrelationen: Robust gegen Ausreißer",
+    "text": "Rangkorrelationen: Robust gegen Ausreißer\n\nBeispiel Pearson vs. Spearman:\n\n\n\nEin einziger Ausreißer verändert die Pearson-Korrelation im Beispiel von \\(r=-0.046\\) nach \\(r=0.410\\)\nDemgegnüber ist die Spearman-Korrelation “robuster” gegenüber dem Ausreißer – sie verändert sich “lediglich” von \\(\\rho=-0.030\\) nach \\(\\rho=0.110\\).\nIntution: während der Wert es Ausreißers deutlich über dem zweithöchsten Y-Wert liegt, ist der Rang nur um 1 höher."
+  },
+  {
+    "objectID": "04_correlation/index.html#wann-spearman-und-wann-kendall",
+    "href": "04_correlation/index.html#wann-spearman-und-wann-kendall",
+    "title": "4  Vorlesung 04: Zusammenhänge",
+    "section": "Wann Spearman und wann Kendall?",
+    "text": "Wann Spearman und wann Kendall?\n\n\nBeide Rangkorrelationskoeffizienten bestimmen die Monotonie eines Zusammenhangs\nKendall ist robuster bei kleinen Stichproben und ist in diesen Fällen bevorzugt\nSpearman ist etwas weniger sensitiv gegenüber Rangbindungen (also wenn zwei Werte den gleichen Rang haben) und ist daher bevorzugt, wenn es viele Rangbindungen gibt2\n\nBeachte: auch bei den Kendall’schen Paaren gibt es Rangbindungen, und zwar dann, wenn die verglichenen Paare zwischen \\(X\\) und \\(Y\\) genau identisch sind\nDiese Paare sind weder konkordant noch diskordant und es gibt verschiedene Algorithmen diese Fälle zu berücksichtigen (hier nicht behandelt)\n\nIn Abwesenheit von Rangbindungen liefert Kendall präzisere Schätzungen und ist Kendall zu bevorzugen.3\nIn der Statistik wird Kendall häufig als “Default”-Rangkorrelation empfohlen4:\n\nidR präzisere Schätzung des Populationsparameters\nStandardfehler ist bekannt (für Spearman gibt es lediglich Approximationen5)\n\nFaktisch ist aber Spearman der weitaus verbreitetere Korrelationskoeffizient – womöglich weil er idR größer als der Kendall-Koeffizient ist 😉"
+  },
+  {
+    "objectID": "04_correlation/index.html#der-phi-koeffizient",
+    "href": "04_correlation/index.html#der-phi-koeffizient",
+    "title": "4  Vorlesung 04: Zusammenhänge",
+    "section": "Der Phi-Koeffizient",
+    "text": "Der Phi-Koeffizient\n\nSpezialfall: beide Variablen haben nur zwei Ausprägungen\nDarstellbar in der Vierfeldertafel:\n\n\n\n\n\n\nBildnachweis6\n\n\n\n\nIn die vier Felder werden die Häufigkeiten der jeweiligen Variablen-Kombination eingetragen (im Beispiel blaugefärbt)\nOptional: In der letzten Zeile/Spalte die Summe\n\n\n\n\n\nWie alle Korrelationskoeffizienten beantwortet der Phi-Koeffizient die Frage, ob zwei Variablen miteinander zusammenhängen\n\nIm Beispiel: hängt das gewählte Fach vom Geschlecht ab?\n\n\n\n\n\n\\[\n\\small{\n\\text{Formel:}\\quad Phi = \\frac{ad-bc}{\\sqrt{(a+b)(c+d)(a+c)(b+d)}}\n}\n\\]\n\nAuch der Phi-Koeffizient hat einen Wertebereich von \\([-1; 1]\\)\n\n\n\n\n\n\n\n\n\nNB: der Phi-Koeffizient ist identisch mit der Pearson-Korrelation und der Spearman-Korrelation, wenn beide dichotomen Variablen mit 0 und 1 kodiert werden."
+  },
+  {
+    "objectID": "04_correlation/index.html#phi-koeffizient-beispiel",
+    "href": "04_correlation/index.html#phi-koeffizient-beispiel",
+    "title": "4  Vorlesung 04: Zusammenhänge",
+    "section": "Phi-Koeffizient: Beispiel",
+    "text": "Phi-Koeffizient: Beispiel\n\n\n\n\n\\[\\begin{align}\nPhi &= \\frac{ad-bc}{\\sqrt{(a+b)(c+d)(a+c)(b+d)}} = \\\\\n    &= \\frac{2\\cdot11-8\\cdot12}{\\sqrt{(2+8)(12+11)(2+12)(8+11)}} = \\\\\n    &= \\frac{22-96}{\\sqrt{10\\cdot23\\cdot14\\cdot19}} = \\frac{-74}{\\sqrt{61180}} = -0.299\n\\end{align}\\]"
+  },
+  {
+    "objectID": "04_correlation/index.html#korrelation-und-kausalität",
+    "href": "04_correlation/index.html#korrelation-und-kausalität",
+    "title": "4  Vorlesung 04: Zusammenhänge",
+    "section": "Korrelation und Kausalität",
+    "text": "Korrelation und Kausalität\n\n\nDie Task Force ist immer noch einigermaßen perblex, ob des Zusammenhangs von TikTok-Onlinezeit und den Entzündungswerten.\n\nAls erfahrenen Statistiker:innen kennen Sie die erste Regel der Korrelation:\n\n\nKorrelation ist nicht gleich Kausalität\n\n\n(Oder falls Sie den Lateiner heraushängen lassen wollen: Cum hoc ergo propter hoc)\n\n\n\n\n\n\nEs scheint unmöglich, dass virutelle TikTok-Zeit einen kausalen Einfluss auf biologische Entzündungswerte hat.\nSie wissen, dass ein häufiger alternativer Grund für eine Korrelation eine dritte Variable ist, die wiederum Einfluss auf beide Variablen der Korrelation hat— eine Störvariable.\nIn diesem Fall vermuten Sie, dass die Störvariable eine vorhandene Paradoxie-Erkrankung selbst ist: die Erkrankung führt einerseits zu höheren Entzündungswerten und andererseits zu vermehrter TikTok-Zeit (um Trost bei Leidensgenossen zu erfahren?)"
+  },
+  {
+    "objectID": "04_correlation/index.html#korrelation-und-kausalität-1",
+    "href": "04_correlation/index.html#korrelation-und-kausalität-1",
+    "title": "4  Vorlesung 04: Zusammenhänge",
+    "section": "Korrelation und Kausalität",
+    "text": "Korrelation und Kausalität\n\nRein rechnerisch bedeutet eine Korrelation einen Zusammenhang zweier Variablen, sogar, dass man die eine Variable aus der anderen statistisch vorhersagen kann\nDies bedeutet jedoch nicht, dass sich die Variablen auch kausal bedingen\nEinerseits können Korrelation zufällig zustande kommen (die Wahrscheinlichkeit von solchen irrtümlichen Befunden untersuchen wir noch genauer beim Thema Signifikanztestung)\n.. andererseits könen Korrelationen durch dritte Variablen (Störvariablen) verursacht sein."
+  },
+  {
+    "objectID": "04_correlation/index.html#korrelation-und-kausalität-2",
+    "href": "04_correlation/index.html#korrelation-und-kausalität-2",
+    "title": "4  Vorlesung 04: Zusammenhänge",
+    "section": "Korrelation und Kausalität",
+    "text": "Korrelation und Kausalität"
+  },
+  {
+    "objectID": "04_correlation/index.html#korrelation-und-kausalität-3",
+    "href": "04_correlation/index.html#korrelation-und-kausalität-3",
+    "title": "4  Vorlesung 04: Zusammenhänge",
+    "section": "Korrelation und Kausalität",
+    "text": "Korrelation und Kausalität"
+  },
+  {
+    "objectID": "04_correlation/index.html#wann-ist-ein-korrelationskoeffizient-groß-oder-klein",
+    "href": "04_correlation/index.html#wann-ist-ein-korrelationskoeffizient-groß-oder-klein",
+    "title": "4  Vorlesung 04: Zusammenhänge",
+    "section": "Wann ist ein Korrelationskoeffizient groß oder klein?",
+    "text": "Wann ist ein Korrelationskoeffizient groß oder klein?\n\nPauschal schwer zu beantworten\nIn der psychologischen Literatur hat sich folgende Nomenklatur nach Jacob Cohen7 eingebürgert:\n\n\n\n\n\n\n\n\n\nKorrelation (r)\nNomenklatur\n\n\n\n\n0.1-0.29\n“kleiner” Effekt\n\n\n0.3-0.49\n“mittlerer” Effekt\n\n\n0.5-1\n“großer” Effekt\n\n\n\n\nAllerdings fügt Cohen im gleichen Artikel hinzu:\n\n\nThese proposed conventions were set forth throughout with much diffidence [Zurückhaltung], qualifications [Bedingungen], and invitations not to employ them if possible.\n\n\nBei der Beurteilung sollte der Korrelationskoeffizient, wie jede Effektgröße, immer in Relation zu typischen Werten im jeweiligen Forschungsfeld gesetzt werden."
+  },
+  {
+    "objectID": "04_correlation/index.html#wann-ist-ein-korrelationskoeffizient-groß-oder-klein-1",
+    "href": "04_correlation/index.html#wann-ist-ein-korrelationskoeffizient-groß-oder-klein-1",
+    "title": "4  Vorlesung 04: Zusammenhänge",
+    "section": "Wann ist ein Korrelationskoeffizient groß oder klein?",
+    "text": "Wann ist ein Korrelationskoeffizient groß oder klein?\n\n\nIn einer kürzlichen Metaanalyse von Lovakov Agadullina (2021)8 wurden typische Effektstärken in der Sozialpsychologie untersucht:\n\n\n\nErkenntnis: “mittlere” und “starke” Korrelationen (definiert als das 50%- und 75%- Quantil) sind in der Realität kleiner als von Cohen angenommen"
+  },
+  {
+    "objectID": "04_correlation/index.html#section",
+    "href": "04_correlation/index.html#section",
+    "title": "4  Vorlesung 04: Zusammenhänge",
+    "section": "",
+    "text": "Zusammenhänge werden mit Kovarianz und Korrelation untersucht\nDie Kovarianz ist die Basis der Pearson-Korrelation – aber sie ist abhängig von den gewählten Einheiten\nDie Pearson-Korrelation misst die Linearität eines Zusammenhangs und gilt für intervallskalierte Daten\nFür ordinalskalierte Variablen eignen sich Rangkorrelationen: Spearmans Rho und Kendalls Tau – sie messen die Monotonie eines Zusammenhangs\nSind beide Variablen dichotom, greift der Phi-Koeffizient\nCorrelation does not imply causation, Correlation does not imply causation, Correlation does not imply causation, Correlation does not"
+  },
+  {
+    "objectID": "05_regression/index.html#woher-kommt-der-ausdruck-regression",
+    "href": "05_regression/index.html#woher-kommt-der-ausdruck-regression",
+    "title": "5  Vorlesung 05: Regression",
+    "section": "Woher kommt der Ausdruck “Regression”?",
+    "text": "Woher kommt der Ausdruck “Regression”?\n\nLateinisch »regredi« = „umkehren, zurückgehen“\nPsychoanalyse: Regression = Zurückfallen in kindliche Verhaltensmuster\n\n\nWir heißen es Regression, wenn sich im Traum die Vorstellung in das sinnliche Bild zurückverwandelt, aus dem sie irgend einmal hervorgegangen ist.\n\nSigmund Freud (1900). “Traumdeutung”.\n\n\n\nIn die Statistik wird der Ausdruck “Regression” klassischerweise auf Francis Galton (Cousin von Charles Darwin) attribuiert, der bereits 1885 ein Phänomen beschrieb, das er regression toward mediocrity (Regression zur Mitte) taufte\nDas Phänomen bestand darin, dass Nachfahren großer Eltern dazu tendieren, selbst nur durchschnittlich groß zu werden\nNeuere Forschung zeigt allerdings, dass sich Galton selbst wohl noch nicht des statistischen Ursprungs dieses Phänomens bewusst war und eine biologische Erklärung favorisierte1"
+  },
+  {
+    "objectID": "05_regression/index.html#regression",
+    "href": "05_regression/index.html#regression",
+    "title": "5  Vorlesung 05: Regression",
+    "section": "Regression",
+    "text": "Regression\n\nDem Wortsinn nach ist Ziel der Regression eine abhängige Variable auf eine oder mehrere unabhängige Variablen zurückzuführen (auf diese zu regredieren)\nEingängiger ist aber die umgekehrte Formulierung: Ziel der Regression ist es, auf Basis der unabhängigen Variablen die eine abhängige Variable vorherzusagen oder zu erklären\n\nAbhängige Variable = vorhersagende oder erklärende Variable\nUnabhängige Variable(n) = vorhergesagte oder erklärte Variable(n)\n\n\n\n\n\nBeispiel: eine Studie untersucht, ob sich Lebenszufriedenheit auf Basis von sportlicher Aktivität vorhersagen/erklären lässt.\n\nLebenszufriedenheit: unabhängige/vorhersagende/erklärende Variable; — sportliche Aktivität: abhängige/vorhergesagte/erklärte Variable"
+  },
+  {
+    "objectID": "05_regression/index.html#regression-1",
+    "href": "05_regression/index.html#regression-1",
+    "title": "5  Vorlesung 05: Regression",
+    "section": "Regression",
+    "text": "Regression\n\n\n\nIm Gegensatz zur Korrelation bestimmt die Regression nicht die Linearität des Zusammenhangs (vielmehr wird dies vorausgesetzt), sondern die Steigung des Zusammenhangs\nAus diesem Grund ist die Regression (wieder im Gegensatz zur Korrelation) nicht symmetrisch – die Steigung ist abhängig davon welche Variable als abhängig und unabhängig deklariert wird.\n\nAus mathematisch etwas komplizierteren Gründen ist es nicht einmal gestattet die Regressionsgleichung zu invertieren ( \\(\\hat{x}_i = \\frac{1}{b_1}y_i-\\frac{b_0}{b_1}\\)) — im Allgemeinen ist \\(\\frac{1}{b_1}\\) nicht die Steigung, wenn die Rollen von X und Y vertauscht werden.\n\n\n\n\n\n\n\n\n\nDie Vorhersage/Erklärung von X durch Y geschieht durch eine Gleichung – die Regressionsgleichung – die im Streudiagramm als Gerade eingezeichnet werden kann."
+  },
+  {
+    "objectID": "05_regression/index.html#bestimmung-der-regressionsgerade-methode-der-kleinsten-quadrate",
+    "href": "05_regression/index.html#bestimmung-der-regressionsgerade-methode-der-kleinsten-quadrate",
+    "title": "5  Vorlesung 05: Regression",
+    "section": "Bestimmung der Regressionsgerade: Methode der kleinsten Quadrate",
+    "text": "Bestimmung der Regressionsgerade: Methode der kleinsten Quadrate\n\n\n\nZiel der Regression ist es, die Gerade zu finden, die die Datenpunkte möglichst gut abbildet — es gibt jedoch verschiedene Definitionen dessen, was “möglichst gut” heißt\nDie häufigste Variante ist die Methode der kleinsten Quadrate, bei der die Gerade so gewählt wird, dass die Summe der quadrierten senkrechten Abstände jedes Datenpunktes zur Geraden minimal ist\n\nEngl. ordinary least square\n\n\n\n\n\n\n\nDie einfache Regression mit nur einer unabhängigen Variablen hat zwei freie Parameter, um die Gerade an die Datenpunkte anzupassen (zu “fitten”):\n\ny-Achsenabschnitt \\(b_0\\) (engl. intercept)\nSteigung \\(b_1\\) (engl. slope)\n\nExakt 0 wären die senkrechten Abstände nur, wenn alle Punkte auf einer perfekten Gerade liegen. Dies ist eigentlich nie der Fall. Die verbleibenden senkrechten Abstände der Datenpunkte von der gefitteten Geraden werden Residuen genannt."
+  },
+  {
+    "objectID": "05_regression/index.html#warum-weichen-die-datenpunkte-überhaupt-von-einer-geraden-ab",
+    "href": "05_regression/index.html#warum-weichen-die-datenpunkte-überhaupt-von-einer-geraden-ab",
+    "title": "5  Vorlesung 05: Regression",
+    "section": "Warum weichen die Datenpunkte überhaupt von einer Geraden ab?",
+    "text": "Warum weichen die Datenpunkte überhaupt von einer Geraden ab?\n\n\nVerschiedene Gründe:\n\nVariablen korrelieren überhaupt nicht \nEinfluss von Störvariablen\nMessungenauigkeit\n\n\n\n\n\nIn der Psychologie gibt es (bis auf triviale Fälle) keine perfekten linearen Zusammenhänge, d.h. es verbleiben immer Residuen \\(\\Delta \\hat{y_i}\\):\n\\[\n\\text{Residuum:}\\quad \\Delta \\hat{y_i} = \\hat{\\epsilon}_i = \\hat{y_i} - y_i\n\\]\n\n\n\n\n\n\n\nResiduum = Differenz von vorhergesagtem Wert \\(\\hat{y_i}\\) und tatsächlichem Wert \\(y_i\\)"
+  },
+  {
+    "objectID": "05_regression/index.html#totale-erklärte-und-residuenquadratsumme",
+    "href": "05_regression/index.html#totale-erklärte-und-residuenquadratsumme",
+    "title": "5  Vorlesung 05: Regression",
+    "section": "Totale, erklärte und Residuenquadratsumme",
+    "text": "Totale, erklärte und Residuenquadratsumme\n\n\n\nDie Methode der kleinsten Quadrate minimiert die Residuenquadratsumme (SQR): \\[\nSQR = \\sum\\left(\\hat{y}_i-y_i\\right)^2 = \\sum\\hat{\\epsilon}_i^2\n\\]\nDiese wiederum lässt sich in Bezug setzen zur totalen Quadratsumme (SQT) und zur erklärten Quadratsumme (SQE):\n\n\\[\nSQR = SQT - SQE\\qquad\\text{bzw.}\n\\] \\[\nSQT = SQT + SQR\n\\]\n\nMit\n\n\\[\nSQE = \\sum\\left(\\hat{y}_i-\\bar{Y}\\right)^2\n\\]\n\\[\nSQT = \\sum\\left(y_i-\\bar{Y}\\right)^2\n\\]\n\n\n\n\n\n\n\n\nFalls alle Punkte exakt auf der Regressionsgeraden liegen (\\(\\hat{y}_i = y_i\\)) ist die erklärte Quadratsumme identisch der totalen Quadratsumme (\\(SQE = SQT\\)) und die Residuenquadratsumme ist 0"
+  },
+  {
+    "objectID": "05_regression/index.html#bestimmtheitsmaß",
+    "href": "05_regression/index.html#bestimmtheitsmaß",
+    "title": "5  Vorlesung 05: Regression",
+    "section": "Bestimmtheitsmaß",
+    "text": "Bestimmtheitsmaß\n\nDas Bestimmtheitsmaß \\(R^2\\) gibt an, wie gut die Datenpunkte durch die Regressionsgerade gefittet werden (“Anpassungsgüte”)\nEs gibt an, welcher Anteil der Datenvarianz \\(Var(y)\\) durch die Varianz der Vorhersage \\(Var(\\hat{y})\\) erklärt wird..\n\n\\[\nR^2 = \\frac{Var(\\hat{y})}{Var(y)} = \\frac{\\sum\\left(\\hat{y_i}-\\bar{Y}\\right)^2}{\\sum\\left(y_i-\\bar{Y}\\right)^2} = \\frac{SQE}{SQT}\n\\]\n\n.. oder äquivalent, den Anteil der erklärten Quadratsumme an der totalen Quadratsumme."
+  },
+  {
+    "objectID": "05_regression/index.html#httpsshiney.zoology.ubc.cawhitlockguessing_correlation",
+    "href": "05_regression/index.html#httpsshiney.zoology.ubc.cawhitlockguessing_correlation",
+    "title": "5  Vorlesung 05: Regression",
+    "section": "https://shiney.zoology.ubc.ca/whitlock/Guessing_correlation/",
+    "text": "https://shiney.zoology.ubc.ca/whitlock/Guessing_correlation/"
+  },
+  {
+    "objectID": "05_regression/index.html#vorhersage-versus-erklärung",
+    "href": "05_regression/index.html#vorhersage-versus-erklärung",
+    "title": "5  Vorlesung 05: Regression",
+    "section": "Vorhersage versus Erklärung",
+    "text": "Vorhersage versus Erklärung"
   }
 ]
