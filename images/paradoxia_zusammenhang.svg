@@ -8,7 +8,7 @@
    version="1.1"
    id="svg1"
    xml:space="preserve"
-   inkscape:version="1.4-dev (1:1.2.0-alpha1+devel+202308201504+f4f93af4f1)"
+   inkscape:version="1.4-dev (1:1.2.0-alpha1+devel+202308312119+2886f59210)"
    sodipodi:docname="paradoxia_zusammenhang.svg"
    inkscape:export-filename="paradoxia_zusammenhang.png"
    inkscape:export-xdpi="300"
@@ -26,9 +26,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="3.7665264"
-     inkscape:cx="298.41819"
-     inkscape:cy="26.815158"
+     inkscape:zoom="7.5330528"
+     inkscape:cx="159.36434"
+     inkscape:cy="8.8941365"
      inkscape:window-width="2560"
      inkscape:window-height="1367"
      inkscape:window-x="2560"
@@ -49,7 +49,7 @@
        inkscape:collect="always"
        preserveAspectRatio="xMidYMid"><path
          transform="scale(0.5)"
-         style="fill:#ff00ff;fill-rule:evenodd;stroke:#ff00ff;stroke-width:1pt"
+         style="fill:#e496e4;fill-rule:evenodd;stroke:#e496e4;stroke-width:1pt"
          d="M 5.77,0 -2.88,5 V -5 Z"
          id="path1" /></marker><marker
        style="overflow:visible"
@@ -65,7 +65,7 @@
        inkscape:collect="always"
        preserveAspectRatio="xMidYMid"><path
          transform="scale(0.5)"
-         style="fill:#ff00ff;fill-rule:evenodd;stroke:#ff00ff;stroke-width:1pt"
+         style="fill:#e496e4;fill-rule:evenodd;stroke:#e496e4;stroke-width:1pt"
          d="M 5.77,0 -2.88,5 V -5 Z"
          id="path135" /></marker></defs><g
      inkscape:label="Layer 1"
@@ -85,10 +85,10 @@
        id="location_label"><tspan
          sodipodi:role="line"
          id="tspan1"
-         style="font-weight:bold;fill:#ff00ff;fill-opacity:1;stroke:none;stroke-width:0.8"
+         style="font-weight:bold;fill:#e496e4;fill-opacity:1;stroke:none;stroke-width:0.8"
          x="200.39525"
          y="104.25703">Entzündungswerte</tspan></text><path
-       style="fill:#800000;fill-opacity:0.62896;stroke:#ff00ff;stroke-width:0.799998;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#myTriangle);marker-end:url(#mymarker1)"
+       style="fill:none;fill-opacity:1;stroke:#e496e4;stroke-width:0.799998;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#myTriangle);marker-end:url(#mymarker1)"
        d="m 172.32277,102.5102 h -9.44884"
        id="dispersion" /><text
        xml:space="preserve"
@@ -98,7 +98,7 @@
        id="text4"><tspan
          sodipodi:role="line"
          id="tspan4"
-         style="font-weight:bold;fill:#ff00ff;fill-opacity:1;stroke:none;stroke-width:0.8"
+         style="font-weight:bold;fill:#e496e4;fill-opacity:1;stroke:none;stroke-width:0.8"
          x="144.29103"
          y="104.51465">TikTok-Zeit</tspan></text><text
        xml:space="preserve"
@@ -108,7 +108,7 @@
        id="text5"><tspan
          sodipodi:role="line"
          id="tspan5"
-         style="font-weight:bold;fill:#ff00ff;fill-opacity:1;stroke:none;stroke-width:0.8"
+         style="font-weight:bold;fill:#e496e4;fill-opacity:1;stroke:none;stroke-width:0.8"
          x="165.96402"
          y="100.92159">?</tspan></text><text
        xml:space="preserve"
@@ -118,6 +118,6 @@
        id="text6"><tspan
          sodipodi:role="line"
          id="tspan6"
-         style="font-weight:bold;fill:#ff00ff;fill-opacity:1;stroke:none;stroke-width:0.8"
+         style="font-weight:bold;fill:#e496e4;fill-opacity:1;stroke:none;stroke-width:0.8"
          x="169.13905"
          y="100.92159">?</tspan></text></g></svg>
