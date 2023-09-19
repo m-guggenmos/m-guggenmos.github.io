@@ -342,7 +342,7 @@
 
   <p class="author">Prof.&nbsp;Matthias Guggenmos</p>
   <p class="institute">Health and Medical University Potsdam</p>
-  <p class="date">01.04.2023</p>
+  <p class="date">24.10.2023</p>
 <div style="display: flex; justify-content: space-between; align-items: baseline">
 <div><img src="images/logo_black.png" height="200px"></div>
 <div><img src="images/paradoxia_group_of_scientists.png" height="240px"></div>
@@ -542,13 +542,13 @@
 <ul>
 <li class="fragment">Berechnung (verbal):
 <ol type="1">
-<li class="fragment">Addiere alle Werte</li>
+<li class="fragment">Addiere alle <span class="math inline">\(n\)</span> Stichprobenwerte</li>
 <li class="fragment">Teile durch die Anzahl der Werte</li>
 </ol></li>
 <li class="fragment">Berechnung (Formel):</li>
 </ul>
 <p><span class="math display">\[
-\bar{x} = \frac{1}{N}\sum_{i=1}^N x_i
+\bar{x} = \frac{1}{n}\sum_{i=1}^n x_i
 \]</span></p>
 <ul>
 <li class="fragment">Notation: Strich über dem kleinen Letter der Zufallsvariable = Mittelwert der Zufallsvariable</li>
@@ -610,7 +610,7 @@ plt.savefig(f'images/{mode}.png', bbox_inches="tight")
 <thead>
 <tr class="header">
 <th><span class="math inline">\(\mathbf{x}\)</span> (z.B. Punktzahlen im Abi)</th>
-<th style="text-align: center;"><span class="math inline">\(\bar{X}\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(\bar{x}\)</span></th>
 <th style="text-align: center;">Histogramm</th>
 <th style="text-align: center;">Mittelwert sinnvoll?</th>
 </tr>
@@ -643,10 +643,10 @@ plt.savefig(f'images/{mode}.png', bbox_inches="tight")
 <li class="fragment">Gibt es dominante Ausreißer in den Daten, so ist häufig der <span style=" color: navy !important;"><strong>Median</strong></span> das sinnvollere Lagemaß</li>
 <li class="fragment">Berechnung:
 <ol type="1">
-<li class="fragment">Alle <span class="math inline">\(N\)</span> Werte der Größe nach aufreihen</li>
+<li class="fragment">Alle <span class="math inline">\(n\)</span> Stichprobenwerte der Größe nach aufreihen</li>
 <li class="fragment">Der Wert, der genau in der Mitte liegt, ist der Median</li>
 <li class="fragment">Bei einer geraden Anzahl von Werten bilden zwei Werte die Mitte – in diesem Fall ist der Median der Mittelwert dieser beiden Werte</li>
-<li class="fragment"><span class="math inline">\(\Big(\)</span> Alternativ mit Formel:  <span class="math inline">\(Tiefe_{\,\text{Median}}=\frac{N+1}{2}\Big)\)</span></li>
+<li class="fragment"><span class="math inline">\(\Big(\)</span> Alternativ mit Formel:  <span class="math inline">\(Tiefe_{\,\text{Median}}=\frac{n+1}{2}\Big)\)</span></li>
 </ol></li>
 </ul>
 <p><span class="block-heading" style="text-align:center; margin-bottom: 3px">Beispiel</span></p>
@@ -756,6 +756,9 @@ plt.savefig(f'images/median_bimodal.png', bbox_inches="tight")
 <section>
 <section class="title-slide slide level1 center">
 <h1>Streuungsmaße</h1>
+<div class="vspace-large">
+
+</div>
 <p><img data-src="images/error-bars-comic.png" class="absolute" style="width: 400px; "></p>
 <!-- ```{python}
 import matplotlib.pyplot as plt
@@ -937,9 +940,9 @@ plt.savefig('images/IQ_blond_brunette_dist.png', bbox_inches="tight")
 <div class="columns" style="display: flex !important">
 <div class="column" style="width:70%;">
 <ul>
-<li class="fragment"><span style=" color: navy !important;"><strong>Streuungsmaße</strong></span> geben die Variabilität von Daten anann entweder</li>
-<li class="fragment">Lagemaße sollten durch die Angabe eines Streuungsmaßes ergänzt werden</li>
-<li class="fragment">Streuung von Daten kann ein Ausdruck von <em>echter Variabilität</em> in der Stichprobe sein oder eine Folge der <em>Messungenauigkeit</em> (häufig beides)</li>
+<li class="fragment"><span style=" color: navy !important;"><strong>Streuungsmaße</strong></span> geben die Variabilität von Daten an</li>
+<li class="fragment">Streuungsmaßes sind eine extrem wichtige Ergänzung zu Lagemaßen beim Bericht wissenschaftlicher Ergebnisse.</li>
+<li class="fragment">Die Streuung von Daten kann ein Ausdruck <em>echter Variabilität</em> in der Stichprobe sein oder eine Folge der <em>Messungenauigkeit</em> (häufig beides).</li>
 <li class="fragment">Je nach Skalenniveau und Zweck können verschiedene Streuungsmaße bestimmt werden:
 <ul>
 <li class="fragment">Spannweite (Range)</li>
@@ -1023,7 +1026,7 @@ Range = x_{max} - x_{min}
 <li class="fragment">Die Varianz ist definiert als die <strong>Summe der quadrierten Abweichungen aller Werte vom Mittelwert</strong>:</li>
 </ul>
 <p><span class="math display">\[
-Var(X) = \sigma^2 = \frac{1}{N}\sum_{i=1}^N\big(x_i-\bar{X}\big)^2
+Var(X) = \sigma^2 = \frac{1}{n}\sum_{i=1}^n\big(x_i-\bar{x}\big)^2
 \]</span></p>
 <p><span style="font-size: 21px">   (Die Varianz ist gleich der quadrierten Standardabweichung <span class="math inline">\(\sigma\)</span> – letztere lernen wir noch kennen)</span></p>
 <ul>
@@ -1048,7 +1051,7 @@ Var(X) = \sigma^2 = \frac{1}{N}\sum_{i=1}^N\big(x_i-\bar{X}\big)^2
 <p><img data-src="images/kein_klausurstoff.png" class="absolute" style="bottom: 0px; right: 0px; height: 130px; "></p>
 <p>Prinzipiell wäre auch eine Formel für die Varianz mit Absolutabständen denkbar:</p>
 <p><span class="math display">\[
-Var_{\text{absolut}}(X) = \frac{1}{N}\sum_{i=1}^N\big|x_i-\bar{X}\big|
+Var_{\text{absolut}}(X) = \frac{1}{n}\sum_{i=1}^n\big|x_i-\bar{x}\big|
 \]</span></p>
 <p>Über die Gründe, warum sich <span class="math inline">\(Var_{\text{absolut}}\)</span> nicht durchgesetzt hat, streitet sich die Fachwelt. Neben historischen Gründen, gibt es aber einige Eigenschaften, die die Präferenz für Abstandsquadrate zumindest nachvollziehbar machen:</p>
 <ul>
@@ -1070,37 +1073,26 @@ Var_{\text{absolut}}(X) = \frac{1}{N}\sum_{i=1}^N\big|x_i-\bar{X}\big|
 </ul>
 <!---  Example --->
 <div class="example">
-<table>
-<colgroup>
-<col style="width: 10%">
-<col style="width: 90%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;"></td>
-<td></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><img data-src="images/example.png" height="70"></td>
-<td><span class="math inline">\(x=\{167\,cm, 181\,cm, 154\,cm, 192\,cm, 173\,cm\}\rightarrow Var(X)=180.4\,\color{red}{cm^2}\)</span></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<div class="columns">
+<div class="column" style="width:10%;">
+<div style="margin-top: 10px">
+<p><img data-src="images/example.png" height="70"></p>
+</div>
+</div><div class="column" style="width:90%;">
+<p><span class="math inline">\(x=\{167\,cm, 181\,cm, 154\,cm, 192\,cm, 173\,cm\}\rightarrow Var(X)=180.4\,\color{red}{cm^2}\)</span></p>
+</div>
+</div>
 </div>
 <ul>
 <li class="fragment">Quadrierte Einheiten sind jedoch wenig intuitiv und schwer zu interpretieren.</li>
 <li class="fragment">Aus diesem Grund wird häufig die Standardabweichung <span class="math inline">\(\sigma\)</span> angegeben, welche die Wurzel der Varianz darstellt:</li>
 </ul>
 <p><span class="math display">\[
-\sigma=\sqrt{Var(X)}=\sqrt{\frac{1}{N}\sum_{i=1}^N\big(x_i-\bar{X}\big)^2}
+\sigma=\sqrt{Var(X)}=\sqrt{\frac{1}{n}\sum_{i=1}^n\big(x_i-\bar{x}\big)^2}
 \]</span></p>
 <ul>
 <li class="fragment">Die Standardabweichung drückt die Streuung in den <strong>Rohwerten der Skala</strong> aus.</li>
-<li class="fragment">Sie wird häufig auch mit <span class="math inline">\(SD\)</span> (für <em>standard deviation</em>) abgekürzt.</li>
+<li class="fragment">Sie wird häufig auch mit <span class="math inline">\(sd\)</span> oder <span class="math inline">\(SD\)</span> (für <em>standard deviation</em>) abgekürzt.</li>
 </ul>
 <!----------------->
 <!--- New slide --->
@@ -1109,30 +1101,30 @@ Var_{\text{absolut}}(X) = \frac{1}{N}\sum_{i=1}^N\big|x_i-\bar{X}\big|
 <section class="slide level2">
 <h2>Einschub: Variablenbenennung</h2>
 <ul>
-<li class="fragment">In psychologischen Studien können in den allermeisten Fällen nur <strong>Stichproben</strong> getest werden und nicht die komplette Population (=<strong>Grundgesamtheit</strong>).</li>
-<li class="fragment">In der Statistik hat es sich eingebürgert, <strong>griechische Buchstaben für Kennwerte der Grundgesamtheit</strong> und <strong>lateinische Buchstaben für Kennwerte der Stichprobe</strong> und zu verwenden.</li>
-<li class="fragment">Das Zirkumflex (^) wird verwendet, wenn das Ziel ist, auf Basis eines Stichprobenkennwertes den analogen Kennwert in der Grundgesamtheit zu <strong>schätzen</strong>.</li>
+<li class="fragment">In psychologischen Studien können in den allermeisten Fällen nur <strong>Stichproben</strong> getest werden und nicht die komplette <strong>Population</strong>.</li>
+<li class="fragment">In der Statistik hat es sich eingebürgert, <strong>griechische Buchstaben für Kennwerte der Population</strong> und <strong>lateinische Buchstaben für Kennwerte der Stichprobe</strong> und zu verwenden.</li>
+<li class="fragment">Das Zirkumflex (^) wird verwendet, wenn das Ziel ist, auf Basis eines Stichprobenkennwertes den analogen Kennwert in der Population zu <strong>schätzen</strong>.</li>
 </ul>
 <!---  Table --->
-<table style="width:85%;">
+<table style="width:90%;">
 <colgroup>
 <col style="width: 20%">
 <col style="width: 15%">
-<col style="width: 30%">
+<col style="width: 35%">
 <col style="width: 20%">
 </colgroup>
 <thead>
 <tr class="header">
 <th></th>
 <th>Stichprobe</th>
-<th>Stichprobe (Schätzung für Grundgesamtheit)</th>
-<th>Grundgesamtheit</th>
+<th>Stichprobe (Schätzung für Population)</th>
+<th>Population</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Mittelwert</td>
-<td><span class="math inline">\(\bar{X}\)</span>, <span class="math inline">\(m\)</span>, <span class="math inline">\(M\)</span></td>
+<td><span class="math inline">\(\bar{x}\)</span>, <span class="math inline">\(m\)</span>, <span class="math inline">\(M\)</span></td>
 <td><span class="math inline">\(\hat{\mu}\)</span></td>
 <td><span class="math inline">\(\mu\)</span></td>
 </tr>
@@ -1148,10 +1140,16 @@ Var_{\text{absolut}}(X) = \frac{1}{N}\sum_{i=1}^N\big|x_i-\bar{X}\big|
 <td><span class="math inline">\(\hat{\sigma}^2\)</span></td>
 <td><span class="math inline">\(\sigma^2\)</span></td>
 </tr>
+<tr class="even">
+<td>Fallzahl</td>
+<td><span class="math inline">\(n\)</span></td>
+<td></td>
+<td><span class="math inline">\(N\)</span></td>
+</tr>
 </tbody>
 </table>
 <ul>
-<li class="fragment">Wie wir noch sehen werden, gilt <span class="math inline">\(\bar{X}=\hat{\mu}\)</span>, aber (zumindest bei kleinen Stichproben) nicht <span class="math inline">\(s=\hat{\sigma}\)</span> bzw. <span class="math inline">\(s^2=\hat{\sigma}^2\)</span>.</li>
+<li class="fragment">Wie wir noch sehen werden, gilt <span class="math inline">\(\bar{x}=\hat{\mu}\)</span>, aber (zumindest bei kleinen Stichproben) <span class="math inline">\(s\ne\hat{\sigma}\)</span> bzw. <span class="math inline">\(s^2\ne\hat{\sigma}^2\)</span>.</li>
 </ul>
 <!----------------->
 <!--- New slide --->
@@ -1447,7 +1445,7 @@ plt.savefig('images/paradoxia_histogram_inflammation_mean_std.png', bbox_inches=
 </div>
 <div class="columns">
 <div class="column" style="width:65%;">
-<p>Wenden wir unser erworbenes Wissen auf die Ergebnisse der Beobachtungsstudie an und erstellen eine Abbildung mit Mittelwert und Standardabweichung:</p>
+<p>Die Daten in Ihrer Beobachtungsstudie weisen keine größeren Ausreißer auf uns Sie entscheiden sich für Mittelwert bzw. Standardabweichung als Ihr Lage- bzw. Streuungsmaß. Für eine erste Kommunikation mit den anderen Task Forces erstellen Sie folgende Abbildung:</p>
 </div><div class="column" style="width:35%;">
 <p><img data-src="images/paradoxia_group_of_scientists.png" class="hcenter-image" style="margin-top:-100px !important" height="200"> <!-- Source: Midjourney --></p>
 </div>
@@ -1463,7 +1461,7 @@ plt.savefig('images/paradoxia_histogram_inflammation_mean_std.png', bbox_inches=
 
 </div>
 <p><img data-src="images/paradoxia_histogram_inflammation_mean_std.png" height="330"></p>
-<p>Die ist nun Ihr erster Blick auch auf die Daten der Entzündungswerte. Tatsächlich sind diese auch erhöht bei Paradoxikern. Auf Basis der Mittelwerte finden Sie also Evidenz für <em>beide Hypothesen</em>!</p>
+<p>Aus den Werten und der Abbildung wird ersichtlich: tatsächlich sind auch die Entzündungswerte bei Paradoxikern erhöht! Auf Basis der Mittelwerte finden Sie also Evidenz für <em>beide Hypothesen</em>!</p>
 <p><img src="images/hmu_logo.png" class="slide-logo"></p>
 <div class="footer footer-default">
 
@@ -1710,6 +1708,7 @@ plt.savefig('images/paradoxia_histogram_inflammation_mean_std.png', bbox_inches=
           }
         });
       }
+      // identifystring
 
       window.onload = bgcolor();
     </script>
