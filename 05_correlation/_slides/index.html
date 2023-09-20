@@ -566,40 +566,30 @@ r, p = pearsonr(x, y)
 reg = linregress(x, y)
 xrange = np.array([0.1, 2.7])
 
-plt.style.use('dark_background')
-plt.figure()
-plt.gca().tick_params(color='white')
-plt.scatter(x, y)
-plt.plot(xrange, reg.slope*xrange+reg.intercept, color='#b8ffc3')
-plt.xlabel('Stunden auf TikTok / 24h', fontsize=fontsize)
-plt.ylabel('Entzündungswerte', fontsize=fontsize)
+plt.figure(figsize=(4, 3))
+plt.scatter(x, y, s=50, marker='o', color='blue', edgecolors='w')
+plt.plot(xrange, reg.slope*xrange+reg.intercept, color='k', lw=2)
+plt.xlabel('Schokoladenkonsum [kg/Tag]', fontsize=fontsize)
+plt.ylabel('Zufriedenheit', fontsize=fontsize)
 plt.xticks(fontsize=fontsize-2)
 plt.yticks(fontsize=fontsize-2)
-plt.text(1.6, 0.7, fr'$r={r:.3f}$ ($p={p:.4f}$)', color='white', fontsize=fontsize-2)
+plt.ylim(0, 6.5)
+plt.text(0.05, 0.9, fr'$r={r:.3f}$ ($p={p:.4f}$)'.replace('.', '{,}'), color='k', transform=plt.gca().transAxes, fontsize=fontsize-2)
+plt.title('Streudiagramm', fontsize=fontsize+2, fontstyle='italic')
 plt.savefig('images/streudiagramm.png', bbox_inches="tight")
 ``` -->
 <!----------------->
 <!--- New slide --->
 <!----------------->
 </section>
-<section class="slide level2 blackslide">
+<section class="slide level2">
 <h2>Das Streudiagramm</h2>
 <ul>
-<li class="fragment">Von einer kleinen Stichprobe im TikTok-Datensatz des CCC sind auch Entzündungswerte bekannt</li>
-<li class="fragment">In der Task Force fragen Sie sich, ob es unter den Paradoxikern einen Zusammenhang zwischen der Zahl der Stunden auf TikTok und den Entzündungswerten gibt</li>
+<li class="fragment">Zusammenhänge zweier Variablen werden häufig in Form eines <span style=" color: navy !important;"><strong>Streudiagramms</strong></span> (engl. <em>scatter plot</em>) dargestellt.</li>
+<li class="fragment">Bei der Korrelation ist es dabei willkürlich, welche Variable auf der x- und y-Achse liegt.</li>
+<li class="fragment">Häufig wird zusätzlich zur “Punktwolke” auch eine <strong>Regressionsgerade</strong> dargestellt, sowie die Stärke des Zusammenhangs (r=.., p=..).</li>
 </ul>
-<div class="columns">
-<div class="column" style="width:45%;">
-<p>Sie fassen Ihr Ergebnis in einem <span style=" color: lightblue !important;"><strong>Streudiagramm</strong></span> zusammen.</p>
-<ul>
-<li class="fragment">Das Streudiagramm (engl. <em>scatter plot</em>) ist die häufigste Visualisierung eins biavariaten Zusammenhangs</li>
-<li class="fragment">Bei der Korrelation ist es dabei willkürlich, welche Variable auf der X- und Y-Achse liegt</li>
-<li class="fragment">Häufig wird zusätzlich zur “Punktwolke” auch eine <strong>Regressionsgerade</strong> angegeben, sowie die Stärke des Zusammenhangs (r=.., p=..)</li>
-</ul>
-</div><div class="column" style="width:55%;">
-<p><img data-src="images/streudiagramm.png"></p>
-</div>
-</div>
+<p><img data-src="images/streudiagramm.png" height="400"></p>
 </section>
 <section class="slide level2">
 <h2>Pearson-Korrelation: Größe-Gewicht-Beispiel</h2>
@@ -1428,7 +1418,7 @@ plt.savefig('images/paradoxia_histogram_correlation_paradoxiker.png', bbox_inche
 </div>
 <div class="columns">
 <div class="column" style="width:65%;">
-<p>Zurück zum Zusammenhang zwischen TikTok-Online-Zeit und Entzündungswerten. Beides sind kontinuierliche intervallskalierte Variablen, wie können also den Pearson-Korrelationskoeffizienten anwenden.</p>
+<p>Zurück zum Zusammenhang zwischen TikTok-Online-Zeit und Entzündungswerten. Beides sind kontinuierliche intervallskalierte Variablen, Sie können also den Pearson-Korrelationskoeffizienten anwenden. Sie stellen den Zusammenhang in Form eines <span style=" color: lightblue !important;"><strong>Streudiagramms</strong></span> dar:</p>
 </div><div class="column" style="width:35%;">
 <p><img data-src="images/paradoxia_group_of_scientists.png" class="hcenter-image" style="margin-top:-100px !important" height="200"> <!-- Source: Midjourney --></p>
 </div>
@@ -1436,7 +1426,7 @@ plt.savefig('images/paradoxia_histogram_correlation_paradoxiker.png', bbox_inche
 <div class="vspace-large">
 
 </div>
-<p><img data-src="images/paradoxia_histogram_correlation_paradoxiker.png" height="300"></p>
+<p><img data-src="images/paradoxia_histogram_correlation_paradoxiker.png" height="400"></p>
 <p>Faszinierend. Es gibt tatsächlich einen Zusammenhang beider Variablen. Kann das Ergebnis so interpretiert werden, dass TikTok sich auf physiologische Entzündungswerte auswirkt?</p>
 <p><img src="images/hmu_logo.png" class="slide-logo"></p>
 <div class="footer footer-default">
