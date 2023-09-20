@@ -342,6 +342,7 @@
 
   <p class="author">Prof.&nbsp;Matthias Guggenmos</p>
   <p class="institute">Health and Medical University Potsdam</p>
+  <p class="date">21.11.2023</p>
 <div style="display: flex; justify-content: space-between; align-items: baseline">
 <div><img src="images/logo_black.png" height="200px"></div>
 <div><img src="images/paradoxia_group_of_scientists.png" height="240px"></div>
@@ -631,10 +632,10 @@ SQT = SQT + SQR
 <li class="fragment">Mit</li>
 </ul>
 <p><span class="math display">\[
-SQE = \sum\left(\hat{y}_i-\bar{Y}\right)^2
+SQE = \sum\left(\hat{y}_i-\bar{y}\right)^2
 \]</span></p>
 <p><span class="math display">\[
-SQT = \sum\left(y_i-\bar{Y}\right)^2
+SQT = \sum\left(y_i-\bar{y}\right)^2
 \]</span></p>
 </div><div class="column" style="width:51%;">
 <div class="vspace-medium">
@@ -657,7 +658,7 @@ SQT = \sum\left(y_i-\bar{Y}\right)^2
 <li class="fragment">Es gibt an, welcher Anteil der Datenvarianz <span class="math inline">\(Var(Y)\)</span> durch die Varianz der Vorhersage <span class="math inline">\(Var(\hat{Y})\)</span> erklärt wird..</li>
 </ul>
 <p><span class="math display">\[
-R^2 = \frac{Var(\hat{Y})}{Var(Y)} = \frac{\sum\left(\hat{y_i}-\bar{Y}\right)^2}{\sum\left(y_i-\bar{Y}\right)^2} = \frac{SQE}{SQT}
+R^2 = \frac{Var(\hat{Y})}{Var(Y)} = \frac{\sum\left(\hat{y_i}-\bar{y}\right)^2}{\sum\left(y_i-\bar{y}\right)^2} = \frac{SQE}{SQT}
 \]</span></p>
 <ul>
 <li class="fragment">.. oder äquivalent, den Anteil der erklärten Quadratsumme an der totalen Quadratsumme.</li>
@@ -669,7 +670,7 @@ R^2 = \frac{Var(\hat{Y})}{Var(Y)} = \frac{\sum\left(\hat{y_i}-\bar{Y}\right)^2}{
 <p><img data-src="images/merke.png" height="55"></p>
 </div>
 </div><div class="column" style="width:95%;">
-<p>Bei einer einfachen Regression gilt: <span class="math inline">\(R^2 = r_{XY}^2\)</span><br> Das Bestimmtheitsmaß ist bei einer einfachen Regression also identisch dem quadrierten Korrelationskoeffizienten zwischen den Variablen X und Y!</p>
+<p>Bei einer einfachen Regression gilt: <span class="math inline">\(R^2 = r^2\)</span><br> Das Bestimmtheitsmaß ist bei einer einfachen Regression also identisch dem quadrierten Korrelationskoeffizienten zwischen den Variablen X und Y!</p>
 </div>
 </div>
 </div>
@@ -678,26 +679,15 @@ R^2 = \frac{Var(\hat{Y})}{Var(Y)} = \frac{\sum\left(\hat{y_i}-\bar{Y}\right)^2}{
 </div>
 <!---  Example --->
 <div class="example">
-<table>
-<colgroup>
-<col style="width: 10%">
-<col style="width: 90%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;"></td>
-<td></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><img data-src="images/example.png" height="70"></td>
-<td>Lebenszufriedenheit und sportliche Aktivität haben eine Korrelation von <span class="math inline">\(r_{XY}=0{,}8\)</span>.<br>⇒ Sportliche Aktivität erklärt <span class="math inline">\(\;r_{XY}^2=0{,}64\;\widehat{=}\;64\%\)</span> der Varianz von Lebenszufriedenheit (und umgekehrt).</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<div class="columns">
+<div class="column" style="width:10%;">
+<div style="margin-top: 10px">
+<p><img data-src="images/example.png" height="70"></p>
+</div>
+</div><div class="column" style="width:90%;">
+<p>Lebenszufriedenheit und sportliche Aktivität haben eine Korrelation von <span class="math inline">\(r=0{,}8\)</span>.<br>⇒ Sportliche Aktivität erklärt <span class="math inline">\(\;r^2=0{,}64\;\widehat{=}\;64\%\)</span> der Varianz von Lebenszufriedenheit (und umgekehrt).</p>
+</div>
+</div>
 </div>
 <!----------------->
 <!--- New slide --->
@@ -752,16 +742,16 @@ R^2 = \frac{Var(\hat{Y})}{Var(Y)} = \frac{\sum\left(\hat{y_i}-\bar{Y}\right)^2}{
 <section class="slide level2">
 <h2>Zusammenhang Regression ↔︎ Korrelation</h2>
 <ul>
-<li class="fragment"><p>Folgendener Zusammenhang gilt zwischen der Steigung <span class="math inline">\(b_1\)</span> und dem Korrelationskoeffizienten <span class="math inline">\(r_{XY}\)</span>: <span class="math display">\[
+<li class="fragment"><p>Folgendener Zusammenhang gilt zwischen der Steigung <span class="math inline">\(b_1\)</span> und dem Korrelationskoeffizienten <span class="math inline">\(r\)</span>: <span class="math display">\[
 \scriptsize{
-b_1 = \frac{Cov(X,Y)}{Var(X)} = \frac{Cov(X,Y)}{s_X^2} = \frac{s_Y}{s_Y}\frac{Cov(X,Y)}{s_Xs_X} = \frac{s_Y}{s_X}\underbrace{\frac{Cov(X,Y)}{s_Xs_Y}}_{r_{XY}} = \frac{s_Y}{s_X}r_{XY}
+b_1 = \frac{Cov(X,Y)}{Var(X)} = \frac{Cov(X,Y)}{s_X^2} = \frac{s_Y}{s_Y}\frac{Cov(X,Y)}{s_Xs_X} = \frac{s_Y}{s_X}\underbrace{\frac{Cov(X,Y)}{s_Xs_Y}}_{r} = \frac{s_Y}{s_X}r
 }
 \]</span></p></li>
 <li class="fragment"><p>Es gilt also</p></li>
 </ul>
 <div style="margin-top: -15px">
 <p><span class="math display">\[
-b_1 = \frac{s_Y}{s_X}r_{XY}\qquad\quad\text{bzw.}\qquad r_{XY} = \frac{s_X}{s_Y}b_1
+b_1 = \frac{s_Y}{s_X}r\qquad\quad\text{bzw.}\qquad r = \frac{s_X}{s_Y}b_1
 \]</span></p>
 </div>
 <div class="merke">
@@ -771,7 +761,7 @@ b_1 = \frac{s_Y}{s_X}r_{XY}\qquad\quad\text{bzw.}\qquad r_{XY} = \frac{s_X}{s_Y}
 <p><img data-src="images/merke.png" height="55"></p>
 </div>
 </div><div class="column" style="width:95%;">
-<p>Sind die Standardabweichungen <span class="math inline">\(s_X\)</span> und <span class="math inline">\(s_Y\)</span> bekannt, kann aus der Steigung <span class="math inline">\(b_1\)</span> der Regression immer auch der Korrelationskoeffizient <span class="math inline">\(r_{XY}\)</span> bestimmt werden (und umgekehrt).</p>
+<p>Sind die Standardabweichungen <span class="math inline">\(s_X\)</span> und <span class="math inline">\(s_Y\)</span> bekannt, kann aus der Steigung <span class="math inline">\(b_1\)</span> der Regression immer auch der Korrelationskoeffizient <span class="math inline">\(r\)</span> bestimmt werden (und umgekehrt).</p>
 </div>
 </div>
 </div>
@@ -787,7 +777,7 @@ b_1 = \frac{s_Y}{s_X}r_{XY}\qquad\quad\text{bzw.}\qquad r_{XY} = \frac{s_X}{s_Y}
 \]</span></p>
 </div>
 <ul>
-<li class="fragment">Bei der einfachen Regression ist der standardisierte Regressionskoeffizient identisch mit dem Korrelationskoeffizienten: <span class="math inline">\(\quad\beta_1 = r_{XY}\)</span></li>
+<li class="fragment">Bei der einfachen Regression ist der standardisierte Regressionskoeffizient identisch mit dem Korrelationskoeffizienten: <span class="math inline">\(\quad\beta_1 = r\)</span></li>
 </ul>
 <!-- https://stats.stackexchange.com/questions/435699/how-to-derive-the-formula-for-coefficient-slope-of-a-simple-linear-regression -->
 <!----------------->
@@ -867,7 +857,7 @@ SQR = \sum\left(\hat{y}_i-y_i\right)^2 = \sum\left(b_0+b_1 x_i-y_i\right)^2 \ove
 </ul>
 <div style="border: 1px solid darkblue">
 <p><span class="math display">\[
-\color{darkblue}{\longrightarrow b_0} = \frac{1}{n}\sum\left(y_i-b_1x_i\right) = \frac{1}{n}\sum y_i-\frac{b_1}{n}\sum x_i = \color{darkblue}{\bar{Y}-b_1\bar{X}}
+\color{darkblue}{\longrightarrow b_0} = \frac{1}{n}\sum\left(y_i-b_1x_i\right) = \frac{1}{n}\sum y_i-\frac{b_1}{n}\sum x_i = \color{darkblue}{\bar{y}-b_1\bar{x}}
 \]</span></p>
 </div>
 <div class="vspace-xlarge">
@@ -882,43 +872,46 @@ SQR = \sum\left(\hat{y}_i-y_i\right)^2 = \sum\left(b_0+b_1 x_i-y_i\right)^2 \ove
 <p><img data-src="images/kein_klausurstoff.png" class="absolute" style="bottom: 0px; right: 0px; height: 110px; "></p>
 <ul>
 <li class="fragment">SQR nach <span class="math inline">\(b_1\)</span> ableiten und gleich Null setzen: <span class="math display">\[
+\small{
 \frac{dSQR}{db_1} = \sum2(b_0+b_1 x_i-y_i)x_i=2b_0\sum x_i + 2b_1\sum x_i^2-2\sum x_i y_i = 0
+}
 \]</span></li>
 </ul>
-<p><span class="math display">\[
-\longrightarrow b_1 = \frac{\sum x_i y_i}{{\sum x_i^2}} - \frac{b_0\sum x_i}{\sum x_i^2} \overset{\color{darkgreen}{(b_0\,einsetzen)}}{=} \frac{\sum x_i y_i}{{\sum x_i^2}} - \frac{\bar{Y}\sum x_i}{\sum x_i^2}+b_1\frac{\bar{X}\sum x_i}{\sum x_i^2}
+<p><span class="math display">\[\small{
+\longrightarrow b_1 = \frac{\sum x_i y_i}{{\sum x_i^2}} - \frac{b_0\sum x_i}{\sum x_i^2} \overset{\color{darkgreen}{(b_0\,einsetzen)}}{=} \frac{\sum x_i y_i}{{\sum x_i^2}} - \frac{\bar{y}\sum x_i}{\sum x_i^2}+b_1\frac{\bar{x}\sum x_i}{\sum x_i^2}
+}
 \]</span></p>
 <ul>
 <li class="fragment">Alle <span class="math inline">\(b_1\)</span>-Terme auf die linke Seite bringen und einige Umformungen vornehmen:</li>
 </ul>
 <div style="margin-top: -12px">
 <p><span class="math display">\[
-\scriptsize{
-b_1 - b_1\frac{\bar{X}\sum x_i}{\sum x_i^2} = \frac{\sum x_i y_i}{{\sum x_i^2}} - \frac{\bar{Y}\sum x_i}{\sum x_i^2}
+\small{
+b_1 - b_1\frac{\bar{x}\sum x_i}{\sum x_i^2} = \frac{\sum x_i y_i}{{\sum x_i^2}} - \frac{\bar{y}\sum x_i}{\sum x_i^2}
 }
 \]</span></p>
 </div>
 <p><span class="math display">\[
 \scriptsize{
-b_1 \left(1 - \frac{\bar{X}\sum x_i}{\sum x_i^2}\right) = \frac{\sum x_i y_i - \bar{Y}\sum x_i}{\sum x_i^2}
+b_1 \left(1 - \frac{\bar{x}\sum x_i}{\sum x_i^2}\right) = \frac{\sum x_i y_i - \bar{y}\sum x_i}{\sum x_i^2}
 }
 \]</span></p>
 <p><span class="math display">\[
 \scriptsize{
-b_1 \left(\frac{\sum x_i^2}{\sum x_i^2} - \frac{\bar{X}\sum x_i}{\sum x_i^2}\right) = \frac{\sum x_i y_i - \bar{Y}\sum x_i}{\sum x_i^2}
+b_1 \left(\frac{\sum x_i^2}{\sum x_i^2} - \frac{\bar{x}\sum x_i}{\sum x_i^2}\right) = \frac{\sum x_i y_i - \bar{y}\sum x_i}{\sum x_i^2}
 }
 \]</span></p>
 <p><span class="math display">\[
 \scriptsize{
-b_1 \frac{\sum x_i^2 - \bar{X}\sum x_i}{\sum x_i^2} = \frac{\sum x_i y_i - \bar{Y}\sum x_i}{\sum x_i^2}
+b_1 \frac{\sum x_i^2 - \bar{x}\sum x_i}{\sum x_i^2} = \frac{\sum x_i y_i - \bar{y}\sum x_i}{\sum x_i^2}
 }
 \]</span></p>
 <div style="margin-left: -100px">
 <p><span class="math display">\[
 \scriptsize{
 \longrightarrow    
-b_1 = \frac{\color{darkred}{\sum x_i^2}}{\sum x_i^2-\bar{X}\sum x_i}\frac{\sum x_i y_i - \bar{Y}\sum x_i}{\color{darkred}{\sum x_i^2}} = \frac{\sum x_i y_i - \bar{Y}\sum x_i}{\sum x_i^2-\bar{X}\sum x_i}
-\overset{\color{darkgreen}{\left(\sum x_i=n\bar{X}\right)}}{=} \frac{\sum x_i y_i - n\bar{X}\bar{Y}}{\sum x_i^2-n\bar{X}^2} \overset{\color{darkgreen}{:n}}{=} \frac{\frac{1}{n}\sum x_i y_i - \bar{X}\bar{Y}}{\frac{1}{n}\sum x_i^2-\bar{X}^2}
+b_1 = \frac{\color{darkred}{\sum x_i^2}}{\sum x_i^2-\bar{x}\sum x_i}\frac{\sum x_i y_i - \bar{y}\sum x_i}{\color{darkred}{\sum x_i^2}} = \frac{\sum x_i y_i - \bar{y}\sum x_i}{\sum x_i^2-\bar{x}\sum x_i}
+\overset{\color{darkgreen}{\left(\sum x_i=n\bar{x}\right)}}{=} \frac{\sum x_i y_i - n\bar{x}\bar{y}}{\sum x_i^2-n\bar{x}^2} \overset{\color{darkgreen}{:n}}{=} \frac{\frac{1}{n}\sum x_i y_i - \bar{x}\bar{y}}{\frac{1}{n}\sum x_i^2-\bar{x}^2}
 }
 \]</span></p>
 </div>
@@ -931,7 +924,7 @@ b_1 = \frac{\color{darkred}{\sum x_i^2}}{\sum x_i^2-\bar{X}\sum x_i}\frac{\sum x
 </ul>
 <div style="margin-top:-20px">
 <p><span class="math display">\[
-b_1 = \frac{\frac{1}{n}\sum x_i y_i - \bar{X}\bar{Y}}{\frac{1}{n}\sum x_i^2-\bar{X}^2}
+b_1 = \frac{\frac{1}{n}\sum x_i y_i - \bar{x}\bar{y}}{\frac{1}{n}\sum x_i^2-\bar{x}^2}
 \]</span></p>
 </div>
 <ul>
@@ -940,20 +933,20 @@ b_1 = \frac{\frac{1}{n}\sum x_i y_i - \bar{X}\bar{Y}}{\frac{1}{n}\sum x_i^2-\bar
 <p><span class="math display">\[
 \scriptsize{
 \begin{aligned}
-Cov(X,Y) &amp;= \frac{1}{n}\sum(x_i-\bar{X})(y_i-\bar{Y}) = \frac{1}{n}\sum\left(x_iy_i-x_i\bar{Y}-y_i\bar{X}+\bar{X}\bar{Y}\right) =
+Cov(X,Y) &amp;= \frac{1}{n}\sum(x_i-\bar{x})(y_i-\bar{y}) = \frac{1}{n}\sum\left(x_iy_i-x_i\bar{y}-y_i\bar{x}+\bar{x}\bar{y}\right) =
 \frac{1}{n}\sum x_iy_i-
-\bar{Y}\frac{1}{n}\sum x_i-
-\bar{X}\frac{1}{n}\sum y_i+
-\bar{X}\bar{Y} = \\
-&amp;\underset{\color{darkgreen}{\left(\frac{1}{n}\sum y_i=\bar{Y}\right)}}{\overset{\color{darkgreen}{\left(\frac{1}{n}\sum x_i=\bar{X}\right)}}{=}} \frac{1}{n}\sum x_iy_i - \bar{Y}\bar{X}-\bar{X}\bar{Y}+\bar{X}\bar{Y} = \frac{1}{n}\sum x_iy_i - \bar{X}\bar{Y}
+\bar{y}\frac{1}{n}\sum x_i-
+\bar{x}\frac{1}{n}\sum y_i+
+\bar{x}\bar{y} = \\
+&amp;\underset{\color{darkgreen}{\left(\frac{1}{n}\sum y_i=\bar{y}\right)}}{\overset{\color{darkgreen}{\left(\frac{1}{n}\sum x_i=\bar{x}\right)}}{=}} \frac{1}{n}\sum x_iy_i - \bar{y}\bar{x}-\bar{x}\bar{y}+\bar{x}\bar{y} = \frac{1}{n}\sum x_iy_i - \bar{x}\bar{y}
 \end{aligned}
 }
 \]</span></p>
 <p><span class="math display">\[
 \scriptsize{
 \begin{aligned}
-Var(X) &amp;= \frac{1}{n}\sum\left(x_i-\bar{X}\right)^2 = \frac{1}{n}\sum\left(x_i^2-2x_i\bar{X}+\bar{X}^2\right) = \frac{1}{n}\sum x_i^2-2\bar{X}\frac{1}{n}\sum x_i+\bar{X}^2 = \\
-&amp;\overset{\color{darkgreen}{\left(\frac{1}{n}\sum x_i=\bar{X}\right)}}{=} \frac{1}{n}\sum x_i^2-2\bar{X}^2+\bar{X}^2 = \frac{1}{n}\sum x_i^2-\bar{X}^2
+Var(X) &amp;= \frac{1}{n}\sum\left(x_i-\bar{x}\right)^2 = \frac{1}{n}\sum\left(x_i^2-2x_i\bar{x}+\bar{x}^2\right) = \frac{1}{n}\sum x_i^2-2\bar{x}\frac{1}{n}\sum x_i+\bar{x}^2 = \\
+&amp;\overset{\color{darkgreen}{\left(\frac{1}{n}\sum x_i=\bar{x}\right)}}{=} \frac{1}{n}\sum x_i^2-2\bar{x}^2+\bar{x}^2 = \frac{1}{n}\sum x_i^2-\bar{x}^2
 \end{aligned}
 }
 \]</span></p>
@@ -970,17 +963,17 @@ Var(X) &amp;= \frac{1}{n}\sum\left(x_i-\bar{X}\right)^2 = \frac{1}{n}\sum\left(x
 <!----------------->
 </section>
 <section class="slide level2">
-<h2><span style=" color: darkred !important;">Beweis, dass <span class="math inline">\(R^2=r_{XY}^2\)</span> bei einfacher Regression</span></h2>
+<h2><span style=" color: darkred !important;">Beweis, dass <span class="math inline">\(R^2=r^2\)</span> bei einfacher Regression</span></h2>
 <p><img data-src="images/kein_klausurstoff.png" class="absolute" style="bottom: 0px; right: 0px; height: 110px; "></p>
 <ul>
-<li class="fragment">Ausgestattet mit der Formel für den Regressionskoeffizienten, lässt sich nun auch beweisen, dass bei der einfachen Regression gilt: <span class="math inline">\(\quad \color{darkblue}{R^2=r_{XY}^2}\)</span></li>
+<li class="fragment">Ausgestattet mit der Formel für den Regressionskoeffizienten, lässt sich nun auch beweisen, dass bei der einfachen Regression gilt: <span class="math inline">\(\quad \color{darkblue}{R^2=r^2}\)</span></li>
 </ul>
 <p><span class="math display">\[
-\scriptsize{
+\small{
 \begin{aligned}
-R^2 = \frac{Var(\hat{Y})}{Var(Y)} &amp;= \frac{\frac{1}{n}\sum\left(\hat{y}_i-\bar{Y}\right)^2}{Var(Y)}
-\underset{\color{darkgreen}{\left(\bar{Y} = b_0+b_1\bar{X}\right)}}{\overset{\color{darkgreen}{\left(\hat{y}_i = b_0+b_1x_i\right)}}{=}} \frac{\frac{1}{n}\sum\left[(b_0+b_1x_i)-(b_0+b_1\bar{X})\right]^2}{Var(Y)} = \frac{\frac{1}{n}\sum\left(b_1x_i-b_1\bar{X}\right)^2}{Var(Y)} = \\
-&amp;= b_1^2\frac{\frac{1}{n}\sum\left(x_i-\bar{X}\right)^2}{Var(Y)}= b_1^2\frac{Var(X)}{Var(Y)}\qquad\qquad \left(\text{NB sieht man, dass gilt:}\quad Var(\hat{Y}) = b_1^2Var(X)\right)
+R^2 = \frac{Var(\hat{Y})}{Var(Y)} &amp;= \frac{\frac{1}{n}\sum\left(\hat{y}_i-\bar{y}\right)^2}{Var(Y)}
+\underset{\color{darkgreen}{\left(\bar{y} = b_0+b_1\bar{x}\right)}}{\overset{\color{darkgreen}{\left(\hat{y}_i = b_0+b_1x_i\right)}}{=}} \frac{\frac{1}{n}\sum\left[(b_0+b_1x_i)-(b_0+b_1\bar{x})\right]^2}{Var(Y)} = \frac{\frac{1}{n}\sum\left(b_1x_i-b_1\bar{x}\right)^2}{Var(Y)} = \\
+&amp;= b_1^2\frac{\frac{1}{n}\sum\left(x_i-\bar{x}\right)^2}{Var(Y)}= b_1^2\frac{Var(X)}{Var(Y)}\qquad\qquad \scriptsize{\left(\text{NB sieht man, dass gilt:}\quad Var(\hat{Y}) = b_1^2Var(X)\right)}
 \end{aligned}
 }
 \]</span></p>
@@ -988,16 +981,16 @@ R^2 = \frac{Var(\hat{Y})}{Var(Y)} &amp;= \frac{\frac{1}{n}\sum\left(\hat{y}_i-\b
 <li class="fragment">Nun <span class="math inline">\(b_1 = \frac{Cov(X,Y)}{Var(X)}\)</span> einsetzen:</li>
 </ul>
 <p><span class="math display">\[
-\scriptsize{
+\small{
 \color{darkblue}{R^2} = \frac{Cov^2(X,Y)}{\color{darkred}{Var^2(X)}}\frac{\color{darkred}{Var(X)}}{Var(Y)} = \color{darkblue}{\frac{Cov^2(X,Y)}{Var(X)Var(Y)}}
 }
 \]</span></p>
 <ul>
-<li class="fragment">Vergleiche mit <span class="math inline">\(r_{XY}^2\)</span>:</li>
+<li class="fragment">Vergleiche mit <span class="math inline">\(r^2\)</span>:</li>
 </ul>
 <p><span class="math display">\[
-\scriptsize{
-\color{darkblue}{r_{XY}^2} = \left[\frac{Cov(X,Y)}{s_Xs_Y}\right]^2 = \frac{Cov^2(X,Y)}{s_X^2s_Y^2} = \frac{Cov^2(X,Y)}{Var(X)Var(Y)}
+\small{
+\color{darkblue}{r^2} = \left[\frac{Cov(X,Y)}{s_Xs_Y}\right]^2 = \frac{Cov^2(X,Y)}{s_X^2s_Y^2} = \frac{Cov^2(X,Y)}{Var(X)Var(Y)}
 }
 \]</span></p>
 <!----------------->
@@ -1007,7 +1000,7 @@ R^2 = \frac{Var(\hat{Y})}{Var(Y)} &amp;= \frac{\frac{1}{n}\sum\left(\hat{y}_i-\b
 <section class="slide level2">
 <h2>Ausblick: Multiple Regression</h2>
 <ul>
-<li class="fragment">Gibt es mehr als eine <strong>unabhängige Variable</strong> (auch <strong>Prädiktoren</strong> genannt), so handelt es sich nicht mehr um eine einfache Regression, sondern um eine <span style=" color: navy !important;"><strong>multiple Regression</strong></span>:</li>
+<li class="fragment">Gibt es mehr als eine <strong>unabhängige Variable</strong> (auch <strong>Prädiktoren</strong> genannt), handelt es sich nicht mehr um eine einfache Regression, sondern um eine <span style=" color: navy !important;"><strong>multiple Regression</strong></span>:</li>
 </ul>
 <div class="vspace-medium">
 
@@ -1042,27 +1035,16 @@ R^2 = \frac{Var(\hat{Y})}{Var(Y)} &amp;= \frac{\frac{1}{n}\sum\left(\hat{y}_i-\b
 </ul>
 <!---  Example --->
 <div class="example">
-<table>
-<colgroup>
-<col style="width: 10%">
-<col style="width: 90%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;"></td>
-<td></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><img data-src="images/example.png" height="70"></td>
-<td><span style="font-family:monospace">“satisfaction ∼ 1 + physical_activity”</span><br>
-<span style="display:block;margin-top:12px;line-height:1.1">Dies wäre eine mögliche Definition unserer einfachen Regression mit sportlicher Aktivität als unabhängiger und Lebenszufriedenheit als abhängiger Variable.</span></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<div class="columns">
+<div class="column" style="width:10%;">
+<div style="margin-top: 10px">
+<p><img data-src="images/example.png" height="70"></p>
+</div>
+</div><div class="column" style="width:90%;">
+<p><span style="font-family:monospace">“satisfaction ∼ 1 + physical_activity”</span><br>
+<span style="display:block;margin-top:12px;line-height:1.1">Dies wäre eine mögliche Definition unserer einfachen Regression mit sportlicher Aktivität als unabhängiger und Lebenszufriedenheit als abhängiger Variable.</span></p>
+</div>
+</div>
 </div>
 </section>
 <section class="slide level2">
@@ -1120,10 +1102,10 @@ R^2 = \frac{Var(\hat{Y})}{Var(Y)} &amp;= \frac{\frac{1}{n}\sum\left(\hat{y}_i-\b
 <div class="columns">
 <div class="column" style="width:9%;">
 <div style="margin-top:-15px">
-<p><img data-src="images/summary.png"></p>
+<p><img data-src="images/summary.png" width="60"></p>
 </div>
 </div><div class="column" style="width:91%;">
-<div class="summary" style="font-size: 28px">
+<div class="summary" style="margin-top:20px !important">
 <ul>
 <li class="fragment">Die lineare Regression erweitert die Korrelation zu einer <span style=" color: navy !important;"><strong>Vorhersageanalyse</strong></span>: wenn Variablen korrelieren, lässt sich eine Variable aus der anderen vorhersagen.</li>
 <li class="fragment">Die Vorhersage basiert auf einer <span style=" color: navy !important;"><strong>Regressionsgerade</strong></span>, die alle Datenpunkte so gut wie möglich repräsentiert.</li>
@@ -1135,7 +1117,6 @@ R^2 = \frac{Var(\hat{Y})}{Var(Y)} &amp;= \frac{\frac{1}{n}\sum\left(\hat{y}_i-\b
 </div>
 </div>
 </div>
-<p>::: ::: ::::</p>
 <!--- ```{python}
 
 ``` --->
@@ -1196,18 +1177,18 @@ plt.savefig('images/paradoxia_slope_paradoxiker.png', bbox_inches='tight')
 <div class="column" style="width:68%;">
 <p>Sie führen nun eine Regressionsanalyse bezüglich des Zusammenhangs von TikTok-Online-Zeit und Entzündungswerten durch. Einmal mit TikTok-Online-Zeit und einmal mit Entzündungswerten als unabhängiger Variable:</p>
 </div><div class="column" style="width:32%;">
-<p><img data-src="images/paradoxia_group_of_scientists.png" class="hcenter-image" style="margin-top:-100px !important" height="200"> <!-- Source: Midjourney --></p>
+<p><img data-src="images/paradoxia_group_of_scientists.png" class="hcenter-image" style="margin-top:-50px !important" height="200"> <!-- Source: Midjourney --></p>
 </div>
 </div>
 <div class="vspace-large">
 
 </div>
 <p><img data-src="images/paradoxia_slope_paradoxiker.png" height="280"></p>
-<p>Es zeigt sich, dass 1 Stunde zusätzlicher TikTok-Konsum mit einer Erhöhung des Entzündungsparameters um 0,043 verbunden ist. Umgekehrt ist eine Erhöhung des Entzündungswertes um 1 mit 4,04 Stunden, bzw. etwas intuitiver, eine Erhöhung des Entzündungswertes um 0,1 mit 0,404 Stunden (24 Minuten) verbunden.</p>
-<p>Das ist in jedem Fall ein substantieller Zusammenhang!</p>
+<p>Es zeigt sich, dass 1 Stunde zusätzlicher TikTok-Konsum mit einer Erhöhung des Entzündungsparameters um 0,043 verbunden ist. Umgekehrt ist eine Erhöhung des Entzündungswertes um 1 mit 4,04 Stunden — bzw. etwas praktikabeler, eine Erhöhung des Entzündungswertes um 0,1 mit 0,404 Stunden (24 Minuten) — verbunden.</p>
+<p>Diese “rohen” Effektstärken zeigen: es handelt sich um ein substantiellen Zusammenhang!</p>
 <p><img src="images/hmu_logo.png" class="slide-logo"></p>
 <div class="footer footer-default">
-
+<p>Vorlesung 06: Regression</p>
 </div>
 </section></section>
 <section id="footnotes" class="footnotes footnotes-end-of-document smaller scrollable" role="doc-endnotes"><h2>Fußnoten</h2>
@@ -1449,6 +1430,7 @@ plt.savefig('images/paradoxia_slope_paradoxiker.png', bbox_inches='tight')
           }
         });
       }
+      // identifystring
 
       window.onload = bgcolor();
     </script>
