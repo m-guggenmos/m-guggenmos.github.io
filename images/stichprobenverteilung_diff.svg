@@ -16,7 +16,7 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns:ns2="http://www.iki.fi/pav/software/textext/">
+   xmlns:ns3="http://www.iki.fi/pav/software/textext/">
   <sodipodi:namedview
      id="namedview1"
      pagecolor="#ffffff"
@@ -27,9 +27,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="1.0846254"
-     inkscape:cx="693.78792"
-     inkscape:cy="371.55685"
+     inkscape:zoom="1.0543058"
+     inkscape:cx="154.12986"
+     inkscape:cy="606.08603"
      inkscape:window-width="1920"
      inkscape:window-height="1007"
      inkscape:window-x="0"
@@ -679,16 +679,16 @@
        id="path103" />
     <g
        transform="matrix(0.63521118,0,0,0.63521118,122.57315,136.6149)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{\\sigma}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.4055024411524741"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.495831"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{\\sigma}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.4055024411524741"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.495831"
        id="g99"
        style="stroke-width:0.780577">
       <defs
@@ -734,16 +734,16 @@
     </g>
     <g
        transform="matrix(0.55037048,0,0,0.55037048,124.48262,138.14129)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{A}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.4055024411524741"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.495831"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{A}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.4055024411524741"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.495831"
        id="g113"
        style="stroke-width:0.900904">
       <defs
@@ -789,16 +789,16 @@
     </g>
     <g
        transform="matrix(0.63521118,0,0,0.63521118,202.48741,136.72544)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{\\sigma}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.4055024411524741"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.495831"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{\\sigma}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.4055024411524741"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.495831"
        id="g118"
        style="stroke-width:0.780577">
       <defs
@@ -844,16 +844,16 @@
     </g>
     <g
        transform="matrix(0.84295531,0,0,0.84295531,202.92831,136.63114)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{B}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.4055024411524741"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.495831"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{B}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.4055024411524741"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.495831"
        id="g124"
        style="stroke-width:0.588205">
       <defs
@@ -996,305 +996,211 @@
          y="171.80933"
          id="tspan164">von Gruppe A</tspan></text>
     <g
-       id="g290"
-       transform="matrix(1.7798245,0,0,1.7798245,-118.50513,-165.66632)"
-       style="stroke-width:0.561853">
+       transform="matrix(0.5797107,0,0,0.5797107,118.26035,193.25873)"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{A}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.4055024411524741"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.495831"
+       id="g175"
+       style="stroke-width:0.855309">
+      <defs
+         id="defs171">
+        <g
+           id="g171">
+          <symbol
+             overflow="visible"
+             id="symbol170">
+            <path
+               style="stroke:none"
+               d=""
+               id="path170" />
+          </symbol>
+          <symbol
+             overflow="visible"
+             id="symbol171">
+            <path
+               style="stroke:none"
+               d="M 1.78125,-1.140625 C 1.390625,-0.484375 1,-0.34375 0.5625,-0.3125 0.4375,-0.296875 0.34375,-0.296875 0.34375,-0.109375 0.34375,-0.046875 0.40625,0 0.484375,0 0.75,0 1.0625,-0.03125 1.328125,-0.03125 c 0.34375,0 0.6875,0.03125 1,0.03125 0.0625,0 0.1875,0 0.1875,-0.1875 0,-0.109375 -0.078125,-0.125 -0.15625,-0.125 -0.21875,-0.015625 -0.46875,-0.09375 -0.46875,-0.34375 0,-0.125 0.0625,-0.234375 0.140625,-0.375 l 0.765625,-1.265625 h 2.5 c 0.015625,0.203125 0.15625,1.5625 0.15625,1.65625 0,0.296875 -0.515625,0.328125 -0.71875,0.328125 C 4.59375,-0.3125 4.5,-0.3125 4.5,-0.109375 4.5,0 4.609375,0 4.640625,0 5.046875,0 5.46875,-0.03125 5.875,-0.03125 6.125,-0.03125 6.765625,0 7.015625,0 7.0625,0 7.1875,0 7.1875,-0.203125 7.1875,-0.3125 7.09375,-0.3125 6.953125,-0.3125 6.34375,-0.3125 6.34375,-0.375 6.3125,-0.671875 l -0.609375,-6.21875 c -0.015625,-0.203125 -0.015625,-0.25 -0.1875,-0.25 -0.15625,0 -0.203125,0.078125 -0.265625,0.171875 z M 2.984375,-2.609375 4.9375,-5.90625 5.265625,-2.609375 Z m 0,0"
+               id="path171" />
+          </symbol>
+        </g>
+      </defs>
       <g
-         transform="matrix(0.32571228,0,0,0.32571228,133.02743,201.66317)"
-         ns2:version="1.9.0"
-         ns2:texconverter="pdflatex"
-         ns2:pdfconverter="inkscape"
-         ns2:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{A}$"
-         ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-         ns2:scale="1.4055024411524741"
-         ns2:alignment="middle center"
-         ns2:stroke-to-path="0"
-         ns2:inkscapeversion="1.4-dev"
-         ns2:jacobian_sqrt="0.495831"
-         id="g175"
+         id="g174"
+         transform="translate(-149.056,-127.624)"
          style="stroke-width:0.855309">
-        <defs
-           id="defs171">
-          <g
-             id="g171">
-            <symbol
-               overflow="visible"
-               id="symbol170">
-              <path
-                 style="stroke:none"
-                 d=""
-                 id="path170" />
-            </symbol>
-            <symbol
-               overflow="visible"
-               id="symbol171">
-              <path
-                 style="stroke:none"
-                 d="M 1.78125,-1.140625 C 1.390625,-0.484375 1,-0.34375 0.5625,-0.3125 0.4375,-0.296875 0.34375,-0.296875 0.34375,-0.109375 0.34375,-0.046875 0.40625,0 0.484375,0 0.75,0 1.0625,-0.03125 1.328125,-0.03125 c 0.34375,0 0.6875,0.03125 1,0.03125 0.0625,0 0.1875,0 0.1875,-0.1875 0,-0.109375 -0.078125,-0.125 -0.15625,-0.125 -0.21875,-0.015625 -0.46875,-0.09375 -0.46875,-0.34375 0,-0.125 0.0625,-0.234375 0.140625,-0.375 l 0.765625,-1.265625 h 2.5 c 0.015625,0.203125 0.15625,1.5625 0.15625,1.65625 0,0.296875 -0.515625,0.328125 -0.71875,0.328125 C 4.59375,-0.3125 4.5,-0.3125 4.5,-0.109375 4.5,0 4.609375,0 4.640625,0 5.046875,0 5.46875,-0.03125 5.875,-0.03125 6.125,-0.03125 6.765625,0 7.015625,0 7.0625,0 7.1875,0 7.1875,-0.203125 7.1875,-0.3125 7.09375,-0.3125 6.953125,-0.3125 6.34375,-0.3125 6.34375,-0.375 6.3125,-0.671875 l -0.609375,-6.21875 c -0.015625,-0.203125 -0.015625,-0.25 -0.1875,-0.25 -0.15625,0 -0.203125,0.078125 -0.265625,0.171875 z M 2.984375,-2.609375 4.9375,-5.90625 5.265625,-2.609375 Z m 0,0"
-                 id="path171" />
-            </symbol>
-          </g>
-        </defs>
         <g
-           id="g174"
-           transform="translate(-149.056,-127.624)"
-           style="stroke-width:0.855309">
+           style="fill:#00878a;fill-opacity:1;stroke-width:0.855309"
+           id="g173">
           <g
-             style="fill:#00878a;fill-opacity:1;stroke-width:0.855309"
-             id="g173">
-            <g
-               transform="matrix(0.63613406,0,0,0.63613406,148.83708,132.16677)"
-               id="g172"
-               style="stroke-width:1.34454">
-              <path
-                 style="stroke:none;stroke-width:1.34454"
-                 d="M 1.78125,-1.140625 C 1.390625,-0.484375 1,-0.34375 0.5625,-0.3125 0.4375,-0.296875 0.34375,-0.296875 0.34375,-0.109375 0.34375,-0.046875 0.40625,0 0.484375,0 0.75,0 1.0625,-0.03125 1.328125,-0.03125 c 0.34375,0 0.6875,0.03125 1,0.03125 0.0625,0 0.1875,0 0.1875,-0.1875 0,-0.109375 -0.078125,-0.125 -0.15625,-0.125 -0.21875,-0.015625 -0.46875,-0.09375 -0.46875,-0.34375 0,-0.125 0.0625,-0.234375 0.140625,-0.375 l 0.765625,-1.265625 h 2.5 c 0.015625,0.203125 0.15625,1.5625 0.15625,1.65625 0,0.296875 -0.515625,0.328125 -0.71875,0.328125 C 4.59375,-0.3125 4.5,-0.3125 4.5,-0.109375 4.5,0 4.609375,0 4.640625,0 5.046875,0 5.46875,-0.03125 5.875,-0.03125 6.125,-0.03125 6.765625,0 7.015625,0 7.0625,0 7.1875,0 7.1875,-0.203125 7.1875,-0.3125 7.09375,-0.3125 6.953125,-0.3125 6.34375,-0.3125 6.34375,-0.375 6.3125,-0.671875 l -0.609375,-6.21875 c -0.015625,-0.203125 -0.015625,-0.25 -0.1875,-0.25 -0.15625,0 -0.203125,0.078125 -0.265625,0.171875 z M 2.984375,-2.609375 4.9375,-5.90625 5.265625,-2.609375 Z m 0,0"
-                 id="path172" />
-            </g>
+             transform="matrix(0.63613406,0,0,0.63613406,148.83708,132.16677)"
+             id="g172"
+             style="stroke-width:1.34454">
+            <path
+               style="stroke:none;stroke-width:1.34454"
+               d="M 1.78125,-1.140625 C 1.390625,-0.484375 1,-0.34375 0.5625,-0.3125 0.4375,-0.296875 0.34375,-0.296875 0.34375,-0.109375 0.34375,-0.046875 0.40625,0 0.484375,0 0.75,0 1.0625,-0.03125 1.328125,-0.03125 c 0.34375,0 0.6875,0.03125 1,0.03125 0.0625,0 0.1875,0 0.1875,-0.1875 0,-0.109375 -0.078125,-0.125 -0.15625,-0.125 -0.21875,-0.015625 -0.46875,-0.09375 -0.46875,-0.34375 0,-0.125 0.0625,-0.234375 0.140625,-0.375 l 0.765625,-1.265625 h 2.5 c 0.015625,0.203125 0.15625,1.5625 0.15625,1.65625 0,0.296875 -0.515625,0.328125 -0.71875,0.328125 C 4.59375,-0.3125 4.5,-0.3125 4.5,-0.109375 4.5,0 4.609375,0 4.640625,0 5.046875,0 5.46875,-0.03125 5.875,-0.03125 6.125,-0.03125 6.765625,0 7.015625,0 7.0625,0 7.1875,0 7.1875,-0.203125 7.1875,-0.3125 7.09375,-0.3125 6.953125,-0.3125 6.34375,-0.3125 6.34375,-0.375 6.3125,-0.671875 l -0.609375,-6.21875 c -0.015625,-0.203125 -0.015625,-0.25 -0.1875,-0.25 -0.15625,0 -0.203125,0.078125 -0.265625,0.171875 z M 2.984375,-2.609375 4.9375,-5.90625 5.265625,-2.609375 Z m 0,0"
+               id="path172" />
           </g>
         </g>
       </g>
+    </g>
+    <g
+       transform="matrix(0.63088458,0.25855963,-0.25855963,0.63088458,121.80035,191.96446)"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{/}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="0.8569534862949402"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.3023149053718655"
+       id="g90"
+       style="stroke-width:0.443399">
+      <defs
+         id="id-65714bfa-48b9-4e0f-b6f9-fa7218982859">
+        <g
+           id="g186">
+          <symbol
+             overflow="visible"
+             id="symbol185">
+            <path
+               style="stroke:none"
+               d=""
+               id="path185" />
+          </symbol>
+          <symbol
+             overflow="visible"
+             id="symbol186">
+            <path
+               style="stroke:none"
+               d="m 4.375,-7.09375 c 0.046875,-0.140625 0.046875,-0.171875 0.046875,-0.1875 0,-0.109375 -0.078125,-0.203125 -0.1875,-0.203125 -0.078125,0 -0.140625,0.03125 -0.171875,0.09375 l -3.46875,9.5 C 0.546875,2.25 0.546875,2.28125 0.546875,2.296875 0.546875,2.40625 0.640625,2.5 0.75,2.5 0.875,2.5 0.90625,2.421875 0.96875,2.25 Z m 0,0"
+               id="path186" />
+          </symbol>
+        </g>
+      </defs>
       <g
-         transform="matrix(0.35446449,0.14527254,-0.14527254,0.35446449,135.01639,200.93598)"
-         ns2:version="1.9.0"
-         ns2:texconverter="pdflatex"
-         ns2:pdfconverter="inkscape"
-         ns2:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{/}$"
-         ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-         ns2:scale="0.8569534862949402"
-         ns2:alignment="middle center"
-         ns2:stroke-to-path="0"
-         ns2:inkscapeversion="1.4-dev"
-         ns2:jacobian_sqrt="0.3023149053718655"
-         id="g90"
+         id="id-1064600c-1fe6-4971-81ef-2b0333c02612"
+         transform="translate(-149.259,-127.281)"
          style="stroke-width:0.443399">
-        <defs
-           id="id-65714bfa-48b9-4e0f-b6f9-fa7218982859">
-          <g
-             id="g186">
-            <symbol
-               overflow="visible"
-               id="symbol185">
-              <path
-                 style="stroke:none"
-                 d=""
-                 id="path185" />
-            </symbol>
-            <symbol
-               overflow="visible"
-               id="symbol186">
-              <path
-                 style="stroke:none"
-                 d="m 4.375,-7.09375 c 0.046875,-0.140625 0.046875,-0.171875 0.046875,-0.1875 0,-0.109375 -0.078125,-0.203125 -0.1875,-0.203125 -0.078125,0 -0.140625,0.03125 -0.171875,0.09375 l -3.46875,9.5 C 0.546875,2.25 0.546875,2.28125 0.546875,2.296875 0.546875,2.40625 0.640625,2.5 0.75,2.5 0.875,2.5 0.90625,2.421875 0.96875,2.25 Z m 0,0"
-                 id="path186" />
-            </symbol>
-          </g>
-        </defs>
         <g
-           id="id-1064600c-1fe6-4971-81ef-2b0333c02612"
-           transform="translate(-149.259,-127.281)"
-           style="stroke-width:0.443399">
+           style="fill:#00878a;fill-opacity:1;stroke-width:0.443399"
+           id="id-dae8e451-7704-40a0-8f1a-8b1106bb5ff5">
           <g
-             style="fill:#00878a;fill-opacity:1;stroke-width:0.443399"
-             id="id-dae8e451-7704-40a0-8f1a-8b1106bb5ff5">
-            <g
-               transform="translate(148.712,134.765)"
-               id="g51-8"
-               style="stroke-width:0.443399">
-              <path
-                 style="stroke:none;stroke-width:0.443399"
-                 d="m 4.375,-7.09375 c 0.046875,-0.140625 0.046875,-0.171875 0.046875,-0.1875 0,-0.109375 -0.078125,-0.203125 -0.1875,-0.203125 -0.078125,0 -0.140625,0.03125 -0.171875,0.09375 l -3.46875,9.5 C 0.546875,2.25 0.546875,2.28125 0.546875,2.296875 0.546875,2.40625 0.640625,2.5 0.75,2.5 0.875,2.5 0.90625,2.421875 0.96875,2.25 Z m 0,0"
-                 id="id-a7aba29a-81bd-4fd9-bbbe-e2a418861c87" />
-            </g>
+             transform="translate(148.712,134.765)"
+             id="g51-8"
+             style="stroke-width:0.443399">
+            <path
+               style="stroke:none;stroke-width:0.443399"
+               d="m 4.375,-7.09375 c 0.046875,-0.140625 0.046875,-0.171875 0.046875,-0.1875 0,-0.109375 -0.078125,-0.203125 -0.1875,-0.203125 -0.078125,0 -0.140625,0.03125 -0.171875,0.09375 l -3.46875,9.5 C 0.546875,2.25 0.546875,2.28125 0.546875,2.296875 0.546875,2.40625 0.640625,2.5 0.75,2.5 0.875,2.5 0.90625,2.421875 0.96875,2.25 Z m 0,0"
+               id="id-a7aba29a-81bd-4fd9-bbbe-e2a418861c87" />
           </g>
         </g>
       </g>
-      <g
-         transform="matrix(0.24078613,0,0,0.26369027,134.11175,202.95446)"
-         ns2:version="1.9.0"
-         ns2:texconverter="pdflatex"
-         ns2:pdfconverter="inkscape"
-         ns2:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{\\sqrt{N}}$"
-         ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-         ns2:scale="0.5898795245037981"
-         ns2:alignment="middle center"
-         ns2:stroke-to-path="0"
-         ns2:inkscapeversion="1.4-dev"
-         ns2:jacobian_sqrt="0.208097"
-         id="g62"
-         style="stroke-width:0.464008">
-        <defs
-           id="id-1ea90a97-9c1b-448f-b94f-d4e1d46a3450">
-          <g
-             id="g190">
-            <symbol
-               overflow="visible"
-               id="symbol187">
-              <path
-                 style="stroke:none"
-                 d=""
-                 id="path187" />
-            </symbol>
-            <symbol
-               overflow="visible"
-               id="symbol188">
-              <path
-                 style="stroke:none"
-                 d="m 3.875,8.515625 -1.75,-3.875 C 2.046875,4.484375 2,4.484375 1.96875,4.484375 c 0,0 -0.0625,0 -0.171875,0.078125 l -0.9375,0.71875 c -0.125,0.109375 -0.125,0.125 -0.125,0.15625 0,0.0625 0.015625,0.109375 0.09375,0.109375 0.0625,0 0.234375,-0.140625 0.34375,-0.21875 C 1.21875,5.28125 1.375,5.171875 1.484375,5.09375 l 1.96875,4.3125 C 3.515625,9.5625 3.5625,9.5625 3.65625,9.5625 c 0.15625,0 0.1875,-0.046875 0.25,-0.1875 L 8.4375,0 C 8.5,-0.140625 8.5,-0.171875 8.5,-0.203125 8.5,-0.296875 8.421875,-0.40625 8.296875,-0.40625 c -0.078125,0 -0.140625,0.0625 -0.21875,0.21875 z m 0,0"
-                 id="path188" />
-            </symbol>
-            <symbol
-               overflow="visible"
-               id="symbol189">
-              <path
-                 style="stroke:none"
-                 d=""
-                 id="path189" />
-            </symbol>
-            <symbol
-               overflow="visible"
-               id="symbol190">
-              <path
-                 style="stroke:none"
-                 d="M 7.53125,-5.765625 C 7.640625,-6.15625 7.8125,-6.46875 8.609375,-6.5 c 0.046875,0 0.171875,-0.015625 0.171875,-0.203125 0,0 0,-0.109375 -0.125,-0.109375 -0.328125,0 -0.6875,0.03125 -1.015625,0.03125 -0.328125,0 -0.6875,-0.03125 -1.015625,-0.03125 -0.0625,0 -0.171875,0 -0.171875,0.203125 C 6.453125,-6.5 6.546875,-6.5 6.625,-6.5 c 0.578125,0.015625 0.6875,0.21875 0.6875,0.4375 0,0.03125 -0.03125,0.1875 -0.03125,0.203125 l -1.125,4.4375 L 3.953125,-6.625 C 3.875,-6.796875 3.875,-6.8125 3.640625,-6.8125 h -1.34375 c -0.1875,0 -0.28125,0 -0.28125,0.203125 0,0.109375 0.09375,0.109375 0.28125,0.109375 0.046875,0 0.671875,0 0.671875,0.09375 L 1.640625,-1.0625 c -0.109375,0.40625 -0.28125,0.71875 -1.078125,0.75 -0.0625,0 -0.171875,0.015625 -0.171875,0.203125 0,0.0625 0.046875,0.109375 0.125,0.109375 0.328125,0 0.671875,-0.03125 1,-0.03125 C 1.859375,-0.03125 2.21875,0 2.546875,0 2.59375,0 2.71875,0 2.71875,-0.203125 2.71875,-0.296875 2.625,-0.3125 2.515625,-0.3125 1.9375,-0.328125 1.859375,-0.546875 1.859375,-0.75 c 0,-0.0625 0.015625,-0.125 0.046875,-0.234375 l 1.3125,-5.25 C 3.265625,-6.1875 3.265625,-6.15625 3.3125,-6.0625 l 2.484375,5.875 C 5.859375,-0.015625 5.890625,0 5.984375,0 6.09375,0 6.09375,-0.03125 6.140625,-0.203125 Z m 0,0"
-                 id="path190" />
-            </symbol>
-          </g>
-        </defs>
+    </g>
+    <g
+       transform="matrix(0.68181318,0,0,0.68181318,116.36281,189.76963)"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{\\hat{\\sigma}}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.375042387340929"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.485086"
+       id="g81"
+       style="stroke-width:0.711463">
+      <defs
+         id="id-ea251f7f-6c6a-425b-aa3a-0d754f186f5e">
         <g
-           id="id-85481beb-eb52-4c9a-8fe6-c147c8f9b95b"
-           transform="translate(-149.446,-125.924)"
-           style="stroke-width:0.464008">
-          <g
-             style="fill:#00878a;fill-opacity:1;stroke-width:0.464008"
-             id="id-1ae8ac32-5c25-4c1b-8a54-e113e96d3d8d">
-            <g
-               transform="translate(148.712,126.33)"
-               id="g52-4"
-               style="stroke-width:0.464008">
-              <path
-                 style="stroke:none;stroke-width:0.464008"
-                 d="m 3.875,8.515625 -1.75,-3.875 C 2.046875,4.484375 2,4.484375 1.96875,4.484375 c 0,0 -0.0625,0 -0.171875,0.078125 l -0.9375,0.71875 c -0.125,0.109375 -0.125,0.125 -0.125,0.15625 0,0.0625 0.015625,0.109375 0.09375,0.109375 0.0625,0 0.234375,-0.140625 0.34375,-0.21875 C 1.21875,5.28125 1.375,5.171875 1.484375,5.09375 l 1.96875,4.3125 C 3.515625,9.5625 3.5625,9.5625 3.65625,9.5625 c 0.15625,0 0.1875,-0.046875 0.25,-0.1875 L 8.4375,0 C 8.5,-0.140625 8.5,-0.171875 8.5,-0.203125 8.5,-0.296875 8.421875,-0.40625 8.296875,-0.40625 c -0.078125,0 -0.140625,0.0625 -0.21875,0.21875 z m 0,0"
-                 id="id-c29474d9-dabc-4f51-8f2a-2dbd31036d15" />
-            </g>
-          </g>
-          <path
-             style="fill:none;stroke:#00878a;stroke-width:0.184675;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
-             d="M 6.25e-4,0.00109375 H 9.090469"
-             transform="matrix(1,0,0,-1,157.015,126.13)"
-             id="id-8855ced3-bb9b-4874-b92c-543f7c3654a7" />
-          <g
-             style="fill:#00878a;fill-opacity:1;stroke-width:0.464008"
-             id="id-16f74cba-d492-48da-bb27-b22d369f7376">
-            <g
-               transform="translate(157.015,134.765)"
-               id="g53"
-               style="stroke-width:0.464008">
-              <path
-                 style="stroke:none;stroke-width:0.464008"
-                 d="M 7.53125,-5.765625 C 7.640625,-6.15625 7.8125,-6.46875 8.609375,-6.5 c 0.046875,0 0.171875,-0.015625 0.171875,-0.203125 0,0 0,-0.109375 -0.125,-0.109375 -0.328125,0 -0.6875,0.03125 -1.015625,0.03125 -0.328125,0 -0.6875,-0.03125 -1.015625,-0.03125 -0.0625,0 -0.171875,0 -0.171875,0.203125 C 6.453125,-6.5 6.546875,-6.5 6.625,-6.5 c 0.578125,0.015625 0.6875,0.21875 0.6875,0.4375 0,0.03125 -0.03125,0.1875 -0.03125,0.203125 l -1.125,4.4375 L 3.953125,-6.625 C 3.875,-6.796875 3.875,-6.8125 3.640625,-6.8125 h -1.34375 c -0.1875,0 -0.28125,0 -0.28125,0.203125 0,0.109375 0.09375,0.109375 0.28125,0.109375 0.046875,0 0.671875,0 0.671875,0.09375 L 1.640625,-1.0625 c -0.109375,0.40625 -0.28125,0.71875 -1.078125,0.75 -0.0625,0 -0.171875,0.015625 -0.171875,0.203125 0,0.0625 0.046875,0.109375 0.125,0.109375 0.328125,0 0.671875,-0.03125 1,-0.03125 C 1.859375,-0.03125 2.21875,0 2.546875,0 2.59375,0 2.71875,0 2.71875,-0.203125 2.71875,-0.296875 2.625,-0.3125 2.515625,-0.3125 1.9375,-0.328125 1.859375,-0.546875 1.859375,-0.75 c 0,-0.0625 0.015625,-0.125 0.046875,-0.234375 l 1.3125,-5.25 C 3.265625,-6.1875 3.265625,-6.15625 3.3125,-6.0625 l 2.484375,5.875 C 5.859375,-0.015625 5.890625,0 5.984375,0 6.09375,0 6.09375,-0.03125 6.140625,-0.203125 Z m 0,0"
-                 id="id-f737f246-3d7a-4824-8700-d14e3328e59b" />
-            </g>
-          </g>
+           id="g194">
+          <symbol
+             overflow="visible"
+             id="symbol191">
+            <path
+               style="stroke:none"
+               d=""
+               id="path191" />
+          </symbol>
+          <symbol
+             overflow="visible"
+             id="symbol192">
+            <path
+               style="stroke:none"
+               d="M 2.5,-6.921875 1.15625,-5.5625 1.328125,-5.390625 2.5,-6.40625 3.640625,-5.390625 3.8125,-5.5625 Z m 0,0"
+               id="path192" />
+          </symbol>
+          <symbol
+             overflow="visible"
+             id="symbol193">
+            <path
+               style="stroke:none"
+               d=""
+               id="path193" />
+          </symbol>
+          <symbol
+             overflow="visible"
+             id="symbol194">
+            <path
+               style="stroke:none"
+               d="m 5.15625,-3.71875 c 0.140625,0 0.5,0 0.5,-0.34375 0,-0.234375 -0.21875,-0.234375 -0.390625,-0.234375 h -2.28125 c -1.5,0 -2.609375,1.640625 -2.609375,2.828125 0,0.875 0.59375,1.578125 1.5,1.578125 1.171875,0 2.5,-1.203125 2.5,-2.734375 0,-0.171875 0,-0.65625 -0.3125,-1.09375 z M 1.890625,-0.109375 C 1.390625,-0.109375 1,-0.46875 1,-1.1875 c 0,-0.296875 0.109375,-1.109375 0.46875,-1.703125 0.421875,-0.6875 1.015625,-0.828125 1.359375,-0.828125 0.828125,0 0.90625,0.65625 0.90625,0.96875 0,0.46875 -0.203125,1.28125 -0.53125,1.796875 -0.390625,0.578125 -0.9375,0.84375 -1.3125,0.84375 z m 0,0"
+               id="path194" />
+          </symbol>
         </g>
-      </g>
+      </defs>
       <g
-         transform="matrix(0.38307888,0,0,0.38307888,131.96129,199.70281)"
-         ns2:version="1.9.0"
-         ns2:texconverter="pdflatex"
-         ns2:pdfconverter="inkscape"
-         ns2:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{\\hat{\\sigma}}$"
-         ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-         ns2:scale="1.375042387340929"
-         ns2:alignment="middle center"
-         ns2:stroke-to-path="0"
-         ns2:inkscapeversion="1.4-dev"
-         ns2:jacobian_sqrt="0.485086"
-         id="g81"
+         id="id-e6412869-2f9d-4cf2-9eef-97e086979b4d"
+         transform="translate(-149.087,-127.843)"
          style="stroke-width:0.711463">
-        <defs
-           id="id-ea251f7f-6c6a-425b-aa3a-0d754f186f5e">
-          <g
-             id="g194">
-            <symbol
-               overflow="visible"
-               id="symbol191">
-              <path
-                 style="stroke:none"
-                 d=""
-                 id="path191" />
-            </symbol>
-            <symbol
-               overflow="visible"
-               id="symbol192">
-              <path
-                 style="stroke:none"
-                 d="M 2.5,-6.921875 1.15625,-5.5625 1.328125,-5.390625 2.5,-6.40625 3.640625,-5.390625 3.8125,-5.5625 Z m 0,0"
-                 id="path192" />
-            </symbol>
-            <symbol
-               overflow="visible"
-               id="symbol193">
-              <path
-                 style="stroke:none"
-                 d=""
-                 id="path193" />
-            </symbol>
-            <symbol
-               overflow="visible"
-               id="symbol194">
-              <path
-                 style="stroke:none"
-                 d="m 5.15625,-3.71875 c 0.140625,0 0.5,0 0.5,-0.34375 0,-0.234375 -0.21875,-0.234375 -0.390625,-0.234375 h -2.28125 c -1.5,0 -2.609375,1.640625 -2.609375,2.828125 0,0.875 0.59375,1.578125 1.5,1.578125 1.171875,0 2.5,-1.203125 2.5,-2.734375 0,-0.171875 0,-0.65625 -0.3125,-1.09375 z M 1.890625,-0.109375 C 1.390625,-0.109375 1,-0.46875 1,-1.1875 c 0,-0.296875 0.109375,-1.109375 0.46875,-1.703125 0.421875,-0.6875 1.015625,-0.828125 1.359375,-0.828125 0.828125,0 0.90625,0.65625 0.90625,0.96875 0,0.46875 -0.203125,1.28125 -0.53125,1.796875 -0.390625,0.578125 -0.9375,0.84375 -1.3125,0.84375 z m 0,0"
-                 id="path194" />
-            </symbol>
-          </g>
-        </defs>
         <g
-           id="id-e6412869-2f9d-4cf2-9eef-97e086979b4d"
-           transform="translate(-149.087,-127.843)"
-           style="stroke-width:0.711463">
+           style="fill:#00878a;fill-opacity:1;stroke-width:0.711463"
+           id="id-27f22143-b3f6-4d97-8a0d-5b28b1bc14df">
           <g
-             style="fill:#00878a;fill-opacity:1;stroke-width:0.711463"
-             id="id-27f22143-b3f6-4d97-8a0d-5b28b1bc14df">
-            <g
-               transform="translate(149.247,134.765)"
-               id="g2"
-               style="stroke-width:0.711463">
-              <path
-                 style="stroke:none;stroke-width:0.711463"
-                 d="M 2.5,-6.921875 1.15625,-5.5625 1.328125,-5.390625 2.5,-6.40625 3.640625,-5.390625 3.8125,-5.5625 Z m 0,0"
-                 id="id-ff522950-3882-4624-8913-86348ed490ec" />
-            </g>
+             transform="translate(149.247,134.765)"
+             id="g2"
+             style="stroke-width:0.711463">
+            <path
+               style="stroke:none;stroke-width:0.711463"
+               d="M 2.5,-6.921875 1.15625,-5.5625 1.328125,-5.390625 2.5,-6.40625 3.640625,-5.390625 3.8125,-5.5625 Z m 0,0"
+               id="id-ff522950-3882-4624-8913-86348ed490ec" />
           </g>
+        </g>
+        <g
+           style="fill:#00878a;fill-opacity:1;stroke-width:0.711463"
+           id="id-e3758bfc-df6f-464b-87ec-55f9fccb9433">
           <g
-             style="fill:#00878a;fill-opacity:1;stroke-width:0.711463"
-             id="id-e3758bfc-df6f-464b-87ec-55f9fccb9433">
-            <g
-               transform="translate(148.712,134.765)"
-               id="g3"
-               style="stroke-width:0.711463">
-              <path
-                 style="stroke:none;stroke-width:0.711463"
-                 d="m 5.15625,-3.71875 c 0.140625,0 0.5,0 0.5,-0.34375 0,-0.234375 -0.21875,-0.234375 -0.390625,-0.234375 h -2.28125 c -1.5,0 -2.609375,1.640625 -2.609375,2.828125 0,0.875 0.59375,1.578125 1.5,1.578125 1.171875,0 2.5,-1.203125 2.5,-2.734375 0,-0.171875 0,-0.65625 -0.3125,-1.09375 z M 1.890625,-0.109375 C 1.390625,-0.109375 1,-0.46875 1,-1.1875 c 0,-0.296875 0.109375,-1.109375 0.46875,-1.703125 0.421875,-0.6875 1.015625,-0.828125 1.359375,-0.828125 0.828125,0 0.90625,0.65625 0.90625,0.96875 0,0.46875 -0.203125,1.28125 -0.53125,1.796875 -0.390625,0.578125 -0.9375,0.84375 -1.3125,0.84375 z m 0,0"
-                 id="id-207e12d1-203d-4b2d-bdb0-0d1f483332d9" />
-            </g>
+             transform="translate(148.712,134.765)"
+             id="g3"
+             style="stroke-width:0.711463">
+            <path
+               style="stroke:none;stroke-width:0.711463"
+               d="m 5.15625,-3.71875 c 0.140625,0 0.5,0 0.5,-0.34375 0,-0.234375 -0.21875,-0.234375 -0.390625,-0.234375 h -2.28125 c -1.5,0 -2.609375,1.640625 -2.609375,2.828125 0,0.875 0.59375,1.578125 1.5,1.578125 1.171875,0 2.5,-1.203125 2.5,-2.734375 0,-0.171875 0,-0.65625 -0.3125,-1.09375 z M 1.890625,-0.109375 C 1.390625,-0.109375 1,-0.46875 1,-1.1875 c 0,-0.296875 0.109375,-1.109375 0.46875,-1.703125 0.421875,-0.6875 1.015625,-0.828125 1.359375,-0.828125 0.828125,0 0.90625,0.65625 0.90625,0.96875 0,0.46875 -0.203125,1.28125 -0.53125,1.796875 -0.390625,0.578125 -0.9375,0.84375 -1.3125,0.84375 z m 0,0"
+               id="id-207e12d1-203d-4b2d-bdb0-0d1f483332d9" />
           </g>
         </g>
       </g>
     </g>
     <g
        transform="matrix(0.63088458,0.25855963,-0.25855963,0.63088458,200.0778,191.96446)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{/}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="0.8569534862949402"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.3023149053718655"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{/}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="0.8569534862949402"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.3023149053718655"
        id="g205"
        style="stroke-width:0.443399">
       <defs
@@ -1339,106 +1245,17 @@
       </g>
     </g>
     <g
-       transform="matrix(0.42855705,0,0,0.4693224,198.4677,195.557)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{\\sqrt{N}}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="0.5898795245037981"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.208097"
-       id="g214"
-       style="stroke-width:0.464008">
-      <defs
-         id="defs208">
-        <g
-           id="g208">
-          <symbol
-             overflow="visible"
-             id="symbol205">
-            <path
-               style="stroke:none"
-               d=""
-               id="path205" />
-          </symbol>
-          <symbol
-             overflow="visible"
-             id="symbol206">
-            <path
-               style="stroke:none"
-               d="m 3.875,8.515625 -1.75,-3.875 C 2.046875,4.484375 2,4.484375 1.96875,4.484375 c 0,0 -0.0625,0 -0.171875,0.078125 l -0.9375,0.71875 c -0.125,0.109375 -0.125,0.125 -0.125,0.15625 0,0.0625 0.015625,0.109375 0.09375,0.109375 0.0625,0 0.234375,-0.140625 0.34375,-0.21875 C 1.21875,5.28125 1.375,5.171875 1.484375,5.09375 l 1.96875,4.3125 C 3.515625,9.5625 3.5625,9.5625 3.65625,9.5625 c 0.15625,0 0.1875,-0.046875 0.25,-0.1875 L 8.4375,0 C 8.5,-0.140625 8.5,-0.171875 8.5,-0.203125 8.5,-0.296875 8.421875,-0.40625 8.296875,-0.40625 c -0.078125,0 -0.140625,0.0625 -0.21875,0.21875 z m 0,0"
-               id="path206" />
-          </symbol>
-          <symbol
-             overflow="visible"
-             id="symbol207">
-            <path
-               style="stroke:none"
-               d=""
-               id="path207" />
-          </symbol>
-          <symbol
-             overflow="visible"
-             id="symbol208">
-            <path
-               style="stroke:none"
-               d="M 7.53125,-5.765625 C 7.640625,-6.15625 7.8125,-6.46875 8.609375,-6.5 c 0.046875,0 0.171875,-0.015625 0.171875,-0.203125 0,0 0,-0.109375 -0.125,-0.109375 -0.328125,0 -0.6875,0.03125 -1.015625,0.03125 -0.328125,0 -0.6875,-0.03125 -1.015625,-0.03125 -0.0625,0 -0.171875,0 -0.171875,0.203125 C 6.453125,-6.5 6.546875,-6.5 6.625,-6.5 c 0.578125,0.015625 0.6875,0.21875 0.6875,0.4375 0,0.03125 -0.03125,0.1875 -0.03125,0.203125 l -1.125,4.4375 L 3.953125,-6.625 C 3.875,-6.796875 3.875,-6.8125 3.640625,-6.8125 h -1.34375 c -0.1875,0 -0.28125,0 -0.28125,0.203125 0,0.109375 0.09375,0.109375 0.28125,0.109375 0.046875,0 0.671875,0 0.671875,0.09375 L 1.640625,-1.0625 c -0.109375,0.40625 -0.28125,0.71875 -1.078125,0.75 -0.0625,0 -0.171875,0.015625 -0.171875,0.203125 0,0.0625 0.046875,0.109375 0.125,0.109375 0.328125,0 0.671875,-0.03125 1,-0.03125 C 1.859375,-0.03125 2.21875,0 2.546875,0 2.59375,0 2.71875,0 2.71875,-0.203125 2.71875,-0.296875 2.625,-0.3125 2.515625,-0.3125 1.9375,-0.328125 1.859375,-0.546875 1.859375,-0.75 c 0,-0.0625 0.015625,-0.125 0.046875,-0.234375 l 1.3125,-5.25 C 3.265625,-6.1875 3.265625,-6.15625 3.3125,-6.0625 l 2.484375,5.875 C 5.859375,-0.015625 5.890625,0 5.984375,0 6.09375,0 6.09375,-0.03125 6.140625,-0.203125 Z m 0,0"
-               id="path208" />
-          </symbol>
-        </g>
-      </defs>
-      <g
-         id="g213"
-         transform="translate(-149.446,-125.924)"
-         style="stroke-width:0.464008">
-        <g
-           style="fill:#00878a;fill-opacity:1;stroke-width:0.464008"
-           id="g210">
-          <g
-             transform="translate(148.712,126.33)"
-             id="g209"
-             style="stroke-width:0.464008">
-            <path
-               style="stroke:none;stroke-width:0.464008"
-               d="m 3.875,8.515625 -1.75,-3.875 C 2.046875,4.484375 2,4.484375 1.96875,4.484375 c 0,0 -0.0625,0 -0.171875,0.078125 l -0.9375,0.71875 c -0.125,0.109375 -0.125,0.125 -0.125,0.15625 0,0.0625 0.015625,0.109375 0.09375,0.109375 0.0625,0 0.234375,-0.140625 0.34375,-0.21875 C 1.21875,5.28125 1.375,5.171875 1.484375,5.09375 l 1.96875,4.3125 C 3.515625,9.5625 3.5625,9.5625 3.65625,9.5625 c 0.15625,0 0.1875,-0.046875 0.25,-0.1875 L 8.4375,0 C 8.5,-0.140625 8.5,-0.171875 8.5,-0.203125 8.5,-0.296875 8.421875,-0.40625 8.296875,-0.40625 c -0.078125,0 -0.140625,0.0625 -0.21875,0.21875 z m 0,0"
-               id="path209" />
-          </g>
-        </g>
-        <path
-           style="fill:none;stroke:#00878a;stroke-width:0.184675;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
-           d="M 6.25e-4,0.00109375 H 9.090469"
-           transform="matrix(1,0,0,-1,157.015,126.13)"
-           id="path210" />
-        <g
-           style="fill:#00878a;fill-opacity:1;stroke-width:0.464008"
-           id="g212">
-          <g
-             transform="translate(157.015,134.765)"
-             id="g211"
-             style="stroke-width:0.464008">
-            <path
-               style="stroke:none;stroke-width:0.464008"
-               d="M 7.53125,-5.765625 C 7.640625,-6.15625 7.8125,-6.46875 8.609375,-6.5 c 0.046875,0 0.171875,-0.015625 0.171875,-0.203125 0,0 0,-0.109375 -0.125,-0.109375 -0.328125,0 -0.6875,0.03125 -1.015625,0.03125 -0.328125,0 -0.6875,-0.03125 -1.015625,-0.03125 -0.0625,0 -0.171875,0 -0.171875,0.203125 C 6.453125,-6.5 6.546875,-6.5 6.625,-6.5 c 0.578125,0.015625 0.6875,0.21875 0.6875,0.4375 0,0.03125 -0.03125,0.1875 -0.03125,0.203125 l -1.125,4.4375 L 3.953125,-6.625 C 3.875,-6.796875 3.875,-6.8125 3.640625,-6.8125 h -1.34375 c -0.1875,0 -0.28125,0 -0.28125,0.203125 0,0.109375 0.09375,0.109375 0.28125,0.109375 0.046875,0 0.671875,0 0.671875,0.09375 L 1.640625,-1.0625 c -0.109375,0.40625 -0.28125,0.71875 -1.078125,0.75 -0.0625,0 -0.171875,0.015625 -0.171875,0.203125 0,0.0625 0.046875,0.109375 0.125,0.109375 0.328125,0 0.671875,-0.03125 1,-0.03125 C 1.859375,-0.03125 2.21875,0 2.546875,0 2.59375,0 2.71875,0 2.71875,-0.203125 2.71875,-0.296875 2.625,-0.3125 2.515625,-0.3125 1.9375,-0.328125 1.859375,-0.546875 1.859375,-0.75 c 0,-0.0625 0.015625,-0.125 0.046875,-0.234375 l 1.3125,-5.25 C 3.265625,-6.1875 3.265625,-6.15625 3.3125,-6.0625 l 2.484375,5.875 C 5.859375,-0.015625 5.890625,0 5.984375,0 6.09375,0 6.09375,-0.03125 6.140625,-0.203125 Z m 0,0"
-               id="path211" />
-          </g>
-        </g>
-      </g>
-    </g>
-    <g
        transform="matrix(0.68181318,0,0,0.68181318,194.64026,189.76963)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{\\hat{\\sigma}}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.375042387340929"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.485086"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{\\hat{\\sigma}}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.375042387340929"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.485086"
        id="g223"
        style="stroke-width:0.711463">
       <defs
@@ -1513,16 +1330,16 @@
     </g>
     <g
        transform="matrix(0.37866613,0,0,0.37866613,196.76649,193.51047)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{B}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="0.9232770937140643"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.325712"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{B}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="0.9232770937140643"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.325712"
        id="g200"
        style="stroke-width:0.860158">
       <defs
@@ -1732,16 +1549,16 @@
    id="tspan487">B</tspan></tspan></text>
     <g
        transform="matrix(0.579711,0,0,0.579711,285.71191,191.69297)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{A}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.4055024411524741"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.495831"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{A}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.4055024411524741"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.495831"
        id="g393"
        style="stroke-width:0.855309">
       <defs
@@ -1930,16 +1747,16 @@
        inkscape:transform-center-y="-18.993951" />
     <g
        transform="matrix(0.71336,0,0,0.71336,287.66878,187.88365)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{2}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.6432720537097152"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.579711"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{2}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.6432720537097152"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.579711"
        id="g503"
        style="stroke-width:0.812649">
       <defs
@@ -1985,16 +1802,16 @@
     </g>
     <g
        transform="matrix(0.579711,0,0,0.579711,290.69425,189.37041)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{+}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.6432720537097152"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.579711"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{+}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.6432720537097152"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.579711"
        id="g509">
       <defs
          id="id-4206ab00-07c7-4166-9161-99af12ffddf4">
@@ -2069,16 +1886,16 @@
     </g>
     <g
        transform="matrix(0.71336,0,0,0.71336,299.31046,187.88365)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{2}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.6432720537097152"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.579711"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{2}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.6432720537097152"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.579711"
        id="g524"
        style="stroke-width:0.812649">
       <defs
@@ -2124,16 +1941,16 @@
     </g>
     <g
        transform="matrix(0.38649541,0,0,0.38649541,297.22592,191.78814)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{B}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.6432720537097152"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.579711"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{B}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.6432720537097152"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.579711"
        id="g514"
        style="stroke-width:1.49992">
       <defs
@@ -2179,16 +1996,16 @@
     </g>
     <g
        transform="matrix(0.36077358,0,0,0.36077358,302.46845,188.70394)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{-2\\hat{Cov}(X_A,X_B)}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.6432720537097152"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.579711"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{-2\\hat{Cov}(X_A,X_B)}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.6432720537097152"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.579711"
        id="g543"
        style="stroke-width:1.60685">
       <defs
@@ -2498,16 +2315,16 @@
     </g>
     <g
        transform="matrix(0.74827233,0,0,0.81944914,277.5374,186.37001)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{\\sqrt{\\qquad\\qquad\\qquad}}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.2712690256169739"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.4484765638848925"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{\\sqrt{\\qquad\\qquad\\qquad}}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.2712690256169739"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.4484765638848925"
        id="g407"
        style="stroke-width:0.572729">
       <defs
@@ -2587,16 +2404,16 @@
        id="path582" />
     <g
        transform="matrix(0.579711,0,0,0.579711,281.78661,246.27779)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{A}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.4055024411524741"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.495831"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{A}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.4055024411524741"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.495831"
        id="g588"
        style="stroke-width:0.855309">
       <defs
@@ -2642,16 +2459,16 @@
     </g>
     <g
        transform="matrix(0.71336,0,0,0.71336,283.74348,242.46847)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{2}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.6432720537097152"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.579711"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{2}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.6432720537097152"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.579711"
        id="g603"
        style="stroke-width:0.812649">
       <defs
@@ -2697,16 +2514,16 @@
     </g>
     <g
        transform="matrix(0.579711,0,0,0.579711,286.76895,243.95523)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{+}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.6432720537097152"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.579711"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{+}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.6432720537097152"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.579711"
        id="g608">
       <defs
          id="defs604">
@@ -2781,16 +2598,16 @@
     </g>
     <g
        transform="matrix(0.71336,0,0,0.71336,295.38516,242.46847)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{2}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.6432720537097152"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.579711"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{2}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.6432720537097152"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.579711"
        id="g618"
        style="stroke-width:0.812649">
       <defs
@@ -2836,16 +2653,16 @@
     </g>
     <g
        transform="matrix(0.38649541,0,0,0.38649541,293.30062,246.37296)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{B}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.6432720537097152"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.579711"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{B}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.6432720537097152"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.579711"
        id="g623"
        style="stroke-width:1.49992">
       <defs
@@ -3010,61 +2827,6 @@
            id="path595" />
       </g>
     </g>
-    <g
-       transform="matrix(0.69845116,0,0,0.76488998,296.68746,251.48011)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{N}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.5487318154032024"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.5463595075222907"
-       id="g679"
-       style="stroke-width:0.7475">
-      <defs
-         id="id-820ef524-8ebd-444f-ac24-38f978db1685">
-        <g
-           id="id-632d8a86-991d-4def-83b8-dd46aaee75ce">
-          <symbol
-             overflow="visible"
-             id="id-d8913ae0-3919-4b4d-8e22-2615b3c954d3">
-            <path
-               style="stroke:none"
-               d=""
-               id="id-6f14c580-27c1-4666-a139-e49ffd122234" />
-          </symbol>
-          <symbol
-             overflow="visible"
-             id="id-8ccee9d5-bbbf-4c54-9604-c464bfefc1c3">
-            <path
-               style="stroke:none"
-               d="M 7.53125,-5.765625 C 7.640625,-6.15625 7.8125,-6.46875 8.609375,-6.5 c 0.046875,0 0.171875,-0.015625 0.171875,-0.203125 0,0 0,-0.109375 -0.125,-0.109375 -0.328125,0 -0.6875,0.03125 -1.015625,0.03125 -0.328125,0 -0.6875,-0.03125 -1.015625,-0.03125 -0.0625,0 -0.171875,0 -0.171875,0.203125 C 6.453125,-6.5 6.546875,-6.5 6.625,-6.5 c 0.578125,0.015625 0.6875,0.21875 0.6875,0.4375 0,0.03125 -0.03125,0.1875 -0.03125,0.203125 l -1.125,4.4375 L 3.953125,-6.625 C 3.875,-6.796875 3.875,-6.8125 3.640625,-6.8125 h -1.34375 c -0.1875,0 -0.28125,0 -0.28125,0.203125 0,0.109375 0.09375,0.109375 0.28125,0.109375 0.046875,0 0.671875,0 0.671875,0.09375 L 1.640625,-1.0625 c -0.109375,0.40625 -0.28125,0.71875 -1.078125,0.75 -0.0625,0 -0.171875,0.015625 -0.171875,0.203125 0,0.0625 0.046875,0.109375 0.125,0.109375 0.328125,0 0.671875,-0.03125 1,-0.03125 C 1.859375,-0.03125 2.21875,0 2.546875,0 2.59375,0 2.71875,0 2.71875,-0.203125 2.71875,-0.296875 2.625,-0.3125 2.515625,-0.3125 1.9375,-0.328125 1.859375,-0.546875 1.859375,-0.75 c 0,-0.0625 0.015625,-0.125 0.046875,-0.234375 l 1.3125,-5.25 C 3.265625,-6.1875 3.265625,-6.15625 3.3125,-6.0625 l 2.484375,5.875 C 5.859375,-0.015625 5.890625,0 5.984375,0 6.09375,0 6.09375,-0.03125 6.140625,-0.203125 Z m 0,0"
-               id="id-2f29bb9f-1017-4947-89d7-0ed05d92568b" />
-          </symbol>
-        </g>
-      </defs>
-      <g
-         id="id-2f9c1df6-e412-4c88-8fc5-a0f6c600b5b7"
-         transform="translate(-149.103,-127.953)"
-         style="stroke-width:0.7475">
-        <g
-           style="fill:#00878a;fill-opacity:1;stroke-width:0.7475"
-           id="id-6800675f-7bbb-4461-976c-d4e41bbda925">
-          <g
-             transform="translate(148.712,134.765)"
-             id="g857"
-             style="stroke-width:0.7475">
-            <path
-               style="stroke:none;stroke-width:0.7475"
-               d="M 7.53125,-5.765625 C 7.640625,-6.15625 7.8125,-6.46875 8.609375,-6.5 c 0.046875,0 0.171875,-0.015625 0.171875,-0.203125 0,0 0,-0.109375 -0.125,-0.109375 -0.328125,0 -0.6875,0.03125 -1.015625,0.03125 -0.328125,0 -0.6875,-0.03125 -1.015625,-0.03125 -0.0625,0 -0.171875,0 -0.171875,0.203125 C 6.453125,-6.5 6.546875,-6.5 6.625,-6.5 c 0.578125,0.015625 0.6875,0.21875 0.6875,0.4375 0,0.03125 -0.03125,0.1875 -0.03125,0.203125 l -1.125,4.4375 L 3.953125,-6.625 C 3.875,-6.796875 3.875,-6.8125 3.640625,-6.8125 h -1.34375 c -0.1875,0 -0.28125,0 -0.28125,0.203125 0,0.109375 0.09375,0.109375 0.28125,0.109375 0.046875,0 0.671875,0 0.671875,0.09375 L 1.640625,-1.0625 c -0.109375,0.40625 -0.28125,0.71875 -1.078125,0.75 -0.0625,0 -0.171875,0.015625 -0.171875,0.203125 0,0.0625 0.046875,0.109375 0.125,0.109375 0.328125,0 0.671875,-0.03125 1,-0.03125 C 1.859375,-0.03125 2.21875,0 2.546875,0 2.59375,0 2.71875,0 2.71875,-0.203125 2.71875,-0.296875 2.625,-0.3125 2.515625,-0.3125 1.9375,-0.328125 1.859375,-0.546875 1.859375,-0.75 c 0,-0.0625 0.015625,-0.125 0.046875,-0.234375 l 1.3125,-5.25 C 3.265625,-6.1875 3.265625,-6.15625 3.3125,-6.0625 l 2.484375,5.875 C 5.859375,-0.015625 5.890625,0 5.984375,0 6.09375,0 6.09375,-0.03125 6.140625,-0.203125 Z m 0,0"
-               id="id-d6b449f1-477b-447d-bc27-a0a168d9f13a" />
-          </g>
-        </g>
-      </g>
-    </g>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,101.7417,93.898075)"
@@ -3072,16 +2834,16 @@
        style="font-size:26.6667px;line-height:90%;font-family:sans-serif;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect863);display:inline;fill:#000000;stroke-width:0.999999;-inkscape-stroke:none;stop-color:#000000" />
     <g
        transform="matrix(0.65821221,0,0,1.0027134,130.57886,234.42519)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{\\sqrt{\\color{white}{\\frac{X\\qquad}{\\color{white}{X}}}}}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.5487318154032024"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.546359"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{\\sqrt{\\color{white}{\\frac{X\\qquad}{\\color{white}{X}}}}}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.5487318154032024"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.546359"
        id="g936"
        style="stroke-width:0.672522">
       <defs
@@ -3179,16 +2941,16 @@
     </g>
     <g
        transform="matrix(0.579711,0,0,0.579711,139.34578,239.91625)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{A}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.4055024411524741"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.495831"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{A}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.4055024411524741"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.495831"
        id="g878"
        style="stroke-width:0.855309">
       <defs
@@ -3234,16 +2996,16 @@
     </g>
     <g
        transform="matrix(0.71336,0,0,0.71336,141.30265,236.10693)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{2}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.6432720537097152"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.579711"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{2}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.6432720537097152"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.579711"
        id="g883"
        style="stroke-width:0.812649">
       <defs
@@ -3289,16 +3051,16 @@
     </g>
     <g
        transform="matrix(0.579711,0,0,0.579711,144.29871,240.33019)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{+}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.6432720537097152"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.579711"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{+}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.6432720537097152"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.579711"
        id="g888">
       <defs
          id="defs884">
@@ -3373,16 +3135,16 @@
     </g>
     <g
        transform="matrix(0.71336,0,0,0.71336,152.77809,236.45147)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{2}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.6432720537097152"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.579711"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{2}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.6432720537097152"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.579711"
        id="g898"
        style="stroke-width:0.812649">
       <defs
@@ -3428,16 +3190,16 @@
     </g>
     <g
        transform="matrix(0.38649541,0,0,0.38649541,150.69355,240.35596)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{B}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.6432720537097152"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.579711"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{B}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.6432720537097152"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.579711"
        id="g903"
        style="stroke-width:1.49992">
       <defs
@@ -3510,72 +3272,17 @@
       </g>
     </g>
     <g
-       transform="matrix(0.57945061,0,0,0.63456989,136.48614,245.28287)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{N}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.5487318154032024"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.5463595075222907"
-       id="g924"
-       style="stroke-width:0.901012">
-      <defs
-         id="defs920">
-        <g
-           id="g920">
-          <symbol
-             overflow="visible"
-             id="symbol919">
-            <path
-               style="stroke:none"
-               d=""
-               id="path919" />
-          </symbol>
-          <symbol
-             overflow="visible"
-             id="symbol920">
-            <path
-               style="stroke:none"
-               d="M 7.53125,-5.765625 C 7.640625,-6.15625 7.8125,-6.46875 8.609375,-6.5 c 0.046875,0 0.171875,-0.015625 0.171875,-0.203125 0,0 0,-0.109375 -0.125,-0.109375 -0.328125,0 -0.6875,0.03125 -1.015625,0.03125 -0.328125,0 -0.6875,-0.03125 -1.015625,-0.03125 -0.0625,0 -0.171875,0 -0.171875,0.203125 C 6.453125,-6.5 6.546875,-6.5 6.625,-6.5 c 0.578125,0.015625 0.6875,0.21875 0.6875,0.4375 0,0.03125 -0.03125,0.1875 -0.03125,0.203125 l -1.125,4.4375 L 3.953125,-6.625 C 3.875,-6.796875 3.875,-6.8125 3.640625,-6.8125 h -1.34375 c -0.1875,0 -0.28125,0 -0.28125,0.203125 0,0.109375 0.09375,0.109375 0.28125,0.109375 0.046875,0 0.671875,0 0.671875,0.09375 L 1.640625,-1.0625 c -0.109375,0.40625 -0.28125,0.71875 -1.078125,0.75 -0.0625,0 -0.171875,0.015625 -0.171875,0.203125 0,0.0625 0.046875,0.109375 0.125,0.109375 0.328125,0 0.671875,-0.03125 1,-0.03125 C 1.859375,-0.03125 2.21875,0 2.546875,0 2.59375,0 2.71875,0 2.71875,-0.203125 2.71875,-0.296875 2.625,-0.3125 2.515625,-0.3125 1.9375,-0.328125 1.859375,-0.546875 1.859375,-0.75 c 0,-0.0625 0.015625,-0.125 0.046875,-0.234375 l 1.3125,-5.25 C 3.265625,-6.1875 3.265625,-6.15625 3.3125,-6.0625 l 2.484375,5.875 C 5.859375,-0.015625 5.890625,0 5.984375,0 6.09375,0 6.09375,-0.03125 6.140625,-0.203125 Z m 0,0"
-               id="path920" />
-          </symbol>
-        </g>
-      </defs>
-      <g
-         id="g923"
-         transform="translate(-149.103,-127.953)"
-         style="stroke-width:0.901012">
-        <g
-           style="fill:#00878a;fill-opacity:1;stroke-width:0.901012"
-           id="g922">
-          <g
-             transform="translate(148.712,134.765)"
-             id="g921"
-             style="stroke-width:0.901012">
-            <path
-               style="stroke:none;stroke-width:0.901012"
-               d="M 7.53125,-5.765625 C 7.640625,-6.15625 7.8125,-6.46875 8.609375,-6.5 c 0.046875,0 0.171875,-0.015625 0.171875,-0.203125 0,0 0,-0.109375 -0.125,-0.109375 -0.328125,0 -0.6875,0.03125 -1.015625,0.03125 -0.328125,0 -0.6875,-0.03125 -1.015625,-0.03125 -0.0625,0 -0.171875,0 -0.171875,0.203125 C 6.453125,-6.5 6.546875,-6.5 6.625,-6.5 c 0.578125,0.015625 0.6875,0.21875 0.6875,0.4375 0,0.03125 -0.03125,0.1875 -0.03125,0.203125 l -1.125,4.4375 L 3.953125,-6.625 C 3.875,-6.796875 3.875,-6.8125 3.640625,-6.8125 h -1.34375 c -0.1875,0 -0.28125,0 -0.28125,0.203125 0,0.109375 0.09375,0.109375 0.28125,0.109375 0.046875,0 0.671875,0 0.671875,0.09375 L 1.640625,-1.0625 c -0.109375,0.40625 -0.28125,0.71875 -1.078125,0.75 -0.0625,0 -0.171875,0.015625 -0.171875,0.203125 0,0.0625 0.046875,0.109375 0.125,0.109375 0.328125,0 0.671875,-0.03125 1,-0.03125 C 1.859375,-0.03125 2.21875,0 2.546875,0 2.59375,0 2.71875,0 2.71875,-0.203125 2.71875,-0.296875 2.625,-0.3125 2.515625,-0.3125 1.9375,-0.328125 1.859375,-0.546875 1.859375,-0.75 c 0,-0.0625 0.015625,-0.125 0.046875,-0.234375 l 1.3125,-5.25 C 3.265625,-6.1875 3.265625,-6.15625 3.3125,-6.0625 l 2.484375,5.875 C 5.859375,-0.015625 5.890625,0 5.984375,0 6.09375,0 6.09375,-0.03125 6.140625,-0.203125 Z m 0,0"
-               id="path921" />
-          </g>
-        </g>
-      </g>
-    </g>
-    <g
-       transform="matrix(0.60799864,0,0,0.60799864,139.96224,248.77218)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{A}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.4055024411524741"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.495831"
+       transform="matrix(0.60799864,0,0,0.60799864,139.85927,248.23618)"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{A}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.4055024411524741"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.495831"
        id="g929"
        style="stroke-width:0.815514">
       <defs
@@ -3620,72 +3327,17 @@
       </g>
     </g>
     <g
-       transform="matrix(0.57945061,0,0,0.63456989,148.12782,245.28287)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{N}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.5487318154032024"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.5463595075222907"
-       id="g948"
-       style="stroke-width:0.901012">
-      <defs
-         id="defs944">
-        <g
-           id="g944">
-          <symbol
-             overflow="visible"
-             id="symbol943">
-            <path
-               style="stroke:none"
-               d=""
-               id="path943" />
-          </symbol>
-          <symbol
-             overflow="visible"
-             id="symbol944">
-            <path
-               style="stroke:none"
-               d="M 7.53125,-5.765625 C 7.640625,-6.15625 7.8125,-6.46875 8.609375,-6.5 c 0.046875,0 0.171875,-0.015625 0.171875,-0.203125 0,0 0,-0.109375 -0.125,-0.109375 -0.328125,0 -0.6875,0.03125 -1.015625,0.03125 -0.328125,0 -0.6875,-0.03125 -1.015625,-0.03125 -0.0625,0 -0.171875,0 -0.171875,0.203125 C 6.453125,-6.5 6.546875,-6.5 6.625,-6.5 c 0.578125,0.015625 0.6875,0.21875 0.6875,0.4375 0,0.03125 -0.03125,0.1875 -0.03125,0.203125 l -1.125,4.4375 L 3.953125,-6.625 C 3.875,-6.796875 3.875,-6.8125 3.640625,-6.8125 h -1.34375 c -0.1875,0 -0.28125,0 -0.28125,0.203125 0,0.109375 0.09375,0.109375 0.28125,0.109375 0.046875,0 0.671875,0 0.671875,0.09375 L 1.640625,-1.0625 c -0.109375,0.40625 -0.28125,0.71875 -1.078125,0.75 -0.0625,0 -0.171875,0.015625 -0.171875,0.203125 0,0.0625 0.046875,0.109375 0.125,0.109375 0.328125,0 0.671875,-0.03125 1,-0.03125 C 1.859375,-0.03125 2.21875,0 2.546875,0 2.59375,0 2.71875,0 2.71875,-0.203125 2.71875,-0.296875 2.625,-0.3125 2.515625,-0.3125 1.9375,-0.328125 1.859375,-0.546875 1.859375,-0.75 c 0,-0.0625 0.015625,-0.125 0.046875,-0.234375 l 1.3125,-5.25 C 3.265625,-6.1875 3.265625,-6.15625 3.3125,-6.0625 l 2.484375,5.875 C 5.859375,-0.015625 5.890625,0 5.984375,0 6.09375,0 6.09375,-0.03125 6.140625,-0.203125 Z m 0,0"
-               id="path944" />
-          </symbol>
-        </g>
-      </defs>
-      <g
-         id="g947"
-         transform="translate(-149.103,-127.953)"
-         style="stroke-width:0.901012">
-        <g
-           style="fill:#00878a;fill-opacity:1;stroke-width:0.901012"
-           id="g946">
-          <g
-             transform="translate(148.712,134.765)"
-             id="g945"
-             style="stroke-width:0.901012">
-            <path
-               style="stroke:none;stroke-width:0.901012"
-               d="M 7.53125,-5.765625 C 7.640625,-6.15625 7.8125,-6.46875 8.609375,-6.5 c 0.046875,0 0.171875,-0.015625 0.171875,-0.203125 0,0 0,-0.109375 -0.125,-0.109375 -0.328125,0 -0.6875,0.03125 -1.015625,0.03125 -0.328125,0 -0.6875,-0.03125 -1.015625,-0.03125 -0.0625,0 -0.171875,0 -0.171875,0.203125 C 6.453125,-6.5 6.546875,-6.5 6.625,-6.5 c 0.578125,0.015625 0.6875,0.21875 0.6875,0.4375 0,0.03125 -0.03125,0.1875 -0.03125,0.203125 l -1.125,4.4375 L 3.953125,-6.625 C 3.875,-6.796875 3.875,-6.8125 3.640625,-6.8125 h -1.34375 c -0.1875,0 -0.28125,0 -0.28125,0.203125 0,0.109375 0.09375,0.109375 0.28125,0.109375 0.046875,0 0.671875,0 0.671875,0.09375 L 1.640625,-1.0625 c -0.109375,0.40625 -0.28125,0.71875 -1.078125,0.75 -0.0625,0 -0.171875,0.015625 -0.171875,0.203125 0,0.0625 0.046875,0.109375 0.125,0.109375 0.328125,0 0.671875,-0.03125 1,-0.03125 C 1.859375,-0.03125 2.21875,0 2.546875,0 2.59375,0 2.71875,0 2.71875,-0.203125 2.71875,-0.296875 2.625,-0.3125 2.515625,-0.3125 1.9375,-0.328125 1.859375,-0.546875 1.859375,-0.75 c 0,-0.0625 0.015625,-0.125 0.046875,-0.234375 l 1.3125,-5.25 C 3.265625,-6.1875 3.265625,-6.15625 3.3125,-6.0625 l 2.484375,5.875 C 5.859375,-0.015625 5.890625,0 5.984375,0 6.09375,0 6.09375,-0.03125 6.140625,-0.203125 Z m 0,0"
-               id="path945" />
-          </g>
-        </g>
-      </g>
-    </g>
-    <g
-       transform="matrix(0.40543119,0,0,0.40543119,151.46218,248.73013)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{B}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.7234573327149458"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.607999"
+       transform="matrix(0.40543119,0,0,0.40543119,151.72855,248.07868)"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{B}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.7234573327149458"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.607999"
        id="g954"
        style="stroke-width:1.49964">
       <defs
@@ -3747,16 +3399,16 @@
          id="tspan957">Varianzen      und      )</tspan></text>
     <g
        transform="matrix(0.39610045,0,0,0.39610045,142.14101,261.21623)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{A}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.4055024411524741"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.495831"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{A}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.4055024411524741"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.495831"
        id="g962"
        style="stroke-width:1.25178">
       <defs
@@ -3802,16 +3454,16 @@
     </g>
     <g
        transform="matrix(0.4874191,0,0,0.4874191,143.47809,258.61343)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{2}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.6432720537097152"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.579711"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{2}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.6432720537097152"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.579711"
        id="g967"
        style="stroke-width:1.18935">
       <defs
@@ -3916,16 +3568,16 @@
     </g>
     <g
        transform="matrix(0.52519231,0,0,0.52519231,156.71579,258.32211)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{2}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.6432720537097152"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.579711"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{2}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.6432720537097152"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.579711"
        id="g981"
        style="stroke-width:1.10381">
       <defs
@@ -3971,16 +3623,16 @@
     </g>
     <g
        transform="matrix(0.28454696,0,0,0.28454696,155.1811,261.19669)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{B}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.6432720537097152"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.579711"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{B}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.6432720537097152"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.579711"
        id="g986"
        style="stroke-width:2.03732">
       <defs
@@ -4094,16 +3746,16 @@
        id="path38" />
     <g
        transform="matrix(0.63521118,0,0,0.63521118,284.49824,136.6149)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{\\sigma}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.4055024411524741"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.495831"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{\\sigma}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.4055024411524741"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.495831"
        id="g44"
        style="stroke-width:0.780577">
       <defs
@@ -4149,16 +3801,16 @@
     </g>
     <g
        transform="matrix(0.55037048,0,0,0.55037048,286.40771,138.14129)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{A}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.4055024411524741"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.495831"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{A}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.4055024411524741"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.495831"
        id="g55"
        style="stroke-width:0.900904">
       <defs
@@ -4204,16 +3856,16 @@
     </g>
     <g
        transform="matrix(0.63521118,0,0,0.63521118,364.4125,136.72544)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{\\sigma}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.4055024411524741"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.495831"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{\\sigma}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.4055024411524741"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.495831"
        id="g65"
        style="stroke-width:0.780577">
       <defs
@@ -4259,16 +3911,16 @@
     </g>
     <g
        transform="matrix(0.84295531,0,0,0.84295531,364.8534,136.63114)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{B}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.4055024411524741"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.495831"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{B}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.4055024411524741"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.495831"
        id="g70"
        style="stroke-width:0.588205">
       <defs
@@ -4334,16 +3986,16 @@
        id="path71" />
     <g
        transform="matrix(0.495831 0 0 0.495831 137.017 146.839)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{myred}{RGB}{165, 4, 4}\r\n$\\color{myred}{\\bar{x}_\\text{A}}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.4055024411524741"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.495831"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{myred}{RGB}{165, 4, 4}\r\n$\\color{myred}{\\bar{x}_\\text{A}}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.4055024411524741"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.495831"
        id="g52">
       <defs
          id="id-3bfabccc-5f8d-42f6-8633-695cde85c08e">
@@ -4442,16 +4094,16 @@
     </g>
     <g
        transform="matrix(0.495831 0 0 0.495831 215.45 146.839)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{myred}{RGB}{165, 4, 4}\r\n$\\color{myred}{\\bar{x}_\\text{B}}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.4055024411524741"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.495831"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{myred}{RGB}{165, 4, 4}\r\n$\\color{myred}{\\bar{x}_\\text{B}}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.4055024411524741"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.495831"
        id="g91">
       <defs
          id="id-6745549c-d611-4e1c-8c5c-d57161a6b838">
@@ -4550,16 +4202,16 @@
     </g>
     <g
        transform="matrix(0.495831 0 0 0.495831 298.943 146.839)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{myred}{RGB}{165, 4, 4}\r\n$\\color{myred}{\\bar{x}_\\text{A}}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.4055024411524741"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.495831"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{myred}{RGB}{165, 4, 4}\r\n$\\color{myred}{\\bar{x}_\\text{A}}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.4055024411524741"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.495831"
        id="g19">
       <defs
          id="id-4b808d34-d9ac-4767-a9ba-ec1191117cc2">
@@ -4658,16 +4310,16 @@
     </g>
     <g
        transform="matrix(0.495831 0 0 0.495831 377.375 146.839)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{myred}{RGB}{165, 4, 4}\r\n$\\color{myred}{\\bar{x}_\\text{B}}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.4055024411524741"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.495831"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{myred}{RGB}{165, 4, 4}\r\n$\\color{myred}{\\bar{x}_\\text{B}}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.4055024411524741"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.495831"
        id="g38">
       <defs
          id="id-0cbc3c9d-084b-40f4-afae-3287aca91e07">
@@ -4766,16 +4418,16 @@
     </g>
     <g
        transform="matrix(0.495831 0 0 0.495831 334.067 205.959)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{myred}{RGB}{165, 4, 4}\r\n$\\color{myred}{\\bar{x}_\\text{A}-\\bar{x}_\\text{B}}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.4055024411524741"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.495831"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{myred}{RGB}{165, 4, 4}\r\n$\\color{myred}{\\bar{x}_\\text{A}-\\bar{x}_\\text{B}}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.4055024411524741"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.495831"
        id="g577">
       <defs
          id="id-0cca6cf2-f49a-4c6a-a57a-7c160f4e0b0c">
@@ -4946,16 +4598,16 @@
     </g>
     <g
        transform="matrix(0.495831 0 0 0.495831 215.45 207.164)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{myred}{RGB}{165, 4, 4}\r\n$\\color{myred}{\\bar{x}_\\text{B}}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.4055024411524741"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.495831"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{myred}{RGB}{165, 4, 4}\r\n$\\color{myred}{\\bar{x}_\\text{B}}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.4055024411524741"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.495831"
        id="g163">
       <defs
          id="id-65f691db-52ac-48b1-afa8-9911c77944a4">
@@ -5054,16 +4706,16 @@
     </g>
     <g
        transform="matrix(0.495831 0 0 0.495831 137.017 207.164)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{myred}{RGB}{165, 4, 4}\r\n$\\color{myred}{\\bar{x}_\\text{A}}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.4055024411524741"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.495831"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{myred}{RGB}{165, 4, 4}\r\n$\\color{myred}{\\bar{x}_\\text{A}}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.4055024411524741"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.495831"
        id="g143">
       <defs
          id="id-1e5ae0ec-f816-48fc-9c9b-a09b0597eafb">
@@ -5162,16 +4814,16 @@
     </g>
     <g
        transform="matrix(0.495831 0 0 0.495831 171.613 266.284)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{myred}{RGB}{165, 4, 4}\r\n$\\color{myred}{\\bar{x}_\\text{A}-\\bar{x}_\\text{B}}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.4055024411524741"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.495831"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{myred}{RGB}{165, 4, 4}\r\n$\\color{myred}{\\bar{x}_\\text{A}-\\bar{x}_\\text{B}}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.4055024411524741"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.495831"
        id="g242">
       <defs
          id="id-8f834418-3986-4bd2-81cd-36f8b72c84b2">
@@ -5342,16 +4994,16 @@
     </g>
     <g
        transform="matrix(0.495831 0 0 0.495831 335.655 266.284)"
-       ns2:version="1.9.0"
-       ns2:texconverter="pdflatex"
-       ns2:pdfconverter="inkscape"
-       ns2:text="\\definecolor{myred}{RGB}{165, 4, 4}\r\n$\\color{myred}{\\bar{x}_\\text{A}-\\bar{x}_\\text{B}}$"
-       ns2:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
-       ns2:scale="1.4055024411524741"
-       ns2:alignment="middle center"
-       ns2:stroke-to-path="0"
-       ns2:inkscapeversion="1.4-dev"
-       ns2:jacobian_sqrt="0.495831"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{myred}{RGB}{165, 4, 4}\r\n$\\color{myred}{\\bar{x}_\\text{A}-\\bar{x}_\\text{B}}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.4055024411524741"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.495831"
        id="g476">
       <defs
          id="id-e4d0c975-04b8-4cd4-b1f2-16c1c0925186">
@@ -5516,6 +5168,332 @@
                style="stroke:none"
                d="m 0.421875,-4.765625 v 0.25 h 0.15625 c 0.546875,0 0.5625,0.078125 0.5625,0.328125 v 3.625 c 0,0.234375 -0.015625,0.3125 -0.5625,0.3125 H 0.421875 V 0 H 3.375 c 0.984375,0 1.703125,-0.609375 1.703125,-1.28125 0,-0.59375 -0.625,-1.109375 -1.46875,-1.203125 0.6875,-0.125 1.25,-0.546875 1.25,-1.09375 0,-0.625 -0.734375,-1.1875 -1.703125,-1.1875 z M 1.75,-2.578125 v -1.65625 c 0,-0.21875 0,-0.28125 0.328125,-0.28125 h 1.03125 c 0.703125,0 1.0625,0.5 1.0625,0.9375 0,0.5 -0.46875,1 -1.265625,1 z M 2.078125,-0.25 C 1.75,-0.25 1.75,-0.3125 1.75,-0.515625 V -2.375 h 1.484375 c 0.734375,0 1.125,0.59375 1.125,1.078125 C 4.359375,-0.78125 3.890625,-0.25 3.125,-0.25 Z m 0,0"
                id="id-abfdb4d5-a813-4c00-ba84-c7c2d48b8bb3" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="matrix(0.698451 0 0 0.76489 297.734 252.358)"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{n}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="2.071882978847535"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.7309159906514565"
+       id="g679">
+      <defs
+         id="id-05540921-021c-49b7-bbff-dc81cff4b241">
+        <g
+           id="id-bca30e24-5408-4460-b86e-3063fbbb53e8">
+          <symbol
+             overflow="visible"
+             id="id-57d15f5d-dda7-43c0-a7a5-a424b38e7849">
+            <path
+               style="stroke:none"
+               d=""
+               id="id-7b2fbfc7-1d3d-4906-a1ff-8c9646b73906" />
+          </symbol>
+          <symbol
+             overflow="visible"
+             id="id-bff1529c-af0e-4a53-92da-772158886da8">
+            <path
+               style="stroke:none"
+               d="m 0.875,-0.59375 c -0.03125,0.15625 -0.09375,0.390625 -0.09375,0.4375 0,0.171875 0.140625,0.265625 0.296875,0.265625 0.125,0 0.296875,-0.078125 0.375,-0.28125 0,-0.015625 0.125,-0.484375 0.1875,-0.734375 l 0.21875,-0.890625 C 1.90625,-2.03125 1.96875,-2.25 2.03125,-2.46875 c 0.03125,-0.171875 0.109375,-0.46875 0.125,-0.5 0.140625,-0.3125 0.671875,-1.21875 1.625,-1.21875 0.453125,0 0.53125,0.375 0.53125,0.703125 0,0.609375 -0.484375,1.890625 -0.640625,2.3125 C 3.578125,-0.9375 3.5625,-0.8125 3.5625,-0.703125 c 0,0.46875 0.359375,0.8125 0.828125,0.8125 0.9375,0 1.296875,-1.453125 1.296875,-1.53125 0,-0.109375 -0.078125,-0.109375 -0.109375,-0.109375 -0.109375,0 -0.109375,0.03125 -0.15625,0.1875 -0.203125,0.671875 -0.53125,1.234375 -1.015625,1.234375 -0.171875,0 -0.234375,-0.09375 -0.234375,-0.328125 0,-0.25 0.078125,-0.484375 0.171875,-0.703125 0.1875,-0.53125 0.609375,-1.625 0.609375,-2.203125 0,-0.65625 -0.421875,-1.0625 -1.140625,-1.0625 -0.90625,0 -1.390625,0.640625 -1.5625,0.875 -0.046875,-0.5625 -0.453125,-0.875 -0.921875,-0.875 -0.453125,0 -0.640625,0.390625 -0.734375,0.5625 C 0.421875,-3.5 0.296875,-2.90625 0.296875,-2.875 c 0,0.109375 0.09375,0.109375 0.109375,0.109375 0.109375,0 0.109375,-0.015625 0.171875,-0.234375 0.171875,-0.703125 0.375,-1.1875 0.734375,-1.1875 0.1875,0 0.296875,0.125 0.296875,0.453125 0,0.21875 -0.03125,0.328125 -0.15625,0.84375 z m 0,0"
+               id="id-92e72fb7-9354-4267-af03-0f4d81c22f43" />
+          </symbol>
+        </g>
+      </defs>
+      <g
+         id="id-c74a3e1c-cb31-4a69-bfc2-6c9721a47e54"
+         transform="translate(-149.009, -130.359)">
+        <g
+           style="fill:#00878a;fill-opacity:1"
+           id="id-de45311f-7288-496c-907c-74be96a812d8">
+          <g
+             transform="translate(148.712, 134.765)"
+             id="g56">
+            <path
+               style="stroke:none"
+               d="m 0.875,-0.59375 c -0.03125,0.15625 -0.09375,0.390625 -0.09375,0.4375 0,0.171875 0.140625,0.265625 0.296875,0.265625 0.125,0 0.296875,-0.078125 0.375,-0.28125 0,-0.015625 0.125,-0.484375 0.1875,-0.734375 l 0.21875,-0.890625 C 1.90625,-2.03125 1.96875,-2.25 2.03125,-2.46875 c 0.03125,-0.171875 0.109375,-0.46875 0.125,-0.5 0.140625,-0.3125 0.671875,-1.21875 1.625,-1.21875 0.453125,0 0.53125,0.375 0.53125,0.703125 0,0.609375 -0.484375,1.890625 -0.640625,2.3125 C 3.578125,-0.9375 3.5625,-0.8125 3.5625,-0.703125 c 0,0.46875 0.359375,0.8125 0.828125,0.8125 0.9375,0 1.296875,-1.453125 1.296875,-1.53125 0,-0.109375 -0.078125,-0.109375 -0.109375,-0.109375 -0.109375,0 -0.109375,0.03125 -0.15625,0.1875 -0.203125,0.671875 -0.53125,1.234375 -1.015625,1.234375 -0.171875,0 -0.234375,-0.09375 -0.234375,-0.328125 0,-0.25 0.078125,-0.484375 0.171875,-0.703125 0.1875,-0.53125 0.609375,-1.625 0.609375,-2.203125 0,-0.65625 -0.421875,-1.0625 -1.140625,-1.0625 -0.90625,0 -1.390625,0.640625 -1.5625,0.875 -0.046875,-0.5625 -0.453125,-0.875 -0.921875,-0.875 -0.453125,0 -0.640625,0.390625 -0.734375,0.5625 C 0.421875,-3.5 0.296875,-2.90625 0.296875,-2.875 c 0,0.109375 0.09375,0.109375 0.109375,0.109375 0.109375,0 0.109375,-0.015625 0.171875,-0.234375 0.171875,-0.703125 0.375,-1.1875 0.734375,-1.1875 0.1875,0 0.296875,0.125 0.296875,0.453125 0,0.21875 -0.03125,0.328125 -0.15625,0.84375 z m 0,0"
+               id="id-8a5cd242-db44-4bab-90b6-b8ddec7cc04c" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="matrix(0.579451 0 0 0.63457 137.355 246.011)"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{n}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.7188803942973356"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.6063845488384413"
+       id="g924">
+      <defs
+         id="id-925c9244-1048-4ba1-a3e2-6a5c5943359c">
+        <g
+           id="id-a2f74c4e-59f4-481e-b77a-84b9a17ebb50">
+          <symbol
+             overflow="visible"
+             id="id-8b786b04-fae5-4c5c-942e-f48f7694b388">
+            <path
+               style="stroke:none"
+               d=""
+               id="id-b7633dad-ba0f-4313-91bd-e52e205f51a4" />
+          </symbol>
+          <symbol
+             overflow="visible"
+             id="id-72ddbecf-ad61-4fb4-adc7-4845c1ab920b">
+            <path
+               style="stroke:none"
+               d="m 0.875,-0.59375 c -0.03125,0.15625 -0.09375,0.390625 -0.09375,0.4375 0,0.171875 0.140625,0.265625 0.296875,0.265625 0.125,0 0.296875,-0.078125 0.375,-0.28125 0,-0.015625 0.125,-0.484375 0.1875,-0.734375 l 0.21875,-0.890625 C 1.90625,-2.03125 1.96875,-2.25 2.03125,-2.46875 c 0.03125,-0.171875 0.109375,-0.46875 0.125,-0.5 0.140625,-0.3125 0.671875,-1.21875 1.625,-1.21875 0.453125,0 0.53125,0.375 0.53125,0.703125 0,0.609375 -0.484375,1.890625 -0.640625,2.3125 C 3.578125,-0.9375 3.5625,-0.8125 3.5625,-0.703125 c 0,0.46875 0.359375,0.8125 0.828125,0.8125 0.9375,0 1.296875,-1.453125 1.296875,-1.53125 0,-0.109375 -0.078125,-0.109375 -0.109375,-0.109375 -0.109375,0 -0.109375,0.03125 -0.15625,0.1875 -0.203125,0.671875 -0.53125,1.234375 -1.015625,1.234375 -0.171875,0 -0.234375,-0.09375 -0.234375,-0.328125 0,-0.25 0.078125,-0.484375 0.171875,-0.703125 0.1875,-0.53125 0.609375,-1.625 0.609375,-2.203125 0,-0.65625 -0.421875,-1.0625 -1.140625,-1.0625 -0.90625,0 -1.390625,0.640625 -1.5625,0.875 -0.046875,-0.5625 -0.453125,-0.875 -0.921875,-0.875 -0.453125,0 -0.640625,0.390625 -0.734375,0.5625 C 0.421875,-3.5 0.296875,-2.90625 0.296875,-2.875 c 0,0.109375 0.09375,0.109375 0.109375,0.109375 0.109375,0 0.109375,-0.015625 0.171875,-0.234375 0.171875,-0.703125 0.375,-1.1875 0.734375,-1.1875 0.1875,0 0.296875,0.125 0.296875,0.453125 0,0.21875 -0.03125,0.328125 -0.15625,0.84375 z m 0,0"
+               id="id-bc140e99-0f6d-436e-9b5c-a542efd01e85" />
+          </symbol>
+        </g>
+      </defs>
+      <g
+         id="id-9e3e31be-ccb8-496a-80b2-a218694d2f2f"
+         transform="translate(-149.009, -130.359)">
+        <g
+           style="fill:#00878a;fill-opacity:1"
+           id="id-98f38834-b814-4618-b4eb-20e0cb28b18f">
+          <g
+             transform="translate(148.712, 134.765)"
+             id="g57">
+            <path
+               style="stroke:none"
+               d="m 0.875,-0.59375 c -0.03125,0.15625 -0.09375,0.390625 -0.09375,0.4375 0,0.171875 0.140625,0.265625 0.296875,0.265625 0.125,0 0.296875,-0.078125 0.375,-0.28125 0,-0.015625 0.125,-0.484375 0.1875,-0.734375 l 0.21875,-0.890625 C 1.90625,-2.03125 1.96875,-2.25 2.03125,-2.46875 c 0.03125,-0.171875 0.109375,-0.46875 0.125,-0.5 0.140625,-0.3125 0.671875,-1.21875 1.625,-1.21875 0.453125,0 0.53125,0.375 0.53125,0.703125 0,0.609375 -0.484375,1.890625 -0.640625,2.3125 C 3.578125,-0.9375 3.5625,-0.8125 3.5625,-0.703125 c 0,0.46875 0.359375,0.8125 0.828125,0.8125 0.9375,0 1.296875,-1.453125 1.296875,-1.53125 0,-0.109375 -0.078125,-0.109375 -0.109375,-0.109375 -0.109375,0 -0.109375,0.03125 -0.15625,0.1875 -0.203125,0.671875 -0.53125,1.234375 -1.015625,1.234375 -0.171875,0 -0.234375,-0.09375 -0.234375,-0.328125 0,-0.25 0.078125,-0.484375 0.171875,-0.703125 0.1875,-0.53125 0.609375,-1.625 0.609375,-2.203125 0,-0.65625 -0.421875,-1.0625 -1.140625,-1.0625 -0.90625,0 -1.390625,0.640625 -1.5625,0.875 -0.046875,-0.5625 -0.453125,-0.875 -0.921875,-0.875 -0.453125,0 -0.640625,0.390625 -0.734375,0.5625 C 0.421875,-3.5 0.296875,-2.90625 0.296875,-2.875 c 0,0.109375 0.09375,0.109375 0.109375,0.109375 0.109375,0 0.109375,-0.015625 0.171875,-0.234375 0.171875,-0.703125 0.375,-1.1875 0.734375,-1.1875 0.1875,0 0.296875,0.125 0.296875,0.453125 0,0.21875 -0.03125,0.328125 -0.15625,0.84375 z m 0,0"
+               id="id-946c533f-3833-46b4-a313-0723ca30b54d" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="matrix(0.579451 0 0 0.63457 148.997 246.011)"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{n}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.7188803942973356"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.6063845488384413"
+       id="g948">
+      <defs
+         id="id-084466d2-0b3c-4884-8ba9-883cc098356e">
+        <g
+           id="id-e43f31ba-4337-42d8-b158-00756e416328">
+          <symbol
+             overflow="visible"
+             id="id-423bb7ec-4b36-407d-9c29-d7655a9fc487">
+            <path
+               style="stroke:none"
+               d=""
+               id="id-7437c44e-4a1d-453c-bd26-c9d504e95927" />
+          </symbol>
+          <symbol
+             overflow="visible"
+             id="id-aec1893c-3b91-4f1f-8f95-3b7b37b506a7">
+            <path
+               style="stroke:none"
+               d="m 0.875,-0.59375 c -0.03125,0.15625 -0.09375,0.390625 -0.09375,0.4375 0,0.171875 0.140625,0.265625 0.296875,0.265625 0.125,0 0.296875,-0.078125 0.375,-0.28125 0,-0.015625 0.125,-0.484375 0.1875,-0.734375 l 0.21875,-0.890625 C 1.90625,-2.03125 1.96875,-2.25 2.03125,-2.46875 c 0.03125,-0.171875 0.109375,-0.46875 0.125,-0.5 0.140625,-0.3125 0.671875,-1.21875 1.625,-1.21875 0.453125,0 0.53125,0.375 0.53125,0.703125 0,0.609375 -0.484375,1.890625 -0.640625,2.3125 C 3.578125,-0.9375 3.5625,-0.8125 3.5625,-0.703125 c 0,0.46875 0.359375,0.8125 0.828125,0.8125 0.9375,0 1.296875,-1.453125 1.296875,-1.53125 0,-0.109375 -0.078125,-0.109375 -0.109375,-0.109375 -0.109375,0 -0.109375,0.03125 -0.15625,0.1875 -0.203125,0.671875 -0.53125,1.234375 -1.015625,1.234375 -0.171875,0 -0.234375,-0.09375 -0.234375,-0.328125 0,-0.25 0.078125,-0.484375 0.171875,-0.703125 0.1875,-0.53125 0.609375,-1.625 0.609375,-2.203125 0,-0.65625 -0.421875,-1.0625 -1.140625,-1.0625 -0.90625,0 -1.390625,0.640625 -1.5625,0.875 -0.046875,-0.5625 -0.453125,-0.875 -0.921875,-0.875 -0.453125,0 -0.640625,0.390625 -0.734375,0.5625 C 0.421875,-3.5 0.296875,-2.90625 0.296875,-2.875 c 0,0.109375 0.09375,0.109375 0.109375,0.109375 0.109375,0 0.109375,-0.015625 0.171875,-0.234375 0.171875,-0.703125 0.375,-1.1875 0.734375,-1.1875 0.1875,0 0.296875,0.125 0.296875,0.453125 0,0.21875 -0.03125,0.328125 -0.15625,0.84375 z m 0,0"
+               id="id-6ca06a98-1020-4da3-b569-27f4641a4645" />
+          </symbol>
+        </g>
+      </defs>
+      <g
+         id="id-a0cb0f4c-2d92-4602-9d52-38e297ee3e13"
+         transform="translate(-149.009, -130.359)">
+        <g
+           style="fill:#00878a;fill-opacity:1"
+           id="id-363f7f90-8341-41c0-995b-43e6126f5cd6">
+          <g
+             transform="translate(148.712, 134.765)"
+             id="g58">
+            <path
+               style="stroke:none"
+               d="m 0.875,-0.59375 c -0.03125,0.15625 -0.09375,0.390625 -0.09375,0.4375 0,0.171875 0.140625,0.265625 0.296875,0.265625 0.125,0 0.296875,-0.078125 0.375,-0.28125 0,-0.015625 0.125,-0.484375 0.1875,-0.734375 l 0.21875,-0.890625 C 1.90625,-2.03125 1.96875,-2.25 2.03125,-2.46875 c 0.03125,-0.171875 0.109375,-0.46875 0.125,-0.5 0.140625,-0.3125 0.671875,-1.21875 1.625,-1.21875 0.453125,0 0.53125,0.375 0.53125,0.703125 0,0.609375 -0.484375,1.890625 -0.640625,2.3125 C 3.578125,-0.9375 3.5625,-0.8125 3.5625,-0.703125 c 0,0.46875 0.359375,0.8125 0.828125,0.8125 0.9375,0 1.296875,-1.453125 1.296875,-1.53125 0,-0.109375 -0.078125,-0.109375 -0.109375,-0.109375 -0.109375,0 -0.109375,0.03125 -0.15625,0.1875 -0.203125,0.671875 -0.53125,1.234375 -1.015625,1.234375 -0.171875,0 -0.234375,-0.09375 -0.234375,-0.328125 0,-0.25 0.078125,-0.484375 0.171875,-0.703125 0.1875,-0.53125 0.609375,-1.625 0.609375,-2.203125 0,-0.65625 -0.421875,-1.0625 -1.140625,-1.0625 -0.90625,0 -1.390625,0.640625 -1.5625,0.875 -0.046875,-0.5625 -0.453125,-0.875 -0.921875,-0.875 -0.453125,0 -0.640625,0.390625 -0.734375,0.5625 C 0.421875,-3.5 0.296875,-2.90625 0.296875,-2.875 c 0,0.109375 0.09375,0.109375 0.109375,0.109375 0.109375,0 0.109375,-0.015625 0.171875,-0.234375 0.171875,-0.703125 0.375,-1.1875 0.734375,-1.1875 0.1875,0 0.296875,0.125 0.296875,0.453125 0,0.21875 -0.03125,0.328125 -0.15625,0.84375 z m 0,0"
+               id="id-4b94964f-e4f8-426e-8340-94e8aaac911e" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="matrix(0.428557 0 0 0.469322 120.856 195.557)"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{\\sqrt{n}}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.2712690256169739"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.4484765638848925"
+       id="g71">
+      <defs
+         id="id-eee8d19e-cfd9-4cad-84d9-06b0dcc84908">
+        <g
+           id="id-8d4de404-b7f5-4541-ae4e-57fff6f4d30c">
+          <symbol
+             overflow="visible"
+             id="id-a888475c-3f93-4028-9c1d-220eddf38b7d">
+            <path
+               style="stroke:none"
+               d=""
+               id="id-27718494-21ee-49df-bd94-f70c0fddb5f5" />
+          </symbol>
+          <symbol
+             overflow="visible"
+             id="id-0a8f2122-7c77-439d-af98-8c43ad9c169f">
+            <path
+               style="stroke:none"
+               d="m 3.875,8.515625 -1.75,-3.875 C 2.046875,4.484375 2,4.484375 1.96875,4.484375 c 0,0 -0.0625,0 -0.171875,0.078125 l -0.9375,0.71875 c -0.125,0.109375 -0.125,0.125 -0.125,0.15625 0,0.0625 0.015625,0.109375 0.09375,0.109375 0.0625,0 0.234375,-0.140625 0.34375,-0.21875 C 1.21875,5.28125 1.375,5.171875 1.484375,5.09375 l 1.96875,4.3125 C 3.515625,9.5625 3.5625,9.5625 3.65625,9.5625 c 0.15625,0 0.1875,-0.046875 0.25,-0.1875 L 8.4375,0 C 8.5,-0.140625 8.5,-0.171875 8.5,-0.203125 8.5,-0.296875 8.421875,-0.40625 8.296875,-0.40625 c -0.078125,0 -0.140625,0.0625 -0.21875,0.21875 z m 0,0"
+               id="id-d25c01fb-ccbe-486d-9ba4-18262c51a333" />
+          </symbol>
+          <symbol
+             overflow="visible"
+             id="id-5a86d589-a87e-4b9f-b057-f41bb7d4b7bd">
+            <path
+               style="stroke:none"
+               d=""
+               id="id-76bd848b-6d87-4d1c-917e-0b7bb4364244" />
+          </symbol>
+          <symbol
+             overflow="visible"
+             id="id-9d9782ae-b426-41b2-ba25-7745d0b76157">
+            <path
+               style="stroke:none"
+               d="m 0.875,-0.59375 c -0.03125,0.15625 -0.09375,0.390625 -0.09375,0.4375 0,0.171875 0.140625,0.265625 0.296875,0.265625 0.125,0 0.296875,-0.078125 0.375,-0.28125 0,-0.015625 0.125,-0.484375 0.1875,-0.734375 l 0.21875,-0.890625 C 1.90625,-2.03125 1.96875,-2.25 2.03125,-2.46875 c 0.03125,-0.171875 0.109375,-0.46875 0.125,-0.5 0.140625,-0.3125 0.671875,-1.21875 1.625,-1.21875 0.453125,0 0.53125,0.375 0.53125,0.703125 0,0.609375 -0.484375,1.890625 -0.640625,2.3125 C 3.578125,-0.9375 3.5625,-0.8125 3.5625,-0.703125 c 0,0.46875 0.359375,0.8125 0.828125,0.8125 0.9375,0 1.296875,-1.453125 1.296875,-1.53125 0,-0.109375 -0.078125,-0.109375 -0.109375,-0.109375 -0.109375,0 -0.109375,0.03125 -0.15625,0.1875 -0.203125,0.671875 -0.53125,1.234375 -1.015625,1.234375 -0.171875,0 -0.234375,-0.09375 -0.234375,-0.328125 0,-0.25 0.078125,-0.484375 0.171875,-0.703125 0.1875,-0.53125 0.609375,-1.625 0.609375,-2.203125 0,-0.65625 -0.421875,-1.0625 -1.140625,-1.0625 -0.90625,0 -1.390625,0.640625 -1.5625,0.875 -0.046875,-0.5625 -0.453125,-0.875 -0.921875,-0.875 -0.453125,0 -0.640625,0.390625 -0.734375,0.5625 C 0.421875,-3.5 0.296875,-2.90625 0.296875,-2.875 c 0,0.109375 0.09375,0.109375 0.109375,0.109375 0.109375,0 0.109375,-0.015625 0.171875,-0.234375 0.171875,-0.703125 0.375,-1.1875 0.734375,-1.1875 0.1875,0 0.296875,0.125 0.296875,0.453125 0,0.21875 -0.03125,0.328125 -0.15625,0.84375 z m 0,0"
+               id="id-0e4504ba-f7b9-4956-9e3a-6c96db30bb03" />
+          </symbol>
+        </g>
+      </defs>
+      <g
+         id="id-fa39e1a7-c3b8-4892-b230-5c6e494046f2"
+         transform="translate(-149.446, -127.183)">
+        <g
+           style="fill:#00878a;fill-opacity:1"
+           id="id-b7245065-aff9-4d86-8afe-7cf0d104398f">
+          <g
+             transform="translate(148.712, 127.589)"
+             id="g59">
+            <path
+               style="stroke:none"
+               d="m 3.875,8.515625 -1.75,-3.875 C 2.046875,4.484375 2,4.484375 1.96875,4.484375 c 0,0 -0.0625,0 -0.171875,0.078125 l -0.9375,0.71875 c -0.125,0.109375 -0.125,0.125 -0.125,0.15625 0,0.0625 0.015625,0.109375 0.09375,0.109375 0.0625,0 0.234375,-0.140625 0.34375,-0.21875 C 1.21875,5.28125 1.375,5.171875 1.484375,5.09375 l 1.96875,4.3125 C 3.515625,9.5625 3.5625,9.5625 3.65625,9.5625 c 0.15625,0 0.1875,-0.046875 0.25,-0.1875 L 8.4375,0 C 8.5,-0.140625 8.5,-0.171875 8.5,-0.203125 8.5,-0.296875 8.421875,-0.40625 8.296875,-0.40625 c -0.078125,0 -0.140625,0.0625 -0.21875,0.21875 z m 0,0"
+               id="id-1b7c38eb-a92d-4711-abb1-2668b8421756" />
+          </g>
+        </g>
+        <path
+           style="fill:none;stroke:#00878a;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
+           d="M 6.25e-4,-6.25e-4 H 5.981094"
+           transform="matrix(1 0 0 -1 157.015 127.39)"
+           id="id-9412f50c-fdec-4246-8ed5-85e8963d9ae8" />
+        <g
+           style="fill:#00878a;fill-opacity:1"
+           id="id-db1214a6-2a97-4ebe-afff-a180334c1291">
+          <g
+             transform="translate(157.015, 134.765)"
+             id="g62">
+            <path
+               style="stroke:none"
+               d="m 0.875,-0.59375 c -0.03125,0.15625 -0.09375,0.390625 -0.09375,0.4375 0,0.171875 0.140625,0.265625 0.296875,0.265625 0.125,0 0.296875,-0.078125 0.375,-0.28125 0,-0.015625 0.125,-0.484375 0.1875,-0.734375 l 0.21875,-0.890625 C 1.90625,-2.03125 1.96875,-2.25 2.03125,-2.46875 c 0.03125,-0.171875 0.109375,-0.46875 0.125,-0.5 0.140625,-0.3125 0.671875,-1.21875 1.625,-1.21875 0.453125,0 0.53125,0.375 0.53125,0.703125 0,0.609375 -0.484375,1.890625 -0.640625,2.3125 C 3.578125,-0.9375 3.5625,-0.8125 3.5625,-0.703125 c 0,0.46875 0.359375,0.8125 0.828125,0.8125 0.9375,0 1.296875,-1.453125 1.296875,-1.53125 0,-0.109375 -0.078125,-0.109375 -0.109375,-0.109375 -0.109375,0 -0.109375,0.03125 -0.15625,0.1875 -0.203125,0.671875 -0.53125,1.234375 -1.015625,1.234375 -0.171875,0 -0.234375,-0.09375 -0.234375,-0.328125 0,-0.25 0.078125,-0.484375 0.171875,-0.703125 0.1875,-0.53125 0.609375,-1.625 0.609375,-2.203125 0,-0.65625 -0.421875,-1.0625 -1.140625,-1.0625 -0.90625,0 -1.390625,0.640625 -1.5625,0.875 -0.046875,-0.5625 -0.453125,-0.875 -0.921875,-0.875 -0.453125,0 -0.640625,0.390625 -0.734375,0.5625 C 0.421875,-3.5 0.296875,-2.90625 0.296875,-2.875 c 0,0.109375 0.09375,0.109375 0.109375,0.109375 0.109375,0 0.109375,-0.015625 0.171875,-0.234375 0.171875,-0.703125 0.375,-1.1875 0.734375,-1.1875 0.1875,0 0.296875,0.125 0.296875,0.453125 0,0.21875 -0.03125,0.328125 -0.15625,0.84375 z m 0,0"
+               id="id-976716aa-4cef-46a5-b67d-9c4c5a2beec9" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="matrix(0.428557 0 0 0.469322 199.134 195.557)"
+       ns3:version="1.9.0"
+       ns3:texconverter="pdflatex"
+       ns3:pdfconverter="inkscape"
+       ns3:text="\\definecolor{mycyan}{RGB}{0, 137, 138}\r\n$\\color{mycyan}{\\sqrt{n}}$"
+       ns3:preamble="/home/matteo/.config/inkscape/extensions/textext/default_packages.tex"
+       ns3:scale="1.2712690256169739"
+       ns3:alignment="middle center"
+       ns3:stroke-to-path="0"
+       ns3:inkscapeversion="1.4-dev"
+       ns3:jacobian_sqrt="0.4484765638848925"
+       id="g214">
+      <defs
+         id="id-40636e5b-4a73-4b58-a8be-99a931557a1e">
+        <g
+           id="id-e2b30489-e3c4-48f1-a5ae-964474665593">
+          <symbol
+             overflow="visible"
+             id="id-85297fcf-deba-45b4-a8c3-d7abc39b111a">
+            <path
+               style="stroke:none"
+               d=""
+               id="id-ed88c362-c1ba-4e57-aa6f-07828bd8599d" />
+          </symbol>
+          <symbol
+             overflow="visible"
+             id="id-6604516a-d723-47be-bbd7-0ec9bd6d78ca">
+            <path
+               style="stroke:none"
+               d="m 3.875,8.515625 -1.75,-3.875 C 2.046875,4.484375 2,4.484375 1.96875,4.484375 c 0,0 -0.0625,0 -0.171875,0.078125 l -0.9375,0.71875 c -0.125,0.109375 -0.125,0.125 -0.125,0.15625 0,0.0625 0.015625,0.109375 0.09375,0.109375 0.0625,0 0.234375,-0.140625 0.34375,-0.21875 C 1.21875,5.28125 1.375,5.171875 1.484375,5.09375 l 1.96875,4.3125 C 3.515625,9.5625 3.5625,9.5625 3.65625,9.5625 c 0.15625,0 0.1875,-0.046875 0.25,-0.1875 L 8.4375,0 C 8.5,-0.140625 8.5,-0.171875 8.5,-0.203125 8.5,-0.296875 8.421875,-0.40625 8.296875,-0.40625 c -0.078125,0 -0.140625,0.0625 -0.21875,0.21875 z m 0,0"
+               id="id-f156b850-cd0f-45d7-b3c6-ebe2112af16a" />
+          </symbol>
+          <symbol
+             overflow="visible"
+             id="id-48b2de95-a63f-4ac5-be03-9327b38b767f">
+            <path
+               style="stroke:none"
+               d=""
+               id="id-5b39df89-a07f-422b-9ae9-cde09b27c2ee" />
+          </symbol>
+          <symbol
+             overflow="visible"
+             id="id-e98fa6bd-64e7-4125-ab20-bd2b383292e8">
+            <path
+               style="stroke:none"
+               d="m 0.875,-0.59375 c -0.03125,0.15625 -0.09375,0.390625 -0.09375,0.4375 0,0.171875 0.140625,0.265625 0.296875,0.265625 0.125,0 0.296875,-0.078125 0.375,-0.28125 0,-0.015625 0.125,-0.484375 0.1875,-0.734375 l 0.21875,-0.890625 C 1.90625,-2.03125 1.96875,-2.25 2.03125,-2.46875 c 0.03125,-0.171875 0.109375,-0.46875 0.125,-0.5 0.140625,-0.3125 0.671875,-1.21875 1.625,-1.21875 0.453125,0 0.53125,0.375 0.53125,0.703125 0,0.609375 -0.484375,1.890625 -0.640625,2.3125 C 3.578125,-0.9375 3.5625,-0.8125 3.5625,-0.703125 c 0,0.46875 0.359375,0.8125 0.828125,0.8125 0.9375,0 1.296875,-1.453125 1.296875,-1.53125 0,-0.109375 -0.078125,-0.109375 -0.109375,-0.109375 -0.109375,0 -0.109375,0.03125 -0.15625,0.1875 -0.203125,0.671875 -0.53125,1.234375 -1.015625,1.234375 -0.171875,0 -0.234375,-0.09375 -0.234375,-0.328125 0,-0.25 0.078125,-0.484375 0.171875,-0.703125 0.1875,-0.53125 0.609375,-1.625 0.609375,-2.203125 0,-0.65625 -0.421875,-1.0625 -1.140625,-1.0625 -0.90625,0 -1.390625,0.640625 -1.5625,0.875 -0.046875,-0.5625 -0.453125,-0.875 -0.921875,-0.875 -0.453125,0 -0.640625,0.390625 -0.734375,0.5625 C 0.421875,-3.5 0.296875,-2.90625 0.296875,-2.875 c 0,0.109375 0.09375,0.109375 0.109375,0.109375 0.109375,0 0.109375,-0.015625 0.171875,-0.234375 0.171875,-0.703125 0.375,-1.1875 0.734375,-1.1875 0.1875,0 0.296875,0.125 0.296875,0.453125 0,0.21875 -0.03125,0.328125 -0.15625,0.84375 z m 0,0"
+               id="id-cab2d89c-ee4d-4569-a643-445615c88990" />
+          </symbol>
+        </g>
+      </defs>
+      <g
+         id="id-a962744e-5cc6-409e-93ab-65a7676b6e78"
+         transform="translate(-149.446, -127.183)">
+        <g
+           style="fill:#00878a;fill-opacity:1"
+           id="id-40a98ad4-8e0f-4bf1-8783-4305775b5693">
+          <g
+             transform="translate(148.712, 127.589)"
+             id="g72">
+            <path
+               style="stroke:none"
+               d="m 3.875,8.515625 -1.75,-3.875 C 2.046875,4.484375 2,4.484375 1.96875,4.484375 c 0,0 -0.0625,0 -0.171875,0.078125 l -0.9375,0.71875 c -0.125,0.109375 -0.125,0.125 -0.125,0.15625 0,0.0625 0.015625,0.109375 0.09375,0.109375 0.0625,0 0.234375,-0.140625 0.34375,-0.21875 C 1.21875,5.28125 1.375,5.171875 1.484375,5.09375 l 1.96875,4.3125 C 3.515625,9.5625 3.5625,9.5625 3.65625,9.5625 c 0.15625,0 0.1875,-0.046875 0.25,-0.1875 L 8.4375,0 C 8.5,-0.140625 8.5,-0.171875 8.5,-0.203125 8.5,-0.296875 8.421875,-0.40625 8.296875,-0.40625 c -0.078125,0 -0.140625,0.0625 -0.21875,0.21875 z m 0,0"
+               id="id-173061d3-f80b-4941-b727-ca1af092483f" />
+          </g>
+        </g>
+        <path
+           style="fill:none;stroke:#00878a;stroke-width:0.398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
+           d="M 6.25e-4,-6.25e-4 H 5.981094"
+           transform="matrix(1 0 0 -1 157.015 127.39)"
+           id="id-0049c724-4bb2-4fff-ad4c-ac17f7560524" />
+        <g
+           style="fill:#00878a;fill-opacity:1"
+           id="id-532aceb2-1bba-40fe-b330-54d6f6d6b908">
+          <g
+             transform="translate(157.015, 134.765)"
+             id="g73">
+            <path
+               style="stroke:none"
+               d="m 0.875,-0.59375 c -0.03125,0.15625 -0.09375,0.390625 -0.09375,0.4375 0,0.171875 0.140625,0.265625 0.296875,0.265625 0.125,0 0.296875,-0.078125 0.375,-0.28125 0,-0.015625 0.125,-0.484375 0.1875,-0.734375 l 0.21875,-0.890625 C 1.90625,-2.03125 1.96875,-2.25 2.03125,-2.46875 c 0.03125,-0.171875 0.109375,-0.46875 0.125,-0.5 0.140625,-0.3125 0.671875,-1.21875 1.625,-1.21875 0.453125,0 0.53125,0.375 0.53125,0.703125 0,0.609375 -0.484375,1.890625 -0.640625,2.3125 C 3.578125,-0.9375 3.5625,-0.8125 3.5625,-0.703125 c 0,0.46875 0.359375,0.8125 0.828125,0.8125 0.9375,0 1.296875,-1.453125 1.296875,-1.53125 0,-0.109375 -0.078125,-0.109375 -0.109375,-0.109375 -0.109375,0 -0.109375,0.03125 -0.15625,0.1875 -0.203125,0.671875 -0.53125,1.234375 -1.015625,1.234375 -0.171875,0 -0.234375,-0.09375 -0.234375,-0.328125 0,-0.25 0.078125,-0.484375 0.171875,-0.703125 0.1875,-0.53125 0.609375,-1.625 0.609375,-2.203125 0,-0.65625 -0.421875,-1.0625 -1.140625,-1.0625 -0.90625,0 -1.390625,0.640625 -1.5625,0.875 -0.046875,-0.5625 -0.453125,-0.875 -0.921875,-0.875 -0.453125,0 -0.640625,0.390625 -0.734375,0.5625 C 0.421875,-3.5 0.296875,-2.90625 0.296875,-2.875 c 0,0.109375 0.09375,0.109375 0.109375,0.109375 0.109375,0 0.109375,-0.015625 0.171875,-0.234375 0.171875,-0.703125 0.375,-1.1875 0.734375,-1.1875 0.1875,0 0.296875,0.125 0.296875,0.453125 0,0.21875 -0.03125,0.328125 -0.15625,0.84375 z m 0,0"
+               id="id-fd7d93e7-d8aa-4070-8ffb-7d98a5875dfe" />
           </g>
         </g>
       </g>

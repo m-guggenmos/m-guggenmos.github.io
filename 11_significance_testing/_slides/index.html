@@ -342,6 +342,7 @@
 
   <p class="author">Prof.&nbsp;Matthias Guggenmos</p>
   <p class="institute">Health and Medical University Potsdam</p>
+  <p class="date">16.01.2024</p>
 <div style="display: flex; justify-content: space-between; align-items: baseline">
 <div><img src="images/logo_black.png" height="200px"></div>
 <div><img src="images/paradoxia_group_of_scientists.png" height="240px"></div>
@@ -487,7 +488,7 @@
 <div class="column" style="width:80%;">
 <p>Sie überprüfen die Hypothese, dass Medizinstudierende längere Nasen haben als Psychologiestudierende.</p>
 <p>Die zugehörige Nullhypothese <span class="math inline">\(H_0\)</span> lautet also: <em>kein Unterschied in der (durchschnittlichen) Nasenlänge von Medizin- und Psychologiestudierenden.</em></p>
-<p>Sie führen eine Studie durch (<span class="math inline">\(N_\text{med}=N_\text{psych}=N=30\)</span>) und messen folgenden Gruppenunterschied:</p>
+<p>Sie führen eine Studie durch (<span class="math inline">\(n_\text{med}=n_\text{psych}=n=30\)</span>) und messen folgenden Gruppenunterschied:</p>
 <p><span class="math display">\[
 \Delta \bar{x} = \bar{x}_\text{med} - \bar{x}_\text{psych} = 0{,}2cm
 \]</span></p>
@@ -602,7 +603,7 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)
 <div class="column" style="width:65%;">
 <p>Im ersten Schritt betrachten wir daher den vereinfachten (in der Praxis sehr seltenen) Fall, dass wir die Streuung <span class="math inline">\(\sigma_\text{med}\)</span> und <span class="math inline">\(\sigma_\text{psych}\)</span> in den beiden Populationen der Medizin und Psychologie kennen, und damit den Standardfehler <span class="math inline">\(se\)</span> unseres Effektes <span class="math inline">\(\Delta \bar{x}\)</span>:</p>
 <p><span class="math display">\[
-se=\sqrt{\frac{\sigma_\text{med}^2+\sigma_\text{psych}^2}{N}}
+se=\sqrt{\frac{\sigma_\text{med}^2+\sigma_\text{psych}^2}{n}}
 \]</span></p>
 <p>Hinweis: dies ist die Formel für den Standardfehler des Differenzeffektes <span class="math inline">\(\bar{x}_\text{med}-\bar{x}_\text{psych}\)</span>. Nehmen wir an, der Standardfehler ergibt sich nach dieser Formel zu <span class="math inline">\(se=0{,}1\)</span>.</p>
 <p>Nun ist alles angerichtet und wir können unseren ersten p-Wert berechnen! Dazu muss die Fläche unter der Nullhypothesenverteilung <u>rechts</u> von <span class="math inline">\(\Delta\bar{x}=\bar{x}_\text{med}-\bar{x}_\text{psych}\)</span> berechnet werden (Erinnerung: wir sind an der Wahrscheinlichkeit interessiert, dass die Daten unseren Effekt annehmen <em>oder einen noch größeren Effekt</em>).</p>
@@ -628,7 +629,7 @@ p &amp;= \int_{\Delta\bar{x}}^{\infty}f(x)dx = 1 - F(\Delta\bar{x}) = \\
 &amp;= 1 - F(0{,}2) \overset{(Computer)}{=} 0{,}023
 \end{aligned}
 \]</span></p>
-<p>wobei <span class="math inline">\(f(x)\)</span> bzw. <span class="math inline">\(F(x)\)</span> hier die Dichte bzw. Verteilunsfunktion der gebenen Normalverteilung <span class="math inline">\(\mathcal{N}(0, 0{,}1)\)</span> ist.</p>
+<p>wobei <span class="math inline">\(f(x)\)</span> bzw. <span class="math inline">\(F(x)\)</span> hier die Dichte bzw. Verteilunsfunktion der gebenen Normalverteilung <span class="math inline">\(\mathcal{n}(0, 0{,}1)\)</span> ist.</p>
 <p><span class="math inline">\(F(x)\)</span> berechnet die Fläche bis zum Punkt <span class="math inline">\(x\)</span>, “1 minus diese Fläche” gibt uns also die Fläche rechts vom angebenen Punkt <span class="math inline">\(x\)</span> — im vorliegenden Fall die Fläche rechts von <span class="math inline">\(\Delta\bar{x}=\bar{x}_\text{med}-\bar{x}_\text{psych}=0{,}2\)</span>.</p>
 <p>Der p-Wert ist 0,023.</p>
 </div><div class="column" style="width:34%;">
@@ -646,23 +647,25 @@ p &amp;= \int_{\Delta\bar{x}}^{\infty}f(x)dx = 1 - F(\Delta\bar{x}) = \\
 <p>Sind die Standardabweichungen in beiden Gruppen unterschiedlich (Faustregel: um mehr als einen Faktor 2), kann keine gepoolte Standardabweichung für beide Gruppen berechnet werden, und die Standardfehler werden für beide Gruppen separat berechnet:</p>
 <div style="margin-top: -8px">
 <p><span class="math display">\[
-se_A = \frac{\sigma_A}{\sqrt{N_A}}\qquad\qquad se_B = \frac{\sigma_B}{\sqrt{N_B}}
+se_A = \frac{\sigma_A}{\sqrt{n_A}}\qquad\qquad se_B = \frac{\sigma_B}{\sqrt{n_B}}
 \]</span></p>
 </div>
 <p>Die Varianzen der Mittelwerte in beiden Gruppen sind gleich dem quadrierten Standardfehler der Mittelwerte:</p>
 <div style="margin-top: -40px">
 <p><span class="math display">\[
-se_A^2 = \frac{\sigma_A^2}{N_A}\qquad\qquad se_B^2 = \frac{\sigma_B^2}{N_B}
+se_A^2 = \frac{\sigma_A^2}{n_A}\qquad\qquad se_B^2 = \frac{\sigma_B^2}{n_B}
 \]</span></p>
 </div>
 <p>Nun sind wir ja an der Differenz der Mittelwerte <span class="math inline">\(\Delta\bar{x}\)</span> interessiert. Allgemein gilt, dass sich die Varianzen von Summen oder Differenz zweier unabhängiger Zufallsvariablen addieren:</p>
 <p><span class="math display">\[
-se_{\Delta\bar{x}}^2 = \frac{\sigma_A^2}{N_A} + \frac{\sigma_A^2}{N_B}
+se^2 = se_A^2 + se_B^2 = \frac{\sigma_A^2}{n_A} + \frac{\sigma_A^2}{n_B}
 \]</span></p>
 <p>Daher gilt für den <strong>Standardfehler der Mittelwertsdifferenz unabhängiger Gruppen A und B</strong>:</p>
+<div style="margin-top: -10px">
 <p><span class="math display">\[
-se_{\Delta\bar{x}} = \sqrt{\frac{\sigma_A^2}{N_A} + \frac{\sigma_A^2}{N_A}}
+se = \sqrt{\frac{\sigma_A^2}{n_A} + \frac{\sigma_A^2}{n_A}}
 \]</span></p>
+</div>
 <!----------------->
 <!--- New slide --->
 <!----------------->
@@ -672,7 +675,7 @@ se_{\Delta\bar{x}} = \sqrt{\frac{\sigma_A^2}{N_A} + \frac{\sigma_A^2}{N_A}}
 <p><u><strong>Messungen in unabhängigen Gruppen mit ähnlichen Varianzen</strong></u></p>
 <p>Gilt <span class="math inline">\(\frac{1}{2}&lt;\frac{\sigma_A}{\sigma_B}&lt;2\)</span>, die Standardabweichungen sind also ähnlich, wird der Standardfehler auf Basis der gepoolten Standardabweichung berechnet:</p>
 <p><span class="math display">\[
-se_{\Delta\bar{x}} = \sigma_\text{pooled}\sqrt{\frac{1}{N_A} + \frac{1}{N_B}}\qquad\text{mit}\qquad \sigma_\text{pooled} = \sqrt{\frac{N_A\sigma^2_A + N_B\sigma^2_B}{N_A+N_B}}
+se = \sigma_\text{pooled}\sqrt{\frac{1}{n_A} + \frac{1}{n_B}}\qquad\text{mit}\qquad \sigma_\text{pooled} = \sqrt{\frac{n_A\sigma^2_A + n_B\sigma^2_B}{n_A+n_B}}
 \]</span></p>
 <p><u><strong>Messungen in abhängigen Bedingungen einer Gruppe</strong></u></p>
 <p>Zur Herleitung des Standardfehlers der Mittelwertdifferenz zweier abhängiger Messungen A und B <em>in einer Stichprobe</em> können wir die Variablen <span class="math inline">\(X_A\)</span> und <span class="math inline">\(X_B\)</span> im ersten Schritt direkt voneinander abziehen:</p>
@@ -680,9 +683,9 @@ se_{\Delta\bar{x}} = \sigma_\text{pooled}\sqrt{\frac{1}{N_A} + \frac{1}{N_B}}\qq
 \Delta X = X_A - X_B
 \]</span></p>
 <p>.. und mit der Standardformel die Standardabweichung <span class="math inline">\(\sigma_\Delta\)</span> dieser Differenz berechnen.</p>
-<p>Der Standardfehler der Mittelwertsdifferenz abhängiger Bedingungen A und B ergibt sich daher bei einer Stichprobengröße <span class="math inline">\(N\)</span> als:</p>
+<p>Der Standardfehler der Mittelwertsdifferenz abhängiger Bedingungen A und B ergibt sich daher bei einer Stichprobengröße <span class="math inline">\(n\)</span> als:</p>
 <p><span class="math display">\[
-se_{\Delta\bar{x}} = \frac{\sigma_\Delta}{\sqrt{N}}\qquad\text{mit}\qquad \sigma_\Delta=\sqrt{\frac{1}{N}\sum\left(\Delta x_i-\Delta\bar{x}\right)^2}
+se = \frac{\sigma_\Delta}{\sqrt{n}}\qquad\text{mit}\qquad \sigma_\Delta=\sqrt{\frac{1}{n}\sum\left(\Delta x_i-\Delta\bar{x}\right)^2}
 \]</span></p>
 <!----------------->
 <!--- New slide --->
@@ -705,20 +708,20 @@ se_{\Delta\bar{x}} = \frac{\sigma_\Delta}{\sqrt{N}}\qquad\text{mit}\qquad \sigma
 <tbody>
 <tr class="odd">
 <td><strong>Differenz des Mittelwertes <u>einer Gruppe</u> und einem Referenzwert</strong> <span class="math inline">\(\mu_0\)</span></td>
-<td><span class="math inline">\(se_{\Delta\bar{x}} = \frac{\sigma}{\sqrt{N}}\)</span></td>
+<td><span class="math inline">\(se = \frac{\sigma}{\sqrt{n}}\)</span></td>
 </tr>
 <tr class="even">
 <td><strong>Mittelwertdifferenz zweier Bedingungen A und B in <u>einer Gruppe</u></strong></td>
-<td><span class="math inline">\(se_{\Delta\bar{x}} = \frac{\sigma_\Delta}{\sqrt{N}}\qquad\text{mit}\)</span><br>
-<span class="math inline">\(\scriptsize{\sigma_\Delta=\sqrt{\frac{1}{N}\sum\left(\Delta x_i-\Delta\bar{x}\right)^2}\qquad\text{oder}\qquad \sigma_\Delta=\sqrt{\sigma_A^2+\sigma_B^2-2\,Cov(X_A,X_B)}}\)</span></td>
+<td><span class="math inline">\(se = \frac{\sigma_\Delta}{\sqrt{n}}\qquad\text{mit}\)</span><br>
+<span class="math inline">\(\scriptsize{\sigma_\Delta=\sqrt{\frac{1}{n}\sum\left(\Delta x_i-\Delta\bar{x}\right)^2}\qquad\text{oder}\qquad \sigma_\Delta=\sqrt{\sigma_A^2+\sigma_B^2-2\,Cov(X_A,X_B)}}\)</span></td>
 </tr>
 <tr class="odd">
 <td><strong>Mittelwertdifferenz <u>zweier unabhängiger Gruppen</u> A und B (ähnliche Varianzen)</strong></td>
-<td><span class="math inline">\(se_{\Delta\bar{x}} = \sigma_\text{pooled}\sqrt{\frac{1}{N_A} + \frac{1}{N_B}}\qquad\text{mit}\qquad \sigma_\text{pooled} = \sqrt{\frac{N_A\sigma^2_A + N_B\sigma^2_B}{N_A+N_B}}\)</span></td>
+<td><span class="math inline">\(se = \sigma_\text{pooled}\sqrt{\frac{1}{n_A} + \frac{1}{n_B}}\qquad\text{mit}\qquad \sigma_\text{pooled} = \sqrt{\frac{n_A\sigma^2_A + n_B\sigma^2_B}{n_A+n_B}}\)</span></td>
 </tr>
 <tr class="even">
 <td><strong>Mittelwertdifferenz <u>zweier unabhängiger Gruppen</u> A und B (unterschiedliche Varianzen)</strong></td>
-<td><span class="math inline">\(se_{\Delta\bar{x}} = \sqrt{\frac{\sigma_A^2}{N_A} + \frac{\sigma_A^2}{N_A}}\)</span></td>
+<td><span class="math inline">\(se = \sqrt{\frac{\sigma_A^2}{n_A} + \frac{\sigma_A^2}{n_A}}\)</span></td>
 </tr>
 </tbody>
 </table>
@@ -856,7 +859,7 @@ z = \frac{\Delta\bar{x}}{se} = \frac{0{,}2}{0{,}1} = 2
 \]</span></p>
 <p>Und berechnen die Fläche rechts von <span class="math inline">\(z\)</span>:</p>
 <p><span class="math display">\[
-p=\int_{Z}^{\infty}\varphi(x)dx = 1 - \Phi(Z) = 1 - \Phi(2) \overset{(Computer)}{=} 0{,}023
+p=\int_{z}^{\infty}\varphi(x)dx = 1 - \Phi(Z) = 1 - \Phi(2) \overset{(Computer)}{=} 0{,}023
 \]</span></p>
 </div><div class="column" style="width:34%;">
 <p><img data-src="images/nulldist2f.png"></p>
@@ -869,7 +872,7 @@ p=\int_{Z}^{\infty}\varphi(x)dx = 1 - \Phi(Z) = 1 - \Phi(2) \overset{(Computer)}
 </section>
 <section class="slide level2">
 <h2>z-Test</h2>
-<p>Der Signifikanztest auf Basis der Standardnormalverteilung — und bei bekannten Streuungen in den relevanten Populationen — wird als <span style=" color: navy !important;"><strong>z-test</strong></span> bezeichnet.</p>
+<p>Der Signifikanztest auf Basis der Standardnormalverteilung — und bei bekannten Streuungen in den relevanten Populationen — wird als <span style=" color: navy !important;"><strong>z-Test</strong></span> bezeichnet.</p>
 <p>Der z-Test kann auf alle Arten von Mittelwertsvergleichen angewendet werden:</p>
 <!---  Table --->
 <table>
@@ -892,19 +895,19 @@ p=\int_{Z}^{\infty}\varphi(x)dx = 1 - \Phi(Z) = 1 - \Phi(2) \overset{(Computer)}
 <td><strong>Einzelmessung:</strong> Vergleich von <span class="math inline">\(\bar{x}\)</span> mit einem Referenzwert <span class="math inline">\(\mu_0\)</span></td>
 <td><span class="math inline">\(z=\frac{\bar{x}-\mu_0}{se}\)</span></td>
 <td style="text-align: center;"><span class="math inline">\(\sigma\)</span></td>
-<td><span class="math inline">\(se=\sigma_{\bar{x}}=\frac{\sigma}{\sqrt{N}}\)</span></td>
+<td><span class="math inline">\(se=\sigma_{\bar{x}}=\frac{\sigma}{\sqrt{n}}\)</span></td>
 </tr>
 <tr class="even">
 <td><strong>Abhängige Messungen:</strong> Vergleich der Mittelwerte <span class="math inline">\(\bar{x}_A\)</span> und <span class="math inline">\(\bar{x}_B\)</span> von <em>zwei Bedingungen A und B in einer Gruppe</em></td>
 <td><span class="math inline">\(z=\frac{\bar{x}_A-\bar{x}_B}{se}=\frac{\Delta \bar{x}}{se}\)</span></td>
 <td style="text-align: center;"><span class="math inline">\(\sigma_A, \sigma_B\)</span><br><span class="math inline">\(\scriptsize{Cov(X_A,X_B)}\)</span></td>
-<td><span class="math inline">\(se=\sqrt{\frac{\sigma_A^2+\sigma_B^2-2\,Cov(X_A,X_B)}{N}}\)</span></td>
+<td><span class="math inline">\(se=\sqrt{\frac{\sigma_A^2+\sigma_B^2-2\,Cov(X_A,X_B)}{n}}\)</span></td>
 </tr>
 <tr class="odd">
 <td><strong>Unabhängige Messungen:</strong> Vergleich der Mittelwerte <span class="math inline">\(\bar{x}_A\)</span> und <span class="math inline">\(\bar{x}_B\)</span> von <em>zwei unabhängigen Gruppen A und B</em></td>
 <td><span class="math inline">\(z=\frac{\bar{x}_A-\bar{x}_B}{se}=\frac{\Delta \bar{x}}{se}\)</span></td>
 <td style="text-align: center;"><span class="math inline">\(\sigma_A, \sigma_B\)</span></td>
-<td><span class="math inline">\(se=\sqrt{\frac{\sigma_A^2}{N_A}+\frac{\sigma_B^2}{N_B}}\)</span></td>
+<td><span class="math inline">\(se=\sqrt{\frac{\sigma_A^2}{n_A}+\frac{\sigma_B^2}{n_B}}\)</span></td>
 </tr>
 </tbody>
 </table>
@@ -1030,7 +1033,7 @@ p(\bar{x}_\text{med} \neq \bar{x}_\text{psych}) = 2 \times \text{min}\left(p(\ba
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="images/pwert_fallzahl_annot.png" height="500"></p>
-<figcaption>Getestet wird, ob der IQ der betrachteten Population (hier <span class="math inline">\(102{,}5\)</span>) größer ist, als der Referenzwert <span class="math inline">\(\mu_0=100\)</span>, der idealerweise den durchschnittlichen IQ aller Menschen darstellt. Im Bild ist zu sehen, dass die betrachtete Population (z.B. alle Brandenburger:innen) tatsächlich einen etwas höheren Mittelwert als 100 aufweisen, was sich auch im Stichprobenmittelwert niederschlägt. <strong>Wie verändert sich der p-Wert abhängig davon, ob die Stichprobe <span class="math inline">\(N=10\)</span> oder <span class="math inline">\(N=100\)</span> umfasst?</strong> <strong>Schritt 1:</strong> der Standardfehler <span class="math inline">\(SE\)</span> ist bei der höheren Stichprobenzahl wesentlich kleiner (aufgrund von <span class="math inline">\(\hat{\sigma}/\sqrt{N}\)</span>) und damit die Stichprobenverteilung bei <span class="math inline">\(N=100\)</span> wesentlich schmaler. <strong>Schritt 2:</strong> der kleinere Standardfehler wirkt sich auf den z-Wert <span class="math inline">\(z=\frac{102{,}5}{SE}\)</span> aus: kleinerer Standardfehler bedeutet größerer z-Wert. <strong>Schritt 3:</strong> größerer z-Wert bedeutet kleinerer p-Wert, da kleinere Fläche rechts von z.</figcaption>
+<figcaption>Getestet wird, ob der IQ der betrachteten Population (hier <span class="math inline">\(102{,}5\)</span>) größer ist, als der Referenzwert <span class="math inline">\(\mu_0=100\)</span>, der idealerweise den durchschnittlichen IQ aller Menschen darstellt. Im Bild ist zu sehen, dass die betrachtete Population (z.B. alle Brandenburger:innen) tatsächlich einen etwas höheren Mittelwert als 100 aufweisen, was sich auch im Stichprobenmittelwert niederschlägt. <strong>Wie verändert sich der p-Wert abhängig davon, ob die Stichprobe <span class="math inline">\(n=10\)</span> oder <span class="math inline">\(n=100\)</span> umfasst?</strong> <strong>Schritt 1:</strong> der Standardfehler <span class="math inline">\(se\)</span> ist bei der höheren Stichprobenzahl wesentlich kleiner (aufgrund von <span class="math inline">\(\hat{\sigma}/\sqrt{n}\)</span>) und damit die Stichprobenverteilung bei <span class="math inline">\(n=100\)</span> wesentlich schmaler. <strong>Schritt 2:</strong> der kleinere Standardfehler wirkt sich auf den z-Wert <span class="math inline">\(z=\frac{102{,}5}{se}\)</span> aus: kleinerer Standardfehler bedeutet größerer z-Wert. <strong>Schritt 3:</strong> größerer z-Wert bedeutet kleinerer p-Wert, da kleinere Fläche rechts von z.</figcaption>
 </figure>
 </div>
 <!----------------->
@@ -1178,7 +1181,7 @@ p(\bar{x}_\text{med} \neq \bar{x}_\text{psych}) = 2 \times \text{min}\left(p(\ba
 <h2>Relevanz für Berechnung der Stichprobengröße</h2>
 <ul>
 <li class="fragment">Die häufigste Anwendung findet das Neyman-Pearson-Framework bei der Planung der Stichprobengröße.</li>
-<li class="fragment">Der Vorteil des Frameworks ist, dass es nicht wie bei Fisher nur die Irrtumswahrscheinlichkeit <span class="math inline">\(\alpha\)</span> für die <span class="math inline">\(H_0\)</span> berücksichtigt (“Wahrscheinlichkeit das Ergebnis als signifikant zu werten obwohl <span class="math inline">\(H_0\)</span> gilt”), sondern auch die Irrtumswahrscheinlichkeit <span class="math inline">\(\beta\)</span> für die <span class="math inline">\(H1\)</span> (“Wahrscheinlichkeit das Ergebnis als nicht signifikant zu werten obwohl <span class="math inline">\(H_1\)</span> gilt”).</li>
+<li class="fragment">Der Vorteil des Frameworks ist, dass es nicht wie bei Fisher nur die Irrtumswahrscheinlichkeit <span class="math inline">\(\alpha\)</span> für die <span class="math inline">\(H_0\)</span> berücksichtigt (“Wahrscheinlichkeit das Ergebnis als signifikant zu werten obwohl <span class="math inline">\(H_0\)</span> gilt”), sondern auch die Irrtumswahrscheinlichkeit <span class="math inline">\(\beta\)</span> für die <span class="math inline">\(H_1\)</span> (“Wahrscheinlichkeit das Ergebnis als nicht signifikant zu werten obwohl <span class="math inline">\(H_1\)</span> gilt”).</li>
 </ul>
 <div style="margin-top: -20px">
 <div class="columns">
@@ -1224,7 +1227,7 @@ p(\bar{x}_\text{med} \neq \bar{x}_\text{psych}) = 2 \times \text{min}\left(p(\ba
 <h2>Relevanz für Berechnung der Stichprobengröße</h2>
 <p>Im Kontext der Stichprobenberechnung, gibt das Neyman-Pearson-Framework eine Antwort auf folgende Frage:</p>
 <div class="colorbox fragment">
-<p>Meine Studie soll einen <strong>Fehler erster Art von höchstens <span class="math inline">\(\alpha\)</span></strong> haben. Ich erwarte, dass mein Effekt eine <strong>Effektstärke <span class="math inline">\(d_1\)</span></strong> aufweist. Wie groß muss ich meine <strong>Fallzahl <span class="math inline">\(N\)</span></strong> wählen, damit ich mit einer <strong>Wahrscheinlichkeit von <span class="math inline">\(1-\beta\)</span> (=Teststärke/Power)</strong> einen tatsächlich vorhandenen Effekt finden würde?</p>
+<p>Meine Studie soll einen <strong>Fehler erster Art von höchstens <span class="math inline">\(\alpha\)</span></strong> haben. Ich erwarte, dass mein Effekt eine <strong>Effektstärke <span class="math inline">\(d_1\)</span></strong> aufweist. Wie groß muss ich meine <strong>Fallzahl <span class="math inline">\(n\)</span></strong> wählen, damit ich mit einer <strong>Wahrscheinlichkeit von <span class="math inline">\(1-\beta\)</span> (=Teststärke/Power)</strong> einen tatsächlich vorhandenen Effekt finden würde?</p>
 </div>
 <!----------------->
 <!--- New slide --->
@@ -1235,7 +1238,7 @@ p(\bar{x}_\text{med} \neq \bar{x}_\text{psych}) = 2 \times \text{min}\left(p(\ba
 <p><strong>Drei Größen beeinflussen die Wahrscheinlichkeit, ein signifikantes Ergebnis zu finden (d.h. <span class="math inline">\(H_0\)</span> abzulehnen):</strong></p>
 <ul>
 <li class="fragment">Effektstärke von <span class="math inline">\(H_1\)</span> (hängt ab von <span class="math inline">\(μ_1\)</span> und <span class="math inline">\(\sigma\)</span>)</li>
-<li class="fragment">Stichprobengröße <span class="math inline">\(N\)</span></li>
+<li class="fragment">Stichprobengröße <span class="math inline">\(n\)</span></li>
 <li class="fragment">Fehlerrate erster Art <span class="math inline">\(\alpha\)</span></li>
 </ul>
 <p><img data-src="images/neyman_pearson_power.png" style="margin-left: 350px !important; margin-top: -30px !important" height="440"></p>
@@ -1260,7 +1263,7 @@ p(\bar{x}_\text{med} \neq \bar{x}_\text{psych}) = 2 \times \text{min}\left(p(\ba
 <!----------------->
 <aside></aside></section>
 <section class="slide level2">
-<h2>Veränderung der Stichprobengröße <span class="math inline">\(N\)</span></h2>
+<h2>Veränderung der Stichprobengröße <span class="math inline">\(n\)</span></h2>
 <p><img data-src="images/demo_neyman_pearson_N30_std15_delta8_zcrit2.png"></p>
 <p><img data-src="images/demo_neyman_pearson_N15_std15_delta8_zcrit2.png"></p>
 <!----------------->
@@ -1301,10 +1304,10 @@ p(\bar{x}_\text{med} \neq \bar{x}_\text{psych}) = 2 \times \text{min}\left(p(\ba
 </div><div class="column" style="width:91%;">
 <div class="summary">
 <ul>
-<li class="fragment">Signifikanztests prüfen die Wahrscheinlichkeit, mit der ein experimentelles Ergebnis (oder ein extremeres) auch zufällig zustande gekommen sein kann, obwohl die Nullhypothese gilt.</li>
-<li class="fragment">Signifikanztests nach Fisher basieren auf der Stichprobenverteilung um den Wert der Nullhypothese</li>
-<li class="fragment">Bei Signifikanztests nach Neyman und Pearson muss zudem die Stichprobenverteilung um einen vom Forscher festgelegten Wert der Alternativhypothese betrachtet werden.</li>
-<li class="fragment">Signifikanztests treffen Entscheidungen für oder gegen eine Hypothese basierend auf dem berechneten p-Wert und dem festgelegten Signifikanzniveau <span class="math inline">\(\alpha\)</span></li>
+<li class="fragment"><strong>Signifikanztests</strong> prüfen die Wahrscheinlichkeit, mit der ein experimentelles Ergebnis (oder ein extremeres) auch zufällig zustande gekommen sein kann, obwohl die Nullhypothese gilt.</li>
+<li class="fragment">Signifikanztests nach Fisher basieren auf der <strong>Stichprobenverteilung um den Wert der Nullhypothese</strong>.</li>
+<li class="fragment">Bei Signifikanztests nach <strong>Neyman und Pearson</strong> muss zudem die Stichprobenverteilung um einen vom Forscher festgelegten Wert der Alternativhypothese betrachtet werden.</li>
+<li class="fragment">Signifikanztests treffen Entscheidungen für oder gegen eine Hypothese basierend auf dem berechneten <strong>p-Wert</strong> und dem festgelegten <strong>Signifikanzniveau</strong> <span class="math inline">\(\mathbf{\alpha}\)</span></li>
 </ul>
 </div>
 </div>
@@ -1317,7 +1320,7 @@ p(\bar{x}_\text{med} \neq \bar{x}_\text{psych}) = 2 \times \text{min}\left(p(\ba
 <div class="vspace-small">
 
 </div>
-<p>Nach kurzer Beratung in der Task Force sind Sie sich einig, dass die Voraussetzungen für einen z-Test nicht optimal sind. Die Populationsstreuung lässt sich nicht aus vorhergehenden Studien ableiten, da die untersuchten Phänomene brandneu sind. Da die Fallzahl von <span class="math inline">\(N=50\)</span> gemäß der Faustregel “<span class="math inline">\(N\ge 30\)</span>” aber ausreichend wäre, rechnen Sie aus reiner Neugier dennoch z-Tests für die Gruppenvergleiche.</p>
+<p>Nach kurzer Beratung in der Task Force sind Sie sich einig, dass die Voraussetzungen für einen z-Test nicht optimal sind. Die Populationsstreuung lässt sich nicht aus vorhergehenden Studien ableiten, da die untersuchten Phänomene brandneu sind. Da die Fallzahl von <span class="math inline">\(n=50\)</span> gemäß der Faustregel “<span class="math inline">\(n\ge 30\)</span>” aber ausreichend wäre, rechnen Sie aus reiner Neugier dennoch z-Tests für die Gruppenvergleiche.</p>
 </section>
 <section class="slide level2 blackslide center">
 <h2></h2>
@@ -1338,7 +1341,7 @@ p(\bar{x}_\text{med} \neq \bar{x}_\text{psych}) = 2 \times \text{min}\left(p(\ba
 <thead>
 <tr class="header">
 <th><u>TikTok</u></th>
-<th>Fallzahl <span class="math inline">\(N\)</span></th>
+<th>Fallzahl <span class="math inline">\(n\)</span></th>
 <th>Mittelwert <span class="math inline">\(\bar{x}\)</span></th>
 <th>Standardabweichung <span class="math inline">\(\sigma\)</span></th>
 </tr>
@@ -1372,7 +1375,7 @@ p(\bar{x}_\text{med} \neq \bar{x}_\text{psych}) = 2 \times \text{min}\left(p(\ba
 <thead>
 <tr class="header">
 <th><u>Entzündung</u></th>
-<th>Fallzahl <span class="math inline">\(N\)</span></th>
+<th>Fallzahl <span class="math inline">\(n\)</span></th>
 <th>Mittelwert <span class="math inline">\(\bar{x}\)</span></th>
 <th>Standardabweichung <span class="math inline">\(\sigma\)</span></th>
 </tr>
@@ -1410,7 +1413,7 @@ p(\bar{x}_\text{med} \neq \bar{x}_\text{psych}) = 2 \times \text{min}\left(p(\ba
 <div class="column" style="width:68%;">
 <p>Um den z-Wert zu bestimmen, benötigen Sie den Standardfehler. Da es sich um unabhängige Messungen in zwei Gruppen handelt, verwenden Sie die Formel, die auf der mittleren Varianz beider Gruppen basiert:</p>
 <p><span class="math display">\[
-se=\sqrt{\frac{\sigma_\text{control}^2}{N_\text{control}}+\frac{\sigma_\text{paradox}^2}{N_\text{paradox}}}
+se=\sqrt{\frac{\sigma_\text{control}^2}{n_\text{control}}+\frac{\sigma_\text{paradox}^2}{n_\text{paradox}}}
 \]</span></p>
 </div><div class="column" style="width:32%;">
 <p><img data-src="images/paradoxia_group_of_scientists.png" class="hcenter-image" style="margin-top:-20px !important" height="200"></p>
@@ -1567,7 +1570,7 @@ plt.savefig('images/paradoxia_histogram_inflammation_sem_sig.png', bbox_inches='
 ``` -->
 <p><img src="images/hmu_logo.png" class="slide-logo"></p>
 <div class="footer footer-default">
-
+<p>Vorlesung 11: Signifikanztestung</p>
 </div>
 </section></section>
 <section id="footnotes" class="footnotes footnotes-end-of-document smaller scrollable" role="doc-endnotes"><h2>Fußnoten</h2>
@@ -1810,6 +1813,7 @@ plt.savefig('images/paradoxia_histogram_inflammation_sem_sig.png', bbox_inches='
           }
         });
       }
+      // identifystring
 
       window.onload = bgcolor();
     </script>

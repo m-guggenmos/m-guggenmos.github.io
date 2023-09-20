@@ -342,6 +342,7 @@
 
   <p class="author">Prof.&nbsp;Matthias Guggenmos</p>
   <p class="institute">Health and Medical University Potsdam</p>
+  <p class="date">09.01.2024</p>
 <div style="display: flex; justify-content: space-between; align-items: baseline">
 <div><img src="images/logo_black.png" height="200px"></div>
 <div><img src="images/paradoxia_group_of_scientists.png" height="240px"></div>
@@ -390,7 +391,7 @@
 <p>Um dieses Konzept zu verstehen, verlassen wir kurz die Idee der Stichprobenverteilung und gehen zurück zu einem Konzept, das wir bereits kennen: <strong>relative Häufigkeiten, dargestellt als Histogramme</strong>.</p>
 <div class="columns">
 <div class="column" style="width:65%;">
-<p>Zur Erinnerung: Histogramme stellen die Häufigkeit der <em>ursprünglichen Merkmalsvariable</em> in einer Stichprobe oder Grundgesamtheit dar. Wird die <strong>relative Häufigkeit</strong> aufgetragen, handelt es sich dabei um eine <strong>empirische Wahrscheinlichkeitsverteilung</strong>.</p>
+<p>Zur Erinnerung: Histogramme stellen die Häufigkeit der <em>ursprünglichen Merkmalsvariable</em> in einer Stichprobe oder Population dar. Wird die <strong>relative Häufigkeit</strong> aufgetragen, handelt es sich dabei um eine <strong>empirische Wahrscheinlichkeitsverteilung</strong>.</p>
 </div><div class="column" style="width:35%;">
 <p><img data-src="images/noselength_normal_relative_noannot.png" style="margin-top:-30px !important"></p>
 </div>
@@ -420,7 +421,7 @@
 </div>
 <!-- - Sie definiert die theoretisch zu erwartende Verteilung eines Merkmals.
 - Sie "generiert" Zufallsereignisse (Würfelwurfe, Nasenlängen, IQ-Werte, usw.) bzw. Zufallsereignisse werden aus der theoretischen Verteilung "gezogen".
-- Selbst die Grundgesamtheit wurde aus der theoretischen Verteilung gezogen! -->
+- Selbst die Population wurde aus der theoretischen Verteilung gezogen! -->
 <!----------------->
 <!--- New slide --->
 <!----------------->
@@ -619,8 +620,8 @@ P(x_0&lt;x&lt;x_1) = \int_{x_0}^{x_1} f(x) dx
 <h2>Wahrscheinlichkeitsdichte: Beispiel</h2>
 <div class="columns">
 <div class="column" style="width:62%;">
-<p>Lassen wir die Vereinfachung im vorherigen Beispiel fallen, dass die Wahrscheinlichkeitsdichte im Bereich <span class="math inline">\([2cm; 4cm]\)</span> konstant ist. Stattdessen nehmen wir an, dass Nasenlängen in der Grundgesamtheit normalverteilt sind, mit Mittelwert <span class="math inline">\(\mu=5\)</span> und Standardabweichung <span class="math inline">\(\sigma=1{,}5\)</span>.</p>
-<p><strong>Frage: wie hoch ist die Wahrscheinlichkeit, dass eine zufällig gezogene Nase aus der Grundgesamtheit eine Länge zwischen <span class="math inline">\(2cm\)</span> und <span class="math inline">\(4cm\)</span> hat?</strong></p>
+<p>Lassen wir die Vereinfachung im vorherigen Beispiel fallen, dass die Wahrscheinlichkeitsdichte im Bereich <span class="math inline">\([2cm; 4cm]\)</span> konstant ist. Stattdessen nehmen wir an, dass Nasenlängen in der Population normalverteilt sind, mit Mittelwert <span class="math inline">\(\mu=5\)</span> und Standardabweichung <span class="math inline">\(\sigma=1{,}5\)</span>.</p>
+<p><strong>Frage: wie hoch ist die Wahrscheinlichkeit, dass eine zufällig gezogene Nase aus der Population eine Länge zwischen <span class="math inline">\(2cm\)</span> und <span class="math inline">\(4cm\)</span> hat?</strong></p>
 </div><div class="column" style="width:38%;">
 <p><img data-src="images/density_integral.png"></p>
 </div>
@@ -634,13 +635,13 @@ P(2\le x\le 4) = \int_2^4 f(x)dx = \frac{1}{\sigma\sqrt{2\pi}}\int_2^4\text{exp}
 <!----------------->
 <!-- ## Theoretische Wahrscheinlichkeitsverteilung
 - Je nach Forschungsfrage kann das Ziel einer Stichprobe sein
-    1. Rückschlüsse auf die Grundgesamtheit zu ziehen (wie gerade gesehen), oder
+    1. Rückschlüsse auf die Population zu ziehen (wie gerade gesehen), oder
     2. Rückschlüsse auf die [**theoretische Wahrscheinlichkeitsverteilung**]{color="navy"} zu ziehen.
 - Die theoretische Wahrscheinlichkeitsverteilung ist von Interesse, wenn wir die Ursachen oder Mechanismen eines psychologischen Phänomens beschreiben und verstehen wollen.
-    - In diesem Fall ist die spezifische Grundgesamtheit nicht das primäre Interesse &mdash; selbst die Grundgesamtheit ist im Prinzip nur eine (großen) Stichprobe aus der Wahrscheinlichkeitsverteilung.
+    - In diesem Fall ist die spezifische Population nicht das primäre Interesse &mdash; selbst die Population ist im Prinzip nur eine (großen) Stichprobe aus der Wahrscheinlichkeitsverteilung.
     - Stattdessen wollen wir mechanistisch und quantitativ verstehen, wie naturwissenschaftliche Prozesse (biologisch, psychisch, sozial) bestimmte psychologische Phänomene "generieren".
-- In der Psychologie ist das primäre Interesse häufig der Mechanismus und damit die theoretische Wahrscheinlichkeitsverteilung eines Merkmals; in der Politologie, Soziologie, Ökonomie ist dagegen häufig die Verteilung in der Grundgesamtheit relevant (z.B. "Sonntagsfrage").
-- Auch wenn diese Unterscheidung konzeptionell wichtig ist, ist sie in der Praxis häufig nicht relevant, da Grundgesamtheiten i.d.R. so groß sind, dass sie nahezu perfekt mit der theoretischen Wahrscheinlichkeitsverteilung übereinstimmen. -->
+- In der Psychologie ist das primäre Interesse häufig der Mechanismus und damit die theoretische Wahrscheinlichkeitsverteilung eines Merkmals; in der Politologie, Soziologie, Ökonomie ist dagegen häufig die Verteilung in der Population relevant (z.B. "Sonntagsfrage").
+- Auch wenn diese Unterscheidung konzeptionell wichtig ist, ist sie in der Praxis häufig nicht relevant, da Populationen i.d.R. so groß sind, dass sie nahezu perfekt mit der theoretischen Wahrscheinlichkeitsverteilung übereinstimmen. -->
 <!----------------->
 <!--- New slide --->
 <!----------------->
@@ -669,7 +670,7 @@ F(x) = \int_{-\infty}^{x} f(x') dx'
 <p><img data-src="images/example.png" height="70"></p>
 </div>
 </div><div class="column" style="width:60%;">
-<p>Nehmen wir wieder die normalverteilte Nasenlängen-Grundgesamtheit an mit Mittelwert <span class="math inline">\(\mu=5\)</span> und Standardabweichung <span class="math inline">\(\sigma=1{,}5\)</span>. Die Wahrscheinlichkeit, dass eine zufällig gezogene Nase eine Länge von höchstens <span class="math inline">\(4cm\)</span> hat, ist gegeben durch den Wert <span class="math inline">\(F(4)\)</span> der Verteilungsfunktion dieser Normalverteilung:</p>
+<p>Nehmen wir wieder die normalverteilte Nasenlängen-Population an mit Mittelwert <span class="math inline">\(\mu=5\)</span> und Standardabweichung <span class="math inline">\(\sigma=1{,}5\)</span>. Die Wahrscheinlichkeit, dass eine zufällig gezogene Nase eine Länge von höchstens <span class="math inline">\(4cm\)</span> hat, ist gegeben durch den Wert <span class="math inline">\(F(4)\)</span> der Verteilungsfunktion dieser Normalverteilung:</p>
 <p><span class="math display">\[
 F(4) = \int_{-\infty}^{4} f(x') dx' = \\
 =\frac{1}{1{,}5\sqrt{2\pi}}\int_{-\infty}^4\text{exp}\left(-\frac{(x'-5)^2}{2\cdot1{,}5^2}\right)dx' \overset{(Computer!)}{\approx} 0{,}25
@@ -762,7 +763,7 @@ P(2&lt;x&lt;4) = F(4) - F(2) \overset{(Computer!)}{\approx} 0{,}23
 <p><img data-src="images/stichprobenverteilung.png" height="370"></p>
 <p><img src="images/hmu_logo.png" class="slide-logo"></p>
 <div class="footer footer-default">
-
+<p>Vorlesung 10: Wahrscheinlichkeitsverteilungen</p>
 </div>
 </section>
     </div>
@@ -996,6 +997,7 @@ P(2&lt;x&lt;4) = F(4) - F(2) \overset{(Computer!)}{\approx} 0{,}23
           }
         });
       }
+      // identifystring
 
       window.onload = bgcolor();
     </script>

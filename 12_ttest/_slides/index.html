@@ -342,6 +342,7 @@
 
   <p class="author">Prof.&nbsp;Matthias Guggenmos</p>
   <p class="institute">Health and Medical University Potsdam</p>
+  <p class="date">23.01.2024</p>
 <div style="display: flex; justify-content: space-between; align-items: baseline">
 <div><img src="images/logo_black.png" height="200px"></div>
 <div><img src="images/paradoxia_group_of_scientists.png" height="240px"></div>
@@ -381,14 +382,14 @@
 </section>
 <section class="slide level2">
 <h2>Problemstellung</h2>
-<p>Ist <span class="math inline">\(\sigma\)</span> im Ausdruck unserer Prüfgröße <span class="math inline">\(\frac{\Delta\bar{x}}{\sigma/\sqrt{N}}\)</span> bekannt, so wird <span class="math inline">\(\Delta\bar{x}\)</span> de facto durch eine Konstante geteilt (<span class="math inline">\(\sigma/\sqrt{N}\)</span>). Da aufgrund des zentralen Grenzwertsatzes <span class="math inline">\(\Delta\bar{x}\)</span> normalverteilt ist, ändert sich daran nichts, wenn wir den Ausdruck durch eine Konstante teilen. Aus diesem Grund können wir beim z-Test eine <strong>Normalverteilung für die Prüfgröße annehmen</strong>.</p>
+<p>Ist <span class="math inline">\(\sigma\)</span> im Ausdruck unserer Prüfgröße <span class="math inline">\(\frac{\Delta\bar{x}}{\sigma/\sqrt{n}}\)</span> bekannt, so wird <span class="math inline">\(\Delta\bar{x}\)</span> de facto durch eine Konstante geteilt (<span class="math inline">\(\sigma/\sqrt{n}\)</span>). Da aufgrund des zentralen Grenzwertsatzes <span class="math inline">\(\Delta\bar{x}\)</span> normalverteilt ist, ändert sich daran nichts, wenn wir den Ausdruck durch eine Konstante teilen. Aus diesem Grund können wir beim z-Test eine <strong>Normalverteilung für die Prüfgröße annehmen</strong>.</p>
 <p>Ist <span class="math inline">\(\sigma\)</span> dagegen <em>nicht bekannt</em>, muss die Streuung auf Basis der Stichprobe als <span class="math inline">\(\hat{\sigma}\)</span> geschätzt werden. Die Schätzung von <span class="math inline">\(\hat{\sigma}\)</span> ist mit Unsicherheit behaftet und daher selbst eine <strong>Zufallsvariable</strong>. Wir teilen also eine normalverteilte Zufallsvariable <span class="math inline">\(\Delta\bar{x}\)</span> durch eine wie-auch-immer-verteilte (*) zweite Zufallsvariable <span class="math inline">\(\hat{\sigma}\)</span>. <strong>In diesem Fall können wir nicht mehr davon ausgehen, dass die Prüfgröße normalverteilt ist!</strong><br><span style="font-size: 22px !important">(* die wie-auch-immer-Verteilung ist bekannt: <span class="math inline">\(\hat{\sigma}\)</span> folgt der Chi-Verteilung bzw. χ-Verteilung)</span></p>
 <div class="vspace-medium">
 
 </div>
 <p>Die Gretchen-Frage ist daher: welcher Verteilung folgt die Prüfstatistik</p>
 <p><span class="math display">\[
-\frac{\Delta\bar{x}}{\hat{\sigma}/\sqrt{N}}\qquad\text{?}
+\frac{\Delta\bar{x}}{\hat{\sigma}/\sqrt{n}}\qquad\text{?}
 \]</span></p>
 <p>(mit Betonung auf dem ^ über <span class="math inline">\(\hat{\sigma}\)</span>)</p>
 <!----------------->
@@ -420,7 +421,7 @@ t\text{-Verteilung:}\qquad f_t(x|\scriptsize\text{df}\normalsize)
 <div class="columns">
 <div class="column" style="width:45%;">
 <ul>
-<li class="fragment">Die <span style=" color: navy !important;"><strong>Zahl der Freiheitsgrade</strong></span> hängt eng mit der Stichprobengröße <span class="math inline">\(N\)</span> zusammen.</li>
+<li class="fragment">Die <span style=" color: navy !important;"><strong>Zahl der Freiheitsgrade</strong></span> hängt eng mit der Stichprobengröße <span class="math inline">\(n\)</span> zusammen.</li>
 <li class="fragment">Im Bild rechts ist eine t-Verteilung mit 4 Freiheitsgraden im Vergleich zur Normalverteilung aufgetragen.</li>
 <li class="fragment">Erste Erkenntnis: die t-Verteilung hat etwas dickere Flanken (<em>fat tails</em>)!</li>
 </ul>
@@ -445,7 +446,7 @@ t\text{-Verteilung:}\qquad f_t(x|\scriptsize\text{df}\normalsize)
 <li class="fragment">In Korrespondenz mit dem Namen der Verteilung wird die Prüfgröße auf Basis von <span class="math inline">\(\hat{\sigma}\)</span> als <span style=" color: navy !important;"><strong>t-Wert</strong></span> bezeichnet:</li>
 </ul>
 <p><span class="math display">\[
-t = \frac{\Delta\bar{x}}{\hat{\sigma}/\sqrt{N}} = \frac{\Delta\bar{x}}{\hat{se}}
+t = \frac{\Delta\bar{x}}{\hat{\sigma}/\sqrt{n}} = \frac{\Delta\bar{x}}{\hat{se}}
 \]</span></p>
 </div><div class="column" style="width:40%;">
 <p><img data-src="images/ttest1.png" style="margin-top: -40px !important"></p>
@@ -486,21 +487,21 @@ t = \frac{\Delta\bar{x}}{\hat{\sigma}/\sqrt{N}} = \frac{\Delta\bar{x}}{\hat{se}}
 <tbody>
 <tr class="odd">
 <td><strong>Differenz des Mittelwertes <u>einer Gruppe</u> und einem Referenzwert</strong> <span class="math inline">\(\mu_0\)</span><br>(→ Einstichproben-t-Test)</td>
-<td><span class="math inline">\(\hat{se}=\frac{\hat{\sigma}}{\sqrt{N}}\)</span></td>
+<td><span class="math inline">\(\hat{se}=\frac{\hat{\sigma}}{\sqrt{n}}\)</span></td>
 </tr>
 <tr class="even">
 <td><strong>Mittelwertdifferenz zweier Bedingungen A und B in <u>einer Gruppe</u></strong><br>(→ Differenzen-t-Test)</td>
-<td><span class="math inline">\(\hat{se} = \frac{\hat{\sigma}_\Delta}{\sqrt{N}}\qquad\text{mit}\)</span><br>
+<td><span class="math inline">\(\hat{se} = \frac{\hat{\sigma}_\Delta}{\sqrt{n}}\qquad\text{mit}\)</span><br>
 <span class="math inline">\(\hat{\sigma}_\Delta=\sqrt{\hat{\sigma}_A^2+\hat{\sigma}_B^2-2\,\hat{Cov}(X_A,X_B)}\)</span></td>
 </tr>
 <tr class="odd">
 <td><strong>Mittelwertdifferenz <u>zweier unabhängiger Gruppen</u> A und B (ähnliche Varianzen)</strong><br>(→ Klassischer Zweistichproben-t-Test)</td>
-<td><span class="math inline">\(\hat{se} = \hat{\sigma}_\text{pooled}\sqrt{\frac{1}{N_A}+\frac{1}{N_B}}\)</span><br>
-<span class="math inline">\(\text{mit}\quad \hat{\sigma}_\text{pooled}=\sqrt{\frac{(N_A-1)\hat{\sigma}^2_A + (N_B-1)\hat{\sigma}^2_B}{N_A+N_B-2}}\)</span></td>
+<td><span class="math inline">\(\hat{se} = \hat{\sigma}_\text{pooled}\sqrt{\frac{1}{n_A}+\frac{1}{n_B}}\)</span><br>
+<span class="math inline">\(\text{mit}\quad \hat{\sigma}_\text{pooled}=\sqrt{\frac{(n_A-1)\hat{\sigma}^2_A + (n_B-1)\hat{\sigma}^2_B}{n_A+n_B-2}}\)</span></td>
 </tr>
 <tr class="even">
 <td><strong>Mittelwertdifferenz <u>zweier unabhängiger Gruppen</u> A und B (unterschiedliche Varianzen)</strong><br>(→ Welch’s t-Test)</td>
-<td><span class="math inline">\(\hat{se}= \sqrt{\frac{\hat{\sigma}_A^2}{N_A} + \frac{\hat{\sigma}_B^2}{N_B}}\)</span></td>
+<td><span class="math inline">\(\hat{se}= \sqrt{\frac{\hat{\sigma}_A^2}{n_A} + \frac{\hat{\sigma}_B^2}{n_B}}\)</span></td>
 </tr>
 </tbody>
 </table>
@@ -574,7 +575,7 @@ t = F^{-1}_t(a|\scriptsize\text{df}\normalsize)
 </div>
 </div>
 <p>wobei <span class="math inline">\(a\)</span> die Fläche (<u>a</u>rea) bezeichnet. Da die t-Verteilung eine Wahrscheinlichkeitsdichte ist, kann die Fläche <span class="math inline">\(a\)</span> nur Werte zwischen 0 und 1 annehmen.</p>
-<p>Die Funktion wird auch <strong>Quantilfunktion</strong> genannt, da sie z.B. für <span class="math inline">\(a=0.8\)</span> den Wert <span class="math inline">\(t\)</span> zurück gibt, der 80% der t-Verteilung (von <span class="math inline">\(-\infty\)</span> gerechnet) umfasst.</p>
+<p>Die Funktion wird auch <strong>Quantilfunktion</strong> genannt, da sie z.B. für <span class="math inline">\(a=0{,}8\)</span> den Wert <span class="math inline">\(t\)</span> zurück gibt, der 80% der t-Verteilung (von <span class="math inline">\(-\infty\)</span> gerechnet) umfasst.</p>
 <div class="notabene">
 <div class="columns">
 <div class="column" style="width:7%;">
@@ -589,19 +590,19 @@ t = F^{-1}_t(a|\scriptsize\text{df}\normalsize)
 </section>
 <section class="slide level2">
 <h2>Funktionen der t-Verteilung</h2>
-<div class="vspace-medium">
-
-</div>
-<p>Mit der inversen kumulativen Verteilungsfunktion können <span style=" color: navy !important;"><strong>kritische t-Werte</strong></span> für gegebene Signifikanzniveaus berechnet werden, wie sie von der <strong>t-Tabelle</strong> bereitgestellt werden.</p>
-<p>Bei gerichteter Hypothese ist der kritische t-Wert bei einem Signifikanzniveau von <span class="math inline">\(\alpha\)</span> gleich <span class="math inline">\(F^{-1}_t(1-\alpha|\scriptsize\text{df}\normalsize)\)</span>, bei ungerichteter Hypothese gleich <span class="math inline">\(F^{-1}_t(1-\frac{\alpha}{2}|\scriptsize\text{df}\normalsize)\)</span>.</p>
+<p>Mit der inversen kumulativen Verteilungsfunktion können <span style=" color: navy !important;"><strong>kritische t-Werte</strong></span> für gegebene Signifikanzniveaus <span class="math inline">\(\alpha\)</span> berechnet werden, wie sie von der <strong>t-Tabelle</strong> bereitgestellt werden.</p>
+<p>Bei gerichteter Hypothese ist der kritische t-Wert bei einem Signifikanzniveau von <span class="math inline">\(\alpha\)</span> gleich <span class="math inline">\(F^{-1}_t(1-\alpha|\scriptsize\text{df}\normalsize)\)</span>, bei ungerichteter Hypothese gleich <span class="math inline">\(F^{-1}_t(1-\frac{\alpha}{2}|\scriptsize\text{df}\normalsize)\)</span>. Für die Angabe eines kritischen t-Wertes wird üblicherweise als Subscript die kritische Fläche und die Zahl der Freiheitsgrade <span class="math inline">\(\text{df}\)</span> angegeben:</p>
+<p><span class="math display">\[
+\text{Gerichtet:}\quad t_\text{crit} = t_{(1-\alpha,\,\text{df})}\qquad\text{Ungerichtet:}\quad t_\text{crit} = t_{(1-\frac{\alpha}{2},\,\text{df})}
+\]</span></p>
 <div class="vspace-medium">
 
 </div>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><img data-src="images/ttest1_alpha.png"></p>
+<p><img data-src="images/ttest1_alpha.png" height="330"></p>
 </div><div class="column" style="width:50%;">
-<p><img data-src="images/ttest1_alpha_ungerichtet.png"></p>
+<p><img data-src="images/ttest1_alpha_ungerichtet.png" height="330"></p>
 </div>
 </div>
 <!----------------->
@@ -623,7 +624,7 @@ t = F^{-1}_t(a|\scriptsize\text{df}\normalsize)
 </div>
 <ul>
 <li class="fragment">Der einzige Parameter der t-Verteilung, die Zahl der Freiheitsgrade <span class="math inline">\(\text{df}\)</span>, bestimmt die Form der Verteilung.</li>
-<li class="fragment">Die Zahl der Freiheitsgrade df hängt eng mit der Stichprobengröße <span class="math inline">\(N\)</span> zusammen<br>(z.B. <span class="math inline">\(\text{df}=N-1\)</span> bei einem Mittelwertsunterschied abhängiger Messungen).</li>
+<li class="fragment">Die Zahl der Freiheitsgrade df hängt eng mit der Stichprobengröße <span class="math inline">\(n\)</span> zusammen<br>(z.B. <span class="math inline">\(\text{df}=n-1\)</span> bei einem Mittelwertsunterschied abhängiger Messungen).</li>
 <li class="fragment">Je größer df/Stichprobengröße, desto ähnlicher wird die t-Verteilung der Normalverteilung!</li>
 </ul>
 <div class="vspace-small">
@@ -638,11 +639,11 @@ t = F^{-1}_t(a|\scriptsize\text{df}\normalsize)
 <h2><span style="color: darkred">Intuition: verdickte Flanken der t-Verteilung</span></h2>
 <p><img data-src="images/kein_klausurstoff.png" class="absolute" style="bottom: 0px; right: 0px; height: 110px; "></p>
 <ul>
-<li class="fragment">Warum sind die Flanken der Verteilung der Testgröße <span class="math inline">\(t=\frac{\Delta\bar{x}}{\hat{\sigma}/\sqrt{N}}\)</span> stärker ausgeprägt, wenn <span class="math inline">\(\hat{\sigma}\)</span> auf Basis der Stichprobe geschätzt werden muss?</li>
+<li class="fragment">Warum sind die Flanken der Verteilung der Testgröße <span class="math inline">\(t=\frac{\Delta\bar{x}}{\hat{\sigma}/\sqrt{n}}\)</span> stärker ausgeprägt, wenn <span class="math inline">\(\hat{\sigma}\)</span> auf Basis der Stichprobe geschätzt werden muss?</li>
 <li class="fragment">Der Grund liegt in der (chi-)Verteilung der Zufallsvariable <span class="math inline">\(\hat{\sigma}\)</span> im Nenner:
 <ul>
 <li class="fragment">Bei kleinen Stichprobengrößen (kleines df), gibt es eine Assymmetrie der Verteilung hin zu Werten kleiner dem Mittelwert (welcher die korrekte Schätzung von <span class="math inline">\(\sigma\)</span> repräsentiert — in der Abbildung gestrichelte Linien)</li>
-<li class="fragment">D.h. wir <em>teilen</em> <span class="math inline">\(\Delta\bar{x}\)</span> <em>überproportional häufig durch zu kleine Werte</em>, wodurch die <em>Teststatistik</em> <span class="math inline">\(t=\frac{\Delta\bar{x}}{\hat{\sigma}/\sqrt{N}}\)</span> <em>überproportional häufig zu extreme (negative oder positive) Werte</em> liefert.</li>
+<li class="fragment">D.h. wir <em>teilen</em> <span class="math inline">\(\Delta\bar{x}\)</span> <em>überproportional häufig durch zu kleine Werte</em>, wodurch die <em>Teststatistik</em> <span class="math inline">\(t=\frac{\Delta\bar{x}}{\hat{\sigma}/\sqrt{n}}\)</span> <em>überproportional häufig zu extreme (negative oder positive) Werte</em> liefert.</li>
 <li class="fragment">Dies führt zu den stärkeren Flanken der t-Verteilung!</li>
 </ul></li>
 </ul>
@@ -689,7 +690,7 @@ f_t(x|\color{green}{\mu},\color{blue}{\sigma},\scriptsize\text{df}\normalsize) =
 \]</span></p>
 <p>Ähnlich wie beim z-Test hat es sich in der Praxis aber durchgesetzt immer mit standardisierten Prüfgrößen (wie <span class="math inline">\(z\)</span> oder <span class="math inline">\(t\)</span>) zu arbeiten. Daher finden die unstandardisierte t- und Normalverteilung im Kontext der Hypothesentestung selten eine Anwendung.</p>
 <div style="margin-top: -5px">
-<p>Der <strong>Vorteil standardisierter Prüfgrößen</strong> ist, dass diese vergleichbar zwischen Studien sind. Ein bestimmter z- oder t-Wert hat daher eine interpretierbare Aussagekraft, ohne den Standardfehler einer spezifischen Studie zu kennen.</p>
+<p>Der <strong>Vorteil standardisierter Prüfgrößen</strong> ist, dass diese vergleichbar zwischen Studien sind. Ein bestimmter z- oder t-Wert hat eine Aussagekraft, ohne den Standardfehler einer Studie zu kennen.</p>
 </div>
 <!----------------->
 <!--- New slide --->
@@ -761,7 +762,7 @@ f_t(x|\color{green}{\mu},\color{blue}{\sigma},\scriptsize\text{df}\normalsize) =
 <div style="margin-top: -13px">
 <ul>
 <li class="fragment">Damit <span class="math inline">\(t=\text{Stichprobenkennwert}/\hat{se}\)</span> einer t-Verteilung folgt, müssen der Stichprobenkennwert und der Standardfehler <span class="math inline">\(\hat{se}\)</span> unabhängig sein (dürfen nicht korrelieren). Dies ist (theoretisch) nur erfüllt, wenn die gemessenen Variablen eine Normalverteilung folgen — tatsächlich lässt sich genau mit dieser Bedingung die Normalverteilung ableiten.</li>
-<li class="fragment">Der zentrale Grenzwertsatz gilt streng genommen nur für <span class="math inline">\(N\rightarrow\infty\)</span>, was natürlich in empirischen Studien nie gegeben ist. Ist die Stichprobengröße begrenzt, ist die Stichprobenverteilung nur normalverteilt, wenn auch die gemessene Variable in der Population normalverteilt ist (<a href="https://de.wikipedia.org/wiki/Satz_von_Cram%C3%A9r_(Normalverteilung)">Satz von Cramer</a>).</li>
+<li class="fragment">Der zentrale Grenzwertsatz gilt streng genommen nur für <span class="math inline">\(n\rightarrow\infty\)</span>, was natürlich in empirischen Studien nie gegeben ist. Ist die Stichprobengröße begrenzt, ist die Stichprobenverteilung nur normalverteilt, wenn auch die gemessene Variable in der Population normalverteilt ist (<a href="https://de.wikipedia.org/wiki/Satz_von_Cram%C3%A9r_(Normalverteilung)">Satz von Cramer</a>).</li>
 </ul>
 </div>
 </div>
@@ -791,11 +792,11 @@ f_t(x|\color{green}{\mu},\color{blue}{\sigma},\scriptsize\text{df}\normalsize) =
 <p><strong>Beispiel Varianz:</strong> Angenommen, wir wollen für einer Stichprobe aus vier Werten die Varianz bestimmen:</p>
 <div style="margin-top:-15px !important; margin-bottom:-5px !important">
 <p><span class="math display">\[
-\sigma^2 = \frac{1}{N}\sum_1^4 (x_i-\bar{x})
+\sigma^2 = \frac{1}{n}\sum_1^4 (x_i-\bar{x})
 \]</span></p>
 </div>
-<p>Aus der Formel der Varianz erkennen wir, dass wir zur Berechnung der Varianz <strong>einen Parameter</strong> aus den Daten bestimmen müssen, nämlich der Mittelwert <span class="math inline">\(\bar{x}\)</span>. Die Zahl der Freiheitsgrade ergibt sich damit plain &amp; simple nach obiger Definition als <strong>Stichprobengröße N minus 1</strong>.</p>
-<p>Für die Intuition entscheidend ist folgende Frage bzw. Gedankenexperiment: wie viele der <span class="math inline">\(N=4\)</span> Werte kann ich frei variieren unter der Bedingung, dass der Mittelwert gleich <span class="math inline">\(\bar{x}\)</span> beträgt? — dies ist die Zahl der Freiheitsgrade! Wie man sich leicht überlegen kann, könnten wir die ersten <span class="math inline">\(N-1=3\)</span> Werte völlig frei bestimmen und hätten mit dem vierten Wert die Möglichkeit den Mittelwert <span class="math inline">\(\bar{x}=2\)</span> zu erreichen. Bei (2, 4, 1) wäre der vierte Wert 1. Bei (-10000, 0, 0) wäre der vierte Wert 10008. Den vierten Wert allerdings ergibt sich wie gerade gesehen automatisch — wir können ihn nicht mehr frei bestimmen. Diese Logik gilt nicht nur für den Mittelwertsparameter, sondern für jeden Parameter der “auf dem Weg” zur Berechnung einer statistischen Größe geschätzt werden muss.</p>
+<p>Aus der Formel der Varianz erkennen wir, dass wir zur Berechnung der Varianz <strong>einen Parameter</strong> aus den Daten bestimmen müssen, nämlich der Mittelwert <span class="math inline">\(\bar{x}\)</span>. Die Zahl der Freiheitsgrade ergibt sich damit plain &amp; simple nach obiger Definition als <strong>Stichprobengröße n minus 1</strong>.</p>
+<p>Für die Intuition entscheidend ist folgende Frage bzw. Gedankenexperiment: wie viele der <span class="math inline">\(n=4\)</span> Werte kann ich frei variieren unter der Bedingung, dass der Mittelwert gleich <span class="math inline">\(\bar{x}\)</span> beträgt? — dies ist die Zahl der Freiheitsgrade! Wie man sich leicht überlegen kann, könnten wir die ersten <span class="math inline">\(n-1=3\)</span> Werte völlig frei bestimmen und hätten mit dem vierten Wert die Möglichkeit den Mittelwert <span class="math inline">\(\bar{x}=2\)</span> zu erreichen. Bei (2, 4, 1) wäre der vierte Wert 1. Bei (-10000, 0, 0) wäre der vierte Wert 10008. Den vierten Wert allerdings ergibt sich wie gerade gesehen automatisch — wir können ihn nicht mehr frei bestimmen. Diese Logik gilt nicht nur für den Mittelwertsparameter, sondern für jeden Parameter der “auf dem Weg” zur Berechnung einer statistischen Größe geschätzt werden muss.</p>
 </div>
 </div>
 </div>
@@ -823,7 +824,7 @@ f_t(x|\color{green}{\mu},\color{blue}{\sigma},\scriptsize\text{df}\normalsize) =
 </div>
 <div style="margin-top: -15px">
 <ul>
-<li class="fragment">Der <strong>Begriff “Freiheitsgrad” ist wenig intuitiv</strong>, weil die Datenpunkte nur im Gedanken-experiment “frei” gewählt werden können — in Realität sind sie natürlich gegeben.</li>
+<li class="fragment">Der <strong>Begriff “Freiheitsgrad” ist wenig intuitiv</strong>, weil die Datenpunkte nur im Gedankenexperiment “frei” gewählt werden können — in Realität sind sie natürlich gegeben.</li>
 <li class="fragment">Ein intuitiverer Ausdruck wäre <strong>effektive Stichprobengröße</strong>: wie viele Datenpunkte aus meiner Stichprobe kann ich effektiv zur Schätzung meines statistischen Zielkennwerts nutzbar machen?</li>
 </ul>
 </div>
@@ -880,23 +881,23 @@ f_t(x|\color{green}{\mu},\color{blue}{\sigma},\scriptsize\text{df}\normalsize) =
 <tr class="odd">
 <td><strong>Einstichprobentest mit Einzelmessung</strong></td>
 <td>Ist <span class="math inline">\(\bar{x}\)</span> größer als ein Referenzwert <span class="math inline">\(\mu_0\)</span>?</td>
-<td><span class="math inline">\(\text{df} = N - 1\)</span>, da für die Berechnung von <span class="math inline">\(t\)</span> genau ein Zwischenparameter bestimmt werden muss (der Mittelwert <span class="math inline">\(\bar{x}\)</span>)</td>
+<td><span class="math inline">\(\text{df} = n - 1\)</span>, da für die Berechnung von <span class="math inline">\(t\)</span> genau ein Zwischenparameter bestimmt werden muss (der Mittelwert <span class="math inline">\(\bar{x}\)</span>)</td>
 </tr>
 <tr class="even">
 <td><strong>Einstichprobentest mit zwei abhängigen Messungen</strong></td>
 <td>Unterscheiden sich die Mittelwerte <span class="math inline">\(\bar{x}_A\)</span> und <span class="math inline">\(\bar{x}_B\)</span> zwischen zwei Bedingungen A und B? In diesem Fall kann man auch fragen: ist der Mittelwert der Differenzvariable (<span class="math inline">\(\Delta\bar{x}=\overline{X_A-X_B}\)</span>) verschieden von Null?</td>
-<td><span class="math inline">\(\text{df} = N - 1\)</span>, da für die Berechnung von <span class="math inline">\(t\)</span> genau ein Zwischenparameter bestimmt werden muss (der Mittelwert <span class="math inline">\(\overline{X_A-X_B}\)</span>)</td>
+<td><span class="math inline">\(\text{df} = n - 1\)</span>, da für die Berechnung von <span class="math inline">\(t\)</span> genau ein Zwischenparameter bestimmt werden muss (der Mittelwert <span class="math inline">\(\overline{X_A-X_B}\)</span>)</td>
 </tr>
 <tr class="odd">
 <td><strong>Zweistichprobentest (ähnliche Varianzen)</strong></td>
 <td>Unterscheiden sich die Mittelwerte <span class="math inline">\(\bar{x}_A\)</span> und <span class="math inline">\(\bar{x}_B\)</span> zwischen zwei Gruppen A und B? (<span class="math inline">\(\Delta\bar{x}=\bar{x}_A-\bar{x}_B\)</span>)</td>
-<td><span class="math inline">\(\text{df} = N_A + N_B - 2\)</span>, da für die Berechnung von <span class="math inline">\(t\)</span> genau zwei Zwischenparameter bestimmt werden müssen (die Mittelwerte <span class="math inline">\(\bar{x}_A\)</span> und <span class="math inline">\(\bar{x}_B\)</span>)</td>
+<td><span class="math inline">\(\text{df} = n_A + n_B - 2\)</span>, da für die Berechnung von <span class="math inline">\(t\)</span> genau zwei Zwischenparameter bestimmt werden müssen (die Mittelwerte <span class="math inline">\(\bar{x}_A\)</span> und <span class="math inline">\(\bar{x}_B\)</span>)</td>
 </tr>
 <tr class="even">
 <td><strong>Zweistichprobentest (unterschiedliche Varianzen)</strong></td>
 <td>Unterscheiden sich die Mittelwerte <span class="math inline">\(\bar{x}_A\)</span> und <span class="math inline">\(\bar{x}_B\)</span> zwischen zwei Gruppen A und B? (<span class="math inline">\(\Delta\bar{x}=\bar{x}_A-\bar{x}_B\)</span>)</td>
-<td><span class="math inline">\(\text{df} = \frac{\left(\frac{\hat{\sigma}_A^2}{N_A}+\frac{\hat{\sigma}_B^2}{N_B}\right)^2}{\frac{\left(\hat{\sigma}_A^2/N_A\right)^2}{N_A-1}+\frac{\left(\hat{\sigma}_B^2/N_B\right)^2}{N_B-1}}\)</span><br>
-Falls <span class="math inline">\(N_A=N_B=N\)</span>: <span class="math inline">\(\text{df}=(N-1)\Big(1+\frac{2}{\left(\frac{\hat{\sigma}_A}{\hat{\sigma}_B}\right)^2+\left(\frac{\hat{\sigma}_B}{\hat{\sigma}_A}\right)^2}\Big)\)</span></td>
+<td><span class="math inline">\(\text{df} = \frac{\left(\frac{\hat{\sigma}_A^2}{n_A}+\frac{\hat{\sigma}_B^2}{n_B}\right)^2}{\frac{\left(\hat{\sigma}_A^2/n_A\right)^2}{n_A-1}+\frac{\left(\hat{\sigma}_B^2/n_B\right)^2}{n_B-1}}\)</span><br>
+Falls <span class="math inline">\(n_A=n_B=n\)</span>: <span class="math inline">\(\text{df}=(n-1)\Big(1+\frac{2}{\left(\frac{\hat{\sigma}_A}{\hat{\sigma}_B}\right)^2+\left(\frac{\hat{\sigma}_B}{\hat{\sigma}_A}\right)^2}\Big)\)</span></td>
 </tr>
 </tbody>
 </table>
@@ -908,9 +909,9 @@ Falls <span class="math inline">\(N_A=N_B=N\)</span>: <span class="math inline">
 <h2><span style=" color: darkred !important;">Freiheitsgrade beim Zweistichproben-t-Test mit unterschiedlicher Varianz</span></h2>
 <p><img data-src="images/kein_klausurstoff.png" class="absolute" style="bottom: 0px; right: 0px; height: 110px; "></p>
 <p>Auch wenn die Formel für die Freiheitsgrade beim Zweistichproben-t-Test mit unterschiedlicher Varianz recht kompliziert aussieht, ist eine nähere Betrachtung durchaus aufschlussreich.</p>
-<p>Für <span class="math inline">\(N_A=N_B=N\)</span> gilt:</p>
+<p>Für <span class="math inline">\(n_A=n_B=n\)</span> gilt:</p>
 <p><span class="math display">\[
-\text{df}=(N-1)\Big(1+\frac{2}{\left(\frac{\hat{\sigma}_A}{\hat{\sigma}_B}\right)^2+\left(\frac{\hat{\sigma}_B}{\hat{\sigma}_A}\right)^2}\Big)
+\text{df}=(n-1)\Big(1+\frac{2}{\left(\frac{\hat{\sigma}_A}{\hat{\sigma}_B}\right)^2+\left(\frac{\hat{\sigma}_B}{\hat{\sigma}_A}\right)^2}\Big)
 \]</span></p>
 <p>Zwei Fälle sind interessant:</p>
 <div class="vspace-small">
@@ -918,7 +919,7 @@ Falls <span class="math inline">\(N_A=N_B=N\)</span>: <span class="math inline">
 </div>
 <p><u>Fall 1: Sind die Varianzen gleich</u>, d.h. <span class="math inline">\(\hat{\sigma}_A=\hat{\sigma}_B\)</span>, so vereinfacht sich die Formel zu</p>
 <p><span class="math display">\[
-\text{df} = (N-1)(1+\frac{2}{2}) = 2N -2,
+\text{df} = (n-1)(1+\frac{2}{2}) = 2n -2,
 \]</span></p>
 <p><strong>also exakt die Formel des klassichen Zweistichprobentests.</strong></p>
 <!----------------->
@@ -930,7 +931,7 @@ Falls <span class="math inline">\(N_A=N_B=N\)</span>: <span class="math inline">
 <p><img data-src="images/kein_klausurstoff.png" class="absolute" style="bottom: 0px; right: 0px; height: 110px; "></p>
 <p><u>Fall 2: Sind die Varianzen extrem unterschiedlich</u>, so wird entweder <span class="math inline">\(\left(\frac{\hat{\sigma}_A}{\hat{\sigma}_B}\right)^2\)</span> oder <span class="math inline">\(\left(\frac{\hat{\sigma}_B}{\hat{\sigma}_A}\right)^2\)</span> extrem groß und die Formel vereinfacht sich zu</p>
 <p><span class="math display">\[
-\text{df} = (N-1)(1+\frac{2}{\infty}) = (N-1)(1+0) = N-1
+\text{df} = (n-1)(1+\frac{2}{\infty}) = (n-1)(1+0) = n-1
 \]</span></p>
 <p><strong>also exakt die Formel des Einstichprobentests.</strong></p>
 <p>Für extrem ungleiche Varianzen reduzieren sich also die Freiheitsgrade — und damit die <em>effektive Stichprobengröße</em> — auf die Größe einer der beiden verglichenen Gruppen.</p>
@@ -969,9 +970,9 @@ Falls <span class="math inline">\(N_A=N_B=N\)</span>: <span class="math inline">
 \]</span></p>
 <p>Wir schlagen die Formel für den Standardfehler bei unabhängigen Messungen und ungleichen Varianzen nach und setzen ein:</p>
 <p><span class="math display">\[
-\hat{SE}= \sqrt{\frac{\hat{\sigma}_\text{med}^2}{N_\text{med}} + \frac{\hat{\sigma}_\text{psych}^2}{N_\text{psych}}} \overset{(Computer)}{=}  0{,}102
+\hat{SE}= \sqrt{\frac{\hat{\sigma}_\text{med}^2}{n_\text{med}} + \frac{\hat{\sigma}_\text{psych}^2}{n_\text{psych}}} \overset{(Computer)}{=}  0{,}102
 \]</span></p>
-<p>Erinnerung: es galt <span class="math inline">\(N_\text{med}=N_\text{psych}=30\)</span>.</p>
+<p>Erinnerung: es galt <span class="math inline">\(n_\text{med}=n_\text{psych}=30\)</span>.</p>
 </div><div class="column" style="width:20%;">
 <p><img data-src="images/psych_med.png"></p>
 </div>
@@ -994,7 +995,7 @@ t = \frac{\Delta \bar{x}}{\hat{se}} = 1{,}96
 <div style="margin-top: -10px">
 <p><span class="math display">\[
 \begin{aligned}
-\text{df}&amp;=(N-1)\Big(1+\frac{2}{\left(\frac{\hat{\sigma}_\text{med}}{\hat{\sigma}_\text{psych}}\right)^2+\left(\frac{\hat{\sigma}_\text{psych}}{\hat{\sigma}_\text{med}}\right)^2}\Big) = \\
+\text{df}&amp;=(n-1)\Big(1+\frac{2}{\left(\frac{\hat{\sigma}_\text{med}}{\hat{\sigma}_\text{psych}}\right)^2+\left(\frac{\hat{\sigma}_\text{psych}}{\hat{\sigma}_\text{med}}\right)^2}\Big) = \\
 &amp;=(30-1)\Big(1+\frac{2}{\left(\frac{0{,}5}{0{,}25}\right)^2+\left(\frac{0{,}25}{0{,}5}\right)^2}\Big) = 42{,}6
 \end{aligned}
 \]</span></p>
@@ -1032,7 +1033,7 @@ p=\int_{t}^{\infty}f_t(x|\scriptsize\text{df}\normalsize)dx = \int_{1{,}96}^{\in
 <div class="column" style="width:66%;">
 <ul>
 <li class="fragment">Herrscht Varianzgleichheit vor und ist die Stichprobengröße nicht extrem klein in einer Gruppe, kommen der Student’sche t-Test und Welch’s t-Test zum gleichen Ergebnis.</li>
-<li class="fragment">Vor diesem Hintergrund wird empfohlen<a href="#/footnotes" class="footnote-ref" id="fnref5" role="doc-noteref" data-footnote-href="#/fn5" onclick=""><sup>5</sup></a>, bereits ab moderaten Gruppengrößen (ca. <span class="math inline">\(N\ge 8\)</span> pro Gruppe) <em>immer</em> Welch’s t-Test anzuwenden. In den meisten Statistikprogrammen ist dieser Test implementiert.</li>
+<li class="fragment">Vor diesem Hintergrund wird empfohlen<a href="#/footnotes" class="footnote-ref" id="fnref5" role="doc-noteref" data-footnote-href="#/fn5" onclick=""><sup>5</sup></a>, bereits ab moderaten Gruppengrößen (ca. <span class="math inline">\(n\ge 8\)</span> pro Gruppe) <em>immer</em> Welch’s t-Test anzuwenden. In den meisten Statistikprogrammen ist dieser Test implementiert.</li>
 </ul>
 </div><div class="column" style="width:34%;">
 <div class="quarto-figure quarto-figure-center" style="margin-top:-20px">
@@ -1052,7 +1053,7 @@ p=\int_{t}^{\infty}f_t(x|\scriptsize\text{df}\normalsize)dx = \int_{1{,}96}^{\in
 <h2>Beispiel: t-Test für abhängige Messungen</h2>
 <div class="columns">
 <div class="column" style="width:80%;">
-<p>Sie führen ein Experiment <em>innerhalb der Med-Gruppe</em> (N=32) durch. In einer experimentellen Intervention stellen Sie den Med-Studierenden die Frage</p>
+<p>Sie führen ein Experiment <em>innerhalb der Med-Gruppe</em> (n=32) durch. In einer experimentellen Intervention stellen Sie den Med-Studierenden die Frage</p>
 <blockquote>
 <p>Studieren Sie Medizin, weil es der Wunsch Ihrer Eltern ist?</p>
 </blockquote>
@@ -1067,7 +1068,7 @@ p=\int_{t}^{\infty}f_t(x|\scriptsize\text{df}\normalsize)dx = \int_{1{,}96}^{\in
 \hat{\sigma}_\Delta=\sqrt{\hat{\sigma}_\text{pre}^2+\hat{\sigma}_\text{post}^2-2\,\hat{Cov}(X_\text{pre}, X_\text{post})} = \sqrt{(0{,5})^2+(0{,5})^2-2\cdot 0} = \frac{1}{\sqrt{2}}
 \]</span></p>
 <p><span class="math display">\[
-\text{Standardfehler:}\qquad \hat{se}=\frac{\hat{\sigma}_\Delta}{\sqrt{N}} = \frac{1}{\sqrt{2}\sqrt{32}}=\frac{1}{8}
+\text{Standardfehler:}\qquad \hat{se}=\frac{\hat{\sigma}_\Delta}{\sqrt{n}} = \frac{1}{\sqrt{2}\sqrt{32}}=\frac{1}{8}
 \]</span></p>
 <!----------------->
 <!--- New slide --->
@@ -1081,7 +1082,7 @@ p=\int_{t}^{\infty}f_t(x|\scriptsize\text{df}\normalsize)dx = \int_{1{,}96}^{\in
 <p><span class="math display">\[
 t = \frac{\Delta\bar{x}}{\hat{se}} = \frac{0{,}1}{1/8} = 0{,}8
 \]</span></p>
-<p>Aufgrund der ungerichteten Hypothese ist der p-Wert die Summe der Flächen unter der t-Verteilung links von <span class="math inline">\(t=-0{,8}\)</span> <u>und</u> rechts von <span class="math inline">\(t=+0{,8}\)</span>. Bei <span class="math inline">\(df=N-1=31\)</span> Freiheitsgraden gilt:</p>
+<p>Aufgrund der ungerichteten Hypothese ist der p-Wert die Summe der Flächen unter der t-Verteilung links von <span class="math inline">\(t=-0{,}8\)</span> <u>und</u> rechts von <span class="math inline">\(t=+0{,}8\)</span>. Bei <span class="math inline">\(\text{df}=n-1=31\)</span> Freiheitsgraden gilt:</p>
 </div><div class="column" style="width:40%;">
 <p><img data-src="images/ttest1_example2.png"></p>
 </div>
@@ -1111,7 +1112,7 @@ p&amp;=\int_{-\infty}^{-t}f_t(x|\scriptsize\text{df}\normalsize)dx + \int_{t}^{\
 </ul>
 <div style="margin-top: -15px">
 <p><span class="math display">\[
-\hat{se}(r) = \sqrt{\frac{1-r^2}{N-2}}
+\hat{se}(r) = \sqrt{\frac{1-r^2}{n-2}}
 \]</span></p>
 </div>
 </div><div class="column" style="width:40%;">
@@ -1123,7 +1124,7 @@ p&amp;=\int_{-\infty}^{-t}f_t(x|\scriptsize\text{df}\normalsize)dx + \int_{t}^{\
 </ul>
 <div style="margin-top: -15px">
 <p><span class="math display">\[
-t = \frac{r}{\hat{se}(r)} = r\sqrt{\frac{N-2}{1-r^2}}
+t = \frac{r}{\hat{se}(r)} = r\sqrt{\frac{n-2}{1-r^2}}
 \]</span></p>
 </div>
 <p><span style="font-size: 23px">(Präziser gesagt handelt es sich auch hier wieder um das Verhältnis einer normalverteilten Variable (<span class="math inline">\(1-r^2\)</span>) und einer chi-verteilten Variable (<span class="math inline">\(\hat{se}(r)\)</span>) — ein solches Verhältnis führt zu einer t-verteilten Prüfgröße)</span></p>
@@ -1162,7 +1163,7 @@ t = \frac{r}{\hat{se}(r)} = r\sqrt{\frac{N-2}{1-r^2}}
 <p><img data-src="images/merke.png" height="55"></p>
 </div>
 </div><div class="column" style="width:95%;">
-<p>Die Zahl der Freiheitsgrade der Korrelation ist <span class="math inline">\(\text{df}=N-2\)</span>. Grund: es müssen <strong>zwei</strong> Mittelwerte bestimmt werden, der Mittelwert <span class="math inline">\(\bar{x}\)</span> der Variable <span class="math inline">\(X\)</span> und der Mittelwert <span class="math inline">\(\bar{y}\)</span> der Variable <span class="math inline">\(Y\)</span>.</p>
+<p>Die Zahl der Freiheitsgrade der Korrelation ist <span class="math inline">\(\text{df}=n-2\)</span>. Grund: es müssen <strong>zwei</strong> Mittelwerte bestimmt werden, der Mittelwert <span class="math inline">\(\bar{x}\)</span> der Variable <span class="math inline">\(X\)</span> und der Mittelwert <span class="math inline">\(\bar{y}\)</span> der Variable <span class="math inline">\(Y\)</span>.</p>
 </div>
 </div>
 </div>
@@ -1173,7 +1174,7 @@ t = \frac{r}{\hat{se}(r)} = r\sqrt{\frac{N-2}{1-r^2}}
 <section class="slide level2">
 <h2>Beispiel: Bestimmung des p-Wertes bei der Korrelation</h2>
 <ul>
-<li class="fragment">Nehmen wir an, die Korrelation von Größe und Gewicht in einer Stichprobe von <span class="math inline">\(N=12\)</span> betrage <span class="math inline">\(r=0{,}4\)</span>.</li>
+<li class="fragment">Nehmen wir an, die Korrelation von Größe und Gewicht in einer Stichprobe von <span class="math inline">\(n=12\)</span> betrage <span class="math inline">\(r=0{,}4\)</span>.</li>
 <li class="fragment">Wir wollen testen, ob die Korrelation auf einem Signifikanzniveau <span class="math inline">\(\alpha=0{,}05\)</span> signifikant größer als 0 ist.</li>
 </ul>
 <div class="columns">
@@ -1182,10 +1183,10 @@ t = \frac{r}{\hat{se}(r)} = r\sqrt{\frac{N-2}{1-r^2}}
 <li class="fragment">Berechnung von der Prüfgröße <span class="math inline">\(t\)</span>:</li>
 </ul>
 <p><span class="math display">\[
-t = r\sqrt{\frac{N-2}{1-r^2}} = 0{,}4\sqrt{\frac{12-2}{1-0{,}4^2}} \overset{(Computer)}{=} 1{,}38
+t = r\sqrt{\frac{n-2}{1-r^2}} = 0{,}4\sqrt{\frac{12-2}{1-0{,}4^2}} \overset{(Computer)}{=} 1{,}38
 \]</span></p>
 <ul>
-<li class="fragment">Wir sehen in der Tabelle, dass der kritische t-Wert für <span class="math inline">\(\text{df}=N-2=10\)</span> Freiheitsgrade bei einem (einseitigen!) Signifikanzniveau von <span class="math inline">\(\alpha=0{,}05\)</span> gleich <span class="math inline">\(2{,}228\)</span> beträgt.</li>
+<li class="fragment">Wir sehen in der Tabelle, dass der kritische t-Wert für <span class="math inline">\(\text{df}=n-2=10\)</span> Freiheitsgrade bei einem (einseitigen!) Signifikanzniveau von <span class="math inline">\(\alpha=0{,}05\)</span> gleich <span class="math inline">\(2{,}228\)</span> beträgt.</li>
 <li class="fragment">Die Nullhypothese wird also nicht abgelehnt, und der Effekt als nicht signifikant gewertet.</li>
 </ul>
 </div><div class="column" style="width:45%;">
@@ -1235,7 +1236,7 @@ t = r\sqrt{\frac{N-2}{1-r^2}} = 0{,}4\sqrt{\frac{12-2}{1-0{,}4^2}} \overset{(Com
 <li class="fragment">Auch für den Regressionskoeffizienten können wir einen Standardfehler definieren:</li>
 </ul>
 <p><span class="math display">\[
-\hat{se}(b_1)= \frac{\hat{\sigma}_Y}{\hat{\sigma}_X}\sqrt{\frac{1-r^2}{N-2}}
+\hat{se}(b_1)= \frac{\hat{\sigma}_Y}{\hat{\sigma}_X}\sqrt{\frac{1-r^2}{n-2}}
 \]</span></p>
 </div><div class="column" style="width:36%;">
 <p><img data-src="images/regression_basics2.png"></p>
@@ -1248,7 +1249,7 @@ t = r\sqrt{\frac{N-2}{1-r^2}} = 0{,}4\sqrt{\frac{12-2}{1-0{,}4^2}} \overset{(Com
 t = \frac{b_1}{\hat{se}(b_1)}
 \]</span></p>
 <ul>
-<li class="fragment">Die Zahl der Freiheitsgrade ist wie bei der Korrelation <span class="math inline">\(\text{df}=N-2\)</span>, da auch hier für die Berechnung des Standardfehlers die beiden Mittelwerte <span class="math inline">\(\bar{x}\)</span> und <span class="math inline">\(\bar{y}\)</span> bestimmt werden müssen.</li>
+<li class="fragment">Die Zahl der Freiheitsgrade ist wie bei der Korrelation <span class="math inline">\(\text{df}=n-2\)</span>, da auch hier für die Berechnung des Standardfehlers die beiden Mittelwerte <span class="math inline">\(\bar{x}\)</span> und <span class="math inline">\(\bar{y}\)</span> bestimmt werden müssen.</li>
 <li class="fragment">Der Rest ist bekannt.</li>
 </ul>
 <!----------------->
@@ -1270,7 +1271,7 @@ b_1 = \frac{\hat{\sigma}_y}{\hat{\sigma}_x}r
 </ul>
 <div style="margin-top: -12px">
 <p><span class="math display">\[
-t = \frac{b_1}{SE(b_1)} = \frac{\frac{\hat{\sigma}_Y}{\hat{\sigma}_X}r}{\frac{\hat{\sigma}_Y}{\hat{\sigma}_X}\sqrt{\frac{1-r^2}{N-2}}} = \frac{r}{\sqrt{\frac{1-r^2}{N-2}}}
+t = \frac{b_1}{SE(b_1)} = \frac{\frac{\hat{\sigma}_Y}{\hat{\sigma}_X}r}{\frac{\hat{\sigma}_Y}{\hat{\sigma}_X}\sqrt{\frac{1-r^2}{n-2}}} = \frac{r}{\sqrt{\frac{1-r^2}{n-2}}}
 \]</span></p>
 </div>
 <ul>
@@ -1289,7 +1290,7 @@ t = \frac{b_1}{SE(b_1)} = \frac{\frac{\hat{\sigma}_Y}{\hat{\sigma}_X}r}{\frac{\h
 <li class="fragment">Im Kontext der Regression wird der Achsenabschnitt <span class="math inline">\(b_0\)</span> idR nicht getestet.</li>
 <li class="fragment">Grund: die Frage, ob Variable <span class="math inline">\(Y\)</span> bei <span class="math inline">\(X=0\)</span> einen y-Achsenabschnitt aufweist, der signifikant von Null verschieden ist, ist im Kontext der Regression selten interessant — schließlich ist es ja der ganze Zweck der Regression die systematische Verändeurng von <span class="math inline">\(Y\)</span> in <span class="math inline">\(X\)</span> zu analysieren und dabei gerade nicht nur einen bestimmten Wert von <span class="math inline">\(X\)</span> zu betrachten.</li>
 <li class="fragment">Nichts desto trotz ist auch die Schätzung von <span class="math inline">\(b_0\)</span> mit Unsicherheit verbunden, die durch folgenden Standardfehler definiert ist: <span class="math display">\[
-\hat{se}(b_0) = \sqrt{\frac{\sum\left(y_i-\hat{y_i}\right)^2}{N-2}}\sqrt{\frac{1}{n}+\frac{\bar{x}^2}{\sum\left(x_i-\bar{x}\right)^2}}
+\hat{se}(b_0) = \sqrt{\frac{\sum\left(y_i-\hat{y_i}\right)^2}{n-2}}\sqrt{\frac{1}{n}+\frac{\bar{x}^2}{\sum\left(x_i-\bar{x}\right)^2}}
 \]</span></li>
 </ul>
 <!----------------->
@@ -1400,7 +1401,7 @@ t = \frac{b_1}{SE(b_1)} = \frac{\frac{\hat{\sigma}_Y}{\hat{\sigma}_X}r}{\frac{\h
 
 </div>
 <p><span class="math display">\[
-t = \frac{r}{\hat{se}(r)} = r\sqrt{\frac{N-2}{1-r^2}} = 0{,}517\sqrt{\frac{50-2}{1-0{,}517^2}} = 4{,}18
+t = \frac{r}{\hat{se}(r)} = r\sqrt{\frac{n-2}{1-r^2}} = 0{,}517\sqrt{\frac{50-2}{1-0{,}517^2}} = 4{,}18
 \]</span></p>
 <!----------------->
 <!--- New slide --->
@@ -1417,7 +1418,7 @@ t = \frac{r}{\hat{se}(r)} = r\sqrt{\frac{N-2}{1-r^2}} = 0{,}517\sqrt{\frac{50-2}
 <p><span class="math display">\[
 p=2\int_{-\infty}^{-4{,}18}f_t(x|\scriptsize\text{df}\normalsize)dx = 2F_t(-4{,}18|48)=0{,}0001
 \]</span></p>
-<p><span style="font-size:24px">(Die Zahl der Freiheitsgrade beim t-Test der Korrelation ist <span class="math inline">\(N-2\)</span>)</span></p>
+<p><span style="font-size:24px">(Die Zahl der Freiheitsgrade beim t-Test der Korrelation ist <span class="math inline">\(n-2\)</span>)</span></p>
 </div><div class="column" style="width:40%;">
 <p><img data-src="images/paradoxia_nulldist_t_r.png"></p>
 </div>
@@ -1448,7 +1449,7 @@ p=2\int_{-\infty}^{-4{,}18}f_t(x|\scriptsize\text{df}\normalsize)dx = 2F_t(-4{,}
 <thead>
 <tr class="header">
 <th></th>
-<th>Fallzahl <span class="math inline">\(N\)</span></th>
+<th>Fallzahl <span class="math inline">\(n\)</span></th>
 <th><span class="math inline">\(\Delta\bar{x}\)</span></th>
 <th>Standardfehler <span class="math inline">\(\hat{se}\)</span></th>
 <th>Freiheitsgrade <span class="math inline">\(\text{df}\)</span></th>
@@ -1482,7 +1483,7 @@ p=2\int_{-\infty}^{-4{,}18}f_t(x|\scriptsize\text{df}\normalsize)dx = 2F_t(-4{,}
 <li class="fragment">Neu hinzugekommen sind die Freiheitsgrade, die Sie in der Tabelle mit der Formel für ungleiche Varianzen bestimmt haben:</li>
 </ul>
 <p><span class="math display">\[
-\text{df}=(N-1)\Big(1+\frac{2}{\left(\frac{\hat{\sigma}_\text{control}}{\hat{\sigma}_\text{paradoxia}}\right)^2+\left(\frac{\hat{\sigma}_\text{paradoxia}}{\hat{\sigma}_\text{control}}\right)^2}\Big)
+\text{df}=(n-1)\Big(1+\frac{2}{\left(\frac{\hat{\sigma}_\text{control}}{\hat{\sigma}_\text{paradoxia}}\right)^2+\left(\frac{\hat{\sigma}_\text{paradoxia}}{\hat{\sigma}_\text{control}}\right)^2}\Big)
 \]</span></p>
 <ul>
 <li class="fragment">Zur Erinnerung:
@@ -1653,8 +1654,8 @@ plt.savefig('images/paradoxia_histogram_inflammation_sem_nonsig.png', bbox_inche
 <div class="columns">
 <div class="column" style="width:60%;">
 <ul>
-<li class="fragment">Um ein Gefühl dafür zu bekommen, wie die t-Verteilung hergeleitet werden kann, ist es sinnvoll nochmals das Testen des <strong>unstandardisierten Mittelwertunterschiedes</strong> <span class="math inline">\(\Delta\bar{X}\)</span> zu betrachten.</li>
-<li class="fragment">Da die Streubreite <span class="math inline">\(\hat{\sigma}/\sqrt{N}\)</span> der Stichprobenverteilung nicht genau bekannt ist, sondern mit Unsicherheit behaftet ist (siehe gestrichelte Linien im unteren Bild), ist der p-Wert nicht eindeutig bestimmt.</li>
+<li class="fragment">Um ein Gefühl dafür zu bekommen, wie die t-Verteilung hergeleitet werden kann, ist es sinnvoll nochmals das Testen des <strong>unstandardisierten Mittelwertunterschiedes</strong> <span class="math inline">\(\Delta\bar{x}\)</span> zu betrachten.</li>
+<li class="fragment">Da die Streubreite <span class="math inline">\(\hat{\sigma}/\sqrt{n}\)</span> der Stichprobenverteilung nicht genau bekannt ist, sondern mit Unsicherheit behaftet ist (siehe gestrichelte Linien im unteren Bild), ist der p-Wert nicht eindeutig bestimmt.</li>
 <li class="fragment">Es ist dennoch möglich, den (erwarteten) p-Wert zu berechnen, in dem man nicht nur die Fläche auf Basis der eigentlichen Schätzung <span class="math inline">\(\hat{\sigma}\)</span> berechnet, sondern <em>für alle möglichen</em> Werte von <span class="math inline">\(\sigma\)</span>.</li>
 <li class="fragment">Die so erhalteten Flächen mittelt man gewichtet an der Wahrscheinlichkeit jedes möglichen Wertes von <span class="math inline">\(\sigma\)</span> — dadurch wird die Unsicherheit von <span class="math inline">\(\hat{\sigma}\)</span> “marginalisiert”.</li>
 </ul>
@@ -1670,7 +1671,7 @@ plt.savefig('images/paradoxia_histogram_inflammation_sem_nonsig.png', bbox_inche
 </ul>
 <p><img src="images/hmu_logo.png" class="slide-logo"></p>
 <div class="footer footer-default">
-
+<p>Vorlesung 12: t-Test</p>
 </div>
 </section></section>
 <section id="footnotes" class="footnotes footnotes-end-of-document smaller scrollable" role="doc-endnotes"><h2>Fußnoten</h2>
@@ -1917,6 +1918,7 @@ plt.savefig('images/paradoxia_histogram_inflammation_sem_nonsig.png', bbox_inche
           }
         });
       }
+      // identifystring
 
       window.onload = bgcolor();
     </script>

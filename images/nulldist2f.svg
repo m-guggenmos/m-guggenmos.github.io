@@ -3,11 +3,11 @@
 
 <svg
    width="76.01062mm"
-   height="57.631443mm"
-   viewBox="0 0 76.010618 57.631443"
+   height="57.478539mm"
+   viewBox="0 0 76.010618 57.478538"
    version="1.1"
    id="svg1"
-   inkscape:version="1.4-dev (1:1.2.0-alpha1+devel+202308312119+2886f59210)"
+   inkscape:version="1.4-dev (1:1.2.0-alpha1+devel+202309191445+0218cc37c8)"
    sodipodi:docname="nulldist2f.svg"
    inkscape:export-filename="nulldist2f.png"
    inkscape:export-xdpi="300"
@@ -27,11 +27,11 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="4.1406847"
-     inkscape:cx="174.00504"
+     inkscape:cx="174.24654"
      inkscape:cy="106.74563"
      inkscape:window-width="2560"
      inkscape:window-height="1367"
-     inkscape:window-x="2560"
+     inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
@@ -237,7 +237,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(8.65393, -103.756)">
+     transform="translate(8.6539316,-103.75559)">
     <rect
        style="fill:none;stroke:#000000;stroke-width:0.6;stroke-dasharray:none;stroke-opacity:1"
        id="rect57-6"
@@ -343,7 +343,7 @@
          id="tspan105">1</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:4.4516px;line-height:90%;font-family:sans-serif;text-decoration-color:#000000;fill:#a50404;stroke-width:0.264583;-inkscape-stroke:none;stop-color:#000000;fill-opacity:1"
+       style="font-size:4.4516px;line-height:90%;font-family:sans-serif;text-decoration-color:#000000;fill:#a50404;fill-opacity:1;stroke-width:0.264583;-inkscape-stroke:none;stop-color:#000000"
        x="36.840096"
        y="161.23413"
        id="text1"><tspan
@@ -351,7 +351,7 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.4516px;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;text-anchor:middle;fill:#a50404;fill-opacity:1;stroke-width:0.264583"
          x="36.840096"
          y="161.23413"
-         id="tspan1">2</tspan></text>
+         id="tspan1">z=2</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:3.86681px;line-height:90%;font-family:sans-serif;text-decoration-color:#000000;fill:#000000;stroke-width:0.264583;-inkscape-stroke:none;stop-color:#000000"
@@ -373,5 +373,16 @@
          x="65.171661"
          y="137.53177"
          id="tspan37">von 2)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.05561px;line-height:90%;font-family:sans-serif;text-decoration-color:#000000;fill:#000000;stroke-width:0.264583;-inkscape-stroke:none;stop-color:#000000"
+       x="57.47422"
+       y="159.41045"
+       id="text3"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.05561px;font-family:Calibri;-inkscape-font-specification:Calibri;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="57.47422"
+         y="159.41045"
+         id="tspan3">Prüfgröße Z</tspan></text>
   </g>
 </svg>
