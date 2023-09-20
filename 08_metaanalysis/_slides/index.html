@@ -617,11 +617,11 @@ w_i = \frac{1}{v_i}
 </ul></li>
 <li class="fragment">Dank des zentralen Grenzwertsatzes kann diese diese Varianz ohne tatsächliche Wiederholungen der Studie geschätzt werden.
 <ul>
-<li class="fragment">Reminder: wird ein statistischer Kennwert in mehreren Stichproben aus derselben Grundgesamtheit bestimmt, folgen die Kennwerte asymptotisch einer Normalverteilung (d.h. für Anzahl Stichproben <span class="math inline">\(\rightarrow\infty\)</span>)<br>
+<li class="fragment">Reminder: wird ein statistischer Kennwert in mehreren Stichproben aus derselben Population bestimmt, folgen die Kennwerte asymptotisch einer Normalverteilung (d.h. für Anzahl Stichproben <span class="math inline">\(\rightarrow\infty\)</span>)<br>
 </li>
-<li class="fragment">Diese Logik der <strong>Stichprobenverteilung</strong> ist bereits bekannt Standardfehler bekannt — tatsächlich ist die Samplingvarianz einfach der Standardfehler zum Quadrat: <span class="math inline">\(v_i = SE^2\)</span></li>
+<li class="fragment">Diese Logik der <strong>Stichprobenverteilung</strong> ist bereits bekannt Standardfehler bekannt — tatsächlich ist die Samplingvarianz einfach der Standardfehler zum Quadrat: <span class="math inline">\(v_i = \hat{se}^2\)</span></li>
 </ul></li>
-<li class="fragment">Die Samplingvarianz hängt stark von der Stichprobenzahl der Studin ab — je höher,<br>desto (erwartbar) weniger werden wiederholt mit dieser Stichprobenzahl<br>bestimmter Kennwerte schwanken, desto kleiner also die Samplingvarianz.</li>
+<li class="fragment">Die Samplingvarianz hängt stark von der Stichprobenzahl der Studien ab — je höher,<br>desto (erwartbar) weniger werden wiederholt mit dieser Stichprobenzahl<br>bestimmter Kennwerte schwanken, desto kleiner also die Samplingvarianz.</li>
 </ul>
 <!----------------->
 <!--- New slide --->
@@ -894,9 +894,14 @@ v_i = \frac{\left(1-r^2\right)^2}{n-1}
 <!----------------->
 <aside></aside></section>
 <section class="slide level2">
-<h2>Zusammenfassung</h2>
+<h2></h2>
 <div class="columns">
-<div class="column" style="width:60%;">
+<div class="column" style="width:9%;">
+<div style="margin-top:-15px">
+<p><img data-src="images/summary.png" width="60"></p>
+</div>
+</div><div class="column" style="width:61%;">
+<div class="summary" style="margin-top: 30px !important">
 <ul>
 <li class="fragment">Metaanalysen <strong>aggregieren Effekstärken</strong> aus verschiedenen Studien.</li>
 <li class="fragment">Sie basieren also auf <strong>empirischen Stichprobenverteilungen</strong>.</li>
@@ -904,8 +909,9 @@ v_i = \frac{\left(1-r^2\right)^2}{n-1}
 <li class="fragment">Metaanalysen liefern <strong>bessere Schätzungen für den wahren Populationsparameter</strong> als einzelne Studien.</li>
 <li class="fragment">Ergebnisse von Metaanalysen sind häufig <strong>durch einen Publication Bias verzerrt</strong>, da vorrangig große/signifikante Effekte publiziert wurden – der wahre Effekt wird dann überschätzt.</li>
 </ul>
-</div><div class="column" style="width:40%;">
-<div class="quarto-figure quarto-figure-center">
+</div>
+</div><div class="column" style="width:30%;">
+<div class="quarto-figure quarto-figure-center" style="margin-top:200px !important">
 <figure>
 <p><img data-src="images/metaanalysis1447.png"></p>
 <figcaption><a href="https://xkcd.com/1447/">xkcd#1477</a></figcaption>
