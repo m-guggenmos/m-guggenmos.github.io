@@ -1445,21 +1445,21 @@ Var(\bar{x}) = \frac{1}{n^2}\sum Var(X_i) = \frac{1}{n^2}\big(n\cdot Var(X_i)\bi
 <h2><span style=" color: darkred !important;">Herleitung des Faktors <span class="math inline">\(\frac{1}{n-1}\)</span></span></h2>
 <p><img data-src="images/kein_klausurstoff.png" class="absolute" style="bottom: 60px; right: 0px; height: 110px; "></p>
 <ul>
-<li class="fragment">Der Ausgangspunkt der Besselkorrektur die Beobachtung, dass die (unkorrigierte) Varianz der Stichprobe die Varianz der Population systematisch unterschätzt.</li>
-<li class="fragment">Der Grund ist, dass der empirische Mittelwert <span class="math inline">\(\bar{x}\)</span> keine perfekte Schätzung für den wahren Mittelwert <span class="math inline">\(\mu\)</span> ist — er streut um <span class="math inline">\(\mu\)</span>.</li>
-<li class="fragment">Diese Streuung haben wir gerade kennengelernt — es ist der Standardfehler <span class="math inline">\(\sigma_\bar{x} = \frac{\sigma}{\sqrt{n}}\)</span>. Als Varianz formuliert:</li>
+<li class="fragment">Der Ausgangspunkt der Besselkorrektur die Beobachtung, dass die (unkorrigierte) Varianz <span class="math inline">\(s^2\)</span> der Stichprobe die Varianz <span class="math inline">\(\sigma^2\)</span> der Population systematisch unterschätzt.</li>
+<li class="fragment">Der Grund ist liegt im Stichprobenmittelwert <span class="math inline">\(\bar{x}\)</span>: er ist keine perfekte Schätzung für den wahren Mittelwert <span class="math inline">\(\mu\)</span> ist — er streut um das “wahre” <span class="math inline">\(\mu\)</span>.</li>
+<li class="fragment">Diese Streuung haben wir gerade kennengelernt — es ist der Standardfehler <span class="math inline">\(\hat{se}=\frac{\hat{\sigma}}{\sqrt{n}}\)</span>. Als Varianz formuliert:</li>
 </ul>
 <div style="margin-top:-15px">
 <p><span class="math display">\[
-\sigma_\bar{x}^2 = \frac{\sigma^2}{n}\quad\text{bzw.}\quad \sigma_\bar{x}^2 = \frac{s^2}{n}\quad\scriptsize{\text{(da wir die Varianz in der Stichprobe bestimmen: $\sigma^2\rightarrow s^2$)}}
+\hat{se}^2 = \frac{\hat{\sigma}^2}{n}
 \]</span></p>
 </div>
 <ul>
-<li class="fragment">Aufgrund der <em>zusätzlichen</em> Variabilität durch die Unsicherheit des Mittelwertes, muss die Varianz des Mittelwertes <span class="math inline">\(\sigma_\bar{x}^2\)</span> auf die (unkorrigierte) Varianz der Stichprobe addiert werden:</li>
+<li class="fragment">Für die Schätzung der Populationsvarianz <span class="math inline">\(\hat{\sigma}^2\)</span> muss nun die <em>zusätzliche</em> Variabilität <span class="math inline">\(\hat{se}^2\)</span> aufgrund der Unsicherheit des Mittelwertes auf die Stichprobenvarianz <span class="math inline">\(s^2\)</span> addiert werden:</li>
 </ul>
 <div style="margin-top:-20px">
 <p><span class="math display">\[
-s^2 = s_{unkorrigiert}^2 + \sigma_\bar{x}^2 = s_{unkorrigiert} + \frac{s^2}{n}\quad \longrightarrow\quad s^2 - \frac{s^2}{n} = s_{unkorrigiert}
+\hat{\sigma}^2 = s^2 + \hat{se}^2 = s^2 + \frac{\hat{\sigma}^2}{n}\quad \longrightarrow\quad \hat{\sigma}^2 - \frac{\hat{\sigma}^2}{n} = s^2
 \]</span></p>
 </div>
 <ul>
@@ -1467,7 +1467,7 @@ s^2 = s_{unkorrigiert}^2 + \sigma_\bar{x}^2 = s_{unkorrigiert} + \frac{s^2}{n}\q
 </ul>
 <div style="margin-top:-15px">
 <p><span class="math display">\[
-s^2 - \frac{s^2}{n} = s^2\left(1 - \frac{1}{n}\right) = s^2\frac{n-1}{n} = s_{unkorrigiert}^2 \;\;\longrightarrow\;\; s^2 = \frac{n}{n-1}s_{unkorrigiert}^2
+\hat{\sigma}^2 - \frac{\hat{\sigma}^2}{n} = \hat{\sigma}^2\left(1 - \frac{1}{n}\right) = \hat{\sigma}^2\frac{n-1}{n} \overset{!}{=} s^2 \;\;\longrightarrow\;\; \hat{\sigma}^2 = \frac{n}{n-1}s^2
 \]</span></p>
 </div>
 <!----------------->
@@ -1478,28 +1478,28 @@ s^2 - \frac{s^2}{n} = s^2\left(1 - \frac{1}{n}\right) = s^2\frac{n-1}{n} = s_{un
 <h2><span style=" color: darkred !important;">Herleitung des Faktors <span class="math inline">\(\frac{1}{n-1}\)</span></span></h2>
 <p><img data-src="images/kein_klausurstoff.png" class="absolute" style="bottom: 30px; right: 0px; height: 110px; "></p>
 <p><span class="math display">\[
-\text{Zwischenergebnis:}\qquad s^2 = \frac{n}{n-1}s_{unkorrigiert}^2
+\text{Zwischenergebnis:}\qquad \hat{\sigma}^2 = \frac{n}{n-1}s^2
 \]</span></p>
 <ul>
-<li class="fragment">Die unkorrigierte Varianz <span class="math inline">\(s_{unkorrigiert}^2\)</span> lautet:</li>
+<li class="fragment">Die unkorrigierte Varianz <span class="math inline">\(s^2\)</span> lautet:</li>
 </ul>
 <div style="margin-top:-25px">
 <p><span class="math display">\[
-s_{unkorrigiert}^2 = \frac{1}{n}\sum\left(x_i-\bar{x}\right)^2
+s^2 = \frac{1}{n}\sum\left(x_i-\bar{x}\right)^2
 \]</span></p>
 </div>
 <ul>
 <li class="fragment">Einsetzen:</li>
 </ul>
 <p><span class="math display">\[
-s^2 = \frac{n}{n-1}s_{unkorrigiert}^2 = \frac{n}{n-1}\frac{1}{n}\sum\left(x_i-\bar{x}\right)^2 = \color{navy}{\frac{1}{n-1}}\sum\left(x_i-\bar{x}\right)^2
+\hat{\sigma}^2 = \frac{n}{n-1}s^2 = \frac{n}{n-1}\frac{1}{n}\sum\left(x_i-\bar{x}\right)^2 = \color{navy}{\frac{1}{n-1}}\sum\left(x_i-\bar{x}\right)^2
 \]</span></p>
 <ul>
 <li class="fragment">Nun haben wir unseren Faktor <span class="math inline">\(\color{navy}{\frac{1}{n-1}}\)</span>.</li>
 <li class="fragment">Für die korrigierte Standardabweichung der Stichprobe wird häufig analog angenommen:</li>
 </ul>
 <p><span class="math display">\[
-s = \sqrt{\color{navy}{\frac{1}{n-1}}\sum\left(x_i-\bar{x}\right)^2}
+\hat{\sigma} = \sqrt{\color{navy}{\frac{1}{n-1}}\sum\left(x_i-\bar{x}\right)^2}
 \]</span></p>
 <ul>
 <li class="fragment">Diese analoge Korrektur für die Standardabweichung ist nicht 100% gültig<a href="#/footnotes" class="footnote-ref" id="fnref6" role="doc-noteref" data-footnote-href="#/fn6" onclick=""><sup>6</sup></a> — für alle<br>praktischen Zwecke reicht sie aber aus.</li>
