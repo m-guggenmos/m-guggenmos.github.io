@@ -237,11 +237,23 @@ console.warn("Cannot find element to set up with selector: " + setup[i].element 
 	function play() {
 //console.log("Play",Reveal.getCurrentSlide());
 		var elements = Reveal.getCurrentSlide().querySelectorAll("[data-animate]");
-		for (var i = 0; i < elements.length; i++ ){
-//console.warn("Play",elements[i]);
-			if ( elements[i].animation ) {
-				elements[i].animation.play();
+		if (Reveal.getConfig().fragments) {
+			for (var i = 0; i < elements.length; i++ ){
+	//console.warn("Play",elements[i]);
+				if ( elements[i].animation ) {
+					elements[i].animation.play();
+				}
 			}
+		} else {
+			for (var i = 0; i < elements.length; i++ ){
+				if (elements[0].innerHTML.includes('class: fragment')) {
+					elements[i].innerHTML = `<div><img src="${elements[i].getAttribute('data-src')}"></div>`;
+				} else {
+					elements[i].animation.play();
+				}
+			}
+			// debugger
+			// return
 		}
 		autoPause();
 	}

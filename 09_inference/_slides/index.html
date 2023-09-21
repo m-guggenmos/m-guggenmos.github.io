@@ -14,7 +14,8 @@
   <title>Vorlesung 09: Inferenzstatistik</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, minimal-ui">
   <link rel="stylesheet" href="index_files/libs/revealjs/dist/reset.css">
   <link rel="stylesheet" href="index_files/libs/revealjs/dist/reveal.css">
   <style>
@@ -36,6 +37,7 @@
   <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-custom-controls/style.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
@@ -797,7 +799,7 @@ plt.savefig('images/noselength_limit.png', bbox_inches='tight')
 <ul>
 <li class="fragment">Annahme: Versuchspersonen werden <em>zufällig</em> aus der Population gezogen.</li>
 </ul></li>
-<li class="fragment">Wir können die Annäherung der Stichprobenverteilung an die Populationverteilung mit <span class="math inline">\(n\rightarrow n_\text{tot}\)</span> simulieren (<span class="math inline">\(n_\text{tot}\)</span> = 80 Mio. Deutsche in diesem Beispiel):</li>
+<li class="fragment">Wir können die Annäherung der Stichprobenverteilung an die Populationverteilung mit <span class="math inline">\(n\rightarrow N\)</span> simulieren (<span class="math inline">\(N\)</span> = Umfang der Population, 80 Mio. Deutsche in diesem Beispiel):</li>
 </ul>
 
 <img data-src="images/noselength_limit.png" class="r-stretch quarto-figure-center"><p class="caption">Die Stichprobenverteilungen sind in braun schattiert, die (gleichbleibende) Häufigkeitsverteilung der Population in grau, die in diesem Fall alle 80 Mio. Deutsche umfasst. Beachte, dass in diesem Fall die <em>relative</em> Häufigkeit dargestellt ist.</p><ul>
@@ -1081,8 +1083,21 @@ X \sim \mathcal{N}(\mu_\text{SV},\,\sigma_\text{SV})
 </section>
 <section class="slide level2">
 <h2>Mittelwert der theoretischen Stichprobenverteilung</h2>
-<p>Die beste Schätzung <span class="math inline">\(\hat{\mu}_\text{SV}\)</span> für den wahren Mittelwertsparameter <span class="math inline">\(\mu_\text{SV}\)</span> der Stichprobenverteilung ist…</p>
-<p>… der statistische Kennwert unserer Studie (z.B. <span class="math inline">\(\bar{x}, s\)</span>)!</p>
+<p>Die beste Schätzung <span class="math inline">\(\hat{\mu}_\text{SV}\)</span> für den wahren Mittelwertsparameter <span class="math inline">\(\mu_\text{SV}\)</span> der Stichprobenverteilung ist häufig der statistische Kennwert selbst (z.B. <span class="math inline">\(\bar{x}, s\)</span>)!</p>
+<div class="vspace-medium">
+
+</div>
+<div class="merke" style="font-size: 22px !important">
+<div class="columns">
+<div class="column" style="width:5%;">
+<div style="margin-top: 18px">
+<p><img data-src="images/merke.png" height="55"></p>
+</div>
+</div><div class="column" style="width:95%;">
+<p>Dies gilt aber nur, wenn die Stichprobenverteilung tatsächlich einer Normalverteilung folgt. Für den Mittelwert kann man diese Normalverteilungs-Näherung bereits bei kleinen <span class="math inline">\(n\)</span> annehmen. Bei anderen Größen, v.a. solchen, die auf einen endlichen Bereich beschränkt sind (z.B. Korrelation −1 bis +1, relative Häufigkeiten 0 bis 1), gilt die Normalverteilungs-Näherung bei typischen Stichprobengrößen nicht ohne Weiteres. In diesem Fall werden andere Funktionen für die Stichprobenverteilung angenommen, bei denen der wahrscheinlichste Wert (Modus) dann u.U. <em>nicht</em> der statistische Kennwert selbst ist. (⇒ Vorlesung 13)</p>
+</div>
+</div>
+</div>
 <div class="vspace-xlarge">
 
 </div>
@@ -1191,13 +1206,13 @@ X \sim \mathcal{N}(\mu_\text{SV},\,\sigma_\text{SV})
 <li class="fragment">Der Standardfehler ist ein Maß für die <strong>Variabilität der Stichprobenmittelwerte</strong> <span class="math inline">\(\bar{x}\)</span> — dies können wir zunächst über die Varianz zum Ausdruck bringen:</li>
 </ul>
 <p><span class="math display">\[
-\text{Variabilität der Stichprobenmittelwerte} = Var(\bar{x})
+se^2 = Var(\bar{x})
 \]</span></p>
 <ul>
 <li class="fragment">Wir wissen, dass <span class="math inline">\(\bar{x} = \frac{1}{n}\sum X_i\)</span>, also:</li>
 </ul>
 <p><span class="math display">\[
-Var(\bar{x}) = Var\left(\frac{1}{n}\sum X_i\right)
+se^2 = Var(\bar{x}) = Var\left(\frac{1}{n}\sum X_i\right)
 \]</span></p>
 <ul>
 <li class="fragment"><p>Um das <span class="math inline">\(\frac{1}{n}\)</span> aus der Varianz herausziehen zu können, versichern wir uns einer kleinen Rechenregel: <span class="math display">\[
@@ -1206,7 +1221,7 @@ Var(aX) = \frac{1}{n}\left(aX_i-a\bar{x}\right)^2 = \frac{a^2}{n}\left(X_i-\bar{
 <li class="fragment"><p>Daraus folgt:</p></li>
 </ul>
 <p><span class="math display">\[
-Var(\bar{x}) = \frac{1}{n^2}Var\left(\sum X_i\right)
+se^2 = \frac{1}{n^2}Var\left(\sum X_i\right)
 \]</span></p>
 <!----------------->
 <!--- New slide --->
@@ -1216,7 +1231,7 @@ Var(\bar{x}) = \frac{1}{n^2}Var\left(\sum X_i\right)
 <h2><span style=" color: darkred !important;">Herleitung des Standardfehlers</span></h2>
 <p><img data-src="images/kein_klausurstoff.png" class="absolute" style="bottom: 0px; right: 0px; height: 130px; "></p>
 <p><span class="math display">\[
-\text{Zwischenergebnis}\qquad Var(\bar{x}) = \frac{1}{n^2}Var\left(\sum X_i\right)
+\text{Zwischenergebnis}\qquad se^2 = \frac{1}{n^2}Var\left(\sum X_i\right)
 \]</span></p>
 <ul>
 <li class="fragment">Die Summe in der Varianz stört noch. Glücklicherweise gilt, dass die Varianz der Summe von unabhängigen Zufallsvariablen <span class="math inline">\(X_i\)</span> gleich der Summe der Varianzen ist, d.h.</li>
@@ -1228,13 +1243,13 @@ Var\left(\sum X_i\right)=\sum Var(X_i)
 <li class="fragment">Daraus folgt:</li>
 </ul>
 <p><span class="math display">\[
-Var(\bar{x}) = \frac{1}{n^2}\sum Var(X_i) = \frac{1}{n^2}\big(n\cdot Var(X_i)\big) = \frac{1}{n}Var(X_i)
+se^2 = \frac{1}{n^2}\sum Var(X_i) = \frac{1}{n^2}\big(n\cdot Var(X_i)\big) = \frac{1}{n}Var(X_i)
 \]</span></p>
 <ul>
-<li class="fragment">Nun sind wir fast am Ziel. Wir ersetzen <span class="math inline">\(Var\)</span> jeweis durch <span class="math inline">\(\sigma^2\)</span>:</li>
+<li class="fragment">Nun sind wir fast am Ziel. Da die Varianz der <span class="math inline">\(X_i\)</span> nichts anderes als die quadrierte Standardabweichung <span class="math inline">\(\sigma^2\)</span> ist, gilt:</li>
 </ul>
 <p><span class="math display">\[
-\sigma_\bar{x}^2 = \frac{\sigma^2}{n} \qquad \text{bzw.} \qquad \sigma_\bar{x} = \frac{\sigma}{\sqrt{n}} = se
+se^2 = \frac{\sigma^2}{n} \qquad \text{bzw.} \qquad se = \frac{\sigma}{\sqrt{n}}
 \]</span></p>
 <!----------------->
 <!--- New slide --->
@@ -1254,7 +1269,7 @@ Var(\bar{x}) = \frac{1}{n^2}\sum Var(X_i) = \frac{1}{n^2}\big(n\cdot Var(X_i)\bi
 <tr class="header">
 <th>Maß</th>
 <th>Standardfehler</th>
-<th>Kommentar</th>
+<th>Einschränkung</th>
 </tr>
 </thead>
 <tbody>
@@ -1266,17 +1281,17 @@ Var(\bar{x}) = \frac{1}{n^2}\sum Var(X_i) = \frac{1}{n^2}\big(n\cdot Var(X_i)\bi
 <tr class="even">
 <td>Median</td>
 <td><span class="math inline">\(\hat{se}(\tilde{x}) = \sqrt{\frac{\pi}{2}}\frac{\hat{\sigma}}{\sqrt{n}}\)</span></td>
-<td>Annahme: Normalverteilung</td>
+<td>Annahme: Normalverteilung von <span class="math inline">\(X\)</span></td>
 </tr>
 <tr class="odd">
 <td>Varianz</td>
 <td><span class="math inline">\(\hat{se}(s^2) = \sqrt{\frac{2}{n-1}}\hat{\sigma}^2\)</span></td>
-<td>Annahme: Normalverteilung</td>
+<td>Annahme: Normalverteilung von <span class="math inline">\(X\)</span></td>
 </tr>
 <tr class="even">
 <td>Standardabweichung</td>
 <td><span class="math inline">\(\hat{se}(s) = \frac{\hat{\sigma}}{\sqrt{2(n-1)}}\)</span></td>
-<td>Näherung; Annahme: Normalverteilung</td>
+<td>Näherung; Annahme: Normalverteilung von <span class="math inline">\(X\)</span></td>
 </tr>
 <tr class="odd">
 <td>Korrelation</td>
@@ -1320,7 +1335,7 @@ Var(\bar{x}) = \frac{1}{n^2}\sum Var(X_i) = \frac{1}{n^2}\big(n\cdot Var(X_i)\bi
 <p>Nehmen wir an, die Nasenlängen der Männer in unserer Studie weisen eine durchschnittliche Länge von <span class="math inline">\(6cm\)</span> auf und einen Standardfehler (des Mittelwertes) von <span class="math inline">\(0{,}5cm\)</span>.</p>
 <p><strong>Wir können damit sagen, dass sich der wahre Mittelwert der Population mit 68% Wahrscheinlichkeit in dem Intervall</strong></p>
 <p><span class="math display">\[
-[\bar{x}-\hat{se}; \bar{x}+\hat{se}] = [6-0{,}5; 6+0{,}5] = [5{,}5; 6{,}5]
+\bar{x}\pm\hat{se} = 6\pm 0{,}5 = [5{,}5; 6{,}5]
 \]</span></p>
 <p><strong>befinden wird</strong>.</p>
 </div><div class="column" style="width:35%;">
@@ -1358,7 +1373,7 @@ Var(\bar{x}) = \frac{1}{n^2}\sum Var(X_i) = \frac{1}{n^2}\big(n\cdot Var(X_i)\bi
 </div>
 </div><div class="column" style="width:90%;">
 <p>Nehmen wir wieder unser Nasenlängen-Beispiel mit <span class="math inline">\(\bar{x}=6cm\)</span> und <span class="math inline">\(\hat{se}=0{,}5cm\)</span>, und nehmen wir an, die Standard<em>abweichung</em> von Nasenlängen in der Stichprobe betrug <span class="math inline">\(5cm\)</span>. In diesem Fall hätten wir den Mittelwert mit einer Präzision von 10% der Streubreite in der Stichprobe geschätzt, was einer recht guten/präzisen Schätzung entspricht.</p>
-<p>(Als kleine Übung: wie hoch müsste in diesem Beispiel die Stichprobenzahl gewesen sein? Spoiler: <span class="math inline">\(n=100\)</span>)</p>
+<p>(Als kleine Übung: wie hoch müsste in diesem Beispiel die Stichprobenzahl gewesen sein? (Antwort: <span class="math inline">\(n=100\)</span>)</p>
 </div>
 </div>
 </div>
@@ -1449,7 +1464,7 @@ Var(\bar{x}) = \frac{1}{n^2}\sum Var(X_i) = \frac{1}{n^2}\big(n\cdot Var(X_i)\bi
 <li class="fragment">Der Grund ist liegt im Stichprobenmittelwert <span class="math inline">\(\bar{x}\)</span>: er ist keine perfekte Schätzung für den wahren Mittelwert <span class="math inline">\(\mu\)</span> ist — er streut um das “wahre” <span class="math inline">\(\mu\)</span>.</li>
 <li class="fragment">Diese Streuung haben wir gerade kennengelernt — es ist der Standardfehler <span class="math inline">\(\hat{se}=\frac{\hat{\sigma}}{\sqrt{n}}\)</span>. Als Varianz formuliert:</li>
 </ul>
-<div style="margin-top:-15px">
+<div style="margin-top:-50px !important">
 <p><span class="math display">\[
 \hat{se}^2 = \frac{\hat{\sigma}^2}{n}
 \]</span></p>
@@ -1465,7 +1480,7 @@ Var(\bar{x}) = \frac{1}{n^2}\sum Var(X_i) = \frac{1}{n^2}\big(n\cdot Var(X_i)\bi
 <ul>
 <li class="fragment">Linke Seite umformen:</li>
 </ul>
-<div style="margin-top:-15px">
+<div style="margin-top:-20px !important">
 <p><span class="math display">\[
 \hat{\sigma}^2 - \frac{\hat{\sigma}^2}{n} = \hat{\sigma}^2\left(1 - \frac{1}{n}\right) = \hat{\sigma}^2\frac{n-1}{n} \overset{!}{=} s^2 \;\;\longrightarrow\;\; \hat{\sigma}^2 = \frac{n}{n-1}s^2
 \]</span></p>
@@ -1491,9 +1506,11 @@ s^2 = \frac{1}{n}\sum\left(x_i-\bar{x}\right)^2
 <ul>
 <li class="fragment">Einsetzen:</li>
 </ul>
+<div style="margin-top: -30px !important">
 <p><span class="math display">\[
 \hat{\sigma}^2 = \frac{n}{n-1}s^2 = \frac{n}{n-1}\frac{1}{n}\sum\left(x_i-\bar{x}\right)^2 = \color{navy}{\frac{1}{n-1}}\sum\left(x_i-\bar{x}\right)^2
 \]</span></p>
+</div>
 <ul>
 <li class="fragment">Nun haben wir unseren Faktor <span class="math inline">\(\color{navy}{\frac{1}{n-1}}\)</span>.</li>
 <li class="fragment">Für die korrigierte Standardabweichung der Stichprobe wird häufig analog angenommen:</li>
@@ -1571,6 +1588,8 @@ s^2 = \frac{1}{n}\sum\left(x_i-\bar{x}\right)^2
   <script src="index_files/libs/revealjs/plugin/reveal-animate/plugin.js"></script>
   <script src="index_files/libs/revealjs/plugin/reveal-animate/svg.min.js"></script>
   <script src="index_files/libs/revealjs/plugin/reveal-animate/js-yaml.min.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-custom-controls/plugin.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-custom-controls/all.min.js"></script>
   <script src="index_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
@@ -1592,8 +1611,9 @@ s^2 = \frac{1}{n}\sum\left(x_i-\bar{x}\right)^2
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'chalkboard': {"buttons":true},
+'chalkboard': {"buttons":false},
 'animate': {"autoplay":true},
+'customcontrols': {"controls":[{"id":"home","title":"Startseite","icon":"<i class=\"fa-solid fa-house\" style=\"color:#8398dd\"></i>","action":"window.open(`${location.protocol}//${location.host}`, '_blank');"},{"id":"print-pdf","title":"Als PDF","icon":"<i class=\"fa-solid fa-file-pdf\" style=\"color:#8398dd\"></i>","action":"window.open(`${location.protocol}//${location.host}${location.pathname}`.replace('index.html', `Vorlesung${location.pathname.split('/')[1]}.pdf`), '_blank');"},{"id":"print","title":"Drucken","icon":"<i class=\"fa-solid fa-print\" style=\"color:#8398dd\"></i>","action":"location.href = location.href.includes('print-pdf') ? `${location.protocol}//${location.host}${location.pathname}${location.hash}` : `${location.protocol}//${location.host}${location.pathname}?print-pdf${location.hash}`;"},{"id":"toggle-notes","title":"Notizen (c)","icon":"<i class=\"fa-solid fa-pen\" style=\"color:#8398dd\"></i>","action":"RevealMenuToolHandlers.toggleNotesCanvas(event);"},{"id":"toggle-chalkboard","title":"Tafel (b)","icon":"<i class=\"fa-solid fa-person-chalkboard\" style=\"color:#8398dd\"></i>","action":"RevealMenuToolHandlers.toggleChalkboard(event);"}]},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -1636,7 +1656,7 @@ s^2 = \frac{1}{n}\sum\left(x_i-\bar{x}\right)^2
         keyboard: true,
 
         // Enable the slide overview mode
-        overview: true,
+        overview: false,
 
         // Disables the default reveal.js slide layout (scaling and centering)
         // so that you can use custom CSS layout
@@ -1764,7 +1784,7 @@ s^2 = \frac{1}{n}\sum\left(x_i-\bar{x}\right)^2
         },
 
         // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, RevealAnimate, QuartoSupport,
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, RevealAnimate, RevealCustomControls, QuartoSupport,
 
           RevealMath,
           RevealNotes,

@@ -14,7 +14,8 @@
   <title>Vorlesung 12: t-Test</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, minimal-ui">
   <link rel="stylesheet" href="index_files/libs/revealjs/dist/reset.css">
   <link rel="stylesheet" href="index_files/libs/revealjs/dist/reveal.css">
   <style>
@@ -36,6 +37,7 @@
   <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-custom-controls/style.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
@@ -1208,7 +1210,7 @@ t = r\sqrt{\frac{n-2}{1-r^2}} = 0{,}4\sqrt{\frac{12-2}{1-0{,}4^2}} \overset{(Com
 <ul>
 <li class="fragment">Halbiere den p-Wert der ungerichteten Hypothese, falls das Vorzeichen von <span class="math inline">\(r\)</span> in Richtung der Hypothese ist.</li>
 <li class="fragment">Verdoppele den p-Wert der ungerichteten Hypothese, falls das Vorzeichen von <span class="math inline">\(r\)</span> in gegensätzlicher Richtung der Hypothese ist.</li>
-<li class="fragment">Im Beispiel wäre also der Korrelationskoeffizient <span class="math inline">\(2\times 0{,}198=0{,}396\)</span>, falls wir einen negativen Zusammenhang vorhergesagt hätten, und <span class="math inline">\(0{,}198/2=0{,}099\)</span>, falls wir einen positiven Zusammenhang vorhergsagt hätten.</li>
+<li class="fragment">Im Beispiel wäre also der Korrelationskoeffizient <span class="math inline">\(2\times 0{,}198=0{,}396\)</span>, falls wir einen negativen Zusammenhang vorhergesagt hätten, und <span class="math inline">\(0{,}198/2=0{,}099\)</span>, falls wir einen positiven Zusammenhang vorhergesagt hätten.</li>
 </ul></li>
 </ul>
 </div><div class="column" style="width:39%;">
@@ -1377,7 +1379,7 @@ t = \frac{b_1}{SE(b_1)} = \frac{\frac{\hat{\sigma}_Y}{\hat{\sigma}_X}r}{\frac{\h
 </tbody>
 </table>
 <div class="caption-style">
-<p>Die Analogie von bekannten statistisch Tests und linearem Modell ist lange bekannt, ging aber 2021 durch Beiträge von Jonas Lindeløv viral<a href="#/footnotes" class="footnote-ref" id="fnref6" role="doc-noteref" data-footnote-href="#/fn6" onclick=""><sup>6</sup></a> <a href="#/footnotes" class="footnote-ref" id="fnref7" role="doc-noteref" data-footnote-href="#/fn7" onclick=""><sup>7</sup></a> <a href="#/footnotes" class="footnote-ref" id="fnref8" role="doc-noteref" data-footnote-href="#/fn8" onclick=""><sup>8</sup></a>.</p>
+<p>Die Analogie von bekannten statistischen Tests und linearem Modell ist lange bekannt, ging aber 2021 durch Beiträge von Jonas Lindeløv viral<a href="#/footnotes" class="footnote-ref" id="fnref6" role="doc-noteref" data-footnote-href="#/fn6" onclick=""><sup>6</sup></a> <a href="#/footnotes" class="footnote-ref" id="fnref7" role="doc-noteref" data-footnote-href="#/fn7" onclick=""><sup>7</sup></a> <a href="#/footnotes" class="footnote-ref" id="fnref8" role="doc-noteref" data-footnote-href="#/fn8" onclick=""><sup>8</sup></a>.</p>
 </div>
 <!----------------->
 <!--- New slide --->
@@ -1701,6 +1703,8 @@ plt.savefig('images/paradoxia_histogram_inflammation_sem_nonsig.png', bbox_inche
   <script src="index_files/libs/revealjs/plugin/reveal-animate/plugin.js"></script>
   <script src="index_files/libs/revealjs/plugin/reveal-animate/svg.min.js"></script>
   <script src="index_files/libs/revealjs/plugin/reveal-animate/js-yaml.min.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-custom-controls/plugin.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-custom-controls/all.min.js"></script>
   <script src="index_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
@@ -1722,8 +1726,9 @@ plt.savefig('images/paradoxia_histogram_inflammation_sem_nonsig.png', bbox_inche
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'chalkboard': {"buttons":true},
+'chalkboard': {"buttons":false},
 'animate': {"autoplay":true},
+'customcontrols': {"controls":[{"id":"home","title":"Startseite","icon":"<i class=\"fa-solid fa-house\" style=\"color:#8398dd\"></i>","action":"window.open(`${location.protocol}//${location.host}`, '_blank');"},{"id":"print-pdf","title":"Als PDF","icon":"<i class=\"fa-solid fa-file-pdf\" style=\"color:#8398dd\"></i>","action":"window.open(`${location.protocol}//${location.host}${location.pathname}`.replace('index.html', `Vorlesung${location.pathname.split('/')[1]}.pdf`), '_blank');"},{"id":"print","title":"Drucken","icon":"<i class=\"fa-solid fa-print\" style=\"color:#8398dd\"></i>","action":"location.href = location.href.includes('print-pdf') ? `${location.protocol}//${location.host}${location.pathname}${location.hash}` : `${location.protocol}//${location.host}${location.pathname}?print-pdf${location.hash}`;"},{"id":"toggle-notes","title":"Notizen (c)","icon":"<i class=\"fa-solid fa-pen\" style=\"color:#8398dd\"></i>","action":"RevealMenuToolHandlers.toggleNotesCanvas(event);"},{"id":"toggle-chalkboard","title":"Tafel (b)","icon":"<i class=\"fa-solid fa-person-chalkboard\" style=\"color:#8398dd\"></i>","action":"RevealMenuToolHandlers.toggleChalkboard(event);"}]},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -1766,7 +1771,7 @@ plt.savefig('images/paradoxia_histogram_inflammation_sem_nonsig.png', bbox_inche
         keyboard: true,
 
         // Enable the slide overview mode
-        overview: true,
+        overview: false,
 
         // Disables the default reveal.js slide layout (scaling and centering)
         // so that you can use custom CSS layout
@@ -1894,7 +1899,7 @@ plt.savefig('images/paradoxia_histogram_inflammation_sem_nonsig.png', bbox_inche
         },
 
         // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, RevealAnimate, QuartoSupport,
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, RevealAnimate, RevealCustomControls, QuartoSupport,
 
           RevealMath,
           RevealNotes,

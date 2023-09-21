@@ -8,7 +8,7 @@
    version="1.1"
    id="svg1"
    xml:space="preserve"
-   inkscape:version="1.4-dev (1:1.2.0-alpha1+devel+202308312119+2886f59210)"
+   inkscape:version="1.4-dev (1:1.2.0-alpha1+devel+202309191445+0218cc37c8)"
    sodipodi:docname="paradoxia_zusammenhang.svg"
    inkscape:export-filename="paradoxia_zusammenhang.png"
    inkscape:export-xdpi="300"
@@ -31,7 +31,7 @@
      inkscape:cy="8.8941365"
      inkscape:window-width="2560"
      inkscape:window-height="1367"
-     inkscape:window-x="2560"
+     inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" /><defs
@@ -71,13 +71,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-129.84081,-96.504112)"><rect
-       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.800001;stroke-dasharray:none;stroke-opacity:1"
-       id="rect3"
-       width="94.149384"
-       height="10.00207"
-       x="129.84081"
-       y="96.504112" /><text
+     transform="translate(-129.84081,-96.504112)"><text
        xml:space="preserve"
        style="font-size:5.99723px;line-height:100%;font-family:Calibri;-inkscape-font-specification:'Calibri, Normal';text-align:center;text-anchor:middle;fill:none;fill-opacity:0.62896;stroke:#000000;stroke-width:0.799999;stroke-linecap:round;stroke-opacity:1"
        x="200.39525"

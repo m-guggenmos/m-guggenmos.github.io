@@ -14,7 +14,8 @@
   <title>Vorlesung 01: Intro</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, minimal-ui">
   <link rel="stylesheet" href="index_files/libs/revealjs/dist/reset.css">
   <link rel="stylesheet" href="index_files/libs/revealjs/dist/reveal.css">
   <style>
@@ -36,6 +37,7 @@
   <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-custom-controls/style.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
@@ -351,36 +353,7 @@
 <section>
 <section class="title-slide slide level1 blackslide center">
 <h1>Paradoxia</h1>
-<!-- 
-https://www.zotero.org/thomas_langkamp
-Statistik I Vorlesung 1: Der heißeste Scheiß, Skalenniveaus, Stichproben, Merkmale & Ideale
-Statistik I Vorlesung 2: Häufigkeiten und Diagramme für die univariate beschreibende Analyse
-Statistik I Vorlesung 3: Zentral- und Lagemaße für die univariate beschreibende Analyse
-Statistik I Vorlesung 4: Streumaße für die univariate beschreibende Analyse
-Statistik I Vorlesung 5: Die Normalverteilung und ihre z-Transformation zur Standardnormalverteilung
-Statistik I Vorlesung 6: Korrelation mit Kreuztabellen, Chi², Phi, Cramers V, Cohen & Lambda
-Statistik I Vorlesung 7: Korrelation mit Scatterplots, Heatmaps, Anscombe, Pearsons r, R², Fishers Z
-Statistik I Vorlesung 8: Spearman vs. Kendall vs Goodman-Kruskal. Rangkorrelation Round 1 - Fight!
-Statistik I Vorlesung 9: Vom Modell der linearen Regression: Vorhersagen und ihre Fehler
-Statistik I Vorlesung 10: RMSE, Vorhersageintervall, Residuenanalyse & explorativer Spaß in JASP
-Statistik I Vorlesung 11: nicht-lineare Regression
-Statistik I Vorlesung 12: Standardfehler & Konfidenzintervall
-Statistik I Vorlesung 13: Stichprobenverteilung, Erwartungswert, Cohens d & Regenwolkenplot
 
-Statistik II Vorlesung 1: Grundlegende Konzepte & Probleme der schließenden Statistik
-Statistik II Vorlesung 2: Anteilswert testen mit dem Binomialtest
-Statistik II Vorlesung 3: z-Test und t-Test einer Stichprobe
-Statistik II Vorlesung 4: t-Test für abhängige Stichproben und Wilcoxon-Vorzeichen-Rang Test
-Statistik II Vorlesung 5: t-Test unabhängiger Stichproben & (un)gerichtet bzw. (2)1seitig testen
-Statistik II Vorlesung 6: Voraussetzungen (non)-parametrischer Tests, deren Prüfung & Korrektur
-Statistik II Vorlesung 7: Stichprobenplanung mit G*Power für den t-Test unabhängiger Stichproben.
-Statistik II Vorlesung 8: post hoc Poweranalyse mit G*Power für den t-Test unabhängiger Stichproben.
-Statistik II Vorlesung 9: einfaktorielle ANOVA (Analysis of Variance) ohne Messwiederholung
-Statistik II Vorlesung 10: Voraussetzungsprüfung, post hoc Tests und Kontraste für die ANOVA
-Statistik II Vorlesung 11: zweifaktorielle ANOVA & Interaktionseffekte
-Statistik II Vorlesung 12: zweifaktorieller Chi²-Test (mit Tabellensplitting) für Cramers V
-Statistik II Vorlesung 13: partielle Korrelation und multiple Regression für Pearsons r
- -->
 </section>
 <section class="slide level2 blackslide center">
 <h2>Eine rätselhafte Erkrankung</h2>
@@ -418,12 +391,42 @@ Statistik II Vorlesung 13: partielle Korrelation und multiple Regression für Pe
 <h2>Eine erste Aufgabe: Hypothesenbildung</h2>
 <div class="columns">
 <div class="column" style="width:70%;">
-<p>Ihre erste Aufgabe besteht darin, <span style=" color: lightblue !important;"><strong>Hypothesen</strong></span> zu bilden, wie es zum Auftreten der Erkrankung gekommen sein könnte. Vermutet wird entweder ein <strong>sozialpsychologisches Ansteckungsphänomen</strong> oder eine <strong>neuartige Viruserkrankung</strong>, die das zentrale Nervensystem befällt.</p>
+<p>Ihre erste Aufgabe besteht darin, <span class="navy-paradoxia"><strong>Hypothesen</strong></span> zu bilden, wie es zum Auftreten der Erkrankung gekommen sein könnte. Vermutet wird entweder ein <strong>sozialpsychologisches Ansteckungsphänomen</strong> oder eine <strong>neuartige Viruserkrankung</strong>, die das zentrale Nervensystem befällt.</p>
 <p><img data-src="images/paradoxia_social.png" style="width:50.0%"></p>
 </div><div class="column" style="width:30%;">
 <p><img data-src="images/paradoxia_virus.png"></p>
 </div>
 </div>
+<!-- 
+https://www.zotero.org/thomas_langkamp
+Statistik I Vorlesung 1: Der heißeste Scheiß, Skalenniveaus, Stichproben, Merkmale & Ideale
+Statistik I Vorlesung 2: Häufigkeiten und Diagramme für die univariate beschreibende Analyse
+Statistik I Vorlesung 3: Zentral- und Lagemaße für die univariate beschreibende Analyse
+Statistik I Vorlesung 4: Streumaße für die univariate beschreibende Analyse
+Statistik I Vorlesung 5: Die Normalverteilung und ihre z-Transformation zur Standardnormalverteilung
+Statistik I Vorlesung 6: Korrelation mit Kreuztabellen, Chi², Phi, Cramers V, Cohen & Lambda
+Statistik I Vorlesung 7: Korrelation mit Scatterplots, Heatmaps, Anscombe, Pearsons r, R², Fishers Z
+Statistik I Vorlesung 8: Spearman vs. Kendall vs Goodman-Kruskal. Rangkorrelation Round 1 - Fight!
+Statistik I Vorlesung 9: Vom Modell der linearen Regression: Vorhersagen und ihre Fehler
+Statistik I Vorlesung 10: RMSE, Vorhersageintervall, Residuenanalyse & explorativer Spaß in JASP
+Statistik I Vorlesung 11: nicht-lineare Regression
+Statistik I Vorlesung 12: Standardfehler & Konfidenzintervall
+Statistik I Vorlesung 13: Stichprobenverteilung, Erwartungswert, Cohens d & Regenwolkenplot
+
+Statistik II Vorlesung 1: Grundlegende Konzepte & Probleme der schließenden Statistik
+Statistik II Vorlesung 2: Anteilswert testen mit dem Binomialtest
+Statistik II Vorlesung 3: z-Test und t-Test einer Stichprobe
+Statistik II Vorlesung 4: t-Test für abhängige Stichproben und Wilcoxon-Vorzeichen-Rang Test
+Statistik II Vorlesung 5: t-Test unabhängiger Stichproben & (un)gerichtet bzw. (2)1seitig testen
+Statistik II Vorlesung 6: Voraussetzungen (non)-parametrischer Tests, deren Prüfung & Korrektur
+Statistik II Vorlesung 7: Stichprobenplanung mit G*Power für den t-Test unabhängiger Stichproben.
+Statistik II Vorlesung 8: post hoc Poweranalyse mit G*Power für den t-Test unabhängiger Stichproben.
+Statistik II Vorlesung 9: einfaktorielle ANOVA (Analysis of Variance) ohne Messwiederholung
+Statistik II Vorlesung 10: Voraussetzungsprüfung, post hoc Tests und Kontraste für die ANOVA
+Statistik II Vorlesung 11: zweifaktorielle ANOVA & Interaktionseffekte
+Statistik II Vorlesung 12: zweifaktorieller Chi²-Test (mit Tabellensplitting) für Cramers V
+Statistik II Vorlesung 13: partielle Korrelation und multiple Regression für Pearsons r
+ -->
 </section></section>
 <section>
 <section class="title-slide slide level1 center">
@@ -998,6 +1001,8 @@ Statistik II Vorlesung 13: partielle Korrelation und multiple Regression für Pe
   <script src="index_files/libs/revealjs/plugin/reveal-animate/plugin.js"></script>
   <script src="index_files/libs/revealjs/plugin/reveal-animate/svg.min.js"></script>
   <script src="index_files/libs/revealjs/plugin/reveal-animate/js-yaml.min.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-custom-controls/plugin.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-custom-controls/all.min.js"></script>
   <script src="index_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
@@ -1019,8 +1024,9 @@ Statistik II Vorlesung 13: partielle Korrelation und multiple Regression für Pe
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'chalkboard': {"buttons":true},
+'chalkboard': {"buttons":false},
 'animate': {"autoplay":true},
+'customcontrols': {"controls":[{"id":"home","title":"Startseite","icon":"<i class=\"fa-solid fa-house\" style=\"color:#8398dd\"></i>","action":"window.open(`${location.protocol}//${location.host}`, '_blank');"},{"id":"print-pdf","title":"Als PDF","icon":"<i class=\"fa-solid fa-file-pdf\" style=\"color:#8398dd\"></i>","action":"window.open(`${location.protocol}//${location.host}${location.pathname}`.replace('index.html', `Vorlesung${location.pathname.split('/')[1]}.pdf`), '_blank');"},{"id":"print","title":"Drucken","icon":"<i class=\"fa-solid fa-print\" style=\"color:#8398dd\"></i>","action":"location.href = location.href.includes('print-pdf') ? `${location.protocol}//${location.host}${location.pathname}${location.hash}` : `${location.protocol}//${location.host}${location.pathname}?print-pdf${location.hash}`;"},{"id":"toggle-notes","title":"Notizen (c)","icon":"<i class=\"fa-solid fa-pen\" style=\"color:#8398dd\"></i>","action":"RevealMenuToolHandlers.toggleNotesCanvas(event);"},{"id":"toggle-chalkboard","title":"Tafel (b)","icon":"<i class=\"fa-solid fa-person-chalkboard\" style=\"color:#8398dd\"></i>","action":"RevealMenuToolHandlers.toggleChalkboard(event);"}]},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -1063,7 +1069,7 @@ Statistik II Vorlesung 13: partielle Korrelation und multiple Regression für Pe
         keyboard: true,
 
         // Enable the slide overview mode
-        overview: true,
+        overview: false,
 
         // Disables the default reveal.js slide layout (scaling and centering)
         // so that you can use custom CSS layout
@@ -1191,7 +1197,7 @@ Statistik II Vorlesung 13: partielle Korrelation und multiple Regression für Pe
         },
 
         // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, RevealAnimate, QuartoSupport,
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, RevealAnimate, RevealCustomControls, QuartoSupport,
 
           RevealMath,
           RevealNotes,
