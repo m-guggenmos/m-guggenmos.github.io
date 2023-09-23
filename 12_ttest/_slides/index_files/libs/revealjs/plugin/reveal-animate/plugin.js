@@ -246,8 +246,9 @@ console.warn("Cannot find element to set up with selector: " + setup[i].element 
 			}
 		} else {
 			for (var i = 0; i < elements.length; i++ ){
-				if (elements[0].innerHTML.includes('class: fragment')) {
-					elements[i].innerHTML = `<div><img src="${elements[i].getAttribute('data-src')}"></div>`;
+				if (elements[i].innerHTML.includes('class: fragment')) {
+					elements[i].innerHTML_prev = elements[i].innerHTML;
+					elements[i].innerHTML = `<div><img src="${elements[i].getAttribute('data-src')}" class="was_anim"></div>`;
 				} else {
 					elements[i].animation.play();
 				}
