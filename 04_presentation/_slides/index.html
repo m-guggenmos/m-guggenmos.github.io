@@ -369,7 +369,9 @@
 <ul>
 <li class="fragment">Handelt es sich um einzelne Werte, können diese übersichtlich im Fließtext berichtet werden:</li>
 </ul>
+<div class="fragment">
 <p><img data-src="images/example_location_dispersion_text.png" style="margin-bottom:-17px"></p>
+</div>
 <ul>
 <li class="fragment">Handelt es sich um eine größere Anzahl von Werten (z.B. bei mehreren Bedingungen) bietet sich eine Darstellung in Tabellenform an.</li>
 <li class="fragment">Auch bei dieser Darstellung sollten Lage- <em>und</em> Streuungsmaße angegeben werden.</li>
@@ -377,9 +379,13 @@
 </ul>
 <div class="columns">
 <div class="column" style="width:50%;">
+<div class="fragment">
 <p><img data-src="images/example_location_dispersion_table.png" class="hcenter-image"></p>
+</div>
 </div><!-- Begin second column --><div class="column" style="width:50%;">
+<div class="fragment">
 <p><img data-src="images/APA7.jpg" height="175"></p>
+</div>
 </div>
 </div>
 <div class="recommendation fragment">
@@ -480,7 +486,9 @@ plt.savefig('images/IQ_blond_brunette_means_sds_nobar.png', bbox_inches="tight")
 <div class="vspace-medium">
 
 </div>
+<div class="fragment">
 <p><img data-src="images/IQ_blond_brunette_means_sds_nobar.png" height="400"></p>
+</div>
 </section>
 <section class="slide level2">
 <h2>The case against bar plots</h2>
@@ -494,9 +502,13 @@ plt.savefig('images/IQ_blond_brunette_means_sds_nobar.png', bbox_inches="tight")
 </ul>
 <div class="columns">
 <div class="column" style="width:60%;">
+<div class="fragment">
 <p><img data-src="images/disadvantages_barplot.png" height="350"></p>
+</div>
 </div><!-- Begin second column --><div class="column caption-style" style="width:40%;">
+<div class="fragment">
 <p>Durch die tatsächliche Verteilung der Datenpunkte im rechten Plot wird klar, dass im Balkendiagramm ein vergleichsweise starker Fokus auf Bereiche gelegt wird, in den gar keine Daten enthalten sind (“Zone of Irrelevance”), und andererseits Extremwerte, insbesondere oberhalb des Fehlerbalkens, visuell völlig unrepräsentiert sind (“Zone of Invisibility”). Der Fehlerbalken ist außerdem leicht mit der Illusion verbunden, dass sich alle Datenpunkte innerhalb des angezeigten Bereiches befinden (“Within-the-bar bias”).<a href="#/footnotes" class="footnote-ref" id="fnref2" role="doc-noteref" data-footnote-href="#/fn2" onclick=""><sup>2</sup></a>.</p>
+</div>
 </div>
 </div>
 <!----------------->
@@ -508,11 +520,16 @@ plt.savefig('images/IQ_blond_brunette_means_sds_nobar.png', bbox_inches="tight")
 <ul>
 <li class="fragment">Alle Datenverteilungen haben den gleichen Mittelwert und Standardabweichung</li>
 </ul>
+<div class="vspace-medium">
+
+</div>
+<div class="fragment">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="images/dino_barplot_example.png"></p>
-<figcaption>Illustration der Tatsache, dass unterschiedlichste Verteilungen von Daten im selben Balkendiagramm münden, hier am Beispiel von Mittelwert und Standardabweichung. Alle Verteilungen haben exakt den gleichen Mittelwert und Standardabweichung, sowohl entlang der y-Achse, als auch entlang der x-Achse (hier nicht dargestellt)<a href="#/footnotes" class="footnote-ref" id="fnref3" role="doc-noteref" data-footnote-href="#/fn3" onclick=""><sup>3</sup></a>.</figcaption>
+<figcaption>Illustration der Tatsache, dass unterschiedlichste Verteilungen von Daten im selben Balkendiagramm münden, hier am Beispiel von Mittelwert und Standardabweichung. Alle Verteilungen haben exakt den gleichen Mittelwert und Standardabweichung, sowohl entlang der y-Achse, als auch entlang der x-Achse (hier sind aber nur die Mittelwerte bezogen auf die y-Achse dargestellt)<a href="#/footnotes" class="footnote-ref" id="fnref3" role="doc-noteref" data-footnote-href="#/fn3" onclick=""><sup>3</sup></a>.</figcaption>
 </figure>
+</div>
 </div>
 <!----------------->
 <!--- New slide --->
@@ -536,11 +553,11 @@ plt.savefig('images/IQ_blond_brunette_means_sds_nobar.png', bbox_inches="tight")
 <div class="column" style="width:65%;">
 <ul>
 <li class="fragment">Eine bekannte Darstellungsform für den Median ist der <span style=" color: navy !important;"><strong>Boxplot</strong></span></li>
-<li class="fragment">In einer der bekanntesten Variationen zeigt der Boxplot drei Informationen an:
+<li class="fragment">In einer gängigen Variante zeigt der Boxplot drei Informationen an:
 <ol type="1">
 <li class="fragment"><strong>Median (als einfache Linie)</strong></li>
 <li class="fragment"><strong>Box:</strong> die “mittleren 50% der Daten” (25% über dem Median, 25% unter dem Median)</li>
-<li class="fragment"><strong>Antennen (“Whisker”):</strong> der Bereich der Daten, der keine Ausreißer enthält. Häufig ist hier das Kriterium, dass die Daten im Bereich <span class="math inline">\([Q_1-1.5\cdot IQR; Q_3+1.5\cdot IQR]\)</span> liegen müssen.</li>
+<li class="fragment"><strong>Antennen (“Whiskers”):</strong> zeigen Grenzen der Ausreißer-Definition an (Ausreißer = alle Punkte unter- und überhalb der Antennen). Häufig ist hier das Kriterium, dass die Daten im Bereich <span class="math inline">\([Q_1-1.5\cdot IQR; Q_3+1.5\cdot IQR]\)</span> liegen müssen.</li>
 </ol></li>
 </ul>
 </div><!-- Begin second column --><div class="column" style="width:35%;">
@@ -549,9 +566,9 @@ plt.savefig('images/IQ_blond_brunette_means_sds_nobar.png', bbox_inches="tight")
 </div>
 <ul>
 <li class="fragment">Der Boxplot gibt eine schnelle Übersicht über wesentliche Kennwerte eines Datensatzen</li>
-<li class="fragment">Zu beachten ist, dass zahlreiche Variationen des Boxplots existieren
+<li class="fragment">Zu beachten ist, dass zahlreiche Varianten des Boxplots existieren
 <ul>
-<li class="fragment">Bei einer weiteren bekannten Variation zeigen die Antennen das absolute Maximum und Minimum der Daten an (also <em>inklusive</em> möglicher Ausreißer)</li>
+<li class="fragment">Bei einer weiteren häufigen Variante zeigen die Antennen das absolute Maximum und Minimum der Daten an (also <em>inklusive</em> möglicher Ausreißer)</li>
 </ul></li>
 </ul>
 <!----------------->
@@ -608,12 +625,19 @@ plt.savefig('images/IQ_blond_brunette_means_sds_nobar.png', bbox_inches="tight")
 </section>
 <section class="slide level2">
 <h2>Abschneiden der y-Achse</h2>
+<div class="columns">
+<div class="column" style="width:30%;">
 <ul>
-<li class="fragment">Das Abschneiden der y-Achse verzerrt häufig die Stärke von Effekten</li>
+<li class="fragment">Das Abschneiden der y-Achse verzerrt häufig die Stärke von Effekten.</li>
 </ul>
-
-<img data-src="images/cut_yaxis.png" class="r-stretch"><ul>
-<li class="fragment">Die grundsätzliche Empfehlung ist daher, die y-Achse bei 0 beginnen zu lassen</li>
+</div><div class="column" style="width:70%;">
+<div class="fragment">
+<p><img data-src="images/cut_yaxis.png" height="340"></p>
+</div>
+</div>
+</div>
+<ul>
+<li class="fragment">Die grundsätzliche Empfehlung ist daher, die y-Achse bei 0 beginnen zu lassen.</li>
 <li class="fragment">Es gibt aber Ausnahmen:
 <ul>
 <li class="fragment">Vorliegen eines anderen natürlichen Referenzwertes (z.B. IQ-Wert 100, wenn alle Werte über 100 liegen).</li>
@@ -646,6 +670,7 @@ plt.savefig('images/IQ_blond_brunette_means_sds_nobar.png', bbox_inches="tight")
 <ul>
 <li class="fragment">Ungleichmäßige Intervalle auf der x-Achse verzerren die Daten von Liniendiagrammen</li>
 </ul>
+<div class="fragment">
 <div data-animate="" data-src="images/intervalle_xachse.svg"><!-- setup:
   - element: "#zoomin"
     modifier: attr
@@ -662,6 +687,7 @@ plt.savefig('images/IQ_blond_brunette_means_sds_nobar.png', bbox_inches="tight")
     parameters:
       - class: fragment
         data-fragment-index: "3" --></div>
+</div>
 <!----------------->
 <!--- New slide --->
 <!----------------->
@@ -704,7 +730,9 @@ plt.savefig('images/IQ_blond_brunette_means_sds_nobar.png', bbox_inches="tight")
 <li class="fragment">Eine <span style=" color: navy !important;"><strong>Häufigkeitsverteilung</strong></span> oder auch kurz <span style=" color: navy !important;"><strong>Verteilung</strong></span> gibt zu verschiedenen Werten eines Merkmals an, wie häufig dieser Wert vorkommt.</li>
 <li class="fragment">Die Häufigkeit kann entweder als <strong>absolute</strong> oder <strong>relative Häufigkeit</strong> angegeben werden.</li>
 </ul>
+<div class="fragment">
 <p><img data-src="images/histogram_example.png" height="300"></p>
+</div>
 <div style="margin-top: -10px">
 <ul>
 <li class="fragment"><strong>Empirische Verteilungen</strong> geben an, wie die tatsächlich gemessenen Daten einer Stichprobe verteilt sind. Das AirBnB-Beispiel zeigt empirische Verteilungen.</li>
@@ -727,9 +755,11 @@ plt.savefig('images/IQ_blond_brunette_means_sds_nobar.png', bbox_inches="tight")
 <li class="fragment">Aufgrund ihrer Form wird sie umgangssprachlich auch als <strong>Glockenkurve</strong> bezeichnet.</li>
 <li class="fragment">Mathematische Definition:</li>
 </ul>
+<div class="fragment">
 <p><span class="math display">\[
 f(x) = \frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2}
 \]</span></p>
+</div>
 </div><div class="column" style="width:33%;">
 <p><img data-src="images/normal_distribution.png"></p>
 </div>
@@ -737,7 +767,7 @@ f(x) = \frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\righ
 <ul>
 <li class="fragment"><span class="math inline">\(\mu\)</span> kennzeichnet den Mittelwert und <span class="math inline">\(\sigma\)</span> die Standardabweichung der Verteilung.</li>
 </ul>
-<div class="merke">
+<div class="merke fragment">
 <div class="columns">
 <div class="column" style="width:5%;">
 <div style="margin-top: 18px">
@@ -828,11 +858,15 @@ plt.savefig('images/normal_sigma.png', bbox_inches='tight')
 <li class="fragment">Die Parameter <span class="math inline">\(\mu\)</span> und <span class="math inline">\(\sigma\)</span> sind die <span style=" color: navy !important;"><strong>Formparameter</strong></span> (engl. <em>shape parameter</em>) der Normalverteilung — mit diesen zwei Parametern ist die Verteilung eindeutig definiert.</li>
 <li class="fragment">Als Lageparameter verschiebt <span class="math inline">\(\mu\)</span> die Verteilung auf der x-Achse:</li>
 </ul>
+<div class="fragment">
 <p><img data-src="images/normal_mu.png" style="margin-bottom:-15px !important" height="240"></p>
+</div>
 <ul>
 <li class="fragment">Als Streuungsparameter verändert <span class="math inline">\(\sigma\)</span> die Breite der Verteilung:</li>
 </ul>
+<div class="fragment">
 <p><img data-src="images/normal_sigma.png" style="margin-top:-15px !important" height="240"></p>
+</div>
 <!----------------->
 <!--- New slide --->
 <!----------------->
@@ -843,7 +877,7 @@ plt.savefig('images/normal_sigma.png', bbox_inches='tight')
 <li class="fragment">Auch wenn die Historie des Terms <strong>Normalverteilung</strong> umstritten ist<a href="#/footnotes" class="footnote-ref" id="fnref10" role="doc-noteref" data-footnote-href="#/fn10" onclick=""><sup>10</sup></a> bringt er zum Ausdruck, dass es sich um eine empirisch sehr häufig beobachtete Verteilung handelt.</li>
 <li class="fragment">Die Erklärung für die Häufigkeit der Normalverteilung liefert der <span style=" color: navy !important;"><strong>zentrale Grenzwertsatz</strong></span>:</li>
 </ul>
-<div class="definition">
+<div class="definition fragment">
 <!---  Definition--->
 <table>
 <colgroup>
@@ -874,7 +908,7 @@ plt.savefig('images/normal_sigma.png', bbox_inches='tight')
 <li class="fragment">Zufällige Umwelteinflüsse (Familie, sozialer Kontext, Klima)</li>
 </ul></li>
 <li class="fragment">Auch Messfehler wären ein solcher Zufallseffekt — gleichzeitig sind Verteilungen in der Psychologie aufgrund der genannten Effekte <em>auch ohne Messfehler</em> häufig normalverteilt.</li>
-<li class="fragment">Auch wenn die Vielzahl der Zufallseffekte Vorhersagen in der Psychologie enorm erschweren, haben sie <strong>aus statistischer Sicht einen Vorteil</strong>: wir können häufig (nicht immer!) annehmen, dass psychologische Merkmale einer Normalverteilung in der Bevölkerung folgen.</li>
+<li class="fragment">Obwohl die Vielzahl der Zufallseffekte Vorhersagen in der Psychologie enorm erschwert, haben sie <strong>aus statistischer Sicht auch einen Vorteil</strong>: wir können häufig (nicht immer!) annehmen, dass psychologische Merkmale einer Normalverteilung in der Bevölkerung folgen.</li>
 </ul>
 <!----------------->
 <!--- New slide --->
@@ -1003,7 +1037,7 @@ plt.savefig('images/normal_sigma.png', bbox_inches='tight')
 <div class="columns">
 <div class="column" style="width:70%;">
 <ul>
-<li class="fragment">In Ihren Übungen mit JASP wird Ihnen ein Wert bereits jetzt begegnen: der <span style=" color: navy !important;"><strong>p-Wert</strong></span></li>
+<li class="fragment">In Ihren Übungen mit JASP wird Ihnen u.U. ein Wert bereits jetzt begegnen: der <span style=" color: navy !important;"><strong>p-Wert</strong></span></li>
 <li class="fragment">Der p-Wert ist von zentraler Bedeutung in der psychologischen Forschungsliteratur (for the better or the worse).</li>
 <li class="fragment">Der p-Wert ist ein <strong>Signifikanz-Maß</strong>: er gibt vereinfacht gesprochen einen Hinweis darauf, wie wahrscheinlich es ist, dass ein gefundener Effekt (z.B. Mittelwertsunterschied zwischen zwei Gruppen) auf bloßem Zufall basiert.</li>
 <li class="fragment"><strong>Je kleiner der p-Wert, desto höher die statistische Signifikanz</strong>, desto sicherer können wir uns also sein, dass ein Effekt nicht nur auf einer zufälligen Schwankung von Messfehlern basiert.</li>
@@ -1153,7 +1187,7 @@ plt.savefig('images/normal_sigma.png', bbox_inches='tight')
         shuffle: false,
 
         // Turns fragments on and off globally
-        fragments: false,
+        fragments: true,
 
         // Flags whether to include the current fragment in the URL,
         // so that reloading brings you to the same fragment position

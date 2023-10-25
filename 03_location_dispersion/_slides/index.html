@@ -533,11 +533,13 @@
 <li class="fragment">Modus (auch Modalwert)</li>
 </ul></li>
 </ul>
+<div class="fragment">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="images/mean_median_modus.png" class="hcenter-image"></p>
 <figcaption>Bildnachweis<a href="#/footnotes" class="footnote-ref" id="fnref1" role="doc-noteref" data-footnote-href="#/fn1" onclick=""><sup>1</sup></a></figcaption>
 </figure>
+</div>
 </div>
 <aside></aside></section>
 <section class="slide level2">
@@ -550,17 +552,21 @@
 </ol></li>
 <li class="fragment">Berechnung (Formel):</li>
 </ul>
+<div class="fragment">
 <p><span class="math display">\[
 \bar{x} = \frac{1}{n}\sum_{i=1}^n x_i
 \]</span></p>
+</div>
 <ul>
 <li class="fragment">Notation: Strich über dem kleinen Letter der Zufallsvariable = Mittelwert der Zufallsvariable</li>
 </ul>
+<div class="fragment">
 <p><span class="block-heading" style="text-align:center; margin-bottom: 3px">Beispiel</span></p>
 <p>Folgende Beobachtungen der Zufallsvariable <span class="math inline">\(X\)</span> “Punktzahl in der Abi-Matheprüfung” werden in einer Stichprobe von 7 Psychologiestudierenden gemacht:  <span class="math inline">\(\mathbf{x} = \{13, 7, 15, 8, 4, 9, 14\}\)</span></p>
 <p><span class="math display">\[
 \bar{x} = \frac{1}{7}(13+7+15+8+4+9+14) =  = \frac{1}{7}\cdot 70 = 10
 \]</span></p>
+</div>
 <!----------------->
 <!--- New slide --->
 <!----------------->
@@ -602,6 +608,7 @@ plt.savefig(f'images/{mode}.png', bbox_inches="tight")
 <div class="vspace-small">
 
 </div>
+<div class="fragment">
 <!---  Table --->
 <table>
 <colgroup>
@@ -639,6 +646,7 @@ plt.savefig(f'images/{mode}.png', bbox_inches="tight")
 </tr>
 </tbody>
 </table>
+</div>
 </section>
 <section class="slide level2" style="overflow: hidden">
 <h2>Median</h2>
@@ -653,15 +661,23 @@ plt.savefig(f'images/{mode}.png', bbox_inches="tight")
 </ol></li>
 <li class="fragment">Der Median wird mit einer Tilde (~) über der Variablen bezeichnet:  <span class="math inline">\(\tilde{x}, \tilde{y}, ..\)</span></li>
 </ul>
+<div class="fragment">
 <p><span class="block-heading" style="text-align:center; margin-bottom: 3px">Beispiel</span></p>
 <p>Folgende Beobachtungen der Zufallsvariable <span class="math inline">\(X\)</span> “Punktzahl in der Abi-Matheprüfung” werden in einer Stichprobe von 7 Psychologiestudierenden gemacht:  <span class="math inline">\(\mathbf{x} = \{13, 7, 15, 8, 4, 9, 14\}\)</span></p>
+</div>
+<div class="fragment">
 <p><span class="math display">\[
 \text{Sortierte Reihenfolge:} \;\mathbf{x} = \{4, 7, 8, \color{green}{\mathbf{9}}, 13, 14, 15\} \;\rightarrow\; \tilde{x} = 9
 \]</span></p>
+</div>
+<div class="fragment">
 <p>Wir fügen den Wert eines weiteren Studierenden hinzu:   <span class="math inline">\(\mathbf{x} = \{13, 7, 15, 8, 4, 9, 14, 10\}\)</span></p>
+</div>
+<div class="fragment">
 <p><span class="math display">\[
 \text{Sortierte Reihenfolge:} \;\mathbf{x} = \{4, 7, 8, \color{green}{\mathbf{9}, \mathbf{10}}, 13, 14, 15\} \;\rightarrow\; \tilde{x} = \frac{9+10}{2} = 9.5
 \]</span></p>
+</div>
 <!-- ```{python}
 
 ``` -->
@@ -718,7 +734,9 @@ plt.savefig(f'images/median_bimodal.png', bbox_inches="tight")
 </ul></li>
 </ul>
 </div><div class="column" style="width:30%;">
+<div class="fragment">
 <p><img data-src="images/show_with_likert_rating.png" height="150"></p>
+</div>
 </div>
 </div>
 <ul>
@@ -728,11 +746,13 @@ plt.savefig(f'images/median_bimodal.png', bbox_inches="tight")
 <li class="fragment">in der zugrundeliegenden Verteilung zwei oder mehr Wertebereiche deutlich häufiger vorkommen als andere Wertebereiche, und diese Bereiche nicht überlappen (z.B. hat der Median von <span class="math inline">\(\{2, 2, 2, 2, 9, 9, 9\}\)</span> den wenig aussagekräftigen Wert 2).</li>
 </ul></li>
 </ul>
+<div class="fragment">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="images/median_bimodal.png" class="hcenter-image" height="170"></p>
 <figcaption>Für diese “bimodale” Verteilung der Daten ist der Median eine schlechte Wahl. Der Wert springt mehr oder weniger zufällig zwischen den beiden dominanten Wertebereichen der Daten (1-5 und 10-14), je nachdem, welcher Bereich mehr Werte aufweist.</figcaption>
 </figure>
+</div>
 </div>
 <!----------------->
 <!--- New slide --->
@@ -750,11 +770,13 @@ plt.savefig(f'images/median_bimodal.png', bbox_inches="tight")
 <li class="fragment">Im Fall von <strong>kategorialen Variablen</strong> ist der Modus das einzig mögliche Lagemaß (Beispiel: aus welchem Bundesland kommen die meisten von Ihnen?)</li>
 <li class="fragment">Ein weiterer sinnvoller Anwendungsfall können schiefe Verteilungen sein:</li>
 </ul>
+<div class="fragment">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="images/schiefe_verteilungen.png" class="hcenter-image" height="290"></p>
 <figcaption>Bildnachweis<a href="#/footnotes" class="footnote-ref" id="fnref3" role="doc-noteref" data-footnote-href="#/fn3" onclick=""><sup>3</sup></a></figcaption>
 </figure>
+</div>
 </div>
 <aside></aside></section></section>
 <section>
@@ -868,8 +890,10 @@ plt.savefig('images/IQ_blond_brunette_dist.png', bbox_inches="tight")
 </div>
 <div class="columns">
 <div class="column" style="width:50%;">
+<div class="fragment">
 <p><span class="text-center">“In unserer Studie waren brünette Menschen im Schnitt 10 IQ-Punkte schlauer als blonde Menschen”</span></p>
 <p><img data-src="images/IQ_blond_brunette_means.png" class="hcenter-image" style="margin-top: 80px !important"></p>
+</div>
 </div><!-- Begin second column --><div class="column" style="width:50%;">
 <div class="fragment">
 <p><span class="text-center"><br>Behind the scenes:</span></p>
@@ -956,7 +980,9 @@ plt.savefig('images/IQ_blond_brunette_dist.png', bbox_inches="tight")
 </ul></li>
 </ul>
 </div><!-- Begin second column --><div class="column center-column-content" style="width:30%;">
+<div class="fragment" data-fragment-index="1">
 <p><img data-src="images/disperson_symbolic.png"></p>
+</div>
 </div>
 </div>
 <!----------------->
@@ -1029,21 +1055,27 @@ Range = x_{max} - x_{min}
 <ul>
 <li class="fragment">Die Varianz ist definiert als die <strong>Summe der quadrierten Abweichungen aller Werte vom Mittelwert</strong>:</li>
 </ul>
+<div class="fragment">
 <p><span class="math display">\[
 Var(X) = \sigma^2 = \frac{1}{n}\sum_{i=1}^n\big(x_i-\bar{x}\big)^2
 \]</span></p>
 <p><span style="font-size: 21px">   (Die Varianz ist gleich der quadrierten Standardabweichung <span class="math inline">\(\sigma\)</span> – letztere lernen wir noch kennen)</span></p>
+</div>
 <ul>
 <li class="fragment">Durch die Quadrierung wird verhindert, dass sich positive und negative Abweichungen gegenseitig aufheben.</li>
 </ul>
 <!-- <div class="vspace-small"></div> -->
 <div class="columns">
 <div class="column" style="width:60%;">
+<div class="fragment">
 <p><img data-src="images/variance_schaefer.png" class="hcenter-image"></p>
+</div>
 </div><!-- Begin second column --><div class="column" style="width:40%;">
+<div class="fragment">
 <p><span class="math display">\[
 \begin{aligned} \sigma^2 &amp;= 0{,}25+2{,}25+0{,}25+2{,}25 \\ &amp;= 5 \end{aligned}
 \]</span></p>
+</div>
 </div>
 </div>
 <!----------------->
@@ -1053,11 +1085,15 @@ Var(X) = \sigma^2 = \frac{1}{n}\sum_{i=1}^n\big(x_i-\bar{x}\big)^2
 <section class="slide level2">
 <h2><span style=" color: darkred !important;">Warum werden werden nicht einfach die Absolutwerte der Differenzen genommen?</span></h2>
 <p><img data-src="images/kein_klausurstoff.png" class="absolute" style="bottom: 0px; right: 0px; height: 130px; "></p>
+<div class="fragment">
 <p>Prinzipiell wäre auch eine Formel für die Varianz mit Absolutabständen denkbar:</p>
 <p><span class="math display">\[
 Var_{\text{absolut}}(X) = \frac{1}{n}\sum_{i=1}^n\big|x_i-\bar{x}\big|
 \]</span></p>
+</div>
+<div class="fragment">
 <p>Über die Gründe, warum sich <span class="math inline">\(Var_{\text{absolut}}\)</span> nicht durchgesetzt hat, streitet sich die Fachwelt. Neben historischen Gründen, gibt es aber einige Eigenschaften, die die Präferenz für Abstandsquadrate zumindest nachvollziehbar machen:</p>
+</div>
 <ul>
 <li class="fragment">Quadrierte Abstände gewichten Punkte, die weiter vom Mittelwert entfernt sind, höher. Dies entspricht einer “Bestrafung” von Ausreißern und kann ein wünschenswertes Verhalten sein.</li>
 <li class="fragment">Analogie zur euklidischen Distanz (z.B. Satz des Pythagoras: <span class="math inline">\(a=\sqrt{b^2+c^2}\)</span>)</li>
@@ -1076,7 +1112,7 @@ Var_{\text{absolut}}(X) = \frac{1}{n}\sum_{i=1}^n\big|x_i-\bar{x}\big|
 <li class="fragment">Ein Nachteil der Varianz ist, dass sie aufgrund der Abstandsquadrate in quadrierten Einheiten angegeben ist:</li>
 </ul>
 <!---  Example --->
-<div class="example">
+<div class="example fragment">
 <div class="columns">
 <div class="column" style="width:10%;">
 <div style="margin-top: 10px">
@@ -1091,9 +1127,11 @@ Var_{\text{absolut}}(X) = \frac{1}{n}\sum_{i=1}^n\big|x_i-\bar{x}\big|
 <li class="fragment">Quadrierte Einheiten sind jedoch wenig intuitiv und schwer zu interpretieren.</li>
 <li class="fragment">Aus diesem Grund wird häufig die Standardabweichung <span class="math inline">\(\sigma\)</span> angegeben, welche die Wurzel der Varianz darstellt:</li>
 </ul>
+<div class="fragment">
 <p><span class="math display">\[
 \sigma=\sqrt{Var(X)}=\sqrt{\frac{1}{n}\sum_{i=1}^n\big(x_i-\bar{x}\big)^2}
 \]</span></p>
+</div>
 <ul>
 <li class="fragment">Die Standardabweichung drückt die Streuung in den <strong>Rohwerten der Skala</strong> aus.</li>
 <li class="fragment">Sie wird häufig auch mit <span class="math inline">\(sd\)</span> oder <span class="math inline">\(SD\)</span> (für <em>standard deviation</em>) abgekürzt.</li>
@@ -1109,6 +1147,7 @@ Var_{\text{absolut}}(X) = \frac{1}{n}\sum_{i=1}^n\big|x_i-\bar{x}\big|
 <li class="fragment">In der Statistik hat es sich eingebürgert, <strong>griechische Buchstaben für Kennwerte der Population</strong> und <strong>lateinische Buchstaben für Kennwerte der Stichprobe</strong> und zu verwenden.</li>
 <li class="fragment">Das Zirkumflex (^) wird verwendet, wenn das Ziel ist, auf Basis eines Stichprobenkennwertes den analogen Kennwert in der Population zu <strong>schätzen</strong>.</li>
 </ul>
+<div class="fragment">
 <!---  Table --->
 <table style="width:90%;">
 <colgroup>
@@ -1158,6 +1197,7 @@ Var_{\text{absolut}}(X) = \frac{1}{n}\sum_{i=1}^n\big|x_i-\bar{x}\big|
 </tr>
 </tbody>
 </table>
+</div>
 <ul>
 <li class="fragment">Wie wir noch sehen werden, gilt <span class="math inline">\(\bar{x}=\hat{\mu}\)</span>, aber (zumindest bei kleinen Stichproben) <span class="math inline">\(s\ne\hat{\sigma}\)</span> bzw. <span class="math inline">\(s^2\ne\hat{\sigma}^2\)</span>.</li>
 </ul>
@@ -1207,7 +1247,7 @@ Var_{\text{absolut}}(X) = \frac{1}{n}\sum_{i=1}^n\big|x_i-\bar{x}\big|
 </ul></li>
 <li class="fragment">Beispiel <em>Dezile</em>: Einteilung der Verteilung in <em>10</em> gleich große Abschnitte
 <ul>
-<li class="fragment">Hier: 20 Werte in 10 Abschnitte (Decile) á 2 Werte</li>
+<li class="fragment">Hier: 20 Werte eingeteilt in 10 Abschnitte (Dezile) á 2 Werte</li>
 </ul></li>
 </ul>
 <div class="fragment" style="margin-top:-20px">
@@ -1218,7 +1258,7 @@ Var_{\text{absolut}}(X) = \frac{1}{n}\sum_{i=1}^n\big|x_i-\bar{x}\big|
 <ul>
 <li class="fragment">Beispiel <em>Quintile</em>: Einteilung der Verteilung in <em>5</em> gleich große Abschnitte
 <ul>
-<li class="fragment">Hier: 30 Werte in 5 Abschnitte (Quintile) á 6 Werte</li>
+<li class="fragment">Hier: 30 Werte eingeteilt in 5 Abschnitte (Quintile) á 6 Werte</li>
 </ul></li>
 </ul>
 <div class="fragment" style="margin-top:-20px">
@@ -1255,9 +1295,11 @@ Var_{\text{absolut}}(X) = \frac{1}{n}\sum_{i=1}^n\big|x_i-\bar{x}\big|
 <li class="fragment">Diese Quartilsgrenzen werden mit <span class="math inline">\(Q_1\)</span>, <span class="math inline">\(Q_2\)</span>, <span class="math inline">\(Q_3\)</span> (bezogen auf <em>Quartile</em>) bzw. mit <span class="math inline">\(Q_{25\%}\)</span>, <span class="math inline">\(Q_{50\%}\)</span>, <span class="math inline">\(Q_{75\%}\)</span> (bezogen auf <em>Quantile</em>) bezeichnet</li>
 <li class="fragment">Der Interquartilsabstand (IQR) ist die Differenz aus der 75%-<em>Quantils</em>grenze und der 25%-Quantilsgrenze bzw. die Differenz aus der 3. und der 1. <em>Quartils</em>grenze:</li>
 </ul>
+<div class="fragment">
 <p><span class="math display">\[
 IQR = Q_{75\%} - Q_{25\%} = Q_3 - Q_1
 \]</span></p>
+</div>
 <!----------------->
 <!--- New slide --->
 <!----------------->
@@ -1307,9 +1349,21 @@ Der “<span class="math inline">\(3{,}5\)</span>”-te Wert von vorne ist der M
 </section>
 <section class="slide level2">
 <h2>Wann ist der Interquartilsabstand ein sinnvolles Streuungsmaß?</h2>
-<p>Outliers: When your dataset contains outliers, extreme values can heavily influence other dispersion measures like the range or standard deviation. The IQR is robust to outliers since it only depends on the middle 50% of the data.</p>
-<p>Skewed Data: If the data is not normally distributed and has a skewed shape, using the IQR can be advantageous because it is less affected by the tail of the distribution compared to other measures like the standard deviation.</p>
-<p>Der Interquartilsabstand ist zur Varianz, wie der Median zum Mittelwert</p>
+<div class="columns">
+<div class="column" style="width:66%;">
+<p>Vereinfacht gesagt verhält sich der <strong>Interquartilsabstand</strong> zur <strong>Varianz</strong>, wie der Median zum Mittelwert zum <strong>Mittelwert</strong>.</p>
+<ul>
+<li class="fragment">Die klassische Standardabweichung kann leicht durch einen einzelnen oder wenige extreme Datenpunkte verzerrt werden (insbesondere durch die Abstandsquadrierung).</li>
+<li class="fragment">Der Interquartilsabstand ist <strong>robuster gegen Ausreißer</strong>, da er auf einem ähnlichen Prinzip wie der Median basiert: statt einem arithmetischen Mittel werden basiert der Wert auf tatsächlichen Datenpunkten <em>in der Mitte der Verteilung</em>.</li>
+<li class="fragment">Wie dem Median ist es daher dem Interquartilsabstand “egal” ob etwa der höchste Wert 10 oder 10 Trillionen ist.</li>
+<li class="fragment">Auch bei <strong>stark schiefen Verteilungen</strong> bietet sich der Interquartilsabstand an, da der von der Standardabweichung verwendete Bezugspunkt “Mittelwert” in diesem Fall problematisch ist.</li>
+</ul>
+</div><div class="column" style="width:34%;">
+<div class="fragment">
+<p><img data-src="images/iqr_skewed.png"></p>
+</div>
+</div>
+</div>
 <!----------------->
 <!--- New slide --->
 <!----------------->
@@ -1376,8 +1430,9 @@ Der “<span class="math inline">\(3{,}5\)</span>”-te Wert von vorne ist der M
 <tr class="even">
 <td><strong>Interquartilsabstand</strong></td>
 <td>▪ Auf kein bestimmtes Lagemaß bezogen<br>
-▪ Jedoch häufig im Zusammenhang mit Median angegeben<br>
-▪ Sehr robust gegenüber Ausreißern</td>
+▪ Jedoch ähnliches Prinzip wie der Median und häufig im Zusammenhang mit<br>
+  diesem angegeben<br>
+▪ Robust gegenüber Ausreißern &amp; sinnvoll bei schiefen Verteilungen</td>
 </tr>
 </tbody>
 </table>
