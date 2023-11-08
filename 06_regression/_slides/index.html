@@ -449,10 +449,12 @@ Die erste Frage an Sie als Task Force lautet: welche Möglichkeiten von Ursache 
 <li class="fragment">Lateinisch »regredi« = „umkehren, zurückgehen“</li>
 <li class="fragment">Psychoanalyse: Regression = Zurückfallen in kindliche Verhaltensmuster</li>
 </ul>
+<div class="fragment">
 <blockquote>
 <p>Wir heißen es <strong>Regression</strong>, wenn sich im Traum die Vorstellung in das sinnliche Bild zurückverwandelt, aus dem sie irgend einmal hervorgegangen ist.</p>
 </blockquote>
 <p><span class="quote-citation">Sigmund Freud (1900). “Traumdeutung”.</span></p>
+</div>
 <div class="columns">
 <div class="column" style="width:70%;">
 <ul>
@@ -461,7 +463,9 @@ Die erste Frage an Sie als Task Force lautet: welche Möglichkeiten von Ursache 
 <li class="fragment">Neuere Forschung zeigt allerdings, dass sich Galton selbst wohl noch nicht des statistischen Ursprungs dieses Phänomens bewusst war und eine biologische Erklärung favorisierte<a href="#/footnotes" class="footnote-ref" id="fnref2" role="doc-noteref" data-footnote-href="#/fn2" onclick=""><sup>2</sup></a>.</li>
 </ul>
 </div><div class="column" style="width:30%;">
+<div class="fragment">
 <p><img data-src="images/galton.png"></p>
+</div>
 </div>
 </div>
 <aside></aside></section>
@@ -475,8 +479,10 @@ Die erste Frage an Sie als Task Force lautet: welche Möglichkeiten von Ursache 
 <li class="fragment"><strong>Abhängige Variable = vorher<em>sagende</em> oder erklär<em>ende</em> Variable</strong> (“<strong>A</strong>uswirkung”)</li>
 </ul></li>
 </ul>
-
-<img data-src="images/regression_basics.png" class="r-stretch"><div style="margin-top: -5px">
+<div class="fragment">
+<p><img data-src="images/regression_basics.png" height="300"></p>
+</div>
+<div style="margin-top: -5px">
 <ul>
 <li class="fragment">Beispiel: Studie untersucht Zusammenhang von Lebenszufriedenheit und sportlicher Aktivität
 <ul>
@@ -494,7 +500,7 @@ Die erste Frage an Sie als Task Force lautet: welche Möglichkeiten von Ursache 
 <li class="fragment">Im Gegensatz zur Korrelation bestimmt die Regression nicht die Linearität des Zusammenhangs (vielmehr wird dies vorausgesetzt), sondern die <strong>Steigung</strong> des Zusammenhangs</li>
 <li class="fragment">Aus diesem Grund ist die Regression (wieder im Gegensatz zur Korrelation) nicht symmetrisch – die Steigung ist abhängig davon welche Variable als abhängig und unabhängig deklariert wird.
 <ul>
-<li class="fragment">Wie wir noch sehen werden, ist es auch nicht gestattet, die Regressionsgleichung zu invertieren ( <span class="math inline">\(\hat{x}_i = \frac{1}{b_1}y_i-\frac{b_0}{b_1}\)</span>) — im Allgemeinen ist <span class="math inline">\(\frac{1}{b_1}\)</span> <em>nicht</em> die Steigung, wenn die Rollen von X und Y vertauscht werden.</li>
+<li class="fragment">Wie wir noch sehen werden, ist es auch nicht gestattet, die Regressionsgleichung zu invertieren ( <span class="math inline">\(x_i = \frac{1}{b_1}\hat{y}_i-\frac{b_0}{b_1}\)</span>) — im Allgemeinen ist <span class="math inline">\(\frac{1}{b_1}\)</span> <em>nicht</em> die Steigung, wenn die Rollen von X und Y vertauscht werden.</li>
 </ul></li>
 </ul>
 </div><div class="column" style="width:30%;">
@@ -508,7 +514,9 @@ Die erste Frage an Sie als Task Force lautet: welche Möglichkeiten von Ursache 
 </ul>
 </div><div class="column" style="width:40%;">
 <div style="margin-top: -25px">
+<div class="fragment">
 <p><img data-src="images/regression_sports.png"></p>
+</div>
 </div>
 </div>
 </div>
@@ -519,7 +527,7 @@ Die erste Frage an Sie als Task Force lautet: welche Möglichkeiten von Ursache 
 <div class="column" style="width:58%;">
 <ul>
 <li class="fragment">Ziel der Regression ist es, die Gerade zu finden, die die Datenpunkte möglichst gut abbildet — es gibt jedoch verschiedene Definitionen dessen, was “möglichst gut” heißt</li>
-<li class="fragment">Die häufigste Variante ist die <span style=" color: navy !important;"><strong>Methode der kleinsten Quadrate</strong></span>, bei der die Gerade so gewählt wird, dass die <strong>Summe der quadrierten <span style=" color: darkmagenta !important;">senkrechten Abstände</span> jedes Datenpunktes zur Geraden</strong> minimal ist
+<li class="fragment">Die häufigste Variante ist die <span style=" color: navy !important;"><strong>Methode der kleinsten Quadrate</strong></span>, bei der die Gerade so gewählt wird, dass die Summe der quadrierten <span style=" color: darkmagenta !important;"><strong>senkrechten Abstände</strong></span> jedes Datenpunktes zur Geraden minimal ist
 <ul>
 <li class="fragment">Engl. <em>ordinary least square</em></li>
 </ul></li>
@@ -534,7 +542,8 @@ Die erste Frage an Sie als Task Force lautet: welche Möglichkeiten von Ursache 
 <li class="fragment"><strong>y-Achsenabschnitt</strong> <span class="math inline">\(b_0\)</span> (engl. <em>intercept</em>)</li>
 <li class="fragment"><strong>Steigung</strong> <span class="math inline">\(b_1\)</span> (engl. <em>slope</em>)</li>
 </ul></li>
-<li class="fragment">Exakt 0 wären die senkrechten Abstände nur, wenn alle Punkte auf einer perfekten Gerade liegen. Dies ist eigentlich nie der Fall. Die verbleibenden senkrechten Abstände der Datenpunkte von der gefitteten Geraden werden <span style=" color: navy !important;"><strong>Residuen</strong></span> genannt.</li>
+<li class="fragment">Die senkrechten Abstände der Datenpunkte von der gefitteten Geraden werden <span style=" color: navy !important;"><strong>Residuen</strong></span> genannt.</li>
+<li class="fragment">Exakt 0 wären die senkrechten Abstände nur, wenn alle Punkte auf einer perfekten Gerade liegen.</li>
 </ul>
 </section>
 <section class="slide level2">
@@ -548,14 +557,18 @@ Die erste Frage an Sie als Task Force lautet: welche Möglichkeiten von Ursache 
 <li class="fragment">Messungenauigkeit</li>
 </ul>
 </div><div class="column" style="width:40%;">
+<div style="margin-top: -32px">
 <p><img data-src="images/regression_weight_height_annot.png"></p>
 </div>
 </div>
+</div>
+<div class="fragment">
 <p>In der Psychologie gibt es (bis auf triviale Fälle) keine perfekten linearen Zusammenhänge, d.h. es verbleiben immer <strong>Residuen</strong> <span class="math inline">\(\Delta \hat{y_i}\)</span>:</p>
 <p><span class="math display">\[
 \text{Residuum:}\quad \Delta \hat{y_i} = \hat{\epsilon}_i = \hat{y_i} - y_i
 \]</span></p>
-<div class="merke" style="margin-top: 32px">
+</div>
+<div class="merke fragment" style="margin-top: 52px">
 <div class="columns">
 <div class="column" style="width:5%;">
 <div style="margin-top: 18px">
@@ -569,11 +582,11 @@ Die erste Frage an Sie als Task Force lautet: welche Möglichkeiten von Ursache 
 <!----------------->
 <!--- New slide --->
 <!----------------->
-</section>
-<section class="slide level2">
-<h2><span style="font-size: 37px">https://shiney.zoology.ubc.ca/whitlock/Guessing_correlation/</span></h2>
-<iframe width="100%" height="100%" src="https://shiney.zoology.ubc.ca/whitlock/Guessing_correlation/">
-</iframe>
+<!-- :::{.content-hidden when-format="pdf"}
+## [https://shiney.zoology.ubc.ca/whitlock/Guessing_correlation/]{style="font-size: 37px"}
+
+<iframe width=100% height="100%" src="https://shiney.zoology.ubc.ca/whitlock/Guessing_correlation/"></iframe>
+::: -->
 <!-- https://www.guessthecorrelation.com/ -->
 </section>
 <section class="slide level2">
@@ -581,7 +594,9 @@ Die erste Frage an Sie als Task Force lautet: welche Möglichkeiten von Ursache 
 <ul>
 <li class="fragment">in der Regel UV auf der x-Achse und AV auf der y-Achse</li>
 </ul>
+<div class="fragment">
 <p><img data-src="images/regression_scatter.png" style="margin-top: 20px !important" height="500"></p>
+</div>
 <!----------------->
 <!--- New slide --->
 <!----------------->
@@ -593,25 +608,22 @@ Die erste Frage an Sie als Task Force lautet: welche Möglichkeiten von Ursache 
 <!----------------->
 <!--- New slide --->
 <!----------------->
-</section>
-<section class="slide level2">
-<h2><span style="font-size:22px">https://phet.colorado.edu/sims/html/least-squares-regression/latest/least-squares-regression_all.html?locale=de</span></h2>
-<iframe width="100%" height="100%" src="https://phet.colorado.edu/sims/html/least-squares-regression/latest/least-squares-regression_all.html?locale=de">
-</iframe>
+<!-- :::{.content-hidden when-format="pdf"}
+## [https://phet.colorado.edu/sims/html/least-squares-regression/latest/least-squares-regression_all.html?locale=de]{style="font-size:22px"}
+<iframe width=100% height=100% src="https://phet.colorado.edu/sims/html/least-squares-regression/latest/least-squares-regression_all.html?locale=de"></iframe>
+::: -->
 <!----------------->
 <!--- New slide --->
 <!----------------->
-</section>
-<section class="slide level2">
-<h2>y-Achsenabschnitt <span class="math inline">\(b_0\)</span></h2>
-<p>[ToDo] Einige Beispielspielplots für b_0</p>
+<!-- ## y-Achsenabschnitt $b_0$
+
+[ToDo] Einige Beispielspielplots für b_0 -->
 <!----------------->
 <!--- New slide --->
 <!----------------->
-</section>
-<section class="slide level2">
-<h2>Steigung <span class="math inline">\(b_1\)</span></h2>
-<p>[ToDo] Einige Beispielspielplots für b_1</p>
+<!-- ## Steigung $b_1$
+
+[ToDo] Einige Beispielspielplots für b_1 -->
 <!----------------->
 <!--- New slide --->
 <!----------------->
@@ -621,25 +633,39 @@ Die erste Frage an Sie als Task Force lautet: welche Möglichkeiten von Ursache 
 <div class="columns">
 <div class="column" style="width:49%;">
 <ul>
-<li class="fragment">Die Methode der kleinsten Quadrate minimiert die <strong>Residuenquadratsumme (SQR)</strong>: <span class="math display">\[
+<li class="fragment">Die Methode der kleinsten Quadrate minimiert die <strong>Residuenquadratsumme (SQR)</strong>:</li>
+</ul>
+<div class="fragment">
+<p><span class="math display">\[
 SQR = \sum\left(\hat{y}_i-y_i\right)^2 = \sum\hat{\epsilon}_i^2
-\]</span></li>
+\]</span></p>
+</div>
+<ul>
 <li class="fragment">Diese wiederum lässt sich in Bezug setzen zur <strong>totalen Quadratsumme (SQT)</strong> und zur <strong>erklärten Quadratsumme (SQE)</strong>:</li>
 </ul>
+<div class="fragment">
 <p><span class="math display">\[
 SQR = SQT - SQE\qquad\text{bzw.}
-\]</span> <span class="math display">\[
+\]</span></p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[
 SQT = SQT + SQR
 \]</span></p>
+</div>
 <ul>
 <li class="fragment">Mit</li>
 </ul>
+<div class="fragment">
 <p><span class="math display">\[
 SQE = \sum\left(\hat{y}_i-\bar{y}\right)^2
 \]</span></p>
+</div>
+<div class="fragment">
 <p><span class="math display">\[
 SQT = \sum\left(y_i-\bar{y}\right)^2
 \]</span></p>
+</div>
 </div><div class="column" style="width:51%;">
 <div class="vspace-medium">
 
@@ -660,13 +686,17 @@ SQT = \sum\left(y_i-\bar{y}\right)^2
 <li class="fragment">Das <span style=" color: navy !important;"><strong>Bestimmtheitsmaß</strong></span> <span class="math inline">\(R^2\)</span> gibt an, wie gut die Datenpunkte durch die Regressionsgerade gefittet werden (“Anpassungsgüte”)</li>
 <li class="fragment">Es gibt an, welcher Anteil der Datenvarianz <span class="math inline">\(Var(Y)\)</span> durch die Varianz der Vorhersage <span class="math inline">\(Var(\hat{Y})\)</span> erklärt wird..</li>
 </ul>
+<div class="fragment">
 <p><span class="math display">\[
 R^2 = \frac{Var(\hat{Y})}{Var(Y)} = \frac{\sum\left(\hat{y_i}-\bar{y}\right)^2}{\sum\left(y_i-\bar{y}\right)^2} = \frac{SQE}{SQT}
 \]</span></p>
+</div>
+<div class="fragment">
 <ul>
 <li class="fragment">.. oder äquivalent, den Anteil der erklärten Quadratsumme an der totalen Quadratsumme.</li>
 </ul>
-<div class="merke">
+</div>
+<div class="merke fragment">
 <div class="columns">
 <div class="column" style="width:5%;">
 <div style="margin-top: 18px">
@@ -681,7 +711,7 @@ R^2 = \frac{Var(\hat{Y})}{Var(Y)} = \frac{\sum\left(\hat{y_i}-\bar{y}\right)^2}{
 
 </div>
 <!---  Example --->
-<div class="example">
+<div class="example fragment">
 <div class="columns">
 <div class="column" style="width:10%;">
 <div style="margin-top: 10px">
@@ -710,7 +740,7 @@ R^2 = \frac{Var(\hat{Y})}{Var(Y)} = \frac{\sum\left(\hat{y_i}-\bar{y}\right)^2}{
 <ul>
 <li class="fragment">Das Bestimmtheitsmaß <span class="math inline">\(R^2\)</span> gibt an, wie gut sich die Variable <span class="math inline">\(Y\)</span> mit einer linearen Gleichung basierend auf <span class="math inline">\(X\)</span> vorhersagen lässt.</li>
 <li class="fragment">Der Maximal wert von <span class="math inline">\(R^2\)</span> ist 1. In diesem Fall erklärt die lineare Gleichung in <span class="math inline">\(X\)</span> die Daten <span class="math inline">\(Y\)</span> perfekt.</li>
-<li class="fragment">Da das Bestimmtheitsmaß <span class="math inline">\(R^2\)</span> angibt, welcher Anteil der Varianz in den Daten durch die lineare Gleichung erklärt wird, wird es manchmal in Prozent ausgedrückt (d.h. mit 100 multipliziert; wie links). Der Maximalwert von <span class="math inline">\(R^2\)</span> ist dann 100%.</li>
+<li class="fragment">Da das Bestimmtheitsmaß <span class="math inline">\(R^2\)</span> angibt, welcher Anteil der Varianz in den Daten durch die lineare Gleichung erklärt wird, wird es manchmal in Prozent ausgedrückt (d.h. mit 100 multipliziert; wie im Bild links). Der Maximalwert von <span class="math inline">\(R^2\)</span> ist dann 100%.</li>
 </ul>
 </div>
 </div>
@@ -727,12 +757,12 @@ R^2 = \frac{Var(\hat{Y})}{Var(Y)} = \frac{\sum\left(\hat{y_i}-\bar{y}\right)^2}{
 <li class="fragment">Dies ist auch der Grund, weshalb die Regressionsgleichung nicht einfach invertiert werden darf:</li>
 </ul></li>
 </ul>
-<div style="margin-top: -23px">
+<div class="fragment" style="margin-top: -23px">
 <p><span class="math display">\[
 \require{cancel}
 \scriptsize{
 \cancel{
-\hat{x}_i = \frac{1}{b_1}y_i-\frac{b_0}{b_1}
+x_i = \frac{1}{b_1}\hat{y}_i-\frac{b_0}{b_1}
 }\\
 \left(\text{.. und }\frac{1}{b_1}\text{ im Allgemeinen }\textbf{nicht}\text{ der Regressionskoeffizient für $Y$ als unabhängige Variable ist.}\right)
 }
@@ -752,12 +782,12 @@ b_1 = \frac{Cov(X,Y)}{Var(X)} = \frac{Cov(X,Y)}{s_X^2} = \frac{s_Y}{s_Y}\frac{Co
 \]</span></p></li>
 <li class="fragment"><p>Es gilt also</p></li>
 </ul>
-<div style="margin-top: -15px">
+<div class="fragment" style="margin-top: -15px">
 <p><span class="math display">\[
 b_1 = \frac{s_Y}{s_X}r\qquad\quad\text{bzw.}\qquad r = \frac{s_X}{s_Y}b_1
 \]</span></p>
 </div>
-<div class="merke">
+<div class="merke fragment">
 <div class="columns">
 <div class="column" style="width:5%;">
 <div style="margin-top: 18px">
@@ -774,7 +804,7 @@ b_1 = \frac{s_Y}{s_X}r\qquad\quad\text{bzw.}\qquad r = \frac{s_X}{s_Y}b_1
 <ul>
 <li class="fragment">Der Ausruck <span class="math inline">\(\frac{s_X}{s_Y}b_1\)</span> wird auch <span style=" color: navy !important;"><strong>standardisierter Regressionskoeffizient</strong></span> <span class="math inline">\(\beta_1\)</span> genannt:</li>
 </ul>
-<div style="margin-top:-15px">
+<div class="fragment" style="margin-top:-15px">
 <p><span class="math display">\[
     \beta_1 = \frac{s_X}{s_Y}b_1
 \]</span></p>
@@ -793,7 +823,7 @@ b_1 = \frac{s_Y}{s_X}r\qquad\quad\text{bzw.}\qquad r = \frac{s_X}{s_Y}b_1
 <li class="fragment">Wie gesehen erhält man den <strong>standardisierten Regressionskoeffizienten</strong> <span class="math inline">\(\beta\)</span> durch die Transformation <span class="math inline">\(\beta_1 = \frac{s_X}{s_Y}b_1\)</span></li>
 <li class="fragment">Im Gegensatz zu <span class="math inline">\(b_1\)</span> ist <span class="math inline">\(\beta_1\)</span> unabhängig von der Skalierung von <span class="math inline">\(X\)</span> und <span class="math inline">\(Y\)</span> (also z.B. ob die Einheit als <span class="math inline">\(cm\)</span> oder <span class="math inline">\(m\)</span> gewählt wurde) ⇒ <span class="math inline">\(\beta\)</span>-Koeffizienten lassen sich besser zwischen verschiedenen Regressionen vergleichen</li>
 </ul>
-<div class="definition">
+<div class="definition fragment">
 <!---  Definition--->
 <table>
 <colgroup>
@@ -819,12 +849,13 @@ b_1 = \frac{s_Y}{s_X}r\qquad\quad\text{bzw.}\qquad r = \frac{s_X}{s_Y}b_1
 <ul>
 <li class="fragment">Wurden sowohl <span class="math inline">\(X\)</span> als auch <span class="math inline">\(Y\)</span> vor der Regression standardisiert, also <span class="math inline">\(s_X=s_Y=1\)</span>, so sind die Regressionskoeffizienten automatisch standardisiert:</li>
 </ul>
-<div style="margin-top: -10px">
+<div class="fragment" style="margin-top: -10px">
 <p><span class="math display">\[
 \beta_1 = \frac{s_X}{s_Y}b_1 = \frac{1}{1}b_1 = b_1
 \]</span></p>
 </div>
 <!---  Table --->
+<div class="fragment">
 <table>
 <caption>Interpretation im Kontext der Regressionsgleichungen <span class="math inline">\(\quad\hat{Y}=b_0+b_1X\quad\)</span> bzw. <span class="math inline">\(\quad\hat{Y}=\beta_0+\beta_1X\)</span></caption>
 <colgroup>
@@ -842,6 +873,7 @@ b_1 = \frac{s_Y}{s_X}r\qquad\quad\text{bzw.}\qquad r = \frac{s_X}{s_Y}b_1
 </tr>
 </tbody>
 </table>
+</div>
 <!----------------->
 <!--- New slide --->
 <!----------------->
@@ -858,7 +890,7 @@ SQR = \sum\left(\hat{y}_i-y_i\right)^2 = \sum\left(b_0+b_1 x_i-y_i\right)^2 \ove
 \frac{dSQR}{db_0} = \sum2\left(b_0+b_1 x_i-y_i\right)=2nb_0+2\sum\left(b_1 x_i-y_i\right)=0
 \]</span></li>
 </ul>
-<div style="border: 1px solid darkblue">
+<div class="fragment" style="border: 1px solid darkblue">
 <p><span class="math display">\[
 \color{darkblue}{\longrightarrow b_0} = \frac{1}{n}\sum\left(y_i-b_1x_i\right) = \frac{1}{n}\sum y_i-\frac{b_1}{n}\sum x_i = \color{darkblue}{\bar{y}-b_1\bar{x}}
 \]</span></p>
@@ -878,12 +910,14 @@ SQR = \sum\left(\hat{y}_i-y_i\right)^2 = \sum\left(b_0+b_1 x_i-y_i\right)^2 \ove
 <li class="fragment">SQR nach <span class="math inline">\(b_1\)</span> ableiten und gleich Null setzen:</li>
 </ul>
 </div>
+<div class="fragment">
 <p><span class="math display">\[
 \small{
 \frac{dSQR}{db_1} = \sum2(b_0+b_1 x_i-y_i)x_i=2b_0\sum x_i + 2b_1\sum x_i^2-2\sum x_i y_i = 0
 }
 \]</span></p>
-<div style="margin-top: -10px !important">
+</div>
+<div class="fragment" style="margin-top: -10px !important">
 <p><span class="math display">\[\small{
 \longrightarrow b_1 = \frac{\sum x_i y_i}{{\sum x_i^2}} - \frac{b_0\sum x_i}{\sum x_i^2} \overset{\color{darkgreen}{(b_0\,einsetzen)}}{=} \frac{\sum x_i y_i}{{\sum x_i^2}} - \frac{\bar{y}\sum x_i}{\sum x_i^2}+b_1\frac{\bar{x}\sum x_i}{\sum x_i^2}
 }
@@ -892,29 +926,35 @@ SQR = \sum\left(\hat{y}_i-y_i\right)^2 = \sum\left(b_0+b_1 x_i-y_i\right)^2 \ove
 <ul>
 <li class="fragment">Alle <span class="math inline">\(b_1\)</span>-Terme auf die linke Seite bringen und einige Umformungen vornehmen:</li>
 </ul>
-<div style="margin-top: -12px">
+<div class="fragment" style="margin-top: -12px">
 <p><span class="math display">\[
 \small{
 b_1 - b_1\frac{\bar{x}\sum x_i}{\sum x_i^2} = \frac{\sum x_i y_i}{{\sum x_i^2}} - \frac{\bar{y}\sum x_i}{\sum x_i^2}
 }
 \]</span></p>
 </div>
+<div class="fragment">
 <p><span class="math display">\[
 \scriptsize{
 b_1 \left(1 - \frac{\bar{x}\sum x_i}{\sum x_i^2}\right) = \frac{\sum x_i y_i - \bar{y}\sum x_i}{\sum x_i^2}
 }
 \]</span></p>
+</div>
+<div class="fragment">
 <p><span class="math display">\[
 \scriptsize{
 b_1 \left(\frac{\sum x_i^2}{\sum x_i^2} - \frac{\bar{x}\sum x_i}{\sum x_i^2}\right) = \frac{\sum x_i y_i - \bar{y}\sum x_i}{\sum x_i^2}
 }
 \]</span></p>
+</div>
+<div class="fragment">
 <p><span class="math display">\[
 \scriptsize{
 b_1 \frac{\sum x_i^2 - \bar{x}\sum x_i}{\sum x_i^2} = \frac{\sum x_i y_i - \bar{y}\sum x_i}{\sum x_i^2}
 }
 \]</span></p>
-<div style="margin-left: -100px">
+</div>
+<div class="fragment" style="margin-left: -100px">
 <p><span class="math display">\[
 \scriptsize{
 \longrightarrow    
@@ -930,7 +970,7 @@ b_1 = \frac{\color{darkred}{\sum x_i^2}}{\sum x_i^2-\bar{x}\sum x_i}\frac{\sum x
 <ul>
 <li class="fragment">Zwischenergebnis:</li>
 </ul>
-<div style="margin-top:-35px">
+<div class="fragment" style="margin-top:-35px">
 <p><span class="math display">\[
 b_1 = \frac{\frac{1}{n}\sum x_i y_i - \bar{x}\bar{y}}{\frac{1}{n}\sum x_i^2-\bar{x}^2}
 \]</span></p>
@@ -938,6 +978,7 @@ b_1 = \frac{\frac{1}{n}\sum x_i y_i - \bar{x}\bar{y}}{\frac{1}{n}\sum x_i^2-\bar
 <ul>
 <li class="fragment">Um zu erkennen, dass der Zähler der Kovarianz und der Nenner der Varianz entspricht, betrachten wir nochmal die Formeln der (Ko)Varianz:</li>
 </ul>
+<div class="fragment">
 <p><span class="math display">\[
 \scriptsize{
 \begin{aligned}
@@ -950,6 +991,8 @@ Cov(X,Y) &amp;= \frac{1}{n}\sum(x_i-\bar{x})(y_i-\bar{y}) = \frac{1}{n}\sum\left
 \end{aligned}
 }
 \]</span></p>
+</div>
+<div class="fragment">
 <p><span class="math display">\[
 \scriptsize{
 \begin{aligned}
@@ -958,10 +1001,11 @@ Var(X) &amp;= \frac{1}{n}\sum\left(x_i-\bar{x}\right)^2 = \frac{1}{n}\sum\left(x
 \end{aligned}
 }
 \]</span></p>
+</div>
 <ul>
 <li class="fragment">Es gilt also tatsächlich:</li>
 </ul>
-<div style="margin-top:-20px">
+<div class="fragment" style="margin-top:-20px">
 <p><span class="math display">\[
 \color{darkblue}{b_1 = \frac{Cov(X,Y)}{Var(X)}}
 \]</span></p>
@@ -976,6 +1020,7 @@ Var(X) &amp;= \frac{1}{n}\sum\left(x_i-\bar{x}\right)^2 = \frac{1}{n}\sum\left(x
 <ul>
 <li class="fragment">Ausgestattet mit der Formel für den Regressionskoeffizienten, lässt sich nun auch beweisen, dass bei der einfachen Regression gilt: <span class="math inline">\(\quad \color{darkblue}{R^2=r^2}\)</span></li>
 </ul>
+<div class="fragment">
 <p><span class="math display">\[
 \small{
 \begin{aligned}
@@ -985,22 +1030,27 @@ R^2 = \frac{Var(\hat{Y})}{Var(Y)} &amp;= \frac{\frac{1}{n}\sum\left(\hat{y}_i-\b
 \end{aligned}
 }
 \]</span></p>
+</div>
 <ul>
 <li class="fragment">Nun <span class="math inline">\(b_1 = \frac{Cov(X,Y)}{Var(X)}\)</span> einsetzen:</li>
 </ul>
+<div class="fragment">
 <p><span class="math display">\[
 \small{
 \color{darkblue}{R^2} = \frac{Cov^2(X,Y)}{\color{darkred}{Var^2(X)}}\frac{\color{darkred}{Var(X)}}{Var(Y)} = \color{darkblue}{\frac{Cov^2(X,Y)}{Var(X)Var(Y)}}
 }
 \]</span></p>
+</div>
 <ul>
 <li class="fragment">Vergleiche mit <span class="math inline">\(r^2\)</span>:</li>
 </ul>
+<div class="fragment">
 <p><span class="math display">\[
 \small{
 \color{darkblue}{r^2} = \left[\frac{Cov(X,Y)}{s_Xs_Y}\right]^2 = \frac{Cov^2(X,Y)}{s_X^2s_Y^2} = \frac{Cov^2(X,Y)}{Var(X)Var(Y)}
 }
 \]</span></p>
+</div>
 <!----------------->
 <!--- New slide --->
 <!----------------->
@@ -1013,7 +1063,9 @@ R^2 = \frac{Var(\hat{Y})}{Var(Y)} &amp;= \frac{\frac{1}{n}\sum\left(\hat{y}_i-\b
 <div class="vspace-medium">
 
 </div>
+<div class="fragment">
 <p><img data-src="images/ausblick_multiple_regression.png" height="300"></p>
+</div>
 <div class="vspace-medium">
 
 </div>
@@ -1033,7 +1085,9 @@ R^2 = \frac{Var(\hat{Y})}{Var(Y)} &amp;= \frac{\frac{1}{n}\sum\left(\hat{y}_i-\b
 <div class="vspace-medium">
 
 </div>
-<img data-src="images/patsy_simple.png">
+<div class="fragment">
+<p><img data-src="images/patsy_simple.png"></p>
+</div>
 <div class="vspace-medium">
 
 </div>
@@ -1042,7 +1096,7 @@ R^2 = \frac{Var(\hat{Y})}{Var(Y)} &amp;= \frac{\frac{1}{n}\sum\left(\hat{y}_i-\b
 <li class="fragment"><span style="font-family:monospace">DV</span>, <span style="font-family:monospace">IV1</span>, <span style="font-family:monospace">IV2</span> sind dabei die gewählten Variablennamen — beliebige Ausdrücke sind möglich</li>
 </ul>
 <!---  Example --->
-<div class="example">
+<div class="example fragment">
 <div class="columns">
 <div class="column" style="width:10%;">
 <div style="margin-top: 10px">
@@ -1083,7 +1137,7 @@ R^2 = \frac{Var(\hat{Y})}{Var(Y)} &amp;= \frac{\frac{1}{n}\sum\left(\hat{y}_i-\b
 <tr class="even">
 <td><strong>Interessante Größe</strong></td>
 <td style="text-align: center;">Steigung <span class="math inline">\(b_1\)</span></td>
-<td style="text-align: center;">Bestimmungsmaß <span class="math inline">\(R^2\)</span></td>
+<td style="text-align: center;">Bestimmtheitsmaß <span class="math inline">\(R^2\)</span></td>
 </tr>
 <tr class="odd">
 <td><strong>Visuelle Hervorhebung der interessanten Größe</strong></td>
