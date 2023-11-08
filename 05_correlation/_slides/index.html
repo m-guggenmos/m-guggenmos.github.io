@@ -402,7 +402,7 @@
 <li class="fragment">Um Unterschiede und Zusammenhänge voneinander abzugrenzen, verstehen wir nachfolgend Zusammenhänge in einem engeren Sinn:</li>
 </ul>
 <!---  Definition--->
-<div class="definition">
+<div class="definition fragment">
 <table>
 <colgroup>
 <col style="width: 10%">
@@ -445,18 +445,25 @@
 <li class="fragment">Ziel: mathematische Größe, die zum Ausdruck bringt, wie stark die Variation zweier Variablen miteinander in Zusammenhang steht</li>
 <li class="fragment">Wir haben bereits eine Größe für die Variation <em>einer</em> Variable — die Varianz:</li>
 </ul>
+<div class="fragment">
 <p><span class="math display">\[
 Var(X) = \frac{1}{n}\sum_{i=1}^n\big(x_i-\bar{x}\big)^2 = \frac{1}{n}\sum_{i=1}^n(x_i-\bar{x})\color{darkred}{(x_i-\bar{x})}
 \]</span></p>
+</div>
 <ul>
-<li class="fragment"><p>Die Varianz gibt an, wie stark eine Variable <span class="math inline">\(X\)</span> um ihren Mittelwert <span class="math inline">\(\bar{x}\)</span> schwankt</p></li>
-<li class="fragment"><p>Analog berechnet die <span style=" color: navy !important;"><strong>Kovarianz</strong></span>, wie stark die <em>gemeinsame Schwankung zweier Variablen um ihren jeweiligen Mittelwert</em> ist: <span class="math display">\[
+<li class="fragment">Die Varianz gibt an, wie stark eine Variable <span class="math inline">\(X\)</span> um ihren Mittelwert <span class="math inline">\(\bar{x}\)</span> schwankt</li>
+<li class="fragment">Analog berechnet die <span style=" color: navy !important;"><strong>Kovarianz</strong></span>, wie stark die <em>gemeinsame Schwankung zweier Variablen um ihren jeweiligen Mittelwert</em> ist:</li>
+</ul>
+<div class="fragment">
+<p><span class="math display">\[
 \text{Kovarianz:}\quad Cov(X,Y) = \frac{1}{n}\sum_{i=1}^n\big(x_i-\bar{x}\big)^2 = \frac{1}{n}\sum_{i=1}^n(x_i-\bar{x})\color{darkred}{(y_i-\bar{y})}
-\]</span></p></li>
-<li class="fragment"><p>Im Zentrum der Kovarianz steht die Erkenntnis, dass das <strong>mathematische Produkt</strong> zweier Abweichungsvariablen — hier die Abweichungen <span class="math inline">\((x_i-\bar{x})\)</span> und <span class="math inline">\((y_i-\bar{y})\)</span> vom Mittelwert — angibt, wie stark die beiden Abweichungen gleichsinnig variieren (ko-variieren).</p></li>
+\]</span></p>
+</div>
+<ul>
+<li class="fragment">Im Zentrum der Kovarianz steht die Erkenntnis, dass das <strong>mathematische Produkt</strong> zweier Abweichungsvariablen — hier die Abweichungen <span class="math inline">\((x_i-\bar{x})\)</span> und <span class="math inline">\((y_i-\bar{y})\)</span> vom Mittelwert — angibt, wie stark die beiden Abweichungen gleichsinnig variieren (ko-variieren).</li>
 </ul>
 </section>
-<section class="slide level2">
+<section class="slide level2" data-fragment-index="0">
 <h2>Kovarianz</h2>
 <p><img data-src="images/covariance-examples.png" height="370"></p>
 <p><u>Intuition für positive Kovarianz</u>:</p>
@@ -467,7 +474,9 @@ Var(X) = \frac{1}{n}\sum_{i=1}^n\big(x_i-\bar{x}\big)^2 = \frac{1}{n}\sum_{i=1}^
 <div class="vspace-small">
 
 </div>
+<div class="fragment">
 <p>Die Intuition für eine negative Kovarianz funktioniert ähnlich.</p>
+</div>
 </section>
 <section class="slide level2">
 <h2>Kovarianz: Größe-Gewicht-Beispiel</h2>
@@ -478,6 +487,7 @@ Var(X) = \frac{1}{n}\sum_{i=1}^n\big(x_i-\bar{x}\big)^2 = \frac{1}{n}\sum_{i=1}^
 <div class="column" style="width:34%;">
 <p><img data-src="images/covariance_height_weight.png"></p>
 </div><div class="column" style="width:66%;">
+<div class="fragment">
 <p><span class="math display">\[
 \scriptsize{
 \begin{aligned}
@@ -490,10 +500,12 @@ Var(X) = \frac{1}{n}\sum_{i=1}^n\big(x_i-\bar{x}\big)^2 = \frac{1}{n}\sum_{i=1}^
 \]</span></p>
 </div>
 </div>
+</div>
 <ul>
 <li class="fragment">Problem: die Kovarianz hängt von den Einheiten ab!</li>
 <li class="fragment">Wird im Beispiel die Körpergröße <span class="math inline">\(X\)</span> in der Einheit <em>Meter</em> angegeben, so lautet die Kovarianz:</li>
 </ul>
+<div class="fragment">
 <p><span class="math display">\[
 \scriptsize{
 \begin{aligned}
@@ -502,6 +514,7 @@ Cov(X, Y) &amp;= \frac{1}{3}\big[(1{,}60-1{,}70)(60-70)+(1{,}70-1{,}70)(70-70)+(
 \end{aligned}
 }
 \]</span></p>
+</div>
 <ul>
 <li class="fragment">Kovarianzen sind also <strong>nicht vergleichbar wenn sich Einheiten unterscheiden</strong>, und erst recht nicht, wenn sich die Variablen unterscheiden.</li>
 </ul>
@@ -519,11 +532,13 @@ Cov(X, Y) &amp;= \frac{1}{3}\big[(1{,}60-1{,}70)(60-70)+(1{,}70-1{,}70)(70-70)+(
 <li class="fragment">Die <span style=" color: navy !important;"><strong>Pearson-Korrelation</strong></span> schafft Abhilfe für das Problem der mangelnden Vergleichbarkeit</li>
 <li class="fragment">Der Schlüssel: die Kovarianz wird mit der Standardabweichung beider Variablen normalisiert:</li>
 </ul>
+<div class="fragment">
 <p><span class="math display">\[
 \small{
 \text{Korrelation:}\quad r = \frac{Cov(X,Y)}{s_X s_Y} = \frac{1}{n s_X s_Y}\sum_{i=1}^n(x_i-\bar{x})(y_i-\bar{y})
 }
 \]</span></p>
+</div>
 <ul>
 <li class="fragment">Durch das Teilen durch die Standardabweichungen <span class="math inline">\(s_X\)</span> und <span class="math inline">\(s_Y\)</span> werden die Einheiten herausgekürzt — die Korrelation ist also eine <strong>einheitslose Größe</strong>.</li>
 <li class="fragment">Die Korrelation kann Werte zwischen <span class="math inline">\(-1\)</span> (perfekter negativer Zusammenhang) und <span class="math inline">\(+1\)</span> (perfekter positiver Zusammenhang) annehmen.</li>
@@ -592,7 +607,9 @@ plt.savefig('images/streudiagramm.png', bbox_inches="tight")
 <li class="fragment">Bei der Korrelation ist es dabei willkürlich, welche Variable auf der x- und y-Achse liegt.</li>
 <li class="fragment">Häufig wird zusätzlich zur “Punktwolke” auch eine <strong>Regressionsgerade</strong> dargestellt, sowie die Stärke des Zusammenhangs (r=.., p=..).</li>
 </ul>
+<div class="fragment">
 <p><img data-src="images/streudiagramm.png" height="400"></p>
+</div>
 </section>
 <section class="slide level2">
 <h2>Pearson-Korrelation: Größe-Gewicht-Beispiel</h2>
@@ -611,6 +628,7 @@ plt.savefig('images/streudiagramm.png', bbox_inches="tight")
 \end{aligned}
 }
 \]</span></p>
+<div class="fragment">
 <p>Und berechnen nun die Korrelation <span class="math inline">\(\;\;r = \frac{Cov(X,Y)}{s_X s_Y}\)</span></p>
 <p><span class="math inline">\(\scriptsize{s_X=\sqrt{\frac{1}{n}\sum_{i=1}^n\big(x_i-\bar{x}\big)^2}=\sqrt{\frac{1}{3}[(-10)^2+0^2+10^2]}=\sqrt{\frac{200}{3}}}\)</span></p>
 <p><span class="math inline">\(\scriptsize{s_Y=\sqrt{\frac{1}{n}\sum_{i=1}^n\big(y_i-\bar{y}\big)^2}=\sqrt{\frac{1}{3}[(-10)^2+0^2+10^2]}=\sqrt{\frac{200}{3}}}\)</span></p>
@@ -621,18 +639,23 @@ r = \frac{\frac{200}{3}}{\sqrt{\frac{200}{3}}\cdot\sqrt{\frac{200}{3}}}=1
 \]</span></p>
 </div>
 </div>
+</div>
 <ul>
 <li class="fragment">Wäre die Körpergröße in der Einheit <em>Meter</em> angeben, so kürzt sich der Faktor 100 (1m = 100cm) nicht nur im Zähler, sondern auch im Nenner:</li>
 </ul>
 <div class="columns">
 <div class="column" style="width:40%;">
+<div class="fragment">
 <p><span class="math display">\[
 \small{
 r = \frac{\frac{2\color{darkred}{{,}}00}{3}}{\sqrt{\frac{2\color{darkred}{{,}}00}{3}}\cdot\sqrt{\frac{2\color{darkred}{{,}}00}{3}}}=1
 }
 \]</span></p>
+</div>
 </div><div class="column" style="width:60%;">
+<div class="fragment">
 <p>Die Normalisierung mit der Standardabweichung sorgt somit dafür, dass die willkürliche Einheit keine Rolle spielt.</p>
+</div>
 </div>
 </div>
 <!----------------->
@@ -645,12 +668,19 @@ r = \frac{\frac{2\color{darkred}{{,}}00}{3}}{\sqrt{\frac{2\color{darkred}{{,}}00
 <li class="fragment">Die Pearson-Korrelation zeigt an, <strong>wie linear</strong> der Zusammenhang zweier Variablen ausgeprägt ist</li>
 <li class="fragment">Die Pearson-Korrelation ist dabei <u>nicht</u> von der Steigung einer gedachten Gerade abhängig.</li>
 </ul>
-
-<img data-src="images/correlation_examples.png" width="1030" class="r-stretch quarto-figure-center"><p class="caption">Korrelationskoeffizienten für verschiedene hypothetische Streudiagramme</p><ul>
+<div class="fragment">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/correlation_examples.png" width="1030"></p>
+<figcaption>Korrelationskoeffizienten für verschiedene hypothetische Streudiagramme</figcaption>
+</figure>
+</div>
+</div>
+<ul>
 <li class="fragment">Ein Zusammenhang zweier Variablen kann extrem schwach sein (z.B. so, dass eine Verdopplung von X nur einer 0.1%-Steigerung von Y entspricht) und dennoch kann die Korrelation stark sein (= nah an <span class="math inline">\(\pm 1\)</span>), wenn die Punkte exakt auf einer Geraden liegen.</li>
 <li class="fragment">Auf einen Satz gemünzt kann man sagen:</li>
 </ul>
-<div style="font-size: 26px; margin-top: -10px">
+<div class="fragment" style="font-size: 26px; margin-top: -10px">
 <blockquote>
 <p>Die Pearson-Korrelation misst, wie gut bivariate Daten durch eine Gerade abgebildet werden können.</p>
 </blockquote>
@@ -670,6 +700,7 @@ r = \frac{\frac{2\color{darkred}{{,}}00}{3}}{\sqrt{\frac{2\color{darkred}{{,}}00
 <li class="fragment">Die Pearson-Korrelation <em>kann</em> <em>immer</em> berechnet werden, solange beide Variablen aus Zahlenwerten bestehen.</li>
 <li class="fragment">Es gibt jedoch weitere Kriterien, die für die Sinnhaftigkeit und Interpretierbarkeit der Pearson-Korrelation wichtig sind:</li>
 </ul>
+<div class="fragment">
 <!---  Table --->
 <table>
 <colgroup>
@@ -709,13 +740,14 @@ r = \frac{\frac{2\color{darkred}{{,}}00}{3}}{\sqrt{\frac{2\color{darkred}{{,}}00
 </tr>
 </tbody>
 </table>
+</div>
 </section>
 <section class="slide level2">
 <h2>Mythen zur Pearson-Korrelation</h2>
 <ul>
 <li class="fragment">In vielen Quellen finden sich darüber hinaus <strong>unzutreffende Behauptungen</strong> zur Pearson-Korrelation:</li>
 </ul>
-<div style="margin-top: 5px">
+<div class="fragment" style="margin-top: 5px">
 <!---  Table --->
 <table>
 <colgroup>
@@ -818,18 +850,22 @@ plt.savefig(f'images/corrmatrix.png', bbox_inches="tight")
 </ul>
 <div class="columns vcenter-column" style="margin-top:-15px">
 <div class="column" style="width:60%;">
+<div class="fragment">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="images/corrmatrix_table.png"></p>
 <figcaption>Tabellarische Korrelationsmatrix. Sterne kennzeichnen häufig das Signifikanzniveau.</figcaption>
 </figure>
 </div>
+</div>
 </div><div class="column" style="width:40%;">
+<div class="fragment">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="images/corrmatrix.png"></p>
-<figcaption>Korrelationsmatrix als “Heatmap” – die Einfärbung ist ein visuelles Hilfsmittel zur intuitiven und schnellen Erfassung der Korrelationsstruktur eines Variablen-Sets.</figcaption>
+<figcaption>Korrelationsmatrix als “Heatmap” – die Einfärbung ist ein visuelles Hilfsmittel zur intuitiven und schnellen Erfassung der Korrelationsstruktur von mehreren Variablen.</figcaption>
 </figure>
+</div>
 </div>
 </div>
 </div>
@@ -846,10 +882,11 @@ plt.savefig(f'images/corrmatrix.png', bbox_inches="tight")
 <div class="columns">
 <div class="column" style="width:75%;">
 <ul>
-<li class="fragment">Eine analoge Matrix-Darstellung gibt es auch für die <strong>Kovarianz</strong></li>
+<li class="fragment">Eine analoge Matrix-Darstellung gibt es auch für die <strong>Kovarianz</strong>.</li>
 <li class="fragment">Im Unterschied zur Korrelationsmatrix sind die Diagonalelemente der Kovarianzmatrix nicht 1, sondern geben die <strong>Varianz</strong> der Variable an.</li>
 <li class="fragment">Sei <span class="math inline">\(\mathbf{X}\)</span> (beachte Fettschrift) ein Vektor von <span class="math inline">\(n\)</span> Variablen <span class="math inline">\(X_1 .. X_n\)</span>, so ist die zugehörige Kovarianzematrix <span class="math inline">\(\operatorname{Cov}(\mathbf{X})\)</span>:</li>
 </ul>
+<div class="fragment">
 <p><span class="math display">\[
 \small{
 \begin{aligned}
@@ -862,12 +899,15 @@ plt.savefig(f'images/corrmatrix.png', bbox_inches="tight")
 \end{aligned}
 }
 \]</span></p>
+</div>
 </div><div class="column" style="width:25%;">
+<div class="fragment">
 <p><img data-src="images/covariance_matrix.png"></p>
 </div>
 </div>
+</div>
 <ul>
-<li class="fragment">Im Gegensatz zur Korrelationsmatrix ist die Kovarianzmatrix selten das “Endprodukt” einer Analyse, sondern meist ein Zwischenschritt in fortgeschritteneren statistischen Analysen wie der <strong>Hauptkomponentenanalyse</strong></li>
+<li class="fragment">Im Gegensatz zur Korrelationsmatrix ist die Kovarianzmatrix selten das “Endprodukt” einer Analyse, sondern meist ein Zwischenschritt in fortgeschritteneren statistischen Analysen wie der <strong>Hauptkomponentenanalyse</strong>.</li>
 </ul>
 <!----------------->
 <!--- New slide --->
@@ -879,8 +919,13 @@ plt.savefig(f'images/corrmatrix.png', bbox_inches="tight")
 <ul>
 <li class="fragment">Korrelationskoeffizienten können auch berechnet werden, wenn eine<br>der beiden Variablen binär ist. Zwei Fälle werden unterschieden.</li>
 </ul>
+<div class="fragment">
 <p><strong>Fall 1: die binäre Variable liegt natürlicherweise in dichotomer Form vor (z.B. männl./weibl.)</strong></p>
+</div>
+<div class="fragment">
 <p>In diesem Fall haben die beiden Werte der binären Variable <em>keine natürliche Ordnung</em> und es wird der <span style=" color: navy !important;"><strong>punktbiseriale Korrelationskoeffizient</strong></span> verwendet.</p>
+</div>
+<div class="fragment">
 <p>Sei <span class="math inline">\(X\)</span> die binäre Variable und <span class="math inline">\(Y\)</span> die kontinuierliche Variable. Wir teilen die Stichprobe in Gruppe <span class="math inline">\(A\)</span> (für die <span class="math inline">\(X\)</span> den einen Wert einnimmt) und Gruppe <span class="math inline">\(B\)</span> (für die <span class="math inline">\(X\)</span> den anderen Wert einnimmt). Es gilt:</p>
 <div style="margin-top: 0px">
 <p><span class="math display">\[
@@ -888,10 +933,11 @@ r_\text{population} = \frac{\left(\bar{y}_A - \bar{y}_B\right)}{\sigma_Y}\sqrt{p
 \]</span></p>
 </div>
 <p>wobei <span class="math inline">\(\bar{y}_{A/B}\)</span> der Mittelwert von <span class="math inline">\(Y\)</span> und <span class="math inline">\(p_{A/B}\)</span> der Anteil (proportion) der Versuchspersonen in Gruppe <span class="math inline">\(A\)</span>/<span class="math inline">\(B\)</span> ist. <span class="math inline">\(\sigma_Y\)</span>/<span class="math inline">\(s_Y\)</span> ist die Standardabweichung von <span class="math inline">\(Y\)</span> in der Population/Stichprobe.</p>
+</div>
 <div class="vspace-medium">
 
 </div>
-<div class="merke">
+<div class="merke fragment">
 <div class="columns">
 <div class="column" style="width:5%;">
 <div style="margin-top: 18px">
@@ -910,6 +956,7 @@ r_\text{population} = \frac{\left(\bar{y}_A - \bar{y}_B\right)}{\sigma_Y}\sqrt{p
 <h2><span style=" color: darkred !important;">Punktbiseriale und biseriale Korrelation</span></h2>
 <p><img data-src="images/kein_klausurstoff.png" class="absolute" style="bottom: 0px; right: 0px; height: 110px; "></p>
 <p><strong>Fall 2: die binäre Variable resultiert aus der Dichotomisierung einer kontinuierlichen Variable</strong></p>
+<div class="fragment">
 <p>In diesem Fall unterschätzt die punktbiseriale Korrelation den wahren Wert und es sollte der <span style=" color: navy !important;"><strong>biseriale Korrelationskoeffizient</strong></span> verwendet:</p>
 <div style="margin-left: -30px">
 <p><span class="math display">\[
@@ -921,7 +968,8 @@ r_\text{population} = \frac{\left(\bar{y}_A - \bar{y}_B\right)}{f(z_p)\sigma_Y}p
 https://real-statistics.com/correlation/biserial-correlation/comment-page-1/?unapproved=1505005&moderation-hash=fba191d84ae6d8b2252c6b13efb49ba1#comment-1505005
 checken! -->
 <p>Quellen: <a href="#/footnotes" class="footnote-ref" id="fnref2" role="doc-noteref" data-footnote-href="#/fn2" onclick=""><sup>2</sup></a> <a href="#/footnotes" class="footnote-ref" id="fnref3" role="doc-noteref" data-footnote-href="#/fn3" onclick=""><sup>3</sup></a> <a href="#/footnotes" class="footnote-ref" id="fnref4" role="doc-noteref" data-footnote-href="#/fn4" onclick=""><sup>4</sup></a></p>
-<div class="merke">
+</div>
+<div class="merke fragment">
 <div class="columns">
 <div class="column" style="width:5%;">
 <div style="margin-top: 18px">
@@ -980,8 +1028,10 @@ checken! -->
 <li class="fragment">(Optional) Variablen in ihre ursprüngliche Reihenfolge bringen</li>
 </ol></li>
 </ul>
-
-<img data-src="images/rangbildung.png" data-heigh="375px" class="r-stretch"><ul>
+<div class="fragment">
+<p><img data-src="images/rangbildung.png" height="375"></p>
+</div>
+<ul>
 <li class="fragment">Die Tabelle gibt die Rangberechnung <em>einer</em> Variablen an (z.B. X) — für die andere Variable (Y) muss das analoge Prozedere durchgeführt werden.</li>
 </ul>
 <!----------------->
@@ -993,9 +1043,11 @@ checken! -->
 <ul>
 <li class="fragment">Die Spearman-Korrelation <span class="math inline">\(r_s\)</span> ist identisch zur Pearson-Korrelation, wenn die Variablen <span class="math inline">\(X\)</span> und <span class="math inline">\(Y\)</span> als Ränge <span class="math inline">\(R(X)\)</span> und <span class="math inline">\(R(Y)\)</span> vorliegen:</li>
 </ul>
+<div class="fragment">
 <p><span class="math display">\[
 r_s = \frac{cov(R(X),R(Y))}{s_{R(X)} s_{R(Y)}}
 \]</span>   wobei <span class="math inline">\(s_{R(X)}\)</span> und <span class="math inline">\(s_{R(Y)}\)</span> die Standardabweichungen der Ränge von <span class="math inline">\(X\)</span> und <span class="math inline">\(Y\)</span> sind.</p>
+</div>
 <div class="columns">
 <div class="column" style="width:60%;">
 <ul>
@@ -1007,7 +1059,9 @@ r_s = \frac{cov(R(X),R(Y))}{s_{R(X)} s_{R(Y)}}
 </ul></li>
 </ul>
 </div><div class="column" style="width:40%;">
+<div class="fragment">
 <p><img data-src="images/monotonie.png"></p>
+</div>
 </div>
 </div>
 <!----------------->
@@ -1017,21 +1071,24 @@ r_s = \frac{cov(R(X),R(Y))}{s_{R(X)} s_{R(Y)}}
 <section class="slide level2">
 <h2>Kendalls Tau</h2>
 <div class="columns">
-<div class="column" style="width:65%;">
+<div class="column" style="width:69%;">
 <ul>
 <li class="fragment">Eine Alternative Rangkorrelation zu Spearman ist <span style=" color: navy !important;"><strong>Kendalls Tau</strong></span></li>
-<li class="fragment">Kendalls Tau vergleicht inwieweit die Rangfolge <em>aller</em> Paare <span class="math inline">\(x_i\)</span>, <span class="math inline">\(x_j\)</span> mit der Rangfolge <em>aller</em> Paare <span class="math inline">\(y_i\)</span>, <span class="math inline">\(y_j\)</span> übereinstimmt</li>
+<li class="fragment">Kendalls Tau vergleicht inwieweit die Rangfolge <em>aller</em> Paare (<span class="math inline">\(x_i\)</span>, <span class="math inline">\(x_j\)</span>) mit der Rangfolge <em>aller</em> Paare (<span class="math inline">\(y_i\)</span>, <span class="math inline">\(y_j\)</span>) übereinstimmt</li>
 <li class="fragment">Dazu wird die Zahl der konkordanten (übereinstimmenden) und diskordanten (nicht übereinstimmenden) Paare gezählt</li>
 </ul>
-</div><div class="column" style="width:35%;">
+</div><div class="column" style="width:31%;">
 <div class="vspace-large">
 
 </div>
+<div class="fragment">
 <p><img data-src="images/Kendalls_Tau_Gleichung.png"></p>
+</div>
 </div>
 </div>
 <div class="columns">
 <div class="column" style="width:30%;">
+<div class="fragment">
 <div class="greybox">
 <p><strong>Beispiel</strong></p>
 </div>
@@ -1041,19 +1098,24 @@ X=\begin{pmatrix} 9\\ 3\\ 7\\ 5 \end{pmatrix}
 Y=\begin{pmatrix} 18\\ 7\\ 8\\ 21 \end{pmatrix}
 }
 \]</span></p>
+</div>
 </div><div class="column" style="width:70%;">
 <ul>
 <li class="fragment">Die Paare von X sind: <span class="math inline">\(\small{(9, 3), (9, 7), (9, 5), (3, 7), (3, 5), (7, 5)}\)</span></li>
 <li class="fragment">Die Paare von Y sind: <span class="math inline">\(\small{(18, 7), (18, 8), (18, 21), (7, 8), (7, 21), (8, 21)}\)</span></li>
-<li class="fragment">Die Paare <span class="math inline">\((x_1=9, x_3=7)\)</span> und <span class="math inline">\((y_1=18, y_3=2)\)</span> wären konkordant, da die Rangfolge des X-Paares (<span class="math inline">\(x_1 &gt; x_3\)</span>) gleich der Rangfolge des entsprechenden Y-Paares (<span class="math inline">\(y_1 &gt; y_3\)</span>) ist</li>
-<li class="fragment">Die Paare<span class="math inline">\((x_1=9, x_4=5)\)</span> und <span class="math inline">\((y_1=18, y_4=21)\)</span> wären diskonkordant, da die Rangfolge des X-Paares (<span class="math inline">\(x_1 &gt; x_4\)</span>) ungleich der Rangfolge des entsprechenden Y-Paares (<span class="math inline">\(y_1 &lt; y_4\)</span>) ist</li>
+<li class="fragment">Die Paare <span class="math inline">\((x_1=9, x_3=7)\)</span> und <span class="math inline">\((y_1=18, y_3=2)\)</span> wären <strong>konkordant</strong>, da die Rangfolge des X-Paares (<span class="math inline">\(x_1 &gt; x_3\)</span>) gleich der Rangfolge des entsprechenden Y-Paares (<span class="math inline">\(y_1 &gt; y_3\)</span>) ist</li>
+<li class="fragment">Die Paare<span class="math inline">\((x_1=9, x_4=5)\)</span> und <span class="math inline">\((y_1=18, y_4=21)\)</span> wären <strong>diskonkordant</strong>, da die Rangfolge des X-Paares (<span class="math inline">\(x_1 &gt; x_4\)</span>) ungleich der Rangfolge des entsprechenden Y-Paares (<span class="math inline">\(y_1 &lt; y_4\)</span>) ist</li>
 </ul>
 </div>
 </div>
+<div class="fragment">
 <p><span style="margin-top:-12px; display: block">Insgesamt gibt es im Beispiel 4 konkordante Paare und 2 diskordante Paare (prüfe nach!), daher gilt:</span></p>
+</div>
+<div class="fragment">
 <p><span class="math display">\[
 \tau = \frac{K-D}{K+D} = \frac{4-2}{3+3} = \frac{2}{6} = 0.333..
 \]</span></p>
+</div>
 <!-- ```{python}
 import matplotlib.pyplot as plt
 import numpy as np
@@ -1125,6 +1187,9 @@ plt.savefig('images/pearson_outlier.png', bbox_inches="tight")
 </div>
 </div>
 <p>http://www3.math.uni-paderborn.de/~agbiehler/sis/sisonline/struktur/jahrgang21-2001/heft2/Langfassungen/2001-2_Matth.pdf</p>
+<ul>
+<li class="fragment">Im gezeigten Beispiel wird die Korrelation fast ausschließlich durch zwei Ausreißer (Türkei und Polen) bestimmt. Der Zusammenhang wird dadurch überschätzt.</li>
+</ul>
 <!----------------->
 <!--- New slide --->
 <!----------------->
@@ -1134,8 +1199,10 @@ plt.savefig('images/pearson_outlier.png', bbox_inches="tight")
 <ul>
 <li class="fragment">Beispiel Pearson vs.&nbsp;Spearman:</li>
 </ul>
-
-<img data-src="images/pearson_outlier.png" class="r-stretch"><ul>
+<div class="fragment">
+<p><img data-src="images/pearson_outlier.png"></p>
+</div>
+<ul>
 <li class="fragment">Ein einziger Ausreißer verändert die Pearson-Korrelation im Beispiel von <span class="math inline">\(r=-0{,}046\)</span> nach <span class="math inline">\(r=0{,}410\)</span></li>
 <li class="fragment">Demgegnüber ist die Spearman-Korrelation “robuster” gegenüber dem Ausreißer — sie verändert sich “lediglich” von <span class="math inline">\(\rho=-0{,}030\)</span> nach <span class="math inline">\(r_s=0{,}110\)</span>.</li>
 <li class="fragment">Intution: während der <em>Wert</em> es Ausreißers deutlich über dem zweithöchsten Y-Wert liegt, ist der <em>Rang</em> nur um 1 höher.</li>
@@ -1168,20 +1235,22 @@ plt.savefig('images/pearson_outlier.png', bbox_inches="tight")
 <section class="slide level2">
 <h2>Der Phi-Koeffizient</h2>
 <ul>
-<li class="fragment">Spezialfall: <strong>beide Variablen haben nur zwei Ausprägungen</strong></li>
+<li class="fragment">Spezialfall: <strong>beide Variablen haben nur zwei Ausprägungen</strong> (sind also <em>dichotom</em>)</li>
 <li class="fragment">Darstellbar in der <span style=" color: navy !important;"><strong>Vierfeldertafel</strong></span>:</li>
 </ul>
 <div class="columns">
 <div class="column" style="width:40%;">
+<div class="fragment">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="images/vierfeldertafel.png"></p>
 <figcaption>Bildnachweis<a href="#/footnotes" class="footnote-ref" id="fnref9" role="doc-noteref" data-footnote-href="#/fn9" onclick=""><sup>9</sup></a></figcaption>
 </figure>
 </div>
+</div>
 </div><div class="column" style="width:50%;">
 <ul>
-<li class="fragment">In die vier Felder werden die Häufigkeiten der jeweiligen Variablen-Kombination eingetragen (im Beispiel blaugefärbt)</li>
+<li class="fragment">In die vier Felder werden die Häufigkeiten der jeweiligen Variablen-Kombination eingetragen</li>
 <li class="fragment">Optional: In der letzten Zeile/Spalte die Summe</li>
 </ul>
 </div>
@@ -1196,17 +1265,21 @@ plt.savefig('images/pearson_outlier.png', bbox_inches="tight")
 </div>
 <div class="columns">
 <div class="column" style="width:65%;">
+<div class="fragment">
 <p><span class="math display">\[
 \small{
 \text{Formel:}\quad \phi = \frac{ad-bc}{\sqrt{(a+b)(c+d)(a+c)(b+d)}}
 }
 \]</span></p>
+</div>
 <ul>
 <li class="fragment">Auch der Phi-Koeffizient hat einen Wertebereich von <span class="math inline">\([-1; 1]\)</span></li>
 </ul>
 </div><div class="column" style="width:35%;">
 <div style="margin: -50px 0 0 -50px !important">
+<div class="fragment">
 <p><img data-src="images/vierfeldertafel2.png" height="165"></p>
+</div>
 </div>
 </div>
 </div>
@@ -1230,6 +1303,20 @@ plt.savefig('images/pearson_outlier.png', bbox_inches="tight")
     &amp;= \frac{2\cdot11-8\cdot12}{\sqrt{(2+8)(12+11)(2+12)(8+11)}} = \\
     &amp;= \frac{22-96}{\sqrt{10\cdot23\cdot14\cdot19}} = \frac{-74}{\sqrt{61180}} = -0.299
 \end{aligned}\]</span></p>
+<div class="vspace-medium">
+
+</div>
+<div class="notabene">
+<div class="columns">
+<div class="column" style="width:7%;">
+<div style="margin-top: 10px">
+<p><img data-src="images/notabene2.png" height="65"></p>
+</div>
+</div><div class="column" style="width:93%;">
+<p><strong>Achtung:</strong> Der Phi-Koeffizient beschreibt einen <em>Zusammenhang im weiteren Sinne</em> und kann somit auch als Unterschied konzeptionalisiert werden (Beispiel: <em>unterscheidet</em> sich die relative Häufigkeit des Haustierbesitzes zwischen Männern und Frauen?).</p>
+</div>
+</div>
+</div>
 </section></section>
 <section>
 <section class="title-slide slide level1 center">
@@ -1257,7 +1344,9 @@ plt.savefig('images/pearson_outlier.png', bbox_inches="tight")
 <li class="fragment">Umgekehrt können Störvariablen auch tatsächlich vorhandene Zusammenhänge unterdrücken — man spricht dann von <strong>Suppression</strong>; der Korrelationskoeffizient unterschätzt in diesem Fall die tatsächliche Stärke des Zusammenhangs.</li>
 <li class="fragment">Trotz aller Fallstricke bei der Interpretation gilt: eine Korrelation KANN ein <strong>Indiz für Kausalität</strong> sein (wo Kausalität da auch Korrelation, sofern diese nicht durch Störvariablen unterdrückt ist). <!-- <div class="vspace-medium"></div> --></li>
 </ul>
+<div class="fragment">
 <p><img data-src="images/correlation_confounder.png" height="210"></p>
+</div>
 <!----------------->
 <!--- New slide --->
 <!----------------->
@@ -1287,8 +1376,9 @@ plt.savefig('images/pearson_outlier.png', bbox_inches="tight")
 <h2>Wann ist ein Korrelationskoeffizient groß oder klein?</h2>
 <ul>
 <li class="fragment">Pauschal schwer zu beantworten</li>
-<li class="fragment">In der psychologischen Literatur hat sich folgende Nomenklatur nach Jacob Cohen<a href="#/footnotes" class="footnote-ref" id="fnref11" role="doc-noteref" data-footnote-href="#/fn11" onclick=""><sup>11</sup></a> eingebürgert:</li>
+<li class="fragment">In der psychologischen Literatur hat sich folgende Konvention/Nomenklatur nach Jacob Cohen<a href="#/footnotes" class="footnote-ref" id="fnref11" role="doc-noteref" data-footnote-href="#/fn11" onclick=""><sup>11</sup></a> eingebürgert:</li>
 </ul>
+<div class="fragment">
 <!---  Table --->
 <table style="width:40%;">
 <colgroup>
@@ -1298,7 +1388,7 @@ plt.savefig('images/pearson_outlier.png', bbox_inches="tight")
 <thead>
 <tr class="header">
 <th>Korrelation (r)</th>
-<th>Nomenklatur</th>
+<th>Konvention</th>
 </tr>
 </thead>
 <tbody>
@@ -1316,12 +1406,15 @@ plt.savefig('images/pearson_outlier.png', bbox_inches="tight")
 </tr>
 </tbody>
 </table>
+</div>
 <ul>
 <li class="fragment">Allerdings fügt Cohen im gleichen Artikel hinzu:</li>
 </ul>
+<div class="fragment">
 <blockquote>
 <p>These proposed conventions were set forth throughout with much diffidence [Zurückhaltung], qualifications [Bedingungen], and invitations <strong>not to employ</strong> them if possible.</p>
 </blockquote>
+</div>
 <ul>
 <li class="fragment">Bei der Beurteilung sollte der Korrelationskoeffizient, wie jede Effektgröße, immer in Relation zu typischen Werten im jeweiligen Forschungsfeld gesetzt werden.</li>
 </ul>
@@ -1335,7 +1428,9 @@ plt.savefig('images/pearson_outlier.png', bbox_inches="tight")
 <ul>
 <li class="fragment">In einer kürzlichen Metaanalyse von Lovakov Agadullina (2021)<a href="#/footnotes" class="footnote-ref" id="fnref12" role="doc-noteref" data-footnote-href="#/fn12" onclick=""><sup>12</sup></a> wurden typische Effektstärken in der Sozialpsychologie untersucht:</li>
 </ul>
+<div class="fragment">
 <p><img data-src="images/lovakov_2021.png" height="400"></p>
+</div>
 <ul>
 <li class="fragment">Erkenntnis: “mittlere” und “starke” Korrelationen (definiert als das 50%- und 75%- Quantil)<br> sind in der Realität kleiner als von Cohen angenommen</li>
 </ul>
