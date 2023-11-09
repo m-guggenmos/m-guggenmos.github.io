@@ -1017,6 +1017,34 @@ Var(X) &amp;= \frac{1}{n}\sum\left(x_i-\bar{x}\right)^2 = \frac{1}{n}\sum\left(x
 <!----------------->
 </section>
 <section class="slide level2">
+<h2>Intuition hinter der Regressionssteigung</h2>
+<ul>
+<li class="fragment">Die Formel für die Steigung bei der einfachen Regression</li>
+</ul>
+<div class="fragment" style="margin-top:-20px">
+<p><span class="math display">\[
+b_1 = \frac{Cov(X,Y)}{Var(X)}
+\]</span></p>
+</div>
+<div class="fragment">
+<p>.. erinnert an die Formel der Korrelation, bei der die Kovarianz ebenfalls standardisiert wird (mit <span class="math inline">\(\frac{1}{s_Xs_Y}\)</span>)</p>
+</div>
+<ul>
+<li class="fragment">Der entscheidende Unterschied ist, dass bei der Korrelation eine Standardisierung bezüglich <em>beider</em> Variablen vorgenommen wird, bei der Regression aber nur bezüglich der <em>unabhängigen</em> Variable.</li>
+<li class="fragment">In der Folge wird bei der Regression folgende Frage beantwortet:</li>
+</ul>
+<blockquote>
+<p>Was ist die Auswirkung einer Änderung der unabhängigen Variable <span class="math inline">\(X\)</span> um 1 (<strong>einheitslos!</strong>) auf die abhängige Variable <span class="math inline">\(Y\)</span> (<strong>in deren Rohwerteinheiten!</strong>).</p>
+</blockquote>
+<ul>
+<li class="fragment">Auch hier wird wieder deutlich, dass bei der Regression eine feste Rollenverteilung vorgenommen wird: nur die unabhängige Variable wird standardisiert.</li>
+<li class="fragment">Da die Steigung also von der Varianz der als unabhängig deklarierten Variable abhängt, ist es nicht zulässig anzunehmen, dass <span class="math inline">\(\frac{1}{b_1}\)</span> einfach die Steigung wäre, wenn <span class="math inline">\(Y\)</span> die unabhängige und <span class="math inline">\(X\)</span> die abhängige Variable ist. Für die umgekehrte Steigung müssten wir schließlich auch die Varianz von <span class="math inline">\(Y\)</span> berücksichtigen!</li>
+</ul>
+<!----------------->
+<!--- New slide --->
+<!----------------->
+</section>
+<section class="slide level2">
 <h2><span style=" color: darkred !important;">Beweis, dass <span class="math inline">\(R^2=r^2\)</span> bei einfacher Regression</span></h2>
 <p><img data-src="images/kein_klausurstoff.png" class="absolute" style="bottom: 0px; right: 0px; height: 110px; "></p>
 <ul>
