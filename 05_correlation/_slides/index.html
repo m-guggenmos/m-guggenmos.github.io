@@ -1103,7 +1103,7 @@ Y=\begin{pmatrix} 18\\ 7\\ 8\\ 21 \end{pmatrix}
 <ul>
 <li class="fragment">Die Paare von X sind: <span class="math inline">\(\small{(9, 3), (9, 7), (9, 5), (3, 7), (3, 5), (7, 5)}\)</span></li>
 <li class="fragment">Die Paare von Y sind: <span class="math inline">\(\small{(18, 7), (18, 8), (18, 21), (7, 8), (7, 21), (8, 21)}\)</span></li>
-<li class="fragment">Die Paare <span class="math inline">\((x_1=9, x_3=7)\)</span> und <span class="math inline">\((y_1=18, y_3=2)\)</span> wären <strong>konkordant</strong>, da die Rangfolge des X-Paares (<span class="math inline">\(x_1 &gt; x_3\)</span>) gleich der Rangfolge des entsprechenden Y-Paares (<span class="math inline">\(y_1 &gt; y_3\)</span>) ist</li>
+<li class="fragment">Die Paare <span class="math inline">\((x_1=9, x_3=7)\)</span> und <span class="math inline">\((y_1=18, y_3=8)\)</span> wären <strong>konkordant</strong>, da die Rangfolge des X-Paares (<span class="math inline">\(x_1 &gt; x_3\)</span>) gleich der Rangfolge des entsprechenden Y-Paares (<span class="math inline">\(y_1 &gt; y_3\)</span>) ist</li>
 <li class="fragment">Die Paare<span class="math inline">\((x_1=9, x_4=5)\)</span> und <span class="math inline">\((y_1=18, y_4=21)\)</span> wären <strong>diskonkordant</strong>, da die Rangfolge des X-Paares (<span class="math inline">\(x_1 &gt; x_4\)</span>) ungleich der Rangfolge des entsprechenden Y-Paares (<span class="math inline">\(y_1 &lt; y_4\)</span>) ist</li>
 </ul>
 </div>
@@ -1282,9 +1282,12 @@ plt.savefig('images/pearson_outlier.png', bbox_inches="tight")
 <ul>
 <li class="fragment">Hier ist für das Vorzeichen entscheidend, welche Ausprägung als 0 und welche als 1 definiert wird (analog der Eintrage-Reihenfolge in die Vierfeldertafel).</li>
 <li class="fragment">In der Praxis findet der Phi-Koeffizient wenig Anwendung, da der Zusammenhang zumeist intuitiver in Form von Häufigkeiten berichtet wird (z.B. Raucherhäufigkeit bei Männern versus Frauen).</li>
-<li class="fragment">Der vielleicht einzige Vorteil des Phi-Koeffizienten ist, dass keine Festlegung erfolgen muss, ob die Raucherhäufigkeit zwischen den Geschlechtern, oder die Geschlechterhäufigkeit zwischen Rauchern und Nichtrauchern berichtet wird.</li>
+<li class="fragment">Zwei Vorteile hat der Phi-Koeffizient jedoch:
+<ul>
+<li class="fragment">Es muss keine Festlegung erfolgen, ob die Raucherhäufigkeit zwischen den Geschlechtern, oder die Geschlechterhäufigkeit zwischen Rauchern und Nichtrauchern berichtet wird.</li>
+<li class="fragment">Der Phi-Koeffizient kann in Metaanalysen mit anderen Studien verglichen werden, die eine ähnliche Fragestellung mit einer linearen Pearson-Korrelation bemessen haben.</li>
+</ul></li>
 <li class="fragment">Zudem macht der Phi-Koeffizient in konzeptioneller Hinsicht den Punkt zu Beginn der Vorlesung deutlich, dass jeder Unterschied (z.B. Raucherhäufigkeit bei Männern versus Frauen) auch als Zusammenhang (Zusammenhang von Geschlecht und Raucherstatus) formuliert werden kann.</li>
-<li class="fragment">In diesem Sinne ist der Phi-Koeffizient ein Beispiel für einen <strong>Zusammenhang im weiteren Sinne</strong>.</li>
 </ul>
 <!----------------->
 <!--- New slide --->
