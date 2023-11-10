@@ -1235,63 +1235,61 @@ plt.savefig('images/pearson_outlier.png', bbox_inches="tight")
 <section class="slide level2">
 <h2>Der Phi-Koeffizient</h2>
 <ul>
-<li class="fragment">Spezialfall: <strong>beide Variablen haben nur zwei Ausprägungen</strong> (sind also <em>dichotom</em>)</li>
+<li class="fragment">Spezialfall: <strong>beide Variablen haben nur zwei Ausprägungen</strong> (sind also <em>dichotom</em>).</li>
 <li class="fragment">Darstellbar in der <span style=" color: navy !important;"><strong>Vierfeldertafel</strong></span>:</li>
 </ul>
 <div class="columns">
 <div class="column" style="width:40%;">
 <div class="fragment">
-<div class="quarto-figure quarto-figure-center">
-<figure>
 <p><img data-src="images/vierfeldertafel.png"></p>
-<figcaption>Bildnachweis<a href="#/footnotes" class="footnote-ref" id="fnref9" role="doc-noteref" data-footnote-href="#/fn9" onclick=""><sup>9</sup></a></figcaption>
-</figure>
-</div>
 </div>
 </div><div class="column" style="width:50%;">
 <ul>
-<li class="fragment">In die vier Felder werden die Häufigkeiten der jeweiligen Variablen-Kombination eingetragen</li>
-<li class="fragment">Optional: In der letzten Zeile/Spalte die Summe</li>
+<li class="fragment">In die vier Felder werden die Häufigkeiten der jeweiligen Variablen-Kombination eingetragen.</li>
+<li class="fragment">Optional: In der letzten Zeile/Spalte die Summe.</li>
+<li class="fragment"><span class="math inline">\(a+b+c+d\)</span> muss sich zur Stichprobengröße <span class="math inline">\(n\)</span> addieren.</li>
 </ul>
 </div>
 </div>
-<div style="margin-top: -29px">
 <ul>
-<li class="fragment">Wie alle Korrelationskoeffizienten beantwortet der <span style=" color: navy !important;"><strong>Phi-Koeffizient</strong></span> die Frage, ob zwei Variablen miteinander zusammenhängen
-<ul>
-<li class="fragment">Im Beispiel: hängt das gewählte Fach vom Geschlecht ab?</li>
-</ul></li>
+<li class="fragment">Frage: hängen Raucherstatus und Geschlecht zusammen? Die Antwort liefert der <span style=" color: navy !important;"><strong>Phi-Koeffizient</strong></span>:</li>
 </ul>
-</div>
-<div class="columns">
-<div class="column" style="width:65%;">
 <div class="fragment">
 <p><span class="math display">\[
 \small{
-\text{Formel:}\quad \phi = \frac{ad-bc}{\sqrt{(a+b)(c+d)(a+c)(b+d)}}
+\text{Phi-Koeffizient:}\quad \phi = \frac{ad-bc}{\sqrt{(a+b)(c+d)(a+c)(b+d)}}
 }
 \]</span></p>
 </div>
 <ul>
-<li class="fragment">Auch der Phi-Koeffizient hat einen Wertebereich von <span class="math inline">\([-1; 1]\)</span></li>
-</ul>
-</div><div class="column" style="width:35%;">
-<div style="margin: -50px 0 0 -50px !important">
-<div class="fragment">
-<p><img data-src="images/vierfeldertafel2.png" height="165"></p>
-</div>
-</div>
-</div>
-</div>
-<div style="margin-top: -19px">
+<li class="fragment">Wichtig: das Vorzeichen hängt davon ab, in welcher Reihenfolge die beiden Variablen in die Vierfeldertafel eingetragen werden.
 <ul>
-<li class="fragment">NB: der Phi-Koeffizient ist identisch mit der Pearson-Korrelation und der Spearman-Korrelation, wenn beide dichotomen Variablen mit 0 und 1 kodiert werden.</li>
+<li class="fragment">Übung für zu Hause: das Vorzeichen von <span class="math inline">\(\phi\)</span> dreht sich um, wenn die Spalten male/female vertauscht werden, und ebenso, wenn die Spalten smoker/nonsmoker vertauscht werden. Warum?</li>
+</ul></li>
+<li class="fragment">Wie alle Korrelationskoeffizienten hat auch der Phi-Koeffizient einen Wertebereich von <span class="math inline">\([-1; 1]\)</span>.</li>
 </ul>
+</section>
+<section class="slide level2">
+<h2>Der Phi-Koeffizient</h2>
+<ul>
+<li class="fragment">Der Phi-Koeffizient ist identisch mit der Pearson-Korrelation und der Spearman-Korrelation, wenn beide dichotomen Variablen mit 0 und 1 kodiert werden.</li>
+</ul>
+<div class="fragment">
+<p><span class="math display">\[
+\phi = \frac{Cov(X,Y)}{s_X s_Y}\qquad\text{mit}\quad X=\{0, 1\}, Y=\{0, 1\}
+\]</span></p>
 </div>
+<ul>
+<li class="fragment">Hier ist für das Vorzeichen entscheidend, welche Ausprägung als 0 und welche als 1 definiert wird (analog der Eintrage-Reihenfolge in die Vierfeldertafel).</li>
+<li class="fragment">In der Praxis findet der Phi-Koeffizient wenig Anwendung, da der Zusammenhang zumeist intuitiver in Form von Häufigkeiten berichtet wird (z.B. Raucherhäufigkeit bei Männern versus Frauen).</li>
+<li class="fragment">Der vielleicht einzige Vorteil des Phi-Koeffizienten ist, dass keine Festlegung erfolgen muss, ob die Raucherhäufigkeit zwischen den Geschlechtern berichtet oder die Geschlechterhäufigkeit zwischen Rauchern und Nichtrauchern wird.</li>
+<li class="fragment">Zudem macht der Phi-Koeffizient in konzeptioneller Hinsicht den Punkt zu Beginn der Vorlesung deutlich, dass jeder Unterschied (z.B. Raucherhäufigkeit bei Männern versus Frauen) auch als Zusammenhang (Zusammenhang von Geschlecht und Raucherstatus) formuliert werden kann.</li>
+<li class="fragment">In diesem Sinne ist der Phi-Koeffizient ein Beispiel für einen <strong>Zusammenhang im weiteren Sinne</strong>.</li>
+</ul>
 <!----------------->
 <!--- New slide --->
 <!----------------->
-<aside></aside></section>
+</section>
 <section class="slide level2">
 <h2>Phi-Koeffizient: Beispiel</h2>
 <div class="vspace-medium">
@@ -1327,7 +1325,7 @@ plt.savefig('images/pearson_outlier.png', bbox_inches="tight")
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="images/Inferring-Causation-from-Correlation.jpg" height="300"></p>
-<figcaption>Bildnachweis<a href="#/footnotes" class="footnote-ref" id="fnref10" role="doc-noteref" data-footnote-href="#/fn10" onclick=""><sup>10</sup></a></figcaption>
+<figcaption>Bildnachweis<a href="#/footnotes" class="footnote-ref" id="fnref9" role="doc-noteref" data-footnote-href="#/fn9" onclick=""><sup>9</sup></a></figcaption>
 </figure>
 </div>
 <!----------------->
@@ -1376,7 +1374,7 @@ plt.savefig('images/pearson_outlier.png', bbox_inches="tight")
 <h2>Wann ist ein Korrelationskoeffizient groß oder klein?</h2>
 <ul>
 <li class="fragment">Pauschal schwer zu beantworten</li>
-<li class="fragment">In der psychologischen Literatur hat sich folgende Konvention/Nomenklatur nach Jacob Cohen<a href="#/footnotes" class="footnote-ref" id="fnref11" role="doc-noteref" data-footnote-href="#/fn11" onclick=""><sup>11</sup></a> eingebürgert:</li>
+<li class="fragment">In der psychologischen Literatur hat sich folgende Konvention/Nomenklatur nach Jacob Cohen<a href="#/footnotes" class="footnote-ref" id="fnref10" role="doc-noteref" data-footnote-href="#/fn10" onclick=""><sup>10</sup></a> eingebürgert:</li>
 </ul>
 <div class="fragment">
 <!---  Table --->
@@ -1426,7 +1424,7 @@ plt.savefig('images/pearson_outlier.png', bbox_inches="tight")
 <h2><span style=" color: darkred !important;">Wann ist ein Korrelationskoeffizient groß oder klein?</span></h2>
 <p><img data-src="images/kein_klausurstoff.png" class="absolute" style="bottom: 0px; right: 0px; height: 120px; "></p>
 <ul>
-<li class="fragment">In einer kürzlichen Metaanalyse von Lovakov Agadullina (2021)<a href="#/footnotes" class="footnote-ref" id="fnref12" role="doc-noteref" data-footnote-href="#/fn12" onclick=""><sup>12</sup></a> wurden typische Effektstärken in der Sozialpsychologie untersucht:</li>
+<li class="fragment">In einer kürzlichen Metaanalyse von Lovakov Agadullina (2021)<a href="#/footnotes" class="footnote-ref" id="fnref11" role="doc-noteref" data-footnote-href="#/fn11" onclick=""><sup>11</sup></a> wurden typische Effektstärken in der Sozialpsychologie untersucht:</li>
 </ul>
 <div class="fragment">
 <p><img data-src="images/lovakov_2021.png" height="400"></p>
@@ -1553,10 +1551,9 @@ plt.savefig('images/paradoxia_histogram_correlation_paradoxiker.png', bbox_inche
 <li id="fn6"><p>Puth M-T, Neuhäuser M, Ruxton GD (2015) Effective use of Spearman’s and Kendall’s correlation coefficients for association between two measured traits. Animal Behaviour 102:77–84.</p></li>
 <li id="fn7"><p>DC Howell (2012). Statistical Methods for Psychology. Wadsworth.</p></li>
 <li id="fn8"><p>https://stats.stackexchange.com/questions/18887/how-to-calculate-a-confidence-interval-for-spearmans-rank-correlation</p></li>
-<li id="fn9"><p>https://learnattack.de/mathematik/baumdiagramm-und-vierfeldertafel</p></li>
-<li id="fn10"><p>https://www.patheos.com/blogs/tippling/2017/10/31/spooky-punkins-and-statistical-correlation/</p></li>
-<li id="fn11"><p>Cohen J. (1988). Statistical Power Analysis for the Behavioral Sciences. New York, NY: Routledge Academic</p></li>
-<li id="fn12"><p>Lovakov A, Agadullina ER (2021) Empirically derived guidelines for effect size interpretation in social psychology. Eur J Soc Psychol 51:485–504.</p></li>
+<li id="fn9"><p>https://www.patheos.com/blogs/tippling/2017/10/31/spooky-punkins-and-statistical-correlation/</p></li>
+<li id="fn10"><p>Cohen J. (1988). Statistical Power Analysis for the Behavioral Sciences. New York, NY: Routledge Academic</p></li>
+<li id="fn11"><p>Lovakov A, Agadullina ER (2021) Empirically derived guidelines for effect size interpretation in social psychology. Eur J Soc Psychol 51:485–504.</p></li>
 </ol>
 </section>
     </div>
