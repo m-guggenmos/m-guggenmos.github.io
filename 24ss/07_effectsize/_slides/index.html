@@ -563,14 +563,99 @@ plt.savefig('images/pooled_variance_dependent.png', bbox_inches='tight')
 <section class="slide level2">
 <h2>Verrechnung von Varianzen und Standardabweichungen</h2>
 <p><strong>Unhängige Messungen in zwei Stichproben</strong></p>
-<p>Im Fall zweier unabhängiger Messungen, ist es nicht möglich die Einzelmesswerte <span class="math inline">\(x_{A,i}\)</span> und <span class="math inline">\(x_{B,i}\)</span> auf Versuchspersonenebene voneinander abzuziehen. Es wäre ohnehin völlig unklar, welche Versuchsperson man in Gruppe A mit welcher anderen Versuchsperson in Gruppe B matched.</p>
-<p><u>Die Frage lautet hier:</u> wie groß ist die mittlere Varianz beider Gruppen?</p>
-<p>Da die Stichprobengrößen <span class="math inline">\(n_A\)</span> und <span class="math inline">\(n_B\)</span> unterschiedlich sein können, berechnen wir den <em>an den Stichprobengrößen</em> gewichteten Varianzmittelwert:</p>
+<p>Im Fall zweier unabhängiger Messungen, ist es nicht möglich die Einzelmesswerte <span class="math inline">\(x_{A,i}\)</span> und <span class="math inline">\(x_{B,i}\)</span> auf Versuchspersonenebene voneinander abzuziehen. Es wäre ohnehin völlig unklar, welche Versuchsperson man in Gruppe A mit welcher anderen Versuchsperson in Gruppe B matched. Man unterscheidet hier im allgemeinen zwei Fälle.</p>
+<div class="fragment">
+<p><u><strong>a) Gepoolte Varianz</strong></u></p>
+</div>
+<p>Sind die Varianzen ähnlich, ist es sinnvoll, die <span style=" color: navy !important;"><strong>gepoolte Varianz</strong></span> <span class="math inline">\(\hat{\sigma}^2_\text{pooled}\)</span> zu berechnen. Der Name leitet sich von der Vorstellung ab, die Datenpunkte beider Gruppen in einen gemeinsamen “Pool” zu werfen, und dann die Varianz auf allen Daten zu berechnen.</p>
+<ul>
+<li class="fragment">Zu beachten ist allerdings, dass beide Gruppen unterschiedliche Mittelwerte haben. Vor dem “Wurf in den Pool” müssen daher die Mittelwerte der Datenpunkte aus den jeweiligen Gruppen gleichgesetzt werden — im einfachsten Fall so, dass jeweils der Gruppenmittelwert von den Datenpunkten abgezogen wird (die Daten werden <strong>zentriert</strong> — beide Gruppen haben danach den Mittelwert 0):</li>
+</ul>
+<div style="margin-top:-43px">
+<p><span class="math display">\[
+X'_A = X_A - \bar{X}_A\qquad und\qquad X'_B = X_B - \bar{X}_B
+\]</span></p>
+</div>
+<p><span class="math display">\[
+X_\text{pooled} = [X'_A; X'_B]
+\]</span></p>
+<p><span class="math display">\[
+\hat{\sigma}^2_\text{pooled} = Var(X_\text{pooled})
+\]</span></p>
+</section>
+<section class="slide level2">
+<h2>Verrechnung von Varianzen und Standardabweichungen</h2>
+<div>
+<ul>
+<li>De facto entspricht die gepoolte Varianz einer Art mittleren Varianz beider Gruppen.</li>
+<li>Die gepoolte Varianz kann daher auch direkt auf Basis der einzelnen Varianzen <span class="math inline">\(\hat{\sigma}^2_A\)</span> und <span class="math inline">\(\hat{\sigma}^2_B\)</span> beider Gruppen berechnet werden.</li>
+</ul>
+</div>
+<div class="fragment" style="margin-top: -20px">
+<div>
+<ul>
+<li>Zu beachten ist allerdings, dass die Stichprobengrößen <span class="math inline">\(n_A\)</span> und <span class="math inline">\(n_B\)</span> unterschiedlich sein können — aus diesem Grund wird der <em>an den Stichprobengrößen</em> gewichtete Varianzmittelwert bestimmt:</li>
+</ul>
+</div>
 <p><span class="math display">\[
 \hat{\sigma}^2_\text{pooled} = \frac{(n_A-1)\hat{\sigma}^2_A + (n_B-1)\hat{\sigma}^2_B}{n_A+n_B-2}\quad\text{bzw.}\quad\hat{\sigma}_\text{pooled} = \sqrt{\frac{(n_A-1)\hat{\sigma}^2_A + (n_B-1)\hat{\sigma}^2_B}{n_A+n_B-2}}
 \]</span></p>
-<p><span class="math inline">\(\hat{\sigma}^2_\text{pooled}\)</span> wird als <span style=" color: navy !important;"><strong>gepoolte Varianz</strong></span> bezeichnet. Die Subtraktion von 1 von den Stichprobengrößen ist Ausdruck der Besselkorrektur.</p>
-<p>Wir halten fest: die gepoolte Varianz zweier unabhängiger Stichproben entspricht der “mittleren Varianz” beider Gruppen.</p>
+</div>
+<div class="fragment">
+<p>Die Subtraktion von 1 von den Stichprobengrößen <span class="math inline">\(n_A\)</span> und <span class="math inline">\(n_B\)</span> ist Ausdruck der Besselkorrektur.</p>
+</div>
+<ul>
+<li class="fragment">Der Vorteil der gepoolten Varianz ist, dass sie eine besonders präzise Schätzung der Varianz unserer Variable (bzw. Merkmals) liefert, da sie auf den kombinierten Datenpunkten beider Gruppen basiert.</li>
+<li class="fragment">Zu beachten ist allerdings, dass die gepoolte Varianz <strong>kein Maß für die Streuung der Mittelwerts<em>differenz</em> ist</strong>, sondern ein Maß der Streuung des ursprünglichen Merkmals.</li>
+</ul>
+</section>
+<section class="slide level2">
+<h2>Verrechnung von Varianzen und Standardabweichungen</h2>
+<ul>
+<li class="fragment">Warum sollten die Varianzen für die Verwendung der gepoolten Varianz ähnlich sein?
+<ul>
+<li class="fragment">Die Idee ist, die Varianzschätzung des Merkmals durch Nutzung der Datenpunkte <em>beider</em> Gruppen zu verbessern.</li>
+<li class="fragment">Sind die Varianzen in beiden Gruppen jedoch unterschiedlich, so ist der Fall gegeben, dass es gar nicht <em>die eine</em> Varianz des Merkmals gibt, sondern die Varianz stark von der Gruppenzugehörigkeit abhängt.</li>
+<li class="fragment">Das Konzept der gepoolten Varianz ist daher nicht mehr sinnvoll.</li>
+</ul></li>
+<li class="fragment">Was heißt “ähnlich”?
+<ul>
+<li class="fragment">Eine gängige Faustregel besagt, dass die Varianzen sich höchstens um den Faktor 2 unterscheiden sollten, d.h. <span class="math inline">\(0{,}5&lt;\frac{\sigma^2_A}{\sigma^2_B}&lt;2\)</span>.</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+<h2>Verrechnung von Varianzen und Standardabweichungen</h2>
+<p><u><strong>b) Varianz der Mittelwertdifferenz bei unabhängigen Gruppen</strong></u></p>
+<ul>
+<li class="fragment">Unabhängig davon, ob die Varianzen beider Gruppen ähnlich oder unähnlich sind, gilt folgende <strong>Varianzsummenformel für unabhängige Variablen</strong>:</li>
+</ul>
+<div class="colorbox fragment" style="margin-top: -12px">
+<p>Die Varianz der Differenz (oder auch Summe!) zweier <strong>unabhängiger</strong> Zufallsvariablen <span class="math inline">\(X_A\)</span> und <span class="math inline">\(X_B\)</span> ist gleich der Summe der Einzelvarianzen:</p>
+<p><span class="math display">\[
+\Delta X = X_A - X_B \quad \rightarrow \quad \hat{\sigma}_\Delta^2 = \hat{\sigma}_A^2 + \hat{\sigma}_B^2
+\]</span></p>
+</div>
+<ul>
+<li class="fragment"><strong>Problem:</strong> wie wir bereits festgestellt haben, können wir bei unabhängigen Gruppen die Variablen <span class="math inline">\(X_A\)</span> und <span class="math inline">\(X_B\)</span> nicht direkt voneinander abziehen, sondern lediglich die Mittelwertsdifferenz <span class="math inline">\(\bar{X}_A-\bar{X}_B\)</span> bilden.</li>
+<li class="fragment">Die Varianzsummenformel lässt sich daher hier nur auf die Mittelwerte <span class="math inline">\(\bar{X}_A\)</span> und <span class="math inline">\(\bar{X}_B\)</span> übertragen:</li>
+</ul>
+<p><span class="math display">\[
+\Delta \bar{X} = \bar{X}_A - \bar{X}_B \quad \rightarrow \quad \hat{\sigma}_\bar{\Delta}^2 = \hat{\sigma}_\bar{A}^2 + \hat{\sigma}_\bar{B}^2
+\]</span></p>
+<p>… was zur Frage führt: was soll die Varianz <span class="math inline">\(\hat{\sigma}_\bar{A}^2\)</span>/<span class="math inline">\(\hat{\sigma}_\bar{B}^2\)</span> eines Mittelwertes sein, wenn es doch nur <em>einen</em> Mittelwert gibt? Dies wird Thema der Vorlesung 08 sein, in der wir lernen, die <em>Unsicherheit des Mittelwertes</em> zu bestimmen — mithilfe des <strong>Standardfehlers</strong>.</p>
+</section>
+<section class="slide level2">
+<h2>Verrechnung von Varianzen und Standardabweichungen</h2>
+<div class="fragment">
+<p>Eine berechtige Frage ist an dieser Stelle: wenn die Gesetzmäßigkeit der Varianzsummenformel sowohl für ähnliche als auch unähnliche Gruppenvarianzen gilt, warum wird das Konzept der gepoolten Varianz überhaupt verwendet?</p>
+</div>
+<ul>
+<li class="fragment">Folgende Überlegung: die Messung von Varianzen auf Basis von Stichproben ist mit Unsicherheit behaftet — sie ist <em>ungenau</em>. Die Varianzsummenformel zur Bestimmung der Varianz einer Mittelwert-differenz basiert auf zwei mit Unischerheit behafteten Einzelvarianzen, die jeweils ausschließlich auf Basis der vorhandenen Datenpunkte in den jeweiligen Gruppen berechnet werden.</li>
+<li class="fragment">Bei der gepoolten Varianz hingegen ist die Situation, dass eigentlich nur eine Varianz bestimmt werden muss, nämlich die Varianz des Merkmals, die wenig von der Gruppenzugehörigkeit beeinflusst wird. Und für diese eine Varianz können wir sogar die gepoolten Datenpunkte beider Gruppen heranziehen.</li>
+<li class="fragment">Es ist also davon auszugehen, dass die <strong>gepoolte Varianz ein präziserer Kennwert als eine Differenzen-Varianz</strong> ist.</li>
+<li class="fragment">Bei vielen nachfolgenden Themenkomplexen werden wir kombinierte Varianzen zur <strong>Standardisierung von Effekten</strong> verwenden, und es gilt: mit je weniger Unsicherheit die dabei verwendete Varianz verbundet ist, desto weniger Unsicherheit fließt auch in die standardisierten Effekte ein. Aus diesem Grund ist die gepoolte Varianz grundsätzlich die attraktivere Wahl — so denn die Voraussetzung ähnlicher Gruppenvarianzen erfüllt ist.</li>
+</ul>
 <!----------------->
 <!--- New slide --->
 <!----------------->

@@ -556,7 +556,7 @@ r = \frac{Cov(X,Y)}{s_X s_Y}
 
 </div>
 <p>Wir sehen: je höher die Korrelation <span class="math inline">\(\bar{x}_A\)</span> und <span class="math inline">\(\bar{x}_B\)</span>, desto geringer die Variabilität der Differenz von <span class="math inline">\(\bar{x}_A-\bar{x}_B\)</span>! Ist die Korrelation perfekt (<span class="math inline">\(r=1\)</span>), so ist die Differenz sogar konstant, d.h. ihre Variabilität ist gleich 0.</p>
-<!--```{python}
+<!-- ```{python}
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -578,7 +578,7 @@ for i in range(3):
     Y_ += (5-Y_.mean())
     print(f'cov={np.cov(X,Y_)[0, 1]:.3f}; r={pearsonr(X,Y_)[0]:.3f}; deltaX={np.mean(X)-np.mean(Y_):.2f}')
     plt.plot(X, 'o-', label='$X_A$')
-    plt.plot(Y_, 'o-', label='$X_A$')
+    plt.plot(Y_, 'o-', label='$X_B$')
     plt.plot(X-Y_, 'o-', label='$X_A-X_B$')
     plt.xticks(range(10), range(1, 11), fontsize=fontsize-2)
     plt.yticks(range(-2, 9, 2), fontsize=fontsize-2)
@@ -592,7 +592,7 @@ for i in range(3):
 
 plt.tight_layout()
 plt.savefig('images/pooled_variance_dependent.png', bbox_inches='tight')
-```-->
+``` -->
 </section>
 <section class="slide level2">
 <h2>Die Varianz von Mittelwertunterschieden</h2>
