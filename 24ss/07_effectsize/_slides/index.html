@@ -482,43 +482,305 @@ r = \frac{Cov(X,Y)}{s_X s_Y}
 </div>
 </div>
 </div>
+</section></section>
+<section>
+<section class="title-slide slide level1 center">
+<h1>Mittelwertunterschiede</h1>
+
 </section>
 <section class="slide level2">
-<h2>Verrechnung von Varianzen und Standardabweichungen</h2>
-<p>Bevor wir uns der Standardisierung von Effektstärken bei Mittelwertsunterschieden widmen, lohnt es sich einen Blick darauf zu werfen, wie Varianzen verschiedener Bedingungen in einer Stichprobe (abhängige Messungen) oder verschiedener Stichproben (unabhängige Messungen) miteinander kombiniert werden können.</p>
-<p><strong>Abhängige Messungen in einer Stichprobe</strong></p>
-<p>Beispiel: Sie messen die Merkfähigkeit einer Stichprobe vor (Bedingung A) und nach (Bedingung B) einer Schlafphase.</p>
-<p>In diesem Fall können wir nicht nur die Mittelwerte <span class="math inline">\(\bar{x}_A\)</span> und <span class="math inline">\(\bar{x}_B\)</span> auf Gruppenebene voneinander abziehen (<span class="math inline">\(\Delta \bar{x} = \bar{x}_A - \bar{x}_B\)</span>), sondern bereits die einzelnen Messwerte <span class="math inline">\(x_{A,i}\)</span> und <span class="math inline">\(x_{B,i}\)</span> auf Versuchspersonenebene: <span class="math inline">\(\;\;\Delta x_i = x_{A,i}-x_{B,i}\)</span></p>
-<p><u>Die Frage lautet hier:</u> wie groß ist die Variabilität von <span class="math inline">\(\Delta x_i\)</span>?</p>
-<p>Wir können diese Variabilität mit der gewohnten Formel berechnen, nur dass wir statt <span class="math inline">\(x_i\)</span> die <span class="math inline">\(\Delta x_i\)</span> einsetzen:</p>
-<p><span class="math display">\[
-\hat{\sigma}^2_\Delta = \frac{1}{n-1}\sum \left(\Delta x_i - \Delta \bar{x}\right)^2 \quad bzw.\quad \hat{\sigma}_{\Delta} = \sqrt{\frac{1}{n-1}\sum \left(\Delta x_i - \Delta \bar{x}\right)^2}
-\]</span></p>
-</section>
-<section class="slide level2">
-<h2>Verrechnung von Varianzen und Standardabweichungen</h2>
-<p>Mit einigen mathematischen Tricks lässt sich zeigen, dass die Formel für die Varianz der Differenzwerte auch wie folgt dargestellt werden kann:</p>
-<p><span class="math display">\[
-\hat{\sigma}^2_\Delta = \hat{\sigma}^2_A + \hat{\sigma}^2_B - 2\,\hat{Cov}(X_A,X_B) \quad bzw.
-\]</span></p>
-<p><span class="math display">\[
-\hat{\sigma}_\Delta = \sqrt{\hat{\sigma}^2_A + \hat{\sigma}^2_B - 2\,\hat{Cov}(X_A,X_B)}
-\]</span></p>
-<p>Diese Formel macht transparent, was passiert, wenn wir zwei Zufallsvariablen voneinander abziehen:</p>
+<h2>Cohen’s d</h2>
 <ul>
-<li class="fragment">Sind die Zufallsvariablen <em>nicht korreliert</em> (<span class="math inline">\(\hat{Cov}(X_A,X_B)=0\)</span>), so ist die Varianz der Differenz einfach der Summe der Einzelvarianzen in den Bedingungen A und B.</li>
-<li class="fragment">Sind die Zufallsvariablen <em>positiv korreliert</em> (<span class="math inline">\(\hat{Cov}(X_A,X_B)&gt;0\)</span>), so reduziert sich diese die Summe in Abhängigkeit von der Kovarianz.</li>
-<li class="fragment">Sind die Zufallsvariablen <em>negativ korreliert</em> (<span class="math inline">\(\hat{Cov}(X_A,X_B)&lt;0\)</span>), so erhöht sich die Summe in Abhängigkeit von der Kovarianz.<br>(<em>Subtraktion</em> der <em>negativen</em> Kovarianz resultiert in einer Erhöhung — “minus x minus = plus”).</li>
+<li class="fragment">Es werden drei Fälle von Mittelwertunterschieden unterschieden:
+<ul>
+<li class="fragment">Fall 1: eine Stichprobe + Einzelmessung: Differenz zwischen dem Mittelwert einer Messung und einem Referenzwert (z.B. IQ=100)</li>
+<li class="fragment">Fall 2: zwei Stichproben + unabhängige Messungen: Differenz der Gruppenmittelwerte<br>(z.B. IQ in einer blonden versus brünetten Gruppe)</li>
+<li class="fragment">Fall 3: eine Stichprobe + abhängige Messungen: Differenz der Mittelwerte zweier Messungen in derselben Gruppe (z.B. IQ morgens und IQ abends)<br>
+</li>
+</ul></li>
+<li class="fragment">Die standardisierte Effektstärke für alle drei Fälle eines Mittelwertunterschieds berechnet sich als</li>
+</ul>
+<p><span class="math display">\[
+d = \frac{\text{Mittelwertdifferenz}}{\text{Standardabweichung}}
+\]</span></p>
+<ul>
+<li class="fragment">Die Bezeichnung <span class="math inline">\(d\)</span> für standardisierte Mittelwertsunterschiede stammt von dem Statistiker Jacob Cohen — häufig wird daher auch von <span style=" color: navy !important;"><strong>Cohen’s d</strong></span> gesprochen.</li>
+<li class="fragment">Während die Mittelwertdifferenz eindeutig ist, ist die weniger triviale Frage: Standardabweichung <em>von was</em>?</li>
 </ul>
 </section>
 <section class="slide level2">
-<h2>Verrechnung von Varianzen und Standardabweichungen</h2>
+<h2>Fall 1: eine Stichprobe + Einzelmessung</h2>
+<div class="columns">
+<div class="column" style="width:63%;">
+<p><strong>Es gibt nur eine einzelne Messung an einer Gruppe und die Frage ist, ob der Mittelwert <span class="math inline">\(\bar{x}\)</span> bedeutsam über einem Referenzwert <span class="math inline">\(\mu_0\)</span> liegt.</strong></p>
+<div class="vspace-small">
+
+</div>
+<p><span class="math display">\[
+\text{Mittelwertsunterschied} = \bar{x} - \mu_0
+\]</span></p>
+<!-- <div class="vspace-medium"></div> -->
+<div class="colorbox fragment">
+<p><span class="math display">\[
+\text{Standardisierte Effektstärke:}\qquad d = \frac{\bar{x} - \mu_0}{\hat{\sigma}}
+\]</span></p>
+</div>
+</div><div class="column" style="width:37%;">
+<div style="margin-top:-25px">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/unterschied_referenz.png" height="300"></p>
+<figcaption>Beispiel: Studie zum Wohlbefinden — ist das Wohlbefinden <em>in der Gruppe</em> mit Kontaktsperre noch im positiven Bereich (<span class="math inline">\(\bar{x}&gt;\mu_0 \text{ mit } \mu_0=0\)</span>)?</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div style="margin-top:-25px">
+<ul>
+<li class="fragment">Die Wahl der Standardabweichung bereitet hier keine Kopfzerbrechen — es ist schlicht die Standardabweichung der Variable <span class="math inline">\(X\)</span> in der Stichprobe.</li>
+<li class="fragment">Eine kleine Besonderheit ist die Verwendung von <span class="math inline">\(n-1\)</span> statt <span class="math inline">\(n\)</span> im Nenner der Varianzformel:</li>
+</ul>
+</div>
+<div style="margin-top:-45px">
+<p><span class="math display">\[
+\hat{\sigma} = \sqrt{\frac{\sum\left(x_i-\bar{x}\right)^2}{n\color{darkgreen}{-1}}}
+\]</span></p>
+</div>
+<div style="margin-top:-20px">
+<ul>
+<li class="fragment">Dies ist die sog. <strong>Besselkorrektur</strong>, die immer dann Anwendung findet, wenn auf Basis der Stichprobe eine Varianzschätzung für die Population getätigt werden soll — in aller Regel ist dies bei der Effektstärkenberechnung der Fall!</li>
+</ul>
+</div>
+</section>
+<section class="slide level2">
+<h2>Fall 2: zwei Stichproben + unabhängige Messungen</h2>
+<div class="columns">
+<div class="column" style="width:68%;">
+<p><strong>Es wird die Mittelwertdifferenz <span class="math inline">\(\bar{x}_A - \bar{x}_B\)</span> zweier unabhängiger Gruppen berechnett.</strong></p>
+<div class="vspace-small">
+
+</div>
+<p><span class="math display">\[
+\text{Mittelwertunterschied} = \bar{x}_A - \bar{x}_B
+\]</span></p>
+<div class="vspace-small">
+
+</div>
+<div class="colorbox fragment">
+<p><span class="math display">\[
+\text{Standardisierte Effektstärke:}\qquad d = \frac{\bar{x}_A - \bar{x}_B}{\hat{\sigma}_\text{pooled}}\qquad
+\]</span></p>
+</div>
+<ul>
+<li class="fragment">Im Nenner von Cohen’s d wird hier die <strong>gepoolte Varianz</strong> verwendet.</li>
+<li class="fragment">Es handelt sich dabei um die mittlere Varianz über beide Gruppen hinweg, entsprechend einem an den Stichprobengrößen <span class="math inline">\(n_A\)</span> und <span class="math inline">\(n_B\)</span> gewichteten Mittelwert:</li>
+</ul>
+</div><div class="column" style="width:32%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/effectsize_pooledSD.png"></p>
+<figcaption>Unterscheidet sich der Mittelwert zweier Gruppen?</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p><span class="math display">\[
+\hat{\sigma}_\text{pooled} = \sqrt{\frac{(n_A-1)\hat{\sigma}_A^2 + (n_B-1)\hat{\sigma}_B^2}{n_A+n_B-2}}\qquad\quad\text{Falls }n_A=n_B=n:\;\; \hat{\sigma}_\text{pooled} = \sqrt{\frac{\hat{\sigma}_A^2 + \hat{\sigma}_B^2}{2}}
+\]</span></p>
+<!----------------->
+<!--- New slide --->
+<!----------------->
+</section>
+<section class="slide level2">
+<h2><span style=" color: darkred !important;">Einschub: gepoolte Varianz</span></h2>
+<p><img data-src="images/kein_klausurstoff.png" class="absolute" style="bottom: 0px; right: 0px; height: 110px; "></p>
+<ul>
+<li class="fragment">Bei unabhängigen Messungen ist es nicht (wie in Fall 3) möglich, die Einzelmesswerte <span class="math inline">\(x_{A,i}\)</span> und <span class="math inline">\(x_{B,i}\)</span> direkt voneinander abzuziehen. Nicht zuletzt wäre es völlig unklar, welche Versuchsperson aus A jeweils von welcher Versuchsperson aus B subtrahiert wird.</li>
+<li class="fragment">Damit kann auch nicht die Varianz der individuellen Effekte der Versuchspersonen berechnet werden (“Differenzenvarianz”), sondern lediglich eine <strong>gepoolte Varianz</strong> <span class="math inline">\(\hat{\sigma}^2_\text{pooled}\)</span>.</li>
+<li class="fragment">Die Annahme ist dabei, dass beide Gruppen eine ähnliche Streuung haben, z.B. weil sie randomisiert aus derselben Population gezogen wurden und man nicht erwartet, dass die Gruppenzugehörigkeit die Varianz beeinflusst.</li>
+<li class="fragment">Der Name leitet sich von der Vorstellung ab, die Datenpunkte beider Gruppen in einen gemeinsamen “Pool” zu werfen, und dann die Varianz auf allen Daten zu berechnen.</li>
+<li class="fragment">Vor dem “Wurf in den Pool” müssen die Mittelwerte der Datenpunkte aus den jeweiligen Gruppen gleichgesetzt werden — im einfachsten Fall so, dass jeweils der Gruppenmittelwert von den Datenpunkten abgezogen wird (die Daten werden <strong>zentriert</strong> — beide Gruppen haben danach den Mittelwert 0):</li>
+</ul>
+<div style="margin-top:-43px">
+<p><span class="math display">\[
+X'_A = X_A - \bar{X}_A\qquad und\qquad X'_B = X_B - \bar{X}_B
+\]</span></p>
+</div>
+<p><span class="math display">\[
+X_\text{pooled} = [X'_A; X'_B]
+\]</span></p>
+<p><span class="math display">\[
+\hat{\sigma}^2_\text{pooled} = Var(X_\text{pooled})
+\]</span></p>
+<!----------------->
+<!--- New slide --->
+<!----------------->
+</section>
+<section class="slide level2">
+<h2><span style=" color: darkred !important;">Einschub: gepoolte Varianz</span></h2>
+<p><img data-src="images/kein_klausurstoff.png" class="absolute" style="bottom: 0px; right: 0px; height: 110px; "></p>
+<div>
+<ul>
+<li>Es lässt sich mathematisch recht einfach zeigen, dass die gepoolte Varianz identisch dem an den Stichprobengrößen <span class="math inline">\(n_A\)</span> und <span class="math inline">\(n_B\)</span> gewichteten Varianzmittelwert ist:</li>
+</ul>
+</div>
+<p><span class="math display">\[
+\hat{\sigma}^2_\text{pooled} = \frac{(n_A-1)\hat{\sigma}^2_A + (n_B-1)\hat{\sigma}^2_B}{n_A+n_B-2}\quad\text{bzw.}\quad\hat{\sigma}_\text{pooled} = \sqrt{\frac{(n_A-1)\hat{\sigma}^2_A + (n_B-1)\hat{\sigma}^2_B}{n_A+n_B-2}}
+\]</span></p>
+<div class="fragment smaller">
+<p>  Die Subtraktion von 1 von den Stichprobengrößen <span class="math inline">\(n_A\)</span> und <span class="math inline">\(n_B\)</span> ist Ausdruck der Besselkorrektur.</p>
+</div>
+<ul>
+<li class="fragment">Die Gewichtung mit den Stichprobengrößen grenzt die gepoolte Varianz von der einfach gemittelten Varianz <span class="math inline">\(\hat{\sigma}_\text{av}\)</span> ab:</li>
+</ul>
+<div style="margin-top: -20px">
+<p><span class="math display">\[
+\hat{\sigma}_\text{av}^2 = \frac{\hat{\sigma}_A+\hat{\sigma}_B}{2}\quad\text{bzw.}\quad\hat{\sigma}_\text{av} = \sqrt{\frac{\hat{\sigma}_A+\hat{\sigma}_B}{2}}
+\]</span></p>
+</div>
+<ul>
+<li class="fragment"><span class="math inline">\(\hat{\sigma}_\text{av}\)</span> wird auch als <strong>ungepoolte Varianz</strong> bezeicnet, weil hier nicht alle Datenpunkte in einen Pool geworfen werden, sondern die Varianzen <span class="math inline">\(\hat{\sigma}_A\)</span> einzeln berechnet und ohne anschließend Berücksichtigung unterschiedlicher Stichprobengrößen gemittelt werden.</li>
+</ul>
+<!----------------->
+<!--- New slide --->
+<!----------------->
+</section>
+<section class="slide level2">
+<h2><span style=" color: darkred !important;">Einschub: gepoolte Varianz</span></h2>
+<p><img data-src="images/kein_klausurstoff.png" class="absolute" style="bottom: 0px; right: 0px; height: 95px; "></p>
+<ul>
+<li class="fragment">Der Nachteil der gepoolten Varianz ist, dass sie nicht mehr der interindividuellen Variabilität des Effektes (hier Mittelwertdifferenz) entspricht, sondern der Variabilität des gemessenen Merkmals <span class="math inline">\(X\)</span>.
+<ul>
+<li class="fragment">Die Mittelwertdifferenz im Zähler wird also streng genommen nicht mehr ins Verhältnis zu ihrer eigenen Variabilität gesetzt.</li>
+</ul></li>
+<li class="fragment">Die gepoolte Varianz hat jedoch auch einen Vorteil: es wird de facto nur eine Varianz geschätzt (die Popuationsvarianz des Merkmals <span class="math inline">\(X\)</span>) und diese Schätzung basiert auf <span class="math inline">\(n_A+n_B\)</span> Versuchspersonen. Sie kann also recht präzise geschätzt werden. Die Präzision der Varianz bestimmt wiederum direkt und wesentlich die Präzision des Effektstärkenmaßes selbst.</li>
+<li class="fragment">Wenn Effektstärken in erster Linie zur Vergleichbarmachung mit anderen Studien dienen (Stichwort <strong>Metaanalyse</strong>), ist eine a) <em>zuverlässige</em> und b) <em>zwischen Studien vergleichbare</em> Schätzung der Varianz ein wichtiger Aspekt — ggf. wichtiger als die Interpretierbarkeit des resultierenden Effektmaßes.</li>
+</ul>
+<!---  Example --->
+<div class="example">
+<div class="columns">
+<div class="column" style="width:10%;">
+<div style="margin-top: 10px">
+<p><img data-src="images/example.png" height="70"></p>
+</div>
+</div><div class="column" style="width:90%;">
+<p>Bei einem Pre-post-Interventionsdesign (Messung vor und nach einer Intervention an derselben Gruppe), kann es vorteilhaft sein, nur die <em>Standardabweichung des Vortestes</em> für die Standardisierung zu nehmen. Grund: die Variabilität <em>vor</em> einer Intervention ist am ehesten zwischen Studien vergleichbar — damit werden auch die Effektstärken besser vergleichbar.<a href="#/footnotes" class="footnote-ref" id="fnref3" role="doc-noteref" data-footnote-href="#/fn3" onclick=""><sup>3</sup></a> In der Praxis geschieht dies aber selten (nicht immer ist die statistisch beste auch die populärste Praxis).</p>
+</div>
+</div>
+</div>
+<!----------------->
+<!--- New slide --->
+<!----------------->
+<aside></aside></section>
+<section class="slide level2">
+<h2><span style=" color: darkred !important;">Einschub: gepoolte Varianz</span></h2>
+<p><img data-src="images/kein_klausurstoff.png" class="absolute" style="top: 10px; right: 0px; height: 100px; "></p>
+<ul>
+<li class="fragment">Eine wichtige Voraussetzung für die Verwendung der gepoolten Varianz ist, dass die<br>Einzelvarianzen <span class="math inline">\(\sigma^2_A\)</span> und <span class="math inline">\(\sigma^2_A\)</span> ähnlich sind.</li>
+<li class="fragment">Warum? Die Idee ist, die Varianzschätzung des Merkmals durch Nutzung der Datenpunkte <em>beider</em> Gruppen zu verbessern. Sind die Varianzen in beiden Gruppen jedoch unterschiedlich, so ist der Fall gegeben, dass es gar nicht <em>die eine</em> Varianz des Merkmals gibt, sondern die Varianz stark von der Gruppenzugehörigkeit abhängt.</li>
+<li class="fragment">Eine gängige Faustregel besagt, dass die Varianzen sich höchstens um den Faktor 2 unterscheiden sollten, d.h. <span class="math inline">\(0{,}5&lt;\frac{\sigma^2_A}{\sigma^2_B}&lt;2\)</span>.</li>
+<li class="fragment">Diese Einschränkung bei der Verwendung der gepoolten Varianz wird jedoch häufg missachtet, mutmaßlich auch, weil sich keine alternative Lösung für den Fall unabhängiger Messungen in großer Breite etabliert hat.
+<ul>
+<li class="fragment">In einem aktuellen Preprint schlagen Delacre und Kollegen für den Fall unabhängiger Messungen und unterschiedlicher Varianzen die Effektstärkengröße <em>Hedges</em>’ g* auf Basis der ungepoolten Varianz <span class="math inline">\(\hat{\sigma}_\text{av}\)</span> vor <a href="#/footnotes" class="footnote-ref" id="fnref4" role="doc-noteref" data-footnote-href="#/fn4" onclick=""><sup>4</sup></a>:</li>
+</ul></li>
+</ul>
+<p><span class="math display">\[
+\text{Hedges'}\,g^* \approx \left(1-\frac{3}{4(n_A+n_B)-9}\right)\cdot \frac{\bar{x}_A - \bar{x}_B}{\hat{\sigma}_\text{av}}\quad\text{mit}\quad \hat{\sigma}_\text{av}=\sqrt{\frac{\hat{\sigma}^2_A+\hat{\sigma}^2_B}{2}}
+\]</span></p>
+<aside></aside></section>
+<section class="slide level2">
+<h2>Fall 3: eine Stichprobe + zwei abhängige Messungen</h2>
+<div class="columns">
+<div class="column" style="width:68%;">
+<p><strong><span class="math inline">\(A\)</span> und <span class="math inline">\(B\)</span> sind abhängige Messungen in derselben Gruppe (d.h. <span class="math inline">\(A\)</span> und <span class="math inline">\(B\)</span> sind zwei Versuchszeitpunkte bzw. -bedingungen).</strong></p>
+<div class="vspace-small">
+
+</div>
+<p><span class="math display">\[
+\text{Mittelwertsunterschied} = \bar{x}_A - \bar{x}_B
+\]</span></p>
+<div class="colorbox fragment">
+<p><span class="math display">\[
+\text{Standardisierte Effektstärke:}
+\]</span></p>
+<div class="vspace-xsmall">
+
+</div>
+<p><span class="math display">\[
+d = \frac{\bar{x}_A - \bar{x}_B}{\hat{\sigma}_\Delta}\qquad\text{oder}\qquad d = \frac{\bar{x}_A - \bar{x}_B}{\hat{\sigma}_\text{pooled}}
+\]</span></p>
+</div>
+</div><div class="column" style="width:32%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/mittelwertunterschied_within2.png"></p>
+<figcaption>Beispiel: Unterscheidet sich das Wohlbefinden <em>in derselben Gruppe</em> vor und nach einer Kontaktsperre?</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>Variante a): Differenzenvarianz</strong></p>
+<ul>
+<li class="fragment">In einer gängigen Variante wird die Standardabweichung <span class="math inline">\(\hat{\sigma}_{\Delta}\)</span> der Differenzwerte <span class="math inline">\(\Delta X=X_A-X_B\)</span> gebildet:</li>
+</ul>
+<div style="margin-top: -18px">
+<p><span class="math display">\[
+\hat{\sigma}_{\Delta} = \sqrt{\frac{\sum\left(\Delta x_i-\Delta\bar{x}\right)^2}{n-1}} \qquad\text{und}\quad \Delta x_i = x^{(A)}_i - x^{(B)}_i
+\]</span></p>
+</div>
+<ul>
+<li class="fragment">Wir bezeichnen diese als <strong>Differenzenvarianz</strong>.</li>
+</ul>
+</section>
+<section class="slide level2">
+<h2><span style=" color: darkred !important;">Einschub: Differenzenvarianz</span></h2>
+<p><img data-src="images/kein_klausurstoff.png" class="absolute" style="top: 10px; right: 0px; height: 90px; "></p>
+<ul>
+<li class="fragment">Im Falle abhängiger Messungen können wir nicht nur die Mittelwerte <span class="math inline">\(\bar{x}_A\)</span> und <span class="math inline">\(\bar{x}_B\)</span> subtrahieren<br>(<span class="math inline">\(\Delta \bar{x} = \bar{x}_A - \bar{x}_B\)</span>), sondern bereits die einzelnen Messwerte <span class="math inline">\(x_{A,i}\)</span> und <span class="math inline">\(x_{B,i}\)</span>: <span class="math inline">\(\;\;\Delta x_i = x_{A,i}-x_{B,i}\)</span></li>
+<li class="fragment">Die Differenzenvarianz misst die Varianz dieser Differenzwerte. Wir können sie mit der gewohnten Formel berechnen, nur dass statt <span class="math inline">\(x_i\)</span> die <span class="math inline">\(\Delta x_i\)</span> eingesetzt werden:</li>
+</ul>
+<div style="margin-top: -10px">
+<p><span class="math display">\[
+\hat{\sigma}^2_\Delta = \frac{1}{n-1}\sum \left(\Delta x_i - \Delta \bar{x}\right)^2 \quad bzw.\quad \hat{\sigma}_{\Delta} = \sqrt{\frac{1}{n-1}\sum \left(\Delta x_i - \Delta \bar{x}\right)^2}
+\]</span></p>
+</div>
+<ul>
+<li class="fragment">Mit einigen mathematischen Tricks lässt sich zeigen, dass die Formel für die Varianz der Differenzwerte auch wie folgt dargestellt werden kann:</li>
+</ul>
+<div style="margin-top: -25px">
+<p><span class="math display">\[
+\hat{\sigma}^2_\Delta = \hat{\sigma}^2_A + \hat{\sigma}^2_B - 2\,\hat{Cov}(X_A,X_B)
+\]</span></p>
+</div>
+<div class="compact-sublist">
+<ul>
+<li class="fragment">Diese Formel macht transparent, dass die Differenzenvarianz vom Zusammenhang zwischen <span class="math inline">\(X_A\)</span> und <span class="math inline">\(X_B\)</span> abhängt:
+<ul>
+<li class="fragment">Sind die Zufallsvariablen <em>nicht korreliert</em> (<span class="math inline">\(\hat{Cov}(X_A,X_B)=0\)</span>), so ist die Varianz der Differenz einfach der Summe der Einzelvarianzen.</li>
+<li class="fragment">Sind die Zufallsvariablen <em>positiv korreliert</em> (<span class="math inline">\(\hat{Cov}(X_A,X_B)&gt;0\)</span>), so reduziert sich die Summe in Abhängigkeit von der Kovarianz.</li>
+<li class="fragment">Sind die Zufallsvariablen <em>negativ korreliert</em> (<span class="math inline">\(\hat{Cov}(X_A,X_B)&lt;0\)</span>), so erhöht sich die Summe in Abhängigkeit von der Kovarianz.<br>(<em>Subtraktion</em> der <em>negativen</em> Kovarianz resultiert in einer Erhöhung — “minus x minus = plus”).</li>
+</ul></li>
+</ul>
+</div>
+<!----------------->
+<!--- New slide --->
+<!----------------->
+</section>
+<section class="slide level2">
+<h2><span style=" color: darkred !important;">Einschub: Differenzenvarianz</span></h2>
+<p><img data-src="images/kein_klausurstoff.png" class="absolute" style="bottom: 0px; right: 0px; height: 100px; "></p>
 <p>Der Effekt der Kovarianz auf die Varianz der Differenzwerte ist besonders intuitiv bei einer positiven Korrelation. Betrachten wir zwei Variablen <span class="math inline">\(X_A\)</span> und <span class="math inline">\(X_B\)</span> mit unterschiedlichen Kovarianzen und wie sich dabei jeweils die Variabilität des Differenzwertes entwickelt:</p>
 <div class="vspace-medium">
 
 </div>
-
-<img data-src="images/pooled_variance_dependent.png" class="r-stretch quarto-figure-center"><p class="caption">In allen drei Plots gilt <span class="math inline">\(\bar{x}_A=6\)</span> und <span class="math inline">\(\bar{x}_B=5\)</span>, d.h. <span class="math inline">\(\bar{x}_A-\bar{x}_B=1\)</span>.</p><div class="vspace-medium">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/pooled_variance_dependent.png"></p>
+<figcaption>In allen drei Plots gilt <span class="math inline">\(\bar{x}_A=6\)</span> und <span class="math inline">\(\bar{x}_B=5\)</span>, d.h. <span class="math inline">\(\bar{x}_A-\bar{x}_B=1\)</span>.</figcaption>
+</figure>
+</div>
+<div class="vspace-medium">
 
 </div>
 <p>Wir sehen: je höher die Korrelation <span class="math inline">\(\bar{x}_A\)</span> und <span class="math inline">\(\bar{x}_B\)</span>, desto geringer die Variabilität der Differenz von <span class="math inline">\(\bar{x}_A-\bar{x}_B\)</span>! Ist die Korrelation perfekt (<span class="math inline">\(r=1\)</span>), so ist die Differenz sogar konstant, d.h. ihre Variabilität ist gleich 0.</p>
@@ -559,241 +821,29 @@ for i in range(3):
 plt.tight_layout()
 plt.savefig('images/pooled_variance_dependent.png', bbox_inches='tight')
 ```-->
-</section>
-<section class="slide level2">
-<h2>Verrechnung von Varianzen und Standardabweichungen</h2>
-<p><strong>Unhängige Messungen in zwei Stichproben</strong></p>
-<p>Im Fall zweier unabhängiger Messungen, ist es nicht möglich die Einzelmesswerte <span class="math inline">\(x_{A,i}\)</span> und <span class="math inline">\(x_{B,i}\)</span> auf Versuchspersonenebene voneinander abzuziehen. Es wäre ohnehin völlig unklar, welche Versuchsperson man in Gruppe A mit welcher anderen Versuchsperson in Gruppe B matched. Man unterscheidet hier im allgemeinen zwei Fälle.</p>
-<div class="fragment">
-<p><u><strong>a) Gepoolte Varianz</strong></u></p>
-</div>
-<p>Sind die Varianzen ähnlich, ist es sinnvoll, die <span style=" color: navy !important;"><strong>gepoolte Varianz</strong></span> <span class="math inline">\(\hat{\sigma}^2_\text{pooled}\)</span> zu berechnen. Der Name leitet sich von der Vorstellung ab, die Datenpunkte beider Gruppen in einen gemeinsamen “Pool” zu werfen, und dann die Varianz auf allen Daten zu berechnen.</p>
-<ul>
-<li class="fragment">Zu beachten ist allerdings, dass beide Gruppen unterschiedliche Mittelwerte haben. Vor dem “Wurf in den Pool” müssen daher die Mittelwerte der Datenpunkte aus den jeweiligen Gruppen gleichgesetzt werden — im einfachsten Fall so, dass jeweils der Gruppenmittelwert von den Datenpunkten abgezogen wird (die Daten werden <strong>zentriert</strong> — beide Gruppen haben danach den Mittelwert 0):</li>
-</ul>
-<div style="margin-top:-43px">
-<p><span class="math display">\[
-X'_A = X_A - \bar{X}_A\qquad und\qquad X'_B = X_B - \bar{X}_B
-\]</span></p>
-</div>
-<p><span class="math display">\[
-X_\text{pooled} = [X'_A; X'_B]
-\]</span></p>
-<p><span class="math display">\[
-\hat{\sigma}^2_\text{pooled} = Var(X_\text{pooled})
-\]</span></p>
-</section>
-<section class="slide level2">
-<h2>Verrechnung von Varianzen und Standardabweichungen</h2>
-<div>
-<ul>
-<li>De facto entspricht die gepoolte Varianz einer Art mittleren Varianz beider Gruppen.</li>
-<li>Die gepoolte Varianz kann daher auch direkt auf Basis der einzelnen Varianzen <span class="math inline">\(\hat{\sigma}^2_A\)</span> und <span class="math inline">\(\hat{\sigma}^2_B\)</span> beider Gruppen berechnet werden.</li>
-</ul>
-</div>
-<div class="fragment" style="margin-top: -20px">
-<div>
-<ul>
-<li>Zu beachten ist allerdings, dass die Stichprobengrößen <span class="math inline">\(n_A\)</span> und <span class="math inline">\(n_B\)</span> unterschiedlich sein können — aus diesem Grund wird der <em>an den Stichprobengrößen</em> gewichtete Varianzmittelwert bestimmt:</li>
-</ul>
-</div>
-<p><span class="math display">\[
-\hat{\sigma}^2_\text{pooled} = \frac{(n_A-1)\hat{\sigma}^2_A + (n_B-1)\hat{\sigma}^2_B}{n_A+n_B-2}\quad\text{bzw.}\quad\hat{\sigma}_\text{pooled} = \sqrt{\frac{(n_A-1)\hat{\sigma}^2_A + (n_B-1)\hat{\sigma}^2_B}{n_A+n_B-2}}
-\]</span></p>
-</div>
-<div class="fragment">
-<p>Die Subtraktion von 1 von den Stichprobengrößen <span class="math inline">\(n_A\)</span> und <span class="math inline">\(n_B\)</span> ist Ausdruck der Besselkorrektur.</p>
-</div>
-<ul>
-<li class="fragment">Der Vorteil der gepoolten Varianz ist, dass sie eine besonders präzise Schätzung der Varianz unserer Variable (bzw. Merkmals) liefert, da sie auf den kombinierten Datenpunkten beider Gruppen basiert.</li>
-<li class="fragment">Zu beachten ist allerdings, dass die gepoolte Varianz <strong>kein Maß für die Streuung der Mittelwerts<em>differenz</em> ist</strong>, sondern ein Maß der Streuung des ursprünglichen Merkmals.</li>
-</ul>
-</section>
-<section class="slide level2">
-<h2>Verrechnung von Varianzen und Standardabweichungen</h2>
-<ul>
-<li class="fragment">Warum sollten die Varianzen für die Verwendung der gepoolten Varianz ähnlich sein?
-<ul>
-<li class="fragment">Die Idee ist, die Varianzschätzung des Merkmals durch Nutzung der Datenpunkte <em>beider</em> Gruppen zu verbessern.</li>
-<li class="fragment">Sind die Varianzen in beiden Gruppen jedoch unterschiedlich, so ist der Fall gegeben, dass es gar nicht <em>die eine</em> Varianz des Merkmals gibt, sondern die Varianz stark von der Gruppenzugehörigkeit abhängt.</li>
-<li class="fragment">Das Konzept der gepoolten Varianz ist daher nicht mehr sinnvoll.</li>
-</ul></li>
-<li class="fragment">Was heißt “ähnlich”?
-<ul>
-<li class="fragment">Eine gängige Faustregel besagt, dass die Varianzen sich höchstens um den Faktor 2 unterscheiden sollten, d.h. <span class="math inline">\(0{,}5&lt;\frac{\sigma^2_A}{\sigma^2_B}&lt;2\)</span>.</li>
-</ul></li>
-</ul>
-</section>
-<section class="slide level2">
-<h2>Verrechnung von Varianzen und Standardabweichungen</h2>
-<p><u><strong>b) Varianz der Mittelwertdifferenz bei unabhängigen Gruppen</strong></u></p>
-<ul>
-<li class="fragment">Unabhängig davon, ob die Varianzen beider Gruppen ähnlich oder unähnlich sind, gilt folgende <strong>Varianzsummenformel für unabhängige Variablen</strong>:</li>
-</ul>
-<div class="colorbox fragment" style="margin-top: -12px">
-<p>Die Varianz der Differenz (oder auch Summe!) zweier <strong>unabhängiger</strong> Zufallsvariablen <span class="math inline">\(X_A\)</span> und <span class="math inline">\(X_B\)</span> ist gleich der Summe der Einzelvarianzen:</p>
-<p><span class="math display">\[
-\Delta X = X_A - X_B \quad \rightarrow \quad \hat{\sigma}_\Delta^2 = \hat{\sigma}_A^2 + \hat{\sigma}_B^2
-\]</span></p>
-</div>
-<ul>
-<li class="fragment"><strong>Problem:</strong> wie wir bereits festgestellt haben, können wir bei unabhängigen Gruppen die Variablen <span class="math inline">\(X_A\)</span> und <span class="math inline">\(X_B\)</span> nicht direkt voneinander abziehen, sondern lediglich die Mittelwertsdifferenz <span class="math inline">\(\bar{X}_A-\bar{X}_B\)</span> bilden.</li>
-<li class="fragment">Die Varianzsummenformel lässt sich daher hier nur auf die Mittelwerte <span class="math inline">\(\bar{X}_A\)</span> und <span class="math inline">\(\bar{X}_B\)</span> übertragen:</li>
-</ul>
-<p><span class="math display">\[
-\Delta \bar{X} = \bar{X}_A - \bar{X}_B \quad \rightarrow \quad \hat{\sigma}_\bar{\Delta}^2 = \hat{\sigma}_\bar{A}^2 + \hat{\sigma}_\bar{B}^2
-\]</span></p>
-<p>… was zur Frage führt: was soll die Varianz <span class="math inline">\(\hat{\sigma}_\bar{A}^2\)</span>/<span class="math inline">\(\hat{\sigma}_\bar{B}^2\)</span> eines Mittelwertes sein, wenn es doch nur <em>einen</em> Mittelwert gibt? Dies wird Thema der Vorlesung 08 sein, in der wir lernen, die <em>Unsicherheit des Mittelwertes</em> zu bestimmen — mithilfe des <strong>Standardfehlers</strong>.</p>
-</section>
-<section class="slide level2">
-<h2>Verrechnung von Varianzen und Standardabweichungen</h2>
-<div class="fragment">
-<p>Eine berechtige Frage ist an dieser Stelle: wenn die Gesetzmäßigkeit der Varianzsummenformel sowohl für ähnliche als auch unähnliche Gruppenvarianzen gilt, warum wird das Konzept der gepoolten Varianz überhaupt verwendet?</p>
-</div>
-<ul>
-<li class="fragment">Folgende Überlegung: die Messung von Varianzen auf Basis von Stichproben ist mit Unsicherheit behaftet — sie ist <em>ungenau</em>. Die Varianzsummenformel zur Bestimmung der Varianz einer Mittelwert-differenz basiert auf zwei mit Unischerheit behafteten Einzelvarianzen, die jeweils ausschließlich auf Basis der vorhandenen Datenpunkte in den jeweiligen Gruppen berechnet werden.</li>
-<li class="fragment">Bei der gepoolten Varianz hingegen ist die Situation, dass eigentlich nur eine Varianz bestimmt werden muss, nämlich die Varianz des Merkmals, die wenig von der Gruppenzugehörigkeit beeinflusst wird. Und für diese eine Varianz können wir sogar die gepoolten Datenpunkte beider Gruppen heranziehen.</li>
-<li class="fragment">Es ist also davon auszugehen, dass die <strong>gepoolte Varianz ein präziserer Kennwert als eine Differenzen-Varianz</strong> ist.</li>
-<li class="fragment">Bei vielen nachfolgenden Themenkomplexen werden wir kombinierte Varianzen zur <strong>Standardisierung von Effekten</strong> verwenden, und es gilt: mit je weniger Unsicherheit die dabei verwendete Varianz verbundet ist, desto weniger Unsicherheit fließt auch in die standardisierten Effekte ein. Aus diesem Grund ist die gepoolte Varianz grundsätzlich die attraktivere Wahl — so denn die Voraussetzung ähnlicher Gruppenvarianzen erfüllt ist.</li>
-</ul>
 <!----------------->
 <!--- New slide --->
 <!----------------->
 </section>
 <section class="slide level2">
-<h2><span style=" color: darkred !important;">Herleitung der gepoolten Varianz und Standardabweichung</span></h2>
-<p><img data-src="images/kein_klausurstoff.png" class="absolute" style="bottom: 0px; right: 0px; height: 110px; "></p>
-<!-- https://stats.stackexchange.com/questions/1850/difference-between-cohens-d-and-hedges-g-for-effect-size-metrics
-https://stats.stackexchange.com/questions/66956/whats-the-difference-between-hedges-g-and-cohens-d
-https://stats.stackexchange.com/questions/1850/difference-between-cohens-d-and-hedges-g-for-effect-size-metrics -->
+<h2>Fall 3: eine Stichprobe + zwei abhängige Messungen</h2>
 <ul>
-<li class="fragment">Wir starten mit den (nicht bias-korrigierten) <strong>Varianzen</strong> <span class="math inline">\(s^2_A\)</span> und <span class="math inline">\(s^2_B\)</span> der Stichproben A und B.</li>
-<li class="fragment">Die <strong>gepoolte Varianz</strong> ist definiert als der gewichtete Mittelwert der beiden Einzelvarianzen in den beiden Gruppen:</li>
+<li class="fragment">Bei der Standardisierung mit <span class="math inline">\(\hat{\sigma}^2_\Delta\)</span> wird der Effekt (Mittelwertdifferenz) mit der <em>Streuung des Effektes</em> (Varianz der Mittelwertdifferenz) ins Verhältnis gesetzt.</li>
+<li class="fragment">Diese Art der Standardisierung entspricht der intuitiven Grundidee von Cohen’s d: den unstandardisierte Effekt an seiner eigenen Streuung zu relativieren (d.h. zu standardisieren).</li>
 </ul>
-<div style="margin-top: -25px">
+<p><strong>Variante b): gepoolte Varianz</strong></p>
+<ul>
+<li class="fragment"><strong>Problem:</strong> häufig sollen Effektstärken zwischen Designs mit <em>abhängigen</em> und <em>unabhängigen</em> Messungen verglichen werden — jedoch lässt sich in Fall 2 (unabhängige Messungen) keine Differenzenvarianz berechnen.</li>
+<li class="fragment">Aus diesem Grund gibt es eine zweite gängige Variante einer Standardisierungsvarianz für Cohen’s d bei abhängigen Messungen, die identisch mit der Varianz in Fall 2 ist: die gepoolte Varianz</li>
+</ul>
+<div style="margin-top: -12px">
 <p><span class="math display">\[
-s^2_\text{pooled} = \frac{n_A\cdot s^2_A + n_B\cdot s^2_B}{n_A+n_B}
+\hat{\sigma}^2_\text{pooled} = \frac{\hat{\sigma}^2_A + \hat{\sigma}^2_B}{2}\quad\text{bzw.}\quad\hat{\sigma}_\text{pooled} = \sqrt{\frac{\hat{\sigma}^2_A + \hat{\sigma}^2_B}{2}}
 \]</span></p>
 </div>
 <ul>
-<li class="fragment">Da wir von der Stichprobe auf die Population schließen wollen, wird die <strong>Besselkorrektur</strong> verwendet, d.h. <span class="math inline">\(n_A\rightarrow n_A-1\)</span> und <span class="math inline">\(n_B\rightarrow n_B-1\)</span> und <span class="math inline">\(s^2 \rightarrow \hat{\sigma}^2\)</span>:</li>
+<li class="fragment">Beachte, dass hier die gepoolte Varianz <span class="math inline">\(\hat{\sigma}^2_\text{pooled}\)</span> identisch mit der ungepoolten (einfach gemittelten) Varianz <span class="math inline">\(\hat{\sigma}^2_\text{av}\)</span> ist, da bei abhängigen Messungen immer gilt: <span class="math inline">\(n=n_A=n_B\)</span>.</li>
 </ul>
-<p><span class="math display">\[
-\hat{\sigma}^2_\text{pooled} = \frac{(n_A-1)\cdot \hat{\sigma}^2_A + (n_B-1)\cdot \hat{\sigma}^2_B}{n_A+n_B-2}
-\]</span></p>
-<ul>
-<li class="fragment">Analog gilt:</li>
-</ul>
-<p><span class="math display">\[
-\text{bzw.}\qquad \hat{\sigma}_\text{pooled} = \sqrt{\frac{(n_A-1)\cdot \hat{\sigma}^2_A + (n_B-1)\cdot \hat{\sigma}^2_B}{n_A+n_B-2}}
-\]</span></p>
-</section>
-<section class="slide level2">
-<h2><span style="font-size:35px">Standardisierte Effektstärken für Mittelwertunterschiede: Einzelmessung</span></h2>
-<div class="columns">
-<div class="column" style="width:63%;">
-<p><u><strong>Fall 1:</strong></u> Es gibt nur eine einzelne Messung an einer Gruppe und die Frage ist, ob der Mittelwert <span class="math inline">\(\bar{x}\)</span> bedeutsam über einem Referenzwert <span class="math inline">\(\mu_0\)</span> liegt.</p>
-<div class="vspace-medium">
-
-</div>
-<p><span class="math display">\[
-\text{Mittelwertsunterschied} = \bar{x} - \mu_0
-\]</span></p>
-<div class="vspace-medium">
-
-</div>
-<p><span class="math display">\[
-\text{Standardisierte Effektstärke:}\qquad d = \frac{\bar{x} - \mu_0}{\hat{\sigma}}
-\]</span></p>
-</div><div class="column" style="width:37%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/unterschied_referenz.png" height="300"></p>
-<figcaption>Beispiel: Studie zum Wohlbefinden — ist das Wohlbefinden <em>in der Gruppe</em> mit Kontaktsperre noch im positiven Bereich (<span class="math inline">\(\bar{x}&gt;\mu_0 \text{ mit } \mu_0=0\)</span>)?</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<div style="margin-top:-25px">
-<ul>
-<li class="fragment">Die Verwendung von <span class="math inline">\(\hat{\sigma}\)</span> statt <span class="math inline">\(\sigma\)</span> bringt zum Ausdruck, dass wir hier auf Basis der Stichprobe die Varianz in der Population schätzen (d.h. Besselkorrektur mit <span class="math inline">\(n-1\)</span>):</li>
-</ul>
-</div>
-<p><span class="math display">\[
-\hat{\sigma} = \sqrt{\frac{\sum\left(x_i-\bar{x}\right)^2}{n\color{darkgreen}{-1}}}
-\]</span></p>
-<ul>
-<li class="fragment">Die Bezeichnung <span class="math inline">\(d\)</span> für standardisierte Mittelwertsunterschiede stammt von dem Statistiker Jacob Cohen — häufig wird daher auch von <span style=" color: navy !important;"><strong>Cohen’s d</strong></span> gesprochen.</li>
-</ul>
-</section>
-<section class="slide level2">
-<h2><span style="font-size:32px">Standardisierte Effektstärken für Mittelwertunterschiede: abhängige Messungen</span></h2>
-<div class="columns">
-<div class="column" style="width:68%;">
-<p><u><strong>Fall 2:</strong></u> <span class="math inline">\(A\)</span> und <span class="math inline">\(B\)</span> sind <em>abhängige</em> Messungen in derselben Gruppe (d.h. <span class="math inline">\(A\)</span> und <span class="math inline">\(B\)</span> sind zwei Versuchszeitpunkte oder Versuchsbedingungen).</p>
-<p><span class="math display">\[
-\text{Mittelwertsunterschied} = \bar{x}_A - \bar{x}_B
-\]</span></p>
-<ul>
-<li class="fragment">Klassischerweise wird für die Berechnung von Cohen’s d die Standardabweichung <span class="math inline">\(\hat{\sigma}_{\Delta}\)</span> der Differenz <span class="math inline">\(\Delta X=X_A-X_B\)</span> gewählt:</li>
-</ul>
-<p><span class="math display">\[
-\text{Standardisierte Effektstärke:}\qquad d = \frac{\bar{x}_A - \bar{x}_B}{\hat{\sigma}_{\Delta}}
-\]</span></p>
-</div><div class="column" style="width:32%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/mittelwertunterschied_within2.png"></p>
-<figcaption>Beispiel: Unterscheidet sich das Wohlbefinden <em>in derselben Gruppe</em> vor und nach einer Kontaktsperre?</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<p><span class="math display">\[
-\text{mit}\quad \hat{\sigma}_{\Delta} = \sqrt{\frac{\sum\left(\Delta x_i-\Delta\bar{x}\right)^2}{n-1}} \qquad\text{und}\quad \Delta x_i = x^{(A)}_i - x^{(B)}_i
-\]</span></p>
-<div class="notabene">
-<div class="columns">
-<div class="column" style="width:7%;">
-<div style="margin-top: 10px">
-<p><img data-src="images/notabene2.png" height="65"></p>
-</div>
-</div><div class="column" style="width:93%;">
-<p>Handelt es sich um ein Pre-post-Interventionsdesign (Messung vor und nach einer Intervention an derselben Gruppe), bietet es sich eigentlich an, nur die Standardabweichung des Vortestes für die Standardisierung zu nehmen. Grund: die Variabilität <em>vor</em> einer Intervention ist am ehesten zwischen Studien vergleichbar.<a href="#/footnotes" class="footnote-ref" id="fnref3" role="doc-noteref" data-footnote-href="#/fn3" onclick=""><sup>3</sup></a> In der Praxis geschieht dies aber selten.</p>
-</div>
-</div>
-</div>
-<aside></aside></section>
-<section class="slide level2">
-<h2><span style="font-size:31px">Standardisierte Effektstärken für Mittelwertunterschiede: unabhängige Messungen</span></h2>
-<div class="columns">
-<div class="column" style="width:68%;">
-<p><u><strong>Fall 3:</strong></u> <span class="math inline">\(A\)</span> und <span class="math inline">\(B\)</span> sind <strong>unabhängige Gruppen</strong>, d.h. sie sind aus unterschiedlichen Versuchspersonen zusammengesetzt.</p>
-<ul>
-<li class="fragment">Auch hier gilt: Mittelwertunterschiede werden immer mit der Streuung <em>innerhalb der Gruppen</em> standardisiert.</li>
-<li class="fragment">Da es zwei Gruppen gibt, wird berechnet, wie die Datenpunkte beider Gruppen im Mittel <em>um ihren jeweiligen Mittelwerte</em> <span class="math inline">\(\bar{x}_A\)</span> und <span class="math inline">\(\bar{x}_B\)</span> streuen.</li>
-<li class="fragment">Diese Art von Standardabweichung ist die bereits eingeführte <strong>gepoolte Standardabweichung</strong> <span class="math inline">\(\hat{\sigma}_\text{pooled}\)</span>:</li>
-</ul>
-</div><div class="column" style="width:32%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/effectsize_pooledSD.png"></p>
-<figcaption>Unterscheidet sich der Mittelwert zweier Gruppen?</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<p><span class="math display">\[
-\scriptsize{
-\hat{\sigma}_\text{pooled} = \sqrt{\frac{(n_A-1)\hat{\sigma}_A^2 + (n_B-1)\hat{\sigma}_B^2}{n_A+n_B-2}}\qquad\qquad\text{Falls }n_A=n_B=n:\;\; \hat{\sigma}_\text{pooled} = \sqrt{\frac{\hat{\sigma}_A^2 + \hat{\sigma}_B^2}{2\left(1-\frac{1}{n}\right)}}
-}
-\]</span></p>
-<div class="vspace-medium">
-
-</div>
-<p><span class="math display">\[
-\text{Standardisierte Effektstärke:}\qquad d = \frac{\bar{x}_A - \bar{x}_B}{\hat{\sigma}_\text{pooled}}
-\]</span></p>
 <!----------------->
 <!--- New slide --->
 <!----------------->
@@ -823,7 +873,7 @@ s^2_\text{pooled} = \frac{n_A\cdot s^2_A + n_B\cdot s^2_B}{n_A+n_B}
 <ul>
 <li class="fragment">Die Effektstärke von <span class="math inline">\(0{,}3\)</span> sagt aus, dass die Schlafdauer um <span class="math inline">\(0{,}3\)</span> <em>Standardabweichungen</em> gegenüber dem Durchschnittswert verringert ist. Die Einheit <em>Standardabweichung</em> bezieht sich dabei auf die Standardabweichung <span class="math inline">\(\hat{\sigma}\)</span> der Schlafdauer in der untersuchten Gruppe.
 <ul>
-<li class="fragment">Bei mehreren Bedingungen/Gruppen gilt zwar weiterhin die Interpretation im Sinne von <em>in Einheiten von Standardabweichungen</em>, allerdings ist die Definition der Standardabweichungen (<span class="math inline">\(s_{\Delta}\)</span>, <span class="math inline">\(s_\text{pooled}\)</span>) eher kompliziert und damit nicht mehr sonderlich intuitiv.</li>
+<li class="fragment">Bei mehreren Bedingungen/Gruppen gilt zwar weiterhin die Interpretation im Sinne von <em>in Einheiten von Standardabweichungen</em>, allerdings ist die Definition der Standardabweichungen (<span class="math inline">\(\hat{\sigma}_{\Delta}\)</span>, <span class="math inline">\(\hat{\sigma}_\text{pooled}\)</span>) eher kompliziert und damit nicht mehr sonderlich intuitiv.</li>
 </ul></li>
 </ul>
 <!----------------->
@@ -896,7 +946,7 @@ s^2_\text{pooled} = \frac{n_A\cdot s^2_A + n_B\cdot s^2_B}{n_A+n_B}
 <div class="column" style="width:70%;">
 <p><img data-src="images/effectsizes_prereg_schaefer.png" height="330"></p>
 </div><div class="column caption-style" style="width:30%;">
-<p>Die Abbildung zeigt, dass Effekte, bei denen Hypothesen und Analysen vorab registriert wurden (“with pre-registration”) deutlich geringere Effektstärken aufweisen, als Effekte “without pre-registration”. In der Abbildung ist zu beachten, dass die absolute und nicht die relative Häufigkeit aufgetragen ist, wodurch Studien ohne Preregistrierung — von denen es deutlich mehr gibt — visuell dominieren.<a href="#/footnotes" class="footnote-ref" id="fnref4" role="doc-noteref" data-footnote-href="#/fn4" onclick=""><sup>4</sup></a></p>
+<p>Die Abbildung zeigt, dass Effekte, bei denen Hypothesen und Analysen vorab registriert wurden (“with pre-registration”) deutlich geringere Effektstärken aufweisen, als Effekte “without pre-registration”. In der Abbildung ist zu beachten, dass die absolute und nicht die relative Häufigkeit aufgetragen ist, wodurch Studien ohne Preregistrierung — von denen es deutlich mehr gibt — visuell dominieren.<a href="#/footnotes" class="footnote-ref" id="fnref5" role="doc-noteref" data-footnote-href="#/fn5" onclick=""><sup>5</sup></a></p>
 </div>
 </div>
 <p>⇒ Die Interpretation und Einordnung von Effektstärken ist ein nicht-triviales Problem, das viel “domain knowledge” erfordert. Dies gilt für standardisierte wie unstandardisierte Effektstärken.</p>
@@ -990,7 +1040,7 @@ QS_\text{Gesamt} = QS_\text{Bedingungen} + QS_\text{Personen x Bedingungen}
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="images/lovakov2021_typical.png" height="550"></p>
-<figcaption>Typische Effektstärke in der sozialpsychologischen Literatur<a href="#/footnotes" class="footnote-ref" id="fnref5" role="doc-noteref" data-footnote-href="#/fn5" onclick=""><sup>5</sup></a>.</figcaption>
+<figcaption>Typische Effektstärke in der sozialpsychologischen Literatur<a href="#/footnotes" class="footnote-ref" id="fnref6" role="doc-noteref" data-footnote-href="#/fn6" onclick=""><sup>6</sup></a>.</figcaption>
 </figure>
 </div>
 <!----------------->
@@ -1006,7 +1056,7 @@ QS_\text{Gesamt} = QS_\text{Bedingungen} + QS_\text{Personen x Bedingungen}
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="images/lovakov2021_effectsizes.png" height="550"></p>
-<figcaption>Trotz Publikationsbias sind die tatsächlich in der Literatur berichteten Effektstärken geringer als bei der Einteilung nach Cohen angenommen. Auf Basis dieser Studie wären die korrekten Grenzen für Cohen’s d 0,15, 0,36, und 0,65. Bild adaptiert von Lovakov &amp; Agadulina (2021)<a href="#/footnotes" class="footnote-ref" id="fnref6" role="doc-noteref" data-footnote-href="#/fn6" onclick=""><sup>6</sup></a>.</figcaption>
+<figcaption>Trotz Publikationsbias sind die tatsächlich in der Literatur berichteten Effektstärken geringer als bei der Einteilung nach Cohen angenommen. Auf Basis dieser Studie wären die korrekten Grenzen für Cohen’s d 0,15, 0,36, und 0,65. Bild adaptiert von Lovakov &amp; Agadulina (2021)<a href="#/footnotes" class="footnote-ref" id="fnref7" role="doc-noteref" data-footnote-href="#/fn7" onclick=""><sup>7</sup></a>.</figcaption>
 </figure>
 </div>
 <!----------------->
@@ -1021,7 +1071,7 @@ QS_\text{Gesamt} = QS_\text{Bedingungen} + QS_\text{Personen x Bedingungen}
 <section class="slide level2">
 <h2>Standardisierte oder unstandardisierte Effektstärken?</h2>
 <ul>
-<li class="fragment">Die Frage ob Effektstärken in standardisierter oder unstandardisierter Form berichtet werden sollten wird durchaus kontrovers diskutiert<a href="#/footnotes" class="footnote-ref" id="fnref7" role="doc-noteref" data-footnote-href="#/fn7" onclick=""><sup>7</sup></a> <a href="#/footnotes" class="footnote-ref" id="fnref8" role="doc-noteref" data-footnote-href="#/fn8" onclick=""><sup>8</sup></a>.</li>
+<li class="fragment">Die Frage ob Effektstärken in standardisierter oder unstandardisierter Form berichtet werden sollten wird durchaus kontrovers diskutiert<a href="#/footnotes" class="footnote-ref" id="fnref8" role="doc-noteref" data-footnote-href="#/fn8" onclick=""><sup>8</sup></a> <a href="#/footnotes" class="footnote-ref" id="fnref9" role="doc-noteref" data-footnote-href="#/fn9" onclick=""><sup>9</sup></a>.</li>
 <li class="fragment">Standardisierte Effektstärken ermöglichen eine bessere Vergleichbarkeit zwischen unterschied-lichen Skalen, gleichzeitig wird die intuitive Bedeutung von <em>Effektstärke</em> aber verwässert.</li>
 </ul>
 <!---  Example --->
@@ -1076,7 +1126,7 @@ d=\frac{kr}{\hat{\sigma}_X\sqrt{1-r^2}} \qquad\qquad \hat{se}(d) = |d|\sqrt{\fra
 </div>
 <p>wobei <span class="math inline">\(\hat{se}(d)\)</span> der Standardfehler der Effektstärke <span class="math inline">\(d\)</span> ist, der zusätzlich angegeben werden sollte.</p>
 <p><strong>Interpretation:</strong> <span class="math inline">\(d\)</span> entspricht der durchschnittlichen Zunahme der standarsierten <span class="math inline">\(Y\)</span>-Variable mit jeder Zunahme von <span class="math inline">\(X\)</span> um <span class="math inline">\(k\)</span> (Rohwert)Einheiten — <span class="math inline">\(k\)</span> muss vom Forscher gewählt werden.</p>
-<p>Hier wird klar, dass die Formel in Fall 1 implizit <span class="math inline">\(k=2\hat{\sigma}_X\)</span> annnimmt. Wählt man dieses <span class="math inline">\(k\)</span> auch in Fall 2, ist die Berechnung von <span class="math inline">\(d\)</span> identisch zu Fall 1 — der Standardfehler unterscheidet sich allerdings weiterhin! Quelle: <a href="#/footnotes" class="footnote-ref" id="fnref9" role="doc-noteref" data-footnote-href="#/fn9" onclick=""><sup>9</sup></a></p>
+<p>Hier wird klar, dass die Formel in Fall 1 implizit <span class="math inline">\(k=2\hat{\sigma}_X\)</span> annnimmt. Wählt man dieses <span class="math inline">\(k\)</span> auch in Fall 2, ist die Berechnung von <span class="math inline">\(d\)</span> identisch zu Fall 1 — der Standardfehler unterscheidet sich allerdings weiterhin! Quelle: <a href="#/footnotes" class="footnote-ref" id="fnref10" role="doc-noteref" data-footnote-href="#/fn10" onclick=""><sup>10</sup></a></p>
 <p>Umgekehrt gilt:</p>
 <div style="margin-top: -40px">
 <p><span class="math display">\[
@@ -1190,7 +1240,7 @@ NNT = \frac{1}{ARR}
 <section class="slide level2">
 <h2>Numbers Needed to Treat (NNT)</h2>
 <ul>
-<li class="fragment">Auch wenn das Ziel von <span class="math inline">\(NNT\)</span> eine einfache laienverständliche Kommunikation der Treatmenteffizienz ist, darf angezweifelt werden, ob dies immer der Fall ist, wie durch folgendes Beispiel demonstriert<a href="#/footnotes" class="footnote-ref" id="fnref10" role="doc-noteref" data-footnote-href="#/fn10" onclick=""><sup>10</sup></a>:</li>
+<li class="fragment">Auch wenn das Ziel von <span class="math inline">\(NNT\)</span> eine einfache laienverständliche Kommunikation der Treatmenteffizienz ist, darf angezweifelt werden, ob dies immer der Fall ist, wie durch folgendes Beispiel demonstriert<a href="#/footnotes" class="footnote-ref" id="fnref11" role="doc-noteref" data-footnote-href="#/fn11" onclick=""><sup>11</sup></a>:</li>
 </ul>
 <p><img data-src="images/quote_NNT.png"></p>
 <!----------------->
@@ -1242,7 +1292,7 @@ NNT = \frac{1}{ARR}
 <section class="slide level2">
 <h2><span style=" color: darkred !important;">Referenz</span></h2>
 <p><img data-src="images/kein_klausurstoff.png" class="absolute" style="bottom: 0px; right: 0px; height: 110px; "></p>
-<p>Empfehlungen nach Lakens (2013)<a href="#/footnotes" class="footnote-ref" id="fnref11" role="doc-noteref" data-footnote-href="#/fn11" onclick=""><sup>11</sup></a>:</p>
+<p>Empfehlungen nach Lakens (2013)<a href="#/footnotes" class="footnote-ref" id="fnref12" role="doc-noteref" data-footnote-href="#/fn12" onclick=""><sup>12</sup></a>:</p>
 <p><img data-src="images/effectsizes_recommendation_lakens2013.png"></p>
 <!----------------->
 <!--- New slide --->
@@ -1252,13 +1302,13 @@ NNT = \frac{1}{ARR}
 <h2><span style="font-size:33px; color: darkred">Standardisierte Effektstärken für Mittelwertunterschiede: aktuelle Forschung</span></h2>
 <p><img data-src="images/kein_klausurstoff.png" class="absolute" style="bottom: 0px; right: 0px; height: 110px; "></p>
 <p>Ein Problem der vorgestellten Effektmaße für abhängige Messungen, ist, dass sie nicht vergleichbar sind mit Effektmaßen für unabhängige Messungen. Es sind streng genommen <strong>unterschiedliche Skalen</strong>.</p>
-<p>Eine aktuelle Forschungsarbeit<a href="#/footnotes" class="footnote-ref" id="fnref12" role="doc-noteref" data-footnote-href="#/fn12" onclick=""><sup>12</sup></a> bietet dafür eine Lösung mit folgender (komplizierterer) Formel:</p>
+<p>Eine aktuelle Forschungsarbeit<a href="#/footnotes" class="footnote-ref" id="fnref13" role="doc-noteref" data-footnote-href="#/fn13" onclick=""><sup>13</sup></a> bietet dafür eine Lösung mit folgender (komplizierterer) Formel:</p>
 <p><span class="math display">\[
 d = \sqrt{\frac{2(1-r)}{n}}\cdot t'_\nu(\lambda)\quad\text{mit}\quad \lambda = \sqrt{\frac{n}{2(1-r)}}\cdot\frac{\bar{x}_A - \bar{x}_B}{\hat{\sigma}}
 \]</span></p>
 <p>wobei <span class="math inline">\(r\)</span> die Pearson-Korrelation zwischen den beiden abhängigen Messungen ist und <span class="math inline">\(t'\)</span> die nichtzentrale <em>t</em>-Verteilung mit <span class="math inline">\(\nu = 2(n − 1)/(1 + r^2)\)</span> Freiheitsgraden. Zu beachten ist, dass die Formel nur gilt, falls gleiche Standardabweichungen in den beiden Bedingungen angenommen werden können(<span class="math inline">\(\sigma=\sigma_A=\sigma_B\)</span>).</p>
 <p>Laut dem Autor der Forschungsarbeit ist diese Formel sowohl auf abhängige als auch unabhängige Messungen anwendbar.</p>
-<p>Weiterer nützlicher Link: <a href="#/footnotes" class="footnote-ref" id="fnref13" role="doc-noteref" data-footnote-href="#/fn13" onclick=""><sup>13</sup></a></p>
+<p>Weiterer nützlicher Link: <a href="#/footnotes" class="footnote-ref" id="fnref14" role="doc-noteref" data-footnote-href="#/fn14" onclick=""><sup>14</sup></a></p>
 <!-- ```{python}
 import numpy as np
 import matplotlib.pyplot as plt
@@ -1346,16 +1396,17 @@ plt.savefig('images/paradoxia_cohensd.png', bbox_inches='tight')
 <li id="fn1"><p>https://www.laenderdaten.info/durchschnittliche-koerpergroessen.php</p></li>
 <li id="fn2"><p>Arbeitsberichte Dresdner Soziologie Nr. 21, https://tud.qucosa.de/api/qucosa%3A24622/attachment/ATT-0/</p></li>
 <li id="fn3"><p>Cumming G (2013) Cohen’s d needs to be readily interpretable: Comment on Shieh (2013). Behav Res 45:968–971.</p></li>
-<li id="fn4"><p>Schäfer T, Schwarz MA (2019) The Meaningfulness of Effect Sizes in Psychological Research: Differences Between Sub-Disciplines and the Impact of Potential Biases. Frontiers in Psychology 10 Available at: https://www.frontiersin.org/articles/10.3389/fpsyg.2019.00813.</p></li>
-<li id="fn5"><p>Lovakov A, Agadullina ER (2021) Empirically derived guidelines for effect size interpretation in social psychology. Eur J Soc Psychol 51:485–504.</p></li>
+<li id="fn4"><p>Delacre M, Lakens D, Ley C, Liu L, Leys C (2023) Why Hedges’ g*s based on the non-pooled standard deviation should be reported with Welch’s t-test. Open Science Framework. Available at: https://osf.io/tu6mp. Hinweis: der Terminus “ungepoolte” Varianz meint hier, dass die Daten nicht implizit in einen Pool geworfen werden und dann die Gesamtvarianz berechnet wird; stattdessen wird unabhängig von möglicherweise unterschiedlich großen Gruppengrößen <span class="math inline">\(n_A\)</span> und <span class="math inline">\(n_B\)</span> der Mittelwert der beiden Einzelvarianzen berechnet.</p></li>
+<li id="fn5"><p>Schäfer T, Schwarz MA (2019) The Meaningfulness of Effect Sizes in Psychological Research: Differences Between Sub-Disciplines and the Impact of Potential Biases. Frontiers in Psychology 10 Available at: https://www.frontiersin.org/articles/10.3389/fpsyg.2019.00813.</p></li>
 <li id="fn6"><p>Lovakov A, Agadullina ER (2021) Empirically derived guidelines for effect size interpretation in social psychology. Eur J Soc Psychol 51:485–504.</p></li>
-<li id="fn7"><p>https://twitter.com/ceptional/status/1687577019629142017</p></li>
-<li id="fn8"><p>Baguley T (2009) Standardized or simple effect size: What should be reported? British Journal of Psychology 100:603–617.</p></li>
-<li id="fn9"><p>Mathur MB, VanderWeele TJ (2020) A Simple, Interpretable Conversion from Pearson’s Correlation to Cohen’s d for Continuous Exposures. Epidemiology 31:e16–e18.</p></li>
-<li id="fn10"><p>Andrade C (2015) The Numbers Needed to Treat and Harm (NNT, NNH) Statistics: What They Tell Us and What They Do Not: (Practical Psychopharmacology). J Clin Psychiatry 76:e330–e333.</p></li>
-<li id="fn11"><p>Lakens D (2013) Calculating and reporting effect sizes to facilitate cumulative science: a practical primer for t-tests and ANOVAs. Frontiers in Psychology 4 Available at: https://www.frontiersin.org/articles/10.3389/fpsyg.2013.00863</p></li>
-<li id="fn12"><p>Cousineau D (2020) Approximating the distribution of Cohen’s d_p in within-subject designs. TQMP 16:418–421.</p></li>
-<li id="fn13"><p>http://jakewestfall.org/blog/index.php/2016/03/25/five-different-cohens-d-statistics-for-within-subject-designs/</p></li>
+<li id="fn7"><p>Lovakov A, Agadullina ER (2021) Empirically derived guidelines for effect size interpretation in social psychology. Eur J Soc Psychol 51:485–504.</p></li>
+<li id="fn8"><p>https://twitter.com/ceptional/status/1687577019629142017</p></li>
+<li id="fn9"><p>Baguley T (2009) Standardized or simple effect size: What should be reported? British Journal of Psychology 100:603–617.</p></li>
+<li id="fn10"><p>Mathur MB, VanderWeele TJ (2020) A Simple, Interpretable Conversion from Pearson’s Correlation to Cohen’s d for Continuous Exposures. Epidemiology 31:e16–e18.</p></li>
+<li id="fn11"><p>Andrade C (2015) The Numbers Needed to Treat and Harm (NNT, NNH) Statistics: What They Tell Us and What They Do Not: (Practical Psychopharmacology). J Clin Psychiatry 76:e330–e333.</p></li>
+<li id="fn12"><p>Lakens D (2013) Calculating and reporting effect sizes to facilitate cumulative science: a practical primer for t-tests and ANOVAs. Frontiers in Psychology 4 Available at: https://www.frontiersin.org/articles/10.3389/fpsyg.2013.00863</p></li>
+<li id="fn13"><p>Cousineau D (2020) Approximating the distribution of Cohen’s d_p in within-subject designs. TQMP 16:418–421.</p></li>
+<li id="fn14"><p>http://jakewestfall.org/blog/index.php/2016/03/25/five-different-cohens-d-statistics-for-within-subject-designs/</p></li>
 </ol>
 </section>
     </div>
