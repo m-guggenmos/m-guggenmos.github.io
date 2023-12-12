@@ -490,22 +490,22 @@ t = \frac{\Delta\bar{x}}{\hat{\sigma}/\sqrt{n}} = \frac{\Delta\bar{x}}{\hat{se}}
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Differenz des Mittelwertes <u>einer Gruppe</u> und einem Referenzwert</strong> <span class="math inline">\(\mu_0\)</span><br>(→ Einstichproben-t-Test)</td>
+<td><strong>Differenz des Mittelwertes <u>einer Stichprobe</u> und einem Referenzwert</strong> <span class="math inline">\(\mu_0\)</span><br>(→ Einstichproben-t-Test)</td>
 <td><span class="math inline">\(\hat{se}=\frac{\hat{\sigma}}{\sqrt{n}}\)</span></td>
 </tr>
 <tr class="even">
-<td><strong>Mittelwertdifferenz zweier Bedingungen A und B in <u>einer Gruppe</u></strong><br>(→ Differenzen-t-Test)</td>
-<td><span class="math inline">\(\hat{se} = \frac{\hat{\sigma}_\Delta}{\sqrt{n}}\qquad\text{mit}\)</span><br>
-<span class="math inline">\(\hat{\sigma}_\Delta=\sqrt{\hat{\sigma}_A^2+\hat{\sigma}_B^2-2\,\hat{Cov}(X_A,X_B)}\)</span></td>
-</tr>
-<tr class="odd">
-<td><strong>Mittelwertdifferenz <u>zweier unabhängiger Gruppen</u> A und B (ähnliche Varianzen)</strong><br>(→ Klassischer Zweistichproben-t-Test)</td>
+<td><strong>Mittelwertdifferenz unabhängiger Messungen in <u>zwei Stichproben A und B</u> (ähnliche Varianzen)</strong><br>(→ Klassischer Zweistichproben-t-Test)</td>
 <td><span class="math inline">\(\hat{se} = \hat{\sigma}_\text{pooled}\sqrt{\frac{1}{n_A}+\frac{1}{n_B}}\)</span><br>
 <span class="math inline">\(\text{mit}\quad \hat{\sigma}_\text{pooled}=\sqrt{\frac{(n_A-1)\hat{\sigma}^2_A + (n_B-1)\hat{\sigma}^2_B}{n_A+n_B-2}}\)</span></td>
 </tr>
-<tr class="even">
-<td><strong>Mittelwertdifferenz <u>zweier unabhängiger Gruppen</u> A und B (unterschiedliche Varianzen)</strong><br>(→ Welch’s t-Test)</td>
+<tr class="odd">
+<td><strong>Mittelwertdifferenz unabhängiger Messungen in <u>zwei Stichproben A und B</u> (unterschiedliche Varianzen)</strong><br>(→ Welch’s Zweistichproben-t-Test)</td>
 <td><span class="math inline">\(\hat{se}= \sqrt{\frac{\hat{\sigma}_A^2}{n_A} + \frac{\hat{\sigma}_B^2}{n_B}}\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>Mittelwertdifferenz abhängiger Messungen A und B in <u>einer Stichprobe</u></strong><br>(→ Differenzen-t-Test)</td>
+<td><span class="math inline">\(\hat{se} = \frac{\hat{\sigma}_\Delta}{\sqrt{n}}\qquad\text{mit}\)</span><br>
+<!-- $\hat{\sigma}_\Delta=\sqrt{\hat{\sigma}_A^2+\hat{\sigma}_B^2-2\,\hat{Cov}(X_A,X_B)}$ | --></td>
 </tr>
 </tbody>
 </table>
@@ -522,6 +522,46 @@ t = \frac{\Delta\bar{x}}{\hat{\sigma}/\sqrt{n}} = \frac{\Delta\bar{x}}{\hat{se}}
 <p>Dieses Cheat Sheet gilt für den Fall, dass die Populationsvarianzen <span class="math inline">\(\sigma^2_A\)</span> bzw. <span class="math inline">\(\sigma^2_B\)</span> <strong>nicht bekannt</strong> sind. In diesem Sinne ist es das in der Praxis relevante Cheat Sheet, da die Populationsvarianzen nahezu nie bekannt sind.</p>
 </div>
 </div>
+</div>
+<!----------------->
+<!--- New slide --->
+<!----------------->
+</section>
+<section class="slide level2">
+<h2>Einschub: gepoolter Standardfehler</h2>
+<div style="margin-top: -10px">
+<ul>
+<li class="fragment">Im Cheat sheet auf der vorherigen Folie ist folgender Standardfehler für den Fall unabhängiger Messungen und ähnlicher Varianzen angegeben:</li>
+</ul>
+</div>
+<div style="margin-top: -30px">
+<p><span class="math display">\[
+\hat{se} = \hat{\sigma}_\text{pooled}\sqrt{\frac{1}{n_A}+\frac{1}{n_B}}
+\]</span></p>
+</div>
+<div style="margin-top: -15px">
+<ul>
+<li class="fragment">Zur Herleitung starten wir wieder mit der allgemeinen Varianzsummenformel: wir wissen, dass sich die Varianzen der beiden Stichprobenmittelwerte (=quadrierte Standardfehler <span class="math inline">\(\hat{se}_A^2\)</span> und <span class="math inline">\(\hat{se}_B^2\)</span>) aufaddieren:</li>
+</ul>
+</div>
+<div style="margin-top: -54px">
+<p><span class="math display">\[
+\hat{se}^2 = \hat{se}_A^2 + \hat{se}_B^2\quad\rightarrow\quad \hat{se} = \sqrt{\hat{se}_A^2 + \hat{se}_B^2} = \sqrt{\frac{\hat{\sigma}_A^2}{n_A} + \frac{\hat{\sigma}_B^2}{n_B}}
+\]</span></p>
+</div>
+<div style="margin-top: -15px">
+<ul>
+<li class="fragment">Können die Varianzen <span class="math inline">\(\hat{\sigma}_A^2\)</span> und <span class="math inline">\(\hat{\sigma}_B^2\)</span> als ähnlich angenommen werden, gilt folgende Überlegung: statt beide Varianzen einzeln zu schätzen, wird eine einheitliche <strong>gepoolte Varianz</strong> <span class="math inline">\(\hat{\sigma}_\text{pooled}\)</span> auf Basis beider Stichproben geschätzt (vgl. Vorlesung 07).
+<ul>
+<li class="fragment">Vorteil: diese Varianz kann präziser geschätzt werden als die Einzelvarianzen, da die kombinierte Stichprobenzahl <span class="math inline">\(n_A+n_B\)</span> zugrundegelegt wird.</li>
+</ul></li>
+<li class="fragment">Wir ersetzen also <span class="math inline">\(\hat{\sigma}_A^2\)</span> und <span class="math inline">\(\hat{\sigma}_B^2\)</span> jeweils durch <span class="math inline">\(\hat{\sigma}_\text{pooled}^2\)</span>:</li>
+</ul>
+</div>
+<div style="margin-top: -20px">
+<p><span class="math display">\[
+\hat{se} = \sqrt{\frac{\hat{\sigma}_\text{pooled}^2}{n_A} + \frac{\hat{\sigma}_\text{pooled}^2}{n_B}} = \hat{\sigma}_\text{pooled}\sqrt{\frac{1}{n_A}+\frac{1}{n_B}}\qquad\text{q.e.d.}
+\]</span></p>
 </div>
 <!----------------->
 <!--- New slide --->
@@ -974,7 +1014,7 @@ Falls <span class="math inline">\(n_A=n_B=n\)</span>: <span class="math inline">
 \]</span></p>
 <p>Wir schlagen die Formel für den Standardfehler bei unabhängigen Messungen und ungleichen Varianzen nach und setzen ein:</p>
 <p><span class="math display">\[
-\hat{SE}= \sqrt{\frac{\hat{\sigma}_\text{med}^2}{n_\text{med}} + \frac{\hat{\sigma}_\text{psych}^2}{n_\text{psych}}} \overset{(Computer)}{=}  0{,}102
+\hat{se}= \sqrt{\frac{\hat{\sigma}_\text{med}^2}{n_\text{med}} + \frac{\hat{\sigma}_\text{psych}^2}{n_\text{psych}}} \overset{(Computer)}{=}  0{,}102
 \]</span></p>
 <p>Erinnerung: es galt <span class="math inline">\(n_\text{med}=n_\text{psych}=30\)</span>.</p>
 </div><div class="column" style="width:20%;">
