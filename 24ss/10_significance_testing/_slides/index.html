@@ -606,9 +606,12 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)
 <div class="column" style="width:65%;">
 <p>Im ersten Schritt betrachten wir daher den vereinfachten (in der Praxis sehr seltenen) Fall, dass wir die Streuung <span class="math inline">\(\sigma_\text{med}\)</span> und <span class="math inline">\(\sigma_\text{psych}\)</span> in den beiden Populationen der Medizin und Psychologie kennen, und damit den Standardfehler <span class="math inline">\(se\)</span> unseres Effektes <span class="math inline">\(\Delta \bar{x}\)</span>:</p>
 <p><span class="math display">\[
-se=\sqrt{\frac{\sigma_\text{med}^2+\sigma_\text{psych}^2}{n}}
+se=\sqrt{\frac{\sigma_\text{med}^2}{n_\text{med}} + \frac{\sigma_\text{psych}^2}{n_\text{psych}}}
 \]</span></p>
-<p>Hinweis: dies ist die Formel für den Standardfehler des Differenzeffektes <span class="math inline">\(\bar{x}_\text{med}-\bar{x}_\text{psych}\)</span>. Nehmen wir an, der Standardfehler ergibt sich nach dieser Formel zu <span class="math inline">\(se=0{,}1\)</span>.</p>
+<div class="smaller">
+<p>(die Herleitung dieser Formel erfolgt in Kürze)</p>
+</div>
+<p>Nehmen wir an, der Standardfehler ergibt sich nach dieser Formel zu <span class="math inline">\(se=0{,}1\)</span>.</p>
 <p>Nun ist alles angerichtet und wir können unseren ersten p-Wert berechnen! Dazu muss die Fläche unter der Nullhypothesenverteilung <u>rechts</u> von <span class="math inline">\(\Delta\bar{x}=\bar{x}_\text{med}-\bar{x}_\text{psych}\)</span> berechnet werden (Erinnerung: wir sind an der Wahrscheinlichkeit interessiert, dass die Daten unseren Effekt annehmen <em>oder einen noch größeren Effekt</em>).</p>
 </div><div class="column" style="width:34%;">
 <img data-src="images/nulldist2c.png">
@@ -646,27 +649,22 @@ p &amp;= \int_{\Delta\bar{x}}^{\infty}f(x)dx = 1 - F(\Delta\bar{x}) = \\
 </section>
 <section class="slide level2">
 <h2>Standardfehler bei Mittelwertdifferenzen</h2>
-<p><u><strong>Messungen in unabhängigen Gruppen mit unterschiedlichen Varianzen</strong></u></p>
-<p>Sind die Standardabweichungen in beiden Gruppen unterschiedlich (Faustregel: um mehr als einen Faktor 2), kann keine gepoolte Standardabweichung für beide Gruppen berechnet werden, und die Standardfehler werden für beide Gruppen separat berechnet:</p>
-<div style="margin-top: -8px">
-<p><span class="math display">\[
-se_A = \frac{\sigma_A}{\sqrt{n_A}}\qquad\qquad se_B = \frac{\sigma_B}{\sqrt{n_B}}
-\]</span></p>
+<p>Zentrale Frage: wie lässt sich auf Basis der (hier als bekannt vorausgesetzten) Populationsstreuungen <span class="math inline">\(\sigma_A\)</span> und <span class="math inline">\(\sigma_B\)</span> der Standardfehler der Mittelwertdifferenz berechnen?</p>
+<p><u><strong>Unabhängige Messungen in zwei Stichproben</strong></u></p>
+<ul>
+<li class="fragment">Bei unabhängigen Gruppen sind die Mittelwerte <span class="math inline">\(\bar{X}_A\)</span> und <span class="math inline">\(\bar{X}_B\)</span> der beiden Stichproben unabhängige Zufallsvariablen.</li>
+<li class="fragment">Für die Mittelwertdifferenz <span class="math inline">\(\Delta\bar{X}=\bar{X}_A - \bar{X}_B\)</span> gilt daher die allgemeine Varianzsummenformel, der zufolge sich bei der Differenzbildung zweier unabhängiger Zufallsvariablen die Varianzen addieren.</li>
+<li class="fragment">Die Varianz von Mittelwerten ist nichts anderes als der quadrierte Standardfehler, hier <span class="math inline">\(se_A^2\)</span> und <span class="math inline">\(se_B^2\)</span>.</li>
+<li class="fragment">Für die Varianz <span class="math inline">\(se^2\)</span> der Mittelwertdifferenz <span class="math inline">\(\Delta\bar{X}\)</span> gilt also: <span class="math display">\[
+se^2 = se_A^2 + se_B^2 = \frac{\sigma_A^2}{n_A} + \frac{\sigma_B^2}{n_B}
+\]</span></li>
+</ul>
+<div style="margin-top: -20px">
+<p>Wurzel ziehen:</p>
 </div>
-<p>Die Varianzen der Mittelwerte in beiden Gruppen sind gleich dem quadrierten Standardfehler der Mittelwerte:</p>
-<div style="margin-top: -40px">
+<div class="colorbox fragment">
 <p><span class="math display">\[
-se_A^2 = \frac{\sigma_A^2}{n_A}\qquad\qquad se_B^2 = \frac{\sigma_B^2}{n_B}
-\]</span></p>
-</div>
-<p>Nun sind wir ja an der Differenz der Mittelwerte <span class="math inline">\(\Delta\bar{x}\)</span> interessiert. Allgemein gilt, dass sich die Varianzen von Summen oder Differenz zweier unabhängiger Zufallsvariablen addieren:</p>
-<p><span class="math display">\[
-se^2 = se_A^2 + se_B^2 = \frac{\sigma_A^2}{n_A} + \frac{\sigma_A^2}{n_B}
-\]</span></p>
-<p>Daher gilt für den <strong>Standardfehler der Mittelwertsdifferenz unabhängiger Gruppen A und B</strong>:</p>
-<div style="margin-top: -10px">
-<p><span class="math display">\[
-se = \sqrt{\frac{\sigma_A^2}{n_A} + \frac{\sigma_A^2}{n_A}}
+se=\sqrt{\frac{\sigma_A^2}{n_A} + \frac{\sigma_B^2}{n_B}}
 \]</span></p>
 </div>
 <!----------------->
@@ -675,21 +673,18 @@ se = \sqrt{\frac{\sigma_A^2}{n_A} + \frac{\sigma_A^2}{n_A}}
 </section>
 <section class="slide level2">
 <h2>Standardfehler bei Mittelwertdifferenzen</h2>
-<p><u><strong>Messungen in unabhängigen Gruppen mit ähnlichen Varianzen</strong></u></p>
-<p>Gilt <span class="math inline">\(\frac{1}{2}&lt;\frac{\sigma_A}{\sigma_B}&lt;2\)</span>, die Standardabweichungen sind also ähnlich, wird der Standardfehler auf Basis der gepoolten Standardabweichung berechnet:</p>
-<p><span class="math display">\[
-se = \sigma_\text{pooled}\sqrt{\frac{1}{n_A} + \frac{1}{n_B}}\qquad\text{mit}\qquad \sigma_\text{pooled} = \sqrt{\frac{n_A\sigma^2_A + n_B\sigma^2_B}{n_A+n_B}}
-\]</span></p>
-<p><u><strong>Messungen in abhängigen Bedingungen einer Gruppe</strong></u></p>
-<p>Zur Herleitung des Standardfehlers der Mittelwertdifferenz zweier abhängiger Messungen A und B <em>in einer Stichprobe</em> können wir die Variablen <span class="math inline">\(X_A\)</span> und <span class="math inline">\(X_B\)</span> im ersten Schritt direkt voneinander abziehen:</p>
+<p><u><strong>Abhängige Messungen in einer Stichprobe</strong></u></p>
+<p>Ähnlich wie bei der Standardisierung der Effektstärke abhängiger Messungen, können die Variablen <span class="math inline">\(X_A\)</span> und <span class="math inline">\(X_B\)</span> im ersten Schritt direkt voneinander abgezogen werden:</p>
 <p><span class="math display">\[
 \Delta X = X_A - X_B
 \]</span></p>
 <p>.. und mit der Standardformel die Standardabweichung <span class="math inline">\(\sigma_\Delta\)</span> dieser Differenz berechnen.</p>
-<p>Der Standardfehler der Mittelwertsdifferenz abhängiger Bedingungen A und B ergibt sich daher bei einer Stichprobengröße <span class="math inline">\(n\)</span> als:</p>
+<p>Der Standardfehler der Mittelwertsdifferenz abhängiger Bedingungen A und B ergibt sich daher als:</p>
+<div class="colorbox fragment">
 <p><span class="math display">\[
 se = \frac{\sigma_\Delta}{\sqrt{n}}\qquad\text{mit}\qquad \sigma_\Delta=\sqrt{\frac{1}{n}\sum\left(\Delta x_i-\Delta\bar{x}\right)^2}
 \]</span></p>
+</div>
 <!----------------->
 <!--- New slide --->
 <!----------------->
@@ -710,21 +705,17 @@ se = \frac{\sigma_\Delta}{\sqrt{n}}\qquad\text{mit}\qquad \sigma_\Delta=\sqrt{\f
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Differenz des Mittelwertes <u>einer Gruppe</u> und einem Referenzwert</strong> <span class="math inline">\(\mu_0\)</span></td>
+<td><strong>Differenz des Mittelwertes <u>einer Stichprobe</u> und einem Referenzwert</strong> <span class="math inline">\(\mu_0\)</span></td>
 <td><span class="math inline">\(se = \frac{\sigma}{\sqrt{n}}\)</span></td>
 </tr>
 <tr class="even">
-<td><strong>Mittelwertdifferenz zweier Bedingungen A und B in <u>einer Gruppe</u></strong></td>
-<td><span class="math inline">\(se = \frac{\sigma_\Delta}{\sqrt{n}}\qquad\text{mit}\)</span><br>
-<span class="math inline">\(\scriptsize{\sigma_\Delta=\sqrt{\frac{1}{n}\sum\left(\Delta x_i-\Delta\bar{x}\right)^2}\qquad\text{oder}\qquad \sigma_\Delta=\sqrt{\sigma_A^2+\sigma_B^2-2\,Cov(X_A,X_B)}}\)</span></td>
+<td><strong>Mittelwertdifferenz unabhängiger Messungen in <u>zwei Stichproben A und B</u></strong></td>
+<td><span class="math inline">\(se = \sqrt{\frac{\sigma_A^2}{n_A} + \frac{\sigma_B^2}{n_B}}\)</span></td>
 </tr>
 <tr class="odd">
-<td><strong>Mittelwertdifferenz <u>zweier unabhängiger Gruppen</u> A und B (ähnliche Varianzen)</strong></td>
-<td><span class="math inline">\(se = \sigma_\text{pooled}\sqrt{\frac{1}{n_A} + \frac{1}{n_B}}\qquad\text{mit}\qquad \sigma_\text{pooled} = \sqrt{\frac{n_A\sigma^2_A + n_B\sigma^2_B}{n_A+n_B}}\)</span></td>
-</tr>
-<tr class="even">
-<td><strong>Mittelwertdifferenz <u>zweier unabhängiger Gruppen</u> A und B (unterschiedliche Varianzen)</strong></td>
-<td><span class="math inline">\(se = \sqrt{\frac{\sigma_A^2}{n_A} + \frac{\sigma_A^2}{n_A}}\)</span></td>
+<td><strong>Mittelwertdifferenz abhängiger Messungen A und B in <u>einer Stichprobe</u></strong></td>
+<td><span class="math inline">\(se = \frac{\sigma_\Delta}{\sqrt{n}}\qquad\text{mit}\)</span><br>
+<span class="math inline">\(\scriptsize{\sigma_\Delta=\sqrt{\frac{1}{n}\sum\left(\Delta x_i-\Delta\bar{x}\right)^2}\qquad\text{oder}\qquad \sigma_\Delta=\sqrt{\sigma_A^2+\sigma_B^2-2\,Cov(X_A,X_B)}}\)</span></td>
 </tr>
 </tbody>
 </table>
