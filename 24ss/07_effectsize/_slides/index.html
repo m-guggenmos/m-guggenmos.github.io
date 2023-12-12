@@ -849,13 +849,13 @@ plt.savefig('images/pooled_variance_dependent.png', bbox_inches='tight')
 <li class="fragment">Die Arbeit bietet dafür folgende Modifikation von Cohen’s d für abhängige Messungen an:</li>
 </ul>
 <p><span class="math display">\[
-d = \sqrt{\frac{2(1-r)}{n}}\cdot t'_\nu(\lambda)\quad\text{mit}\quad \lambda = \sqrt{\frac{n}{2(1-r)}}\cdot\frac{\bar{x}_A - \bar{x}_B}{\hat{\sigma}}
+d = \sqrt{\frac{2(1-r)}{n}}\cdot t'_\nu(\lambda)\quad\text{mit}\quad \lambda = \sqrt{\frac{n}{2(1-r)}}\cdot\frac{\bar{x}_A - \bar{x}_B}{\hat{\sigma}_\text{pooled}}
 \]</span></p>
 <div class="smaller">
-<p>wobei <span class="math inline">\(r\)</span> die Pearson-Korrelation zwischen den beiden abhängigen Messungen ist und <span class="math inline">\(t'\)</span> die nichtzentrale <em>t</em>-Verteilung mit <span class="math inline">\(\nu = 2(n − 1)/(1 + r^2)\)</span> Freiheitsgraden. Zu beachten ist, dass die Formel nur gilt, falls gleiche Standardabweichungen in den beiden Bedingungen angenommen werden können(<span class="math inline">\(\hat{\sigma}=\hat{\sigma}_A=\hat{\sigma}_B\)</span>).</p>
+<p>wobei <span class="math inline">\(r\)</span> die Pearson-Korrelation zwischen den beiden abhängigen Messungen ist und <span class="math inline">\(t'\)</span> die nichtzentrale <em>t</em>-Verteilung mit <span class="math inline">\(\nu = 2(n − 1)/(1 + r^2)\)</span> Freiheitsgraden. Beachte, dass die Formel nur gilt, falls ähnliche Varianzen in den beiden Bedingungen A und B angenommen werden können.</p>
 </div>
 <ul>
-<li class="fragment">Laut dem Autor der Forschungsarbeit ist diese Formel sowohl auf abhängige als auch unabhängige Messungen anwendbar.</li>
+<li class="fragment">Laut dem Autor Denis Cousineau der Forschungsarbeit ist damit Cohen’s d exakt vergleichbar zwischen abhängigen und unabhängigen Messungen.</li>
 <li class="fragment">Weiterer nützlicher Link zu Effektstärken bei abhängigen Messungen: <a href="#/footnotes" class="footnote-ref" id="fnref6" role="doc-noteref" data-footnote-href="#/fn6" onclick=""><sup>6</sup></a></li>
 </ul>
 <aside></aside></section></section>
